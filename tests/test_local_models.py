@@ -283,3 +283,22 @@ def test_last_turns_force_a_report():
     run_investigation(llm, data, max_steps=5)
     assert FORCE_REPORT in [m["content"] for m in llm.calls[3]]
     assert FORCE_REPORT not in [m["content"] for m in llm.calls[2]]
+
+
+def test_dotenv_accepts_pasted_powershell_lines(tmp_path, monkeypatch):
+    from agent.env import load_dotenv
+
+    f = tmp_path / ".env"
+    f.write_text('$env:ZZ_TEST_A="one"\nexport ZZ_TEST_B=two\nZZ_TEST_C=three\n', encoding="utf-8")
+    for k in ("ZZ_TEST_A", "ZZ_TEST_B", "ZZ_TEST_C"):
+        monkeypatch.delenv(k, raising=False)
+    load_dotenv(f)
+    import os
+
+    assert (os.environ["ZZ_TEST_A"], os.environ["ZZ_TEST_B"], os.environ["ZZ_TEST_C"]) == (
+        "one",
+        "two",
+        "three",
+    )
+    for k in ("ZZ_TEST_A", "ZZ_TEST_B", "ZZ_TEST_C"):
+        os.environ.pop(k, None)
