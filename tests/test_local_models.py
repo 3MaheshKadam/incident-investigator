@@ -42,10 +42,10 @@ def test_recovers_bare_and_wrapped_report_text():
     assert extract_text_tool_call(json.dumps(wrapped)).arguments == REPORT
 
 
-def test_ignores_unrelated_text_and_unknown_tools():
+def test_ignores_unrelated_text():
     assert extract_text_tool_call("The root cause is a bad deploy.") is None
-    assert extract_text_tool_call('{"name": "rm_rf", "parameters": {}}') is None
     assert extract_text_tool_call("{ broken json") is None
+    assert extract_text_tool_call('{"name": "x"}') is None  # no arguments: not a tool call
 
 
 def test_loop_accepts_report_written_as_text(root):
@@ -115,3 +115,48 @@ def test_show_trace_prints_steps(tmp_path, root, capsys):
     assert main([str(path)]) == 0
     out = capsys.readouterr().out
     assert "list_deploys" in out and "Final report" in out
+
+
+def test_invented_tool_names_are_matched_to_the_closest_real_tool(root):
+    from agent.tools import resolve_tool_name
+
+    assert resolve_tool_name("list_recent_deploys") == "list_deploys"
+    assert resolve_tool_name("search_log") == "search_logs"
+    assert resolve_tool_name("submit_final_report") == "submit_report"
+    assert resolve_tool_name("rm_rf") is None
+
+    data = ScenarioData(root / "bad_deploy-1")
+    llm = MockLLM(
+        [
+            LLMResponse(text='{"name": "list_recent_deploys", "parameters": {"start": "2026-03-09"}}'),
+            LLMResponse(tool_calls=[ToolCall("submit_report", REPORT)]),
+        ]
+    )
+    result = run_investigation(llm, data)
+    call = next(t for t in result.trace if t["type"] == "tool_call")
+    assert call["name"] == "list_deploys" and call["called_as"] == "list_recent_deploys"
+    assert "ignored unknown arguments ['start']" in call["result"]  # and still returned deploys
+    assert result.stop_reason == "report"
+
+
+def test_truly_unknown_tool_gets_an_error_listing_valid_tools(root):
+    data = ScenarioData(root / "bad_deploy-1")
+    llm = MockLLM(
+        [
+            LLMResponse(text='{"name": "rm_rf", "parameters": {}}'),
+            LLMResponse(tool_calls=[ToolCall("submit_report", REPORT)]),
+        ]
+    )
+    result = run_investigation(llm, data)
+    call = next(t for t in result.trace if t["type"] == "tool_call")
+    assert "unknown tool" in call["result"] and "search_logs" in call["result"]
+
+
+def test_tools_tolerate_null_and_extra_arguments(root):
+    from agent.tools import Toolbox
+
+    box = Toolbox(ScenarioData(root / "bad_deploy-0"))
+    out = box.call("search_logs", {"query": None, "level": "ERROR", "service": None, "limit": "3"})
+    assert out.startswith("note") is False and "matching lines, showing 3" in out
+    assert "metrics for" in box.call("query_metric", {"service": "checkout-service", "extra": 1})
+    assert box.call("query_metric", {}).startswith("error: bad arguments")

@@ -9,7 +9,7 @@ from typing import Any, Protocol
 
 from agent.data import ScenarioData
 from agent.llm import LLM, Message, ToolCall
-from agent.tools import TOOL_SPECS, Toolbox, validate_report
+from agent.tools import TOOL_SPECS, Toolbox, resolve_tool_name, validate_report
 
 SYSTEM_PROMPT = """You are an on-call engineer investigating a production incident.
 
@@ -31,7 +31,6 @@ NUDGE = (
     "summary, evidence (a list), action_type and action_target."
 )
 MAX_NUDGES = 3
-_TOOL_NAMES = {t["name"] for t in TOOL_SPECS}
 
 
 def extract_text_tool_call(text: str) -> ToolCall | None:
@@ -57,7 +56,7 @@ def extract_text_tool_call(text: str) -> ToolCall | None:
                 args = json.loads(args)
             except ValueError:
                 args = None
-        if name in _TOOL_NAMES and isinstance(args, dict):
+        if isinstance(name, str) and isinstance(args, dict):
             return ToolCall(name, args)
         if "root_cause_category" in obj:
             return ToolCall("submit_report", obj)
@@ -140,7 +139,12 @@ def run_investigation(
         for c in resp.tool_calls:
             call_counter += 1
             calls.append(
-                {"id": c.id or f"call_{call_counter}", "name": c.name, "arguments": c.arguments}
+                {
+                    "id": c.id or f"call_{call_counter}",
+                    "name": resolve_tool_name(c.name) or c.name,
+                    "called_as": c.name,
+                    "arguments": c.arguments,
+                }
             )
         messages.append({"role": "assistant", "content": resp.text, "tool_calls": calls})
 
@@ -180,6 +184,8 @@ def run_investigation(
                     "arguments": c["arguments"],
                     "result": output,
                 }
+                if c["called_as"] != c["name"]:
+                    entry["called_as"] = c["called_as"]
                 if flagged:
                     entry["guard_redacted"] = flagged
                 result.trace.append(entry)

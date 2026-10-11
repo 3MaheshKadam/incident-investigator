@@ -74,7 +74,8 @@ def test_tools_are_read_only_and_filter(scenarios):
     assert "metrics for" in box.query_metric(service="checkout-service")
     assert box.query_metric(service="nope").startswith("error")
     assert box.call("delete_everything", {}).startswith("error: unknown tool")
-    assert box.call("search_logs", {"bogus": 1}).startswith("error: bad arguments")
+    assert box.call("search_logs", {"bogus": 1}).startswith("note: ignored unknown arguments")
+    assert box.call("query_metric", {}).startswith("error: bad arguments")
 
 
 def _report(answer, **over):
