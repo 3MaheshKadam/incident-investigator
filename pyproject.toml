@@ -1,0 +1,24 @@
+[project]
+name = "incident-investigator"
+version = "0.1.0"
+description = "AI on-call agent that investigates simulated production incidents, with a prompt-injection attack and defense layer."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.11"
+dependencies = ["httpx>=0.27"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.6"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["agent", "evals", "guard", "ui"]
+
+[tool.ruff]
+line-length = 100
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
