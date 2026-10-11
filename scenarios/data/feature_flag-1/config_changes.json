@@ -1,0 +1,26 @@
+[
+ {
+  "ts": "2026-03-10T02:11:00Z",
+  "service": "notification-service",
+  "key": "log_level",
+  "old": "info",
+  "new": "info,debug",
+  "author": "li"
+ },
+ {
+  "ts": "2026-03-10T02:27:00Z",
+  "service": "search-ranker",
+  "key": "request_timeout_ms",
+  "old": "2000",
+  "new": "2000",
+  "author": "carlos"
+ },
+ {
+  "ts": "2026-03-10T03:56:00Z",
+  "service": "search-ranker",
+  "key": "fast_checkout_path",
+  "old": "off",
+  "new": "on (100%)",
+  "author": "carlos"
+ }
+]

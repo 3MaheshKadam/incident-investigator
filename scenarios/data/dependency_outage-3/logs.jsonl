@@ -1,0 +1,176 @@
+{"ts": "2026-03-10T02:02:49Z", "service": "notification-service", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T02:04:11Z", "service": "notification-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:04:30Z", "service": "pricing-api", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:05:31Z", "service": "cache-proxy", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:06:41Z", "service": "notification-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:07:17Z", "service": "pricing-api", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:08:15Z", "service": "pricing-api", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:08:54Z", "service": "pricing-api", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:11:28Z", "service": "notification-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:13:27Z", "service": "api-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:13:35Z", "service": "api-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:14:20Z", "service": "notification-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:18:51Z", "service": "pricing-api", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:19:26Z", "service": "cache-proxy", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:19:59Z", "service": "cache-proxy", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:23:17Z", "service": "api-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:24:43Z", "service": "api-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:26:30Z", "service": "pricing-api", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:26:57Z", "service": "cache-proxy", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:27:45Z", "service": "cache-proxy", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T02:30:10Z", "service": "pricing-api", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:33:05Z", "service": "pricing-api", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:33:46Z", "service": "pricing-api", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:33:52Z", "service": "cache-proxy", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:34:43Z", "service": "notification-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:36:14Z", "service": "cache-proxy", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:37:35Z", "service": "pricing-api", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:43:13Z", "service": "api-gateway", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T02:49:39Z", "service": "notification-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:51:58Z", "service": "cache-proxy", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:52:50Z", "service": "cache-proxy", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:53:03Z", "service": "notification-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:53:28Z", "service": "notification-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:53:29Z", "service": "api-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:55:05Z", "service": "api-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:55:58Z", "service": "cache-proxy", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:56:44Z", "service": "notification-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:58:13Z", "service": "notification-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:59:30Z", "service": "api-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:04:05Z", "service": "api-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:04:33Z", "service": "notification-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:06:02Z", "service": "api-gateway", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T03:06:49Z", "service": "cache-proxy", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T03:08:40Z", "service": "api-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:09:15Z", "service": "cache-proxy", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T03:11:14Z", "service": "cache-proxy", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:12:59Z", "service": "notification-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:15:53Z", "service": "api-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:16:12Z", "service": "notification-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:17:29Z", "service": "api-gateway", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T03:22:48Z", "service": "pricing-api", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:23:51Z", "service": "api-gateway", "level": "WARN", "msg": "request queue depth 14"}
+{"ts": "2026-03-10T03:25:32Z", "service": "pricing-api", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:27:52Z", "service": "api-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:31:22Z", "service": "cache-proxy", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:31:44Z", "service": "api-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:32:56Z", "service": "api-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:34:00Z", "service": "api-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:35:35Z", "service": "api-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:36:06Z", "service": "cache-proxy", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:36:18Z", "service": "pricing-api", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:36:25Z", "service": "pricing-api", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:39:54Z", "service": "pricing-api", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:41:11Z", "service": "api-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:41:47Z", "service": "pricing-api", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T03:43:41Z", "service": "api-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:44:24Z", "service": "pricing-api", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:48:40Z", "service": "pricing-api", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:49:15Z", "service": "cache-proxy", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:50:16Z", "service": "pricing-api", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:52:16Z", "service": "notification-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:53:37Z", "service": "notification-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:55:01Z", "service": "notification-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:56:42Z", "service": "cache-proxy", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:00:41Z", "service": "notification-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:01:48Z", "service": "cache-proxy", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T04:02:03Z", "service": "api-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:03:52Z", "service": "notification-service", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T04:04:14Z", "service": "notification-service", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T04:07:37Z", "service": "api-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:08:22Z", "service": "notification-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:10:00Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream pricing-api: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:10:12Z", "service": "pricing-api", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
+{"ts": "2026-03-10T04:11:24Z", "service": "notification-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:11:37Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream pricing-api: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:11:49Z", "service": "pricing-api", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
+{"ts": "2026-03-10T04:12:44Z", "service": "pricing-api", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:14:08Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream pricing-api: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:14:20Z", "service": "pricing-api", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
+{"ts": "2026-03-10T04:15:09Z", "service": "api-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:15:17Z", "service": "cache-proxy", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:15:20Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream pricing-api: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:15:32Z", "service": "pricing-api", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
+{"ts": "2026-03-10T04:15:46Z", "service": "api-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:15:52Z", "service": "api-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:17:50Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream pricing-api: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:18:02Z", "service": "pricing-api", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
+{"ts": "2026-03-10T04:20:27Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream pricing-api: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:20:39Z", "service": "pricing-api", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
+{"ts": "2026-03-10T04:21:58Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream pricing-api: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:22:09Z", "service": "notification-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:22:10Z", "service": "pricing-api", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
+{"ts": "2026-03-10T04:23:26Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream pricing-api: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:23:38Z", "service": "pricing-api", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
+{"ts": "2026-03-10T04:24:40Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream pricing-api: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:24:52Z", "service": "pricing-api", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
+{"ts": "2026-03-10T04:26:43Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream pricing-api: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:26:55Z", "service": "pricing-api", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
+{"ts": "2026-03-10T04:27:52Z", "service": "api-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:28:16Z", "service": "notification-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:28:16Z", "service": "cache-proxy", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:28:31Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream pricing-api: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:28:43Z", "service": "pricing-api", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
+{"ts": "2026-03-10T04:29:55Z", "service": "notification-service", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T04:30:30Z", "service": "pricing-api", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T04:31:05Z", "service": "pricing-api", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:31:30Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream pricing-api: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:31:42Z", "service": "pricing-api", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
+{"ts": "2026-03-10T04:32:02Z", "service": "pricing-api", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:32:31Z", "service": "pricing-api", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T04:32:58Z", "service": "cache-proxy", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:33:09Z", "service": "pricing-api", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T04:33:31Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream pricing-api: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:33:43Z", "service": "pricing-api", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
+{"ts": "2026-03-10T04:36:00Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream pricing-api: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:36:12Z", "service": "pricing-api", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
+{"ts": "2026-03-10T04:36:16Z", "service": "pricing-api", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:38:03Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream pricing-api: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:38:15Z", "service": "pricing-api", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
+{"ts": "2026-03-10T04:39:27Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream pricing-api: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:39:39Z", "service": "pricing-api", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
+{"ts": "2026-03-10T04:40:56Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream pricing-api: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:41:04Z", "service": "cache-proxy", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:41:08Z", "service": "pricing-api", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
+{"ts": "2026-03-10T04:42:53Z", "service": "cache-proxy", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:42:54Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream pricing-api: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:43:06Z", "service": "pricing-api", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
+{"ts": "2026-03-10T04:44:14Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream pricing-api: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:44:26Z", "service": "pricing-api", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
+{"ts": "2026-03-10T04:44:26Z", "service": "cache-proxy", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:44:47Z", "service": "pricing-api", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:45:06Z", "service": "notification-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:45:09Z", "service": "cache-proxy", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:46:06Z", "service": "pricing-api", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:46:12Z", "service": "notification-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:46:14Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream pricing-api: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:46:26Z", "service": "pricing-api", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
+{"ts": "2026-03-10T04:47:39Z", "service": "cache-proxy", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:48:15Z", "service": "notification-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:48:17Z", "service": "api-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:48:28Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream pricing-api: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:48:40Z", "service": "pricing-api", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
+{"ts": "2026-03-10T04:49:22Z", "service": "api-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:50:09Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream pricing-api: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:50:21Z", "service": "pricing-api", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
+{"ts": "2026-03-10T04:50:39Z", "service": "pricing-api", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:52:53Z", "service": "cache-proxy", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:53:04Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream pricing-api: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:53:16Z", "service": "pricing-api", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
+{"ts": "2026-03-10T04:55:02Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream pricing-api: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:55:04Z", "service": "cache-proxy", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:55:14Z", "service": "pricing-api", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
+{"ts": "2026-03-10T04:55:16Z", "service": "notification-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:56:05Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream pricing-api: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:56:17Z", "service": "pricing-api", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
+{"ts": "2026-03-10T04:58:18Z", "service": "cache-proxy", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:59:00Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream pricing-api: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:59:12Z", "service": "pricing-api", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
+{"ts": "2026-03-10T05:01:50Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream pricing-api: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T05:02:02Z", "service": "pricing-api", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
+{"ts": "2026-03-10T05:04:01Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream pricing-api: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T05:04:13Z", "service": "pricing-api", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
+{"ts": "2026-03-10T05:06:12Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream pricing-api: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T05:06:24Z", "service": "pricing-api", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
+{"ts": "2026-03-10T05:09:04Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream pricing-api: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T05:09:16Z", "service": "pricing-api", "level": "ERROR", "msg": "health check failing: database primary unreachable"}

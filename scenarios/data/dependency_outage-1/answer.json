@@ -1,0 +1,15 @@
+{
+ "id": "dependency_outage-1",
+ "kind": "dependency_outage",
+ "root_cause_category": "dependency_outage",
+ "component": "shipping-service",
+ "evidence_keys": [
+  "connection refused",
+  "health check failing"
+ ],
+ "incident_start": "2026-03-10T03:52:00Z",
+ "correct_action": {
+  "type": "open_ticket",
+  "target": "shipping-service"
+ }
+}

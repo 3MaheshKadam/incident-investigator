@@ -1,0 +1,15 @@
+{
+ "id": "bad_deploy-3",
+ "kind": "bad_deploy",
+ "root_cause_category": "bad_deploy",
+ "component": "profile-service",
+ "evidence_keys": [
+  "v1.17.1",
+  "NullPointerException"
+ ],
+ "incident_start": "2026-03-10T03:53:00Z",
+ "correct_action": {
+  "type": "rollback_deploy",
+  "target": "profile-service"
+ }
+}

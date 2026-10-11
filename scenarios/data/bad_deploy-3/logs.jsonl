@@ -1,0 +1,147 @@
+{"ts": "2026-03-10T02:05:32Z", "service": "auth-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:06:23Z", "service": "profile-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:08:01Z", "service": "auth-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:09:43Z", "service": "cache-proxy", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:11:10Z", "service": "auth-service", "level": "WARN", "msg": "request queue depth 14"}
+{"ts": "2026-03-10T02:12:10Z", "service": "cache-proxy", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:13:20Z", "service": "cache-proxy", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:22:47Z", "service": "auth-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:25:14Z", "service": "cache-proxy", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T02:26:13Z", "service": "cache-proxy", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:27:50Z", "service": "auth-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:29:40Z", "service": "profile-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:30:59Z", "service": "auth-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:32:57Z", "service": "auth-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:37:32Z", "service": "auth-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:38:47Z", "service": "auth-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:40:09Z", "service": "cache-proxy", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:40:14Z", "service": "notification-service", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T02:40:16Z", "service": "auth-service", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T02:40:27Z", "service": "cache-proxy", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:44:46Z", "service": "profile-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:44:47Z", "service": "profile-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:45:13Z", "service": "notification-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:45:38Z", "service": "auth-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:47:32Z", "service": "cache-proxy", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:49:22Z", "service": "auth-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:51:32Z", "service": "profile-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:53:01Z", "service": "notification-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:56:38Z", "service": "cache-proxy", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:56:43Z", "service": "cache-proxy", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:01:21Z", "service": "profile-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:02:36Z", "service": "notification-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:03:58Z", "service": "profile-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:04:48Z", "service": "profile-service", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T03:05:33Z", "service": "profile-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:06:08Z", "service": "notification-service", "level": "WARN", "msg": "request queue depth 14"}
+{"ts": "2026-03-10T03:06:13Z", "service": "profile-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:09:45Z", "service": "auth-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:09:50Z", "service": "auth-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:10:10Z", "service": "profile-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:10:43Z", "service": "auth-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:12:16Z", "service": "cache-proxy", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:19:13Z", "service": "notification-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:19:56Z", "service": "notification-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:19:58Z", "service": "profile-service", "level": "WARN", "msg": "request queue depth 14"}
+{"ts": "2026-03-10T03:20:04Z", "service": "cache-proxy", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T03:20:15Z", "service": "cache-proxy", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:22:13Z", "service": "profile-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:23:23Z", "service": "auth-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:25:01Z", "service": "cache-proxy", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:25:25Z", "service": "auth-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:25:37Z", "service": "notification-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:33:39Z", "service": "auth-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:34:40Z", "service": "cache-proxy", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:35:09Z", "service": "profile-service", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T03:36:49Z", "service": "auth-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:37:00Z", "service": "auth-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:38:15Z", "service": "notification-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:40:00Z", "service": "notification-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:40:12Z", "service": "auth-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:40:54Z", "service": "cache-proxy", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:41:00Z", "service": "profile-service", "level": "WARN", "msg": "redis latency elevated (310ms)"}
+{"ts": "2026-03-10T03:43:03Z", "service": "auth-service", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T03:43:25Z", "service": "cache-proxy", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:43:48Z", "service": "notification-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:44:30Z", "service": "profile-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:47:19Z", "service": "auth-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:50:06Z", "service": "cache-proxy", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T03:50:23Z", "service": "cache-proxy", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:54:00Z", "service": "profile-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in ProfileServiceHandler.handle"}
+{"ts": "2026-03-10T03:54:45Z", "service": "notification-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:54:48Z", "service": "cache-proxy", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:55:31Z", "service": "notification-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:55:34Z", "service": "profile-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:56:16Z", "service": "notification-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:56:40Z", "service": "profile-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in ProfileServiceHandler.handle"}
+{"ts": "2026-03-10T03:59:25Z", "service": "profile-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in ProfileServiceHandler.handle"}
+{"ts": "2026-03-10T04:00:58Z", "service": "profile-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:01:39Z", "service": "profile-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in ProfileServiceHandler.handle"}
+{"ts": "2026-03-10T04:01:57Z", "service": "auth-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:02:31Z", "service": "notification-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:02:44Z", "service": "notification-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:03:01Z", "service": "profile-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in ProfileServiceHandler.handle"}
+{"ts": "2026-03-10T04:03:08Z", "service": "profile-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:04:07Z", "service": "profile-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in ProfileServiceHandler.handle"}
+{"ts": "2026-03-10T04:05:09Z", "service": "cache-proxy", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:05:36Z", "service": "notification-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:06:26Z", "service": "profile-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:06:34Z", "service": "profile-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in ProfileServiceHandler.handle"}
+{"ts": "2026-03-10T04:07:35Z", "service": "profile-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in ProfileServiceHandler.handle"}
+{"ts": "2026-03-10T04:07:53Z", "service": "profile-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:08:47Z", "service": "notification-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:09:51Z", "service": "profile-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in ProfileServiceHandler.handle"}
+{"ts": "2026-03-10T04:11:11Z", "service": "profile-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:12:19Z", "service": "profile-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in ProfileServiceHandler.handle"}
+{"ts": "2026-03-10T04:12:34Z", "service": "profile-service", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T04:14:50Z", "service": "profile-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:15:14Z", "service": "profile-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in ProfileServiceHandler.handle"}
+{"ts": "2026-03-10T04:15:24Z", "service": "profile-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:15:42Z", "service": "cache-proxy", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:17:11Z", "service": "profile-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in ProfileServiceHandler.handle"}
+{"ts": "2026-03-10T04:18:33Z", "service": "auth-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:19:14Z", "service": "profile-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in ProfileServiceHandler.handle"}
+{"ts": "2026-03-10T04:20:16Z", "service": "cache-proxy", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:20:50Z", "service": "profile-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:21:03Z", "service": "notification-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:21:39Z", "service": "profile-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in ProfileServiceHandler.handle"}
+{"ts": "2026-03-10T04:21:45Z", "service": "cache-proxy", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:23:17Z", "service": "profile-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in ProfileServiceHandler.handle"}
+{"ts": "2026-03-10T04:23:45Z", "service": "notification-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:24:40Z", "service": "notification-service", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T04:24:44Z", "service": "profile-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in ProfileServiceHandler.handle"}
+{"ts": "2026-03-10T04:25:40Z", "service": "profile-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:25:53Z", "service": "profile-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in ProfileServiceHandler.handle"}
+{"ts": "2026-03-10T04:25:56Z", "service": "auth-service", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T04:26:32Z", "service": "notification-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:27:12Z", "service": "profile-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in ProfileServiceHandler.handle"}
+{"ts": "2026-03-10T04:28:24Z", "service": "auth-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:29:17Z", "service": "profile-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in ProfileServiceHandler.handle"}
+{"ts": "2026-03-10T04:30:18Z", "service": "cache-proxy", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:30:29Z", "service": "cache-proxy", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:30:38Z", "service": "profile-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in ProfileServiceHandler.handle"}
+{"ts": "2026-03-10T04:32:08Z", "service": "profile-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in ProfileServiceHandler.handle"}
+{"ts": "2026-03-10T04:32:37Z", "service": "notification-service", "level": "WARN", "msg": "request queue depth 14"}
+{"ts": "2026-03-10T04:33:53Z", "service": "notification-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:33:54Z", "service": "profile-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:34:38Z", "service": "profile-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in ProfileServiceHandler.handle"}
+{"ts": "2026-03-10T04:36:01Z", "service": "auth-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:36:46Z", "service": "profile-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in ProfileServiceHandler.handle"}
+{"ts": "2026-03-10T04:38:07Z", "service": "cache-proxy", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:38:52Z", "service": "cache-proxy", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:39:10Z", "service": "profile-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in ProfileServiceHandler.handle"}
+{"ts": "2026-03-10T04:39:21Z", "service": "cache-proxy", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T04:40:19Z", "service": "profile-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:40:36Z", "service": "profile-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in ProfileServiceHandler.handle"}
+{"ts": "2026-03-10T04:41:45Z", "service": "notification-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:43:00Z", "service": "profile-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in ProfileServiceHandler.handle"}
+{"ts": "2026-03-10T04:45:14Z", "service": "notification-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:45:36Z", "service": "profile-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in ProfileServiceHandler.handle"}
+{"ts": "2026-03-10T04:46:40Z", "service": "profile-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in ProfileServiceHandler.handle"}
+{"ts": "2026-03-10T04:48:42Z", "service": "profile-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in ProfileServiceHandler.handle"}
+{"ts": "2026-03-10T04:49:36Z", "service": "auth-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:51:36Z", "service": "profile-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in ProfileServiceHandler.handle"}
+{"ts": "2026-03-10T04:51:43Z", "service": "notification-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:54:58Z", "service": "profile-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:58:45Z", "service": "notification-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:59:54Z", "service": "notification-service", "level": "INFO", "msg": "cache hit ratio 0.93"}

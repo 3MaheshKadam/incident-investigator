@@ -4,7 +4,8 @@ An AI on-call agent that investigates **simulated** production incidents, finds 
 cause, and proposes a fix that a human must approve. A second layer red-teams the agent with
 prompt-injection attacks and measures a guard that blocks them.
 
-> Status: early skeleton. No results yet. Numbers will be added only after real, held-out runs.
+> Status: core investigator, scenarios and scoring harness are built. No model results yet.
+> Numbers will be added only after real runs on the held-out split.
 
 ## What it will do
 
@@ -36,6 +37,21 @@ pip install -e ".[dev]"
 cp .env.example .env
 pytest
 ```
+
+## Scenarios and scoring
+
+`scenarios/data/` holds 24 simulated incidents (6 types x 4 variants), each with noisy logs,
+metric series, deploys, config changes, a misleading clue and a hidden `answer.json`. They are
+generated deterministically by `python -m scenarios.generate`. Variants 0-1 of each type are the
+**dev** split (use while tuning); variants 2-3 are **heldout** (use only for final numbers).
+
+```bash
+LLM_PROVIDER=ollama LLM_MODEL=llama3.1:8b python -m evals.run --split dev
+```
+
+Each run is scored by plain code: root cause correct (category and component), evidence cited,
+tool calls used, and wrong blame (a wrong component named with medium or high confidence).
+Traces and a `summary.json` are written to `evals/reports/`.
 
 ## Choosing a model
 

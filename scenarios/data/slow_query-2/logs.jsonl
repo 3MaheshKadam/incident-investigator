@@ -1,0 +1,146 @@
+{"ts": "2026-03-10T02:05:04Z", "service": "billing-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:05:13Z", "service": "notification-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:09:05Z", "service": "billing-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:09:28Z", "service": "cache-proxy", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:13:39Z", "service": "billing-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:16:05Z", "service": "cache-proxy", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:17:10Z", "service": "billing-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:20:54Z", "service": "auth-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:20:58Z", "service": "cache-proxy", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:22:27Z", "service": "auth-service", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T02:24:17Z", "service": "auth-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:26:43Z", "service": "billing-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:30:23Z", "service": "notification-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:33:54Z", "service": "notification-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:34:35Z", "service": "notification-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:35:23Z", "service": "billing-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:35:37Z", "service": "notification-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:35:55Z", "service": "billing-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:40:23Z", "service": "notification-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:41:09Z", "service": "cache-proxy", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:42:04Z", "service": "notification-service", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T02:42:38Z", "service": "cache-proxy", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:42:46Z", "service": "billing-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:44:25Z", "service": "billing-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:44:34Z", "service": "cache-proxy", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:44:38Z", "service": "auth-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:45:56Z", "service": "auth-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:46:03Z", "service": "notification-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:48:19Z", "service": "notification-service", "level": "WARN", "msg": "request queue depth 14"}
+{"ts": "2026-03-10T02:48:44Z", "service": "billing-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:51:41Z", "service": "notification-service", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T02:54:50Z", "service": "notification-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:55:16Z", "service": "auth-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:55:50Z", "service": "cache-proxy", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:56:31Z", "service": "auth-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:00:51Z", "service": "auth-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:02:13Z", "service": "billing-service", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T03:03:25Z", "service": "notification-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:03:43Z", "service": "cache-proxy", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:04:18Z", "service": "notification-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:05:09Z", "service": "auth-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:05:10Z", "service": "auth-service", "level": "WARN", "msg": "request queue depth 14"}
+{"ts": "2026-03-10T03:05:26Z", "service": "billing-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:05:37Z", "service": "auth-service", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T03:07:56Z", "service": "cache-proxy", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:08:41Z", "service": "notification-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:09:01Z", "service": "cache-proxy", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:11:49Z", "service": "billing-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:12:51Z", "service": "billing-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:17:40Z", "service": "billing-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:18:22Z", "service": "cache-proxy", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T03:21:21Z", "service": "auth-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:22:33Z", "service": "notification-service", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T03:24:07Z", "service": "billing-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:26:15Z", "service": "auth-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:26:32Z", "service": "auth-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:29:43Z", "service": "cache-proxy", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:30:17Z", "service": "cache-proxy", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:30:53Z", "service": "cache-proxy", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:30:53Z", "service": "auth-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:31:57Z", "service": "billing-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:32:22Z", "service": "billing-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:33:03Z", "service": "billing-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:33:11Z", "service": "cache-proxy", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T03:35:30Z", "service": "billing-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:36:27Z", "service": "notification-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:39:08Z", "service": "notification-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:41:30Z", "service": "cache-proxy", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:47:17Z", "service": "billing-service", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T03:47:57Z", "service": "cache-proxy", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T03:52:11Z", "service": "notification-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:54:00Z", "service": "billing-db", "level": "WARN", "msg": "slow query (4155ms): SELECT * FROM invoices WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on invoices"}
+{"ts": "2026-03-10T03:54:59Z", "service": "billing-service", "level": "WARN", "msg": "request queue depth 14"}
+{"ts": "2026-03-10T03:55:59Z", "service": "billing-db", "level": "WARN", "msg": "slow query (4792ms): SELECT * FROM invoices WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on invoices"}
+{"ts": "2026-03-10T03:56:00Z", "service": "billing-service", "level": "WARN", "msg": "request timed out waiting for database (3000ms)"}
+{"ts": "2026-03-10T03:57:54Z", "service": "notification-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:57:56Z", "service": "billing-db", "level": "WARN", "msg": "slow query (4410ms): SELECT * FROM invoices WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on invoices"}
+{"ts": "2026-03-10T03:59:28Z", "service": "notification-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:00:29Z", "service": "billing-db", "level": "WARN", "msg": "slow query (2790ms): SELECT * FROM invoices WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on invoices"}
+{"ts": "2026-03-10T04:00:31Z", "service": "cache-proxy", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:00:33Z", "service": "auth-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:01:41Z", "service": "billing-db", "level": "WARN", "msg": "slow query (4179ms): SELECT * FROM invoices WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on invoices"}
+{"ts": "2026-03-10T04:01:43Z", "service": "billing-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:03:38Z", "service": "billing-db", "level": "WARN", "msg": "slow query (2608ms): SELECT * FROM invoices WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on invoices"}
+{"ts": "2026-03-10T04:04:55Z", "service": "notification-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:05:28Z", "service": "notification-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:05:37Z", "service": "auth-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:06:00Z", "service": "billing-db", "level": "WARN", "msg": "slow query (4509ms): SELECT * FROM invoices WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on invoices"}
+{"ts": "2026-03-10T04:08:00Z", "service": "billing-db", "level": "WARN", "msg": "slow query (2729ms): SELECT * FROM invoices WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on invoices"}
+{"ts": "2026-03-10T04:08:16Z", "service": "notification-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:08:23Z", "service": "auth-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:09:12Z", "service": "billing-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:09:47Z", "service": "billing-db", "level": "WARN", "msg": "slow query (3765ms): SELECT * FROM invoices WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on invoices"}
+{"ts": "2026-03-10T04:11:20Z", "service": "cache-proxy", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:11:32Z", "service": "billing-db", "level": "WARN", "msg": "slow query (2745ms): SELECT * FROM invoices WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on invoices"}
+{"ts": "2026-03-10T04:11:36Z", "service": "auth-service", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T04:11:40Z", "service": "auth-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:12:03Z", "service": "cache-proxy", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:13:52Z", "service": "billing-db", "level": "WARN", "msg": "slow query (3157ms): SELECT * FROM invoices WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on invoices"}
+{"ts": "2026-03-10T04:14:43Z", "service": "notification-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:15:01Z", "service": "notification-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:15:50Z", "service": "cache-proxy", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:16:41Z", "service": "billing-db", "level": "WARN", "msg": "slow query (3066ms): SELECT * FROM invoices WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on invoices"}
+{"ts": "2026-03-10T04:18:40Z", "service": "billing-db", "level": "WARN", "msg": "slow query (4126ms): SELECT * FROM invoices WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on invoices"}
+{"ts": "2026-03-10T04:19:40Z", "service": "billing-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:19:55Z", "service": "billing-db", "level": "WARN", "msg": "slow query (2994ms): SELECT * FROM invoices WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on invoices"}
+{"ts": "2026-03-10T04:20:32Z", "service": "cache-proxy", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:20:37Z", "service": "billing-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:22:10Z", "service": "billing-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:22:11Z", "service": "billing-db", "level": "WARN", "msg": "slow query (3910ms): SELECT * FROM invoices WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on invoices"}
+{"ts": "2026-03-10T04:24:40Z", "service": "auth-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:24:57Z", "service": "billing-service", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T04:24:58Z", "service": "billing-db", "level": "WARN", "msg": "slow query (4385ms): SELECT * FROM invoices WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on invoices"}
+{"ts": "2026-03-10T04:25:27Z", "service": "cache-proxy", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:27:23Z", "service": "billing-db", "level": "WARN", "msg": "slow query (3775ms): SELECT * FROM invoices WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on invoices"}
+{"ts": "2026-03-10T04:28:43Z", "service": "billing-db", "level": "WARN", "msg": "slow query (3533ms): SELECT * FROM invoices WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on invoices"}
+{"ts": "2026-03-10T04:30:09Z", "service": "auth-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:30:11Z", "service": "cache-proxy", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T04:30:47Z", "service": "auth-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:30:59Z", "service": "billing-db", "level": "WARN", "msg": "slow query (2598ms): SELECT * FROM invoices WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on invoices"}
+{"ts": "2026-03-10T04:32:40Z", "service": "billing-db", "level": "WARN", "msg": "slow query (4497ms): SELECT * FROM invoices WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on invoices"}
+{"ts": "2026-03-10T04:33:39Z", "service": "notification-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:35:33Z", "service": "notification-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:35:36Z", "service": "billing-db", "level": "WARN", "msg": "slow query (4744ms): SELECT * FROM invoices WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on invoices"}
+{"ts": "2026-03-10T04:36:14Z", "service": "cache-proxy", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:38:35Z", "service": "billing-db", "level": "WARN", "msg": "slow query (3569ms): SELECT * FROM invoices WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on invoices"}
+{"ts": "2026-03-10T04:39:05Z", "service": "auth-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:40:06Z", "service": "auth-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:40:32Z", "service": "billing-db", "level": "WARN", "msg": "slow query (4460ms): SELECT * FROM invoices WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on invoices"}
+{"ts": "2026-03-10T04:40:40Z", "service": "cache-proxy", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:43:01Z", "service": "billing-db", "level": "WARN", "msg": "slow query (2561ms): SELECT * FROM invoices WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on invoices"}
+{"ts": "2026-03-10T04:44:25Z", "service": "notification-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:44:27Z", "service": "cache-proxy", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:45:07Z", "service": "billing-db", "level": "WARN", "msg": "slow query (3651ms): SELECT * FROM invoices WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on invoices"}
+{"ts": "2026-03-10T04:46:12Z", "service": "billing-db", "level": "WARN", "msg": "slow query (2800ms): SELECT * FROM invoices WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on invoices"}
+{"ts": "2026-03-10T04:48:47Z", "service": "billing-db", "level": "WARN", "msg": "slow query (3139ms): SELECT * FROM invoices WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on invoices"}
+{"ts": "2026-03-10T04:49:12Z", "service": "auth-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:51:14Z", "service": "billing-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:51:30Z", "service": "auth-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:51:41Z", "service": "billing-db", "level": "WARN", "msg": "slow query (3153ms): SELECT * FROM invoices WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on invoices"}
+{"ts": "2026-03-10T04:51:50Z", "service": "notification-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:52:47Z", "service": "billing-db", "level": "WARN", "msg": "slow query (3033ms): SELECT * FROM invoices WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on invoices"}
+{"ts": "2026-03-10T04:54:23Z", "service": "auth-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:55:28Z", "service": "cache-proxy", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:57:47Z", "service": "cache-proxy", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:59:17Z", "service": "auth-service", "level": "INFO", "msg": "cache hit ratio 0.93"}

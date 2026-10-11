@@ -1,0 +1,18 @@
+[
+ {
+  "ts": "2026-03-10T01:32:00Z",
+  "service": "payments-gateway",
+  "key": "connection_pool_size",
+  "old": "20",
+  "new": "40",
+  "author": "tom"
+ },
+ {
+  "ts": "2026-03-10T02:19:00Z",
+  "service": "api-gateway",
+  "key": "log_level",
+  "old": "info",
+  "new": "info,debug",
+  "author": "li"
+ }
+]

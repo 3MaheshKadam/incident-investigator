@@ -1,0 +1,1 @@
+ALERT [critical] checkout-service: error rate 21% (threshold 5%) since 2026-03-10T04:00:00Z

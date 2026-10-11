@@ -1,0 +1,30 @@
+[
+ {
+  "ts": "2026-03-10T02:26:00Z",
+  "service": "cache-proxy",
+  "version": "v1.1.7",
+  "author": "li",
+  "commit_message": "Fix typo in error message"
+ },
+ {
+  "ts": "2026-03-10T02:32:00Z",
+  "service": "auth-service",
+  "version": "v2.19.8",
+  "author": "tom",
+  "commit_message": "Update documentation link in health endpoint"
+ },
+ {
+  "ts": "2026-03-10T02:58:00Z",
+  "service": "feed-service",
+  "version": "v3.19.2",
+  "author": "carlos",
+  "commit_message": "Add unit tests for date parsing"
+ },
+ {
+  "ts": "2026-03-10T03:47:00Z",
+  "service": "api-gateway",
+  "version": "v2.1.8",
+  "author": "priya",
+  "commit_message": "Fix typo in error message"
+ }
+]

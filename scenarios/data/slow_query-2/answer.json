@@ -1,0 +1,15 @@
+{
+ "id": "slow_query-2",
+ "kind": "slow_query",
+ "root_cause_category": "slow_query",
+ "component": "billing-db",
+ "evidence_keys": [
+  "slow query",
+  "Seq Scan"
+ ],
+ "incident_start": "2026-03-10T03:54:00Z",
+ "correct_action": {
+  "type": "open_ticket",
+  "target": "billing-db"
+ }
+}

@@ -1,0 +1,1 @@
+ALERT [warning] customer-service: p95 latency 3100ms (threshold 800ms) since 2026-03-10T04:06:00Z

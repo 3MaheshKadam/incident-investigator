@@ -1,0 +1,30 @@
+[
+ {
+  "ts": "2026-03-10T01:22:00Z",
+  "service": "partner-api",
+  "version": "v1.10.8",
+  "author": "li",
+  "commit_message": "Bump logging library patch version"
+ },
+ {
+  "ts": "2026-03-10T02:25:00Z",
+  "service": "partner-api",
+  "version": "v2.9.9",
+  "author": "priya",
+  "commit_message": "Add unit tests for date parsing"
+ },
+ {
+  "ts": "2026-03-10T02:41:00Z",
+  "service": "cache-proxy",
+  "version": "v1.4.9",
+  "author": "li",
+  "commit_message": "Fix typo in error message"
+ },
+ {
+  "ts": "2026-03-10T02:59:00Z",
+  "service": "notification-service",
+  "version": "v4.15.7",
+  "author": "carlos",
+  "commit_message": "Tidy imports"
+ }
+]

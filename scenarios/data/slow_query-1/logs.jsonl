@@ -1,0 +1,147 @@
+{"ts": "2026-03-10T02:00:20Z", "service": "cache-proxy", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:01:21Z", "service": "auth-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:01:46Z", "service": "cache-proxy", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:03:51Z", "service": "api-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:04:15Z", "service": "customer-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:04:24Z", "service": "api-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:04:50Z", "service": "cache-proxy", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:06:02Z", "service": "auth-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:08:07Z", "service": "customer-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:08:14Z", "service": "api-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:08:48Z", "service": "customer-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:10:13Z", "service": "customer-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:10:24Z", "service": "cache-proxy", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:11:27Z", "service": "auth-service", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T02:11:54Z", "service": "customer-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:12:25Z", "service": "api-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:12:48Z", "service": "cache-proxy", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T02:12:55Z", "service": "api-gateway", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T02:16:02Z", "service": "customer-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:17:40Z", "service": "api-gateway", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T02:18:59Z", "service": "customer-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:20:00Z", "service": "api-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:21:21Z", "service": "api-gateway", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T02:22:03Z", "service": "cache-proxy", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:26:38Z", "service": "cache-proxy", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:29:24Z", "service": "api-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:32:51Z", "service": "api-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:33:45Z", "service": "api-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:34:26Z", "service": "customer-service", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T02:35:42Z", "service": "customer-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:40:59Z", "service": "auth-service", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T02:43:35Z", "service": "auth-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:45:05Z", "service": "cache-proxy", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:45:28Z", "service": "api-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:46:27Z", "service": "cache-proxy", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:47:04Z", "service": "customer-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:47:46Z", "service": "cache-proxy", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:50:41Z", "service": "customer-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:50:57Z", "service": "api-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:52:50Z", "service": "customer-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:56:52Z", "service": "customer-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:57:22Z", "service": "api-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:03:33Z", "service": "cache-proxy", "level": "WARN", "msg": "request queue depth 14"}
+{"ts": "2026-03-10T03:04:00Z", "service": "customer-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:05:11Z", "service": "api-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:06:25Z", "service": "auth-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:08:35Z", "service": "auth-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:10:37Z", "service": "customer-service", "level": "WARN", "msg": "request queue depth 14"}
+{"ts": "2026-03-10T03:12:29Z", "service": "auth-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:13:07Z", "service": "customer-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:14:11Z", "service": "cache-proxy", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:14:55Z", "service": "auth-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:15:45Z", "service": "api-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:16:45Z", "service": "auth-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:18:38Z", "service": "auth-service", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T03:18:56Z", "service": "auth-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:19:34Z", "service": "cache-proxy", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:19:37Z", "service": "cache-proxy", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T03:22:13Z", "service": "api-gateway", "level": "WARN", "msg": "request queue depth 14"}
+{"ts": "2026-03-10T03:23:28Z", "service": "cache-proxy", "level": "WARN", "msg": "request queue depth 14"}
+{"ts": "2026-03-10T03:23:32Z", "service": "api-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:24:50Z", "service": "cache-proxy", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:27:40Z", "service": "cache-proxy", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:31:51Z", "service": "auth-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:34:08Z", "service": "customer-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:36:12Z", "service": "auth-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:38:00Z", "service": "customer-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:41:18Z", "service": "auth-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:45:14Z", "service": "auth-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:45:51Z", "service": "api-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:46:42Z", "service": "cache-proxy", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:49:35Z", "service": "auth-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:49:42Z", "service": "api-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:51:37Z", "service": "customer-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:53:07Z", "service": "cache-proxy", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:55:35Z", "service": "customer-service", "level": "WARN", "msg": "request queue depth 14"}
+{"ts": "2026-03-10T03:56:24Z", "service": "auth-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:56:26Z", "service": "cache-proxy", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:57:50Z", "service": "auth-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:58:56Z", "service": "api-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:00:01Z", "service": "auth-service", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T04:02:10Z", "service": "api-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:02:45Z", "service": "cache-proxy", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:03:00Z", "service": "customer-db", "level": "WARN", "msg": "slow query (3873ms): SELECT * FROM customers WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on customers"}
+{"ts": "2026-03-10T04:04:57Z", "service": "customer-db", "level": "WARN", "msg": "slow query (4760ms): SELECT * FROM customers WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on customers"}
+{"ts": "2026-03-10T04:05:00Z", "service": "customer-service", "level": "WARN", "msg": "request timed out waiting for database (3000ms)"}
+{"ts": "2026-03-10T04:06:10Z", "service": "customer-db", "level": "WARN", "msg": "slow query (4569ms): SELECT * FROM customers WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on customers"}
+{"ts": "2026-03-10T04:07:35Z", "service": "customer-db", "level": "WARN", "msg": "slow query (4288ms): SELECT * FROM customers WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on customers"}
+{"ts": "2026-03-10T04:09:17Z", "service": "customer-db", "level": "WARN", "msg": "slow query (4338ms): SELECT * FROM customers WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on customers"}
+{"ts": "2026-03-10T04:10:20Z", "service": "customer-db", "level": "WARN", "msg": "slow query (3400ms): SELECT * FROM customers WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on customers"}
+{"ts": "2026-03-10T04:10:41Z", "service": "api-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:13:04Z", "service": "customer-db", "level": "WARN", "msg": "slow query (4353ms): SELECT * FROM customers WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on customers"}
+{"ts": "2026-03-10T04:14:15Z", "service": "customer-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:14:16Z", "service": "auth-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:14:36Z", "service": "customer-db", "level": "WARN", "msg": "slow query (4187ms): SELECT * FROM customers WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on customers"}
+{"ts": "2026-03-10T04:15:01Z", "service": "cache-proxy", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:17:12Z", "service": "customer-db", "level": "WARN", "msg": "slow query (2805ms): SELECT * FROM customers WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on customers"}
+{"ts": "2026-03-10T04:19:34Z", "service": "customer-db", "level": "WARN", "msg": "slow query (3073ms): SELECT * FROM customers WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on customers"}
+{"ts": "2026-03-10T04:19:37Z", "service": "api-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:20:32Z", "service": "cache-proxy", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:21:42Z", "service": "customer-db", "level": "WARN", "msg": "slow query (3068ms): SELECT * FROM customers WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on customers"}
+{"ts": "2026-03-10T04:22:02Z", "service": "customer-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:24:38Z", "service": "customer-db", "level": "WARN", "msg": "slow query (2854ms): SELECT * FROM customers WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on customers"}
+{"ts": "2026-03-10T04:24:46Z", "service": "api-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:25:56Z", "service": "customer-db", "level": "WARN", "msg": "slow query (4751ms): SELECT * FROM customers WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on customers"}
+{"ts": "2026-03-10T04:26:38Z", "service": "api-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:27:11Z", "service": "customer-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:27:45Z", "service": "customer-db", "level": "WARN", "msg": "slow query (3498ms): SELECT * FROM customers WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on customers"}
+{"ts": "2026-03-10T04:30:36Z", "service": "customer-db", "level": "WARN", "msg": "slow query (3381ms): SELECT * FROM customers WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on customers"}
+{"ts": "2026-03-10T04:30:52Z", "service": "cache-proxy", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:32:18Z", "service": "customer-db", "level": "WARN", "msg": "slow query (4142ms): SELECT * FROM customers WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on customers"}
+{"ts": "2026-03-10T04:35:11Z", "service": "customer-db", "level": "WARN", "msg": "slow query (2627ms): SELECT * FROM customers WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on customers"}
+{"ts": "2026-03-10T04:35:24Z", "service": "auth-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:36:43Z", "service": "customer-db", "level": "WARN", "msg": "slow query (2766ms): SELECT * FROM customers WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on customers"}
+{"ts": "2026-03-10T04:36:52Z", "service": "cache-proxy", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:37:48Z", "service": "customer-service", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T04:38:30Z", "service": "customer-db", "level": "WARN", "msg": "slow query (3949ms): SELECT * FROM customers WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on customers"}
+{"ts": "2026-03-10T04:39:23Z", "service": "api-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:39:31Z", "service": "auth-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:41:10Z", "service": "customer-db", "level": "WARN", "msg": "slow query (2651ms): SELECT * FROM customers WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on customers"}
+{"ts": "2026-03-10T04:41:40Z", "service": "cache-proxy", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:43:00Z", "service": "auth-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:43:06Z", "service": "customer-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:43:36Z", "service": "customer-db", "level": "WARN", "msg": "slow query (3104ms): SELECT * FROM customers WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on customers"}
+{"ts": "2026-03-10T04:43:40Z", "service": "cache-proxy", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:44:48Z", "service": "customer-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:45:35Z", "service": "customer-db", "level": "WARN", "msg": "slow query (3851ms): SELECT * FROM customers WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on customers"}
+{"ts": "2026-03-10T04:45:44Z", "service": "customer-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:46:34Z", "service": "customer-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:47:38Z", "service": "cache-proxy", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:48:06Z", "service": "customer-db", "level": "WARN", "msg": "slow query (2934ms): SELECT * FROM customers WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on customers"}
+{"ts": "2026-03-10T04:48:10Z", "service": "cache-proxy", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:48:28Z", "service": "customer-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:50:18Z", "service": "auth-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:51:02Z", "service": "customer-db", "level": "WARN", "msg": "slow query (2964ms): SELECT * FROM customers WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on customers"}
+{"ts": "2026-03-10T04:52:04Z", "service": "customer-db", "level": "WARN", "msg": "slow query (4184ms): SELECT * FROM customers WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on customers"}
+{"ts": "2026-03-10T04:52:45Z", "service": "api-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:53:34Z", "service": "customer-db", "level": "WARN", "msg": "slow query (3637ms): SELECT * FROM customers WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on customers"}
+{"ts": "2026-03-10T04:53:45Z", "service": "api-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:54:14Z", "service": "auth-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:55:28Z", "service": "customer-db", "level": "WARN", "msg": "slow query (2549ms): SELECT * FROM customers WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on customers"}
+{"ts": "2026-03-10T04:55:36Z", "service": "auth-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:55:49Z", "service": "auth-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:58:00Z", "service": "auth-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:58:25Z", "service": "customer-db", "level": "WARN", "msg": "slow query (4146ms): SELECT * FROM customers WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on customers"}
+{"ts": "2026-03-10T05:01:11Z", "service": "customer-db", "level": "WARN", "msg": "slow query (3908ms): SELECT * FROM customers WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on customers"}
+{"ts": "2026-03-10T05:02:25Z", "service": "customer-db", "level": "WARN", "msg": "slow query (3312ms): SELECT * FROM customers WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on customers"}

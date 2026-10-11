@@ -1,0 +1,14 @@
+{
+ "id": "feature_flag-2",
+ "kind": "feature_flag",
+ "root_cause_category": "feature_flag",
+ "component": "feed-service",
+ "evidence_keys": [
+  "recs_v2_pipeline"
+ ],
+ "incident_start": "2026-03-10T04:02:00Z",
+ "correct_action": {
+  "type": "toggle_feature_flag",
+  "target": "recs_v2_pipeline"
+ }
+}

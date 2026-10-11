@@ -1,0 +1,1 @@
+ALERT [critical] login-service: connection failures 97% (threshold 5%) since 2026-03-10T03:55:00Z

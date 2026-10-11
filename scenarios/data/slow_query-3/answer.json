@@ -1,0 +1,15 @@
+{
+ "id": "slow_query-3",
+ "kind": "slow_query",
+ "root_cause_category": "slow_query",
+ "component": "reporting-db",
+ "evidence_keys": [
+  "slow query",
+  "Seq Scan"
+ ],
+ "incident_start": "2026-03-10T04:02:00Z",
+ "correct_action": {
+  "type": "open_ticket",
+  "target": "reporting-db"
+ }
+}

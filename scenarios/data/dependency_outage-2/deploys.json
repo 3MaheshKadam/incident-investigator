@@ -1,0 +1,30 @@
+[
+ {
+  "ts": "2026-03-10T02:19:00Z",
+  "service": "api-gateway",
+  "version": "v2.19.1",
+  "author": "priya",
+  "commit_message": "Bump logging library patch version"
+ },
+ {
+  "ts": "2026-03-10T02:22:00Z",
+  "service": "tax-service",
+  "version": "v2.9.5",
+  "author": "li",
+  "commit_message": "Update documentation link in health endpoint"
+ },
+ {
+  "ts": "2026-03-10T02:36:00Z",
+  "service": "notification-service",
+  "version": "v2.9.9",
+  "author": "dana",
+  "commit_message": "Tidy imports"
+ },
+ {
+  "ts": "2026-03-10T03:35:00Z",
+  "service": "api-gateway",
+  "version": "v2.17.9",
+  "author": "carlos",
+  "commit_message": "Bump http client timeout to 5s"
+ }
+]

@@ -1,0 +1,1 @@
+ALERT [critical] offers-service: error rate 16% (threshold 5%) since 2026-03-10T03:53:00Z

@@ -1,0 +1,37 @@
+[
+ {
+  "ts": "2026-03-10T02:12:00Z",
+  "service": "api-gateway",
+  "version": "v3.17.1",
+  "author": "carlos",
+  "commit_message": "Add unit tests for date parsing"
+ },
+ {
+  "ts": "2026-03-10T02:17:00Z",
+  "service": "cache-proxy",
+  "version": "v1.18.9",
+  "author": "priya",
+  "commit_message": "Update documentation link in health endpoint"
+ },
+ {
+  "ts": "2026-03-10T02:36:00Z",
+  "service": "checkout-service",
+  "version": "v3.16.1",
+  "author": "dana",
+  "commit_message": "Tidy imports"
+ },
+ {
+  "ts": "2026-03-10T03:37:00Z",
+  "service": "api-gateway",
+  "version": "v4.4.1",
+  "author": "carlos",
+  "commit_message": "Bump http client timeout to 5s"
+ },
+ {
+  "ts": "2026-03-10T03:56:00Z",
+  "service": "checkout-service",
+  "version": "v4.16.5",
+  "author": "li",
+  "commit_message": "Refactor request handling and add currency conversion"
+ }
+]

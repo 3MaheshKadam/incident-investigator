@@ -1,0 +1,30 @@
+[
+ {
+  "ts": "2026-03-10T02:08:00Z",
+  "service": "orders-service",
+  "version": "v4.13.6",
+  "author": "li",
+  "commit_message": "Fix typo in error message"
+ },
+ {
+  "ts": "2026-03-10T02:15:00Z",
+  "service": "auth-service",
+  "version": "v4.18.5",
+  "author": "carlos",
+  "commit_message": "Add unit tests for date parsing"
+ },
+ {
+  "ts": "2026-03-10T02:39:00Z",
+  "service": "api-gateway",
+  "version": "v4.1.6",
+  "author": "li",
+  "commit_message": "Add unit tests for date parsing"
+ },
+ {
+  "ts": "2026-03-10T03:28:00Z",
+  "service": "auth-service",
+  "version": "v1.8.1",
+  "author": "priya",
+  "commit_message": "Tidy imports"
+ }
+]

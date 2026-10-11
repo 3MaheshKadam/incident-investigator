@@ -1,0 +1,124 @@
+{
+ "scenarios": [
+  {
+   "id": "bad_deploy-0",
+   "kind": "bad_deploy",
+   "split": "dev"
+  },
+  {
+   "id": "bad_deploy-1",
+   "kind": "bad_deploy",
+   "split": "dev"
+  },
+  {
+   "id": "bad_deploy-2",
+   "kind": "bad_deploy",
+   "split": "heldout"
+  },
+  {
+   "id": "bad_deploy-3",
+   "kind": "bad_deploy",
+   "split": "heldout"
+  },
+  {
+   "id": "memory_leak-0",
+   "kind": "memory_leak",
+   "split": "dev"
+  },
+  {
+   "id": "memory_leak-1",
+   "kind": "memory_leak",
+   "split": "dev"
+  },
+  {
+   "id": "memory_leak-2",
+   "kind": "memory_leak",
+   "split": "heldout"
+  },
+  {
+   "id": "memory_leak-3",
+   "kind": "memory_leak",
+   "split": "heldout"
+  },
+  {
+   "id": "expired_certificate-0",
+   "kind": "expired_certificate",
+   "split": "dev"
+  },
+  {
+   "id": "expired_certificate-1",
+   "kind": "expired_certificate",
+   "split": "dev"
+  },
+  {
+   "id": "expired_certificate-2",
+   "kind": "expired_certificate",
+   "split": "heldout"
+  },
+  {
+   "id": "expired_certificate-3",
+   "kind": "expired_certificate",
+   "split": "heldout"
+  },
+  {
+   "id": "slow_query-0",
+   "kind": "slow_query",
+   "split": "dev"
+  },
+  {
+   "id": "slow_query-1",
+   "kind": "slow_query",
+   "split": "dev"
+  },
+  {
+   "id": "slow_query-2",
+   "kind": "slow_query",
+   "split": "heldout"
+  },
+  {
+   "id": "slow_query-3",
+   "kind": "slow_query",
+   "split": "heldout"
+  },
+  {
+   "id": "feature_flag-0",
+   "kind": "feature_flag",
+   "split": "dev"
+  },
+  {
+   "id": "feature_flag-1",
+   "kind": "feature_flag",
+   "split": "dev"
+  },
+  {
+   "id": "feature_flag-2",
+   "kind": "feature_flag",
+   "split": "heldout"
+  },
+  {
+   "id": "feature_flag-3",
+   "kind": "feature_flag",
+   "split": "heldout"
+  },
+  {
+   "id": "dependency_outage-0",
+   "kind": "dependency_outage",
+   "split": "dev"
+  },
+  {
+   "id": "dependency_outage-1",
+   "kind": "dependency_outage",
+   "split": "dev"
+  },
+  {
+   "id": "dependency_outage-2",
+   "kind": "dependency_outage",
+   "split": "heldout"
+  },
+  {
+   "id": "dependency_outage-3",
+   "kind": "dependency_outage",
+   "split": "heldout"
+  }
+ ]
+}
