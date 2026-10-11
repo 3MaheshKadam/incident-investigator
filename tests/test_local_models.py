@@ -302,3 +302,19 @@ def test_dotenv_accepts_pasted_powershell_lines(tmp_path, monkeypatch):
     )
     for k in ("ZZ_TEST_A", "ZZ_TEST_B", "ZZ_TEST_C"):
         os.environ.pop(k, None)
+
+
+def test_malformed_tool_call_rejection_becomes_text_not_a_crash(monkeypatch):
+    from agent.llm import OpenAICompatLLM
+
+    class Bad:
+        status_code, headers = 400, {}
+        text = (
+            '{"error":{"code":"tool_use_failed",'
+            '"failed_generation":"{\\"name\\": \\"submit_report\\", oops"}}'
+        )
+
+    monkeypatch.setattr("agent.llm.httpx.post", lambda *a, **k: Bad())
+    llm = OpenAICompatLLM("m", "https://x/v1", "k")
+    resp = llm.chat([{"role": "user", "content": "q"}])
+    assert "submit_report" in resp.text and not resp.tool_calls

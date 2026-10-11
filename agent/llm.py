@@ -164,6 +164,15 @@ class OllamaLLM:
         )
 
 
+class LLMRequestError(RuntimeError):
+    """A hosted API call failed for good (not a retryable rate limit)."""
+
+    def __init__(self, message: str, status: int, body: str):
+        super().__init__(message)
+        self.status = status
+        self.body = body
+
+
 class OpenAICompatLLM:
     """Any hosted API that speaks the OpenAI /chat/completions format."""
 
@@ -184,8 +193,12 @@ class OpenAICompatLLM:
                 self._sleep(_retry_after(r, attempt))
                 continue
             if status >= 400:
-                body = getattr(r, "text", "")[:300]
-                raise RuntimeError(f"{self.base_url} returned HTTP {status} for model {self.model!r}: {body}")
+                body = getattr(r, "text", "")
+                raise LLMRequestError(
+                    f"{self.base_url} returned HTTP {status} for model {self.model!r}: {body[:300]}",
+                    status,
+                    body,
+                )
             return r
         raise RuntimeError("unreachable")
 
@@ -221,7 +234,18 @@ class OpenAICompatLLM:
         }
         if tools:
             payload["tools"] = _tool_wrappers(tools)
-        r = self._post_with_retries(payload)
+        try:
+            r = self._post_with_retries(payload)
+        except LLMRequestError as e:
+            # Some providers reject a malformed tool call with HTTP 400. Hand the raw attempt back
+            # as text so the loop can try to recover it or ask the model to try again.
+            if e.status == 400 and "tool_use_failed" in e.body:
+                try:
+                    failed = json.loads(e.body)["error"].get("failed_generation", "")
+                except (ValueError, KeyError, AttributeError):
+                    failed = ""
+                return LLMResponse(text=failed or "")
+            raise
         data = r.json()
         msg = data["choices"][0]["message"]
         calls = []

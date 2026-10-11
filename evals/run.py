@@ -17,7 +17,7 @@ from pathlib import Path
 
 from agent.data import ScenarioData
 from agent.env import load_dotenv
-from agent.investigator import run_investigation
+from agent.investigator import RunResult, run_investigation
 from agent.llm import make_llm
 from evals.score import score_run, summarize
 
@@ -52,7 +52,11 @@ def main(argv: list[str] | None = None) -> int:
     for e in entries:
         folder = args.data / e["id"]
         print(f"running {e['id']} ...", flush=True)
-        result = run_investigation(llm, ScenarioData(folder), max_steps=max_steps)
+        try:
+            result = run_investigation(llm, ScenarioData(folder), max_steps=max_steps)
+        except Exception as exc:  # noqa: BLE001  one failed call must not throw away the rest of the run
+            print(f"      error: {exc}"[:300], flush=True)
+            result = RunResult(e["id"], None, 0, "error")
         answer = json.loads((folder / "answer.json").read_text())
         row = score_run(result, answer)
         row["split"] = e["split"]
