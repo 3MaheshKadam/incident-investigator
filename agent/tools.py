@@ -111,11 +111,32 @@ TOOL_SPECS: list[dict[str, Any]] = [
 ]
 
 
+TOOL_ALIASES = {
+    "metrics": "query_metric",
+    "metric": "query_metric",
+    "get_metric": "query_metric",
+    "get_metrics": "query_metric",
+    "query_metrics": "query_metric",
+    "logs": "search_logs",
+    "get_logs": "search_logs",
+    "query_logs": "search_logs",
+    "deploys": "list_deploys",
+    "get_deploys": "list_deploys",
+    "recent_deploys": "list_deploys",
+    "config_changes": "list_config_changes",
+    "get_config_changes": "list_config_changes",
+    "report": "submit_report",
+    "final_report": "submit_report",
+}
+
+
 def resolve_tool_name(name: str) -> str | None:
     """Map a tool name to a real one. Weak models invent near-misses like list_recent_deploys."""
     names = [t["name"] for t in TOOL_SPECS]
     if name in names:
         return name
+    if str(name).lower() in TOOL_ALIASES:
+        return TOOL_ALIASES[str(name).lower()]
     close = difflib.get_close_matches(str(name), names, n=1, cutoff=0.7)
     return close[0] if close else None
 

@@ -261,3 +261,25 @@ def test_first_message_states_the_data_window(root):
     run_investigation(llm, data)
     first_user = llm.calls[0][1]["content"]
     assert "Data is available from 2026-03-10T02:" in first_user and "(UTC)" in first_user
+
+
+def test_aliases_resolve_invented_tool_names():
+    from agent.tools import resolve_tool_name
+
+    assert resolve_tool_name("metrics") == "query_metric"
+    assert resolve_tool_name("get_logs") == "search_logs"
+    assert resolve_tool_name("totally_unrelated") is None
+
+
+def test_last_turns_force_a_report():
+    from pathlib import Path
+
+    from agent.data import ScenarioData
+    from agent.investigator import FORCE_REPORT, run_investigation
+    from agent.llm import LLMResponse, MockLLM, ToolCall
+
+    data = ScenarioData(Path(__file__).resolve().parent.parent / "scenarios" / "data" / "bad_deploy-0")
+    llm = MockLLM([LLMResponse(tool_calls=[ToolCall("list_deploys", {})])] * 5)
+    run_investigation(llm, data, max_steps=5)
+    assert FORCE_REPORT in [m["content"] for m in llm.calls[3]]
+    assert FORCE_REPORT not in [m["content"] for m in llm.calls[2]]

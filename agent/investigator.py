@@ -37,6 +37,10 @@ NUDGE = (
     "summary, evidence (a list), action_type and action_target."
 )
 MAX_NUDGES = 3
+FORCE_REPORT = (
+    "You are almost out of investigation steps. Call submit_report now with your best "
+    "conclusion from the evidence so far. Use confidence \"low\" if you are not sure."
+)
 
 
 def extract_text_tool_call(text: str) -> ToolCall | None:
@@ -126,7 +130,13 @@ def run_investigation(
     call_counter = 0
 
     for turn in range(1, max_steps + 1):
-        resp = llm.chat(messages, TOOL_SPECS)
+        # Running out of turns: a weak model can loop on searches or write its answer as prose.
+        # Force the last turns to be a report, so a good investigation is not lost to the limit.
+        final_stretch = max_steps >= 3 and turn >= max_steps - 1
+        if final_stretch and turn == max_steps - 1:
+            messages.append({"role": "user", "content": FORCE_REPORT})
+        tools = [t for t in TOOL_SPECS if t["name"] == "submit_report"] if final_stretch else TOOL_SPECS
+        resp = llm.chat(messages, tools)
         result.input_tokens += resp.input_tokens
         result.output_tokens += resp.output_tokens
         if resp.text:
