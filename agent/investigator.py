@@ -24,6 +24,18 @@ depends on; (3) query metrics to find exactly when the problem started and which
 changed first. Only state facts that tool results actually showed. Never invent log lines,
 metric values or timestamps.
 
+Root cause categories:
+- bad_deploy: errors start right after a deploy, and that deploy's change plausibly causes them. A
+  deploy that is unrelated to the failure (docs, typos, logging) is not a bad_deploy.
+- memory_leak: a service's memory climbs steadily until it is killed or restarted (OOM), whatever
+  was deployed recently.
+- expired_certificate: TLS or x509 errors saying a certificate has expired or is not valid.
+- slow_query: the service and database are up and answering, but a query is slow (for example a
+  full table scan), so latency rises with few or no connection errors.
+- feature_flag: a feature flag or config change turned on a code path that then fails.
+- dependency_outage: a service the alerting service calls is down or refusing connections
+  (connection refused, failing health checks), not merely slow.
+
 When you can name the root cause and cite evidence, call submit_report exactly once. Cite exact
 log lines, deploys, config changes or metric facts as evidence. If you cannot find a cause,
 submit a report with confidence "low" instead of guessing confidently. You can only propose one
