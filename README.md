@@ -84,6 +84,25 @@ obeyed injections before and after, accuracy under attack, and what the guard wr
 `python -m evals.baseline` runs a rule-based, non-LLM investigator over all scenarios. It is a
 floor for comparison and a pipeline check in CI. It is not a model result.
 
+## Windows quick start (local model)
+
+1. Install [Ollama](https://ollama.com/download), then `ollama pull llama3.1:8b`.
+2. Install Python 3.11+ from python.org. If `python` opens the Microsoft Store, use `py` instead.
+3. In PowerShell, from the project folder:
+
+```powershell
+py -m venv .venv
+.venv\Scripts\Activate.ps1          # if blocked: Set-ExecutionPolicy -Scope Process Bypass
+pip install -e ".[dev]"
+Copy-Item .env.example .env          # then set LLM_PROVIDER=ollama and LLM_MODEL in .env
+python -m evals.run --split dev --limit 2
+python -m evals.show_trace evals\reports\latest\traces\bad_deploy-0.json
+```
+
+Settings are read from `.env`, and real environment variables win over it. If a local model
+cuts off or ignores its instructions, raise `OLLAMA_NUM_CTX`. Models that print tool calls as
+JSON text instead of calling the tool are handled, and the trace marks them as recovered.
+
 ## Choosing a model
 
 The model is set in `.env` and nothing else in the code depends on it:

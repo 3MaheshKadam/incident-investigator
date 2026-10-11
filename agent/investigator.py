@@ -8,7 +8,7 @@ from pathlib import Path
 from typing import Any, Protocol
 
 from agent.data import ScenarioData
-from agent.llm import LLM, Message
+from agent.llm import LLM, Message, ToolCall
 from agent.tools import TOOL_SPECS, Toolbox, validate_report
 
 SYSTEM_PROMPT = """You are an on-call engineer investigating a production incident.
@@ -21,9 +21,47 @@ not automatically the cause.
 When you can name the root cause and cite evidence, call submit_report exactly once. Cite exact
 log lines, deploys, config changes or metric facts as evidence. If you cannot find a cause,
 submit a report with confidence "low" instead of guessing confidently. You can only propose one
-action; a human will review it before anything happens."""
+action; a human will review it before anything happens.
 
-NUDGE = "Use the tools to investigate, then call submit_report when you are done."
+Always respond by calling a tool. Never write your answer as plain text."""
+
+NUDGE = (
+    "You must reply by calling a tool, not with plain text. Use the evidence tools to keep "
+    "investigating, or call submit_report with root_cause_category, component, confidence, "
+    "summary, evidence (a list), action_type and action_target."
+)
+MAX_NUDGES = 3
+_TOOL_NAMES = {t["name"] for t in TOOL_SPECS}
+
+
+def extract_text_tool_call(text: str) -> ToolCall | None:
+    """Recover a tool call a weak model wrote as JSON text instead of a real tool call.
+
+    Small local models often print {"name": "search_logs", "parameters": {...}} or a bare report
+    object. Accepting these keeps a formatting slip from counting as a failed investigation.
+    """
+    decoder = json.JSONDecoder()
+    for i, ch in enumerate(text):
+        if ch != "{":
+            continue
+        try:
+            obj, _ = decoder.raw_decode(text[i:])
+        except ValueError:
+            continue
+        if not isinstance(obj, dict):
+            continue
+        name = obj.get("name")
+        args = obj.get("arguments", obj.get("parameters"))
+        if isinstance(args, str):
+            try:
+                args = json.loads(args)
+            except ValueError:
+                args = None
+        if name in _TOOL_NAMES and isinstance(args, dict):
+            return ToolCall(name, args)
+        if "root_cause_category" in obj:
+            return ToolCall("submit_report", obj)
+    return None
 
 
 class GuardLike(Protocol):
@@ -81,10 +119,18 @@ def run_investigation(
         if resp.text:
             result.trace.append({"turn": turn, "type": "model_text", "text": resp.text})
 
+        if not resp.tool_calls and resp.text:
+            recovered = extract_text_tool_call(resp.text)
+            if recovered:
+                resp.tool_calls = [recovered]
+                result.trace.append(
+                    {"turn": turn, "type": "recovered_text_tool_call", "name": recovered.name}
+                )
+
         if not resp.tool_calls:
             messages.append({"role": "assistant", "content": resp.text})
             nudges += 1
-            if nudges >= 2:
+            if nudges >= MAX_NUDGES:
                 result.stop_reason = "no_report"
                 return result
             messages.append({"role": "user", "content": NUDGE})

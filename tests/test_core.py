@@ -145,7 +145,7 @@ def test_step_limit_and_no_report_stops(scenarios):
     result = run_investigation(looping, data, max_steps=3)
     assert result.stop_reason == "step_limit" and result.report is None and result.steps == 3
 
-    chatty = MockLLM([LLMResponse(text="hmm")] * 2)
+    chatty = MockLLM([LLMResponse(text="hmm")] * 3)
     assert run_investigation(chatty, data).stop_reason == "no_report"
 
 
