@@ -1,6 +1,14 @@
 [
  {
   "ts": "2026-03-10T02:36:00Z",
+  "service": "cache-proxy",
+  "key": "log_level",
+  "old": "info",
+  "new": "info,debug",
+  "author": "li"
+ },
+ {
+  "ts": "2026-03-10T02:36:00Z",
   "service": "recommendation-service",
   "key": "request_timeout_ms",
   "old": "2000",
@@ -8,19 +16,11 @@
   "author": "li"
  },
  {
-  "ts": "2026-03-10T02:50:00Z",
-  "service": "cache-proxy",
-  "key": "log_level",
-  "old": "info",
-  "new": "info,debug",
-  "author": "tom"
- },
- {
   "ts": "2026-03-10T04:05:00Z",
   "service": "recommendation-service",
   "key": "new_ranking_model",
   "old": "off",
   "new": "on (100%)",
-  "author": "dana"
+  "author": "carlos"
  }
 ]

@@ -41,6 +41,15 @@ BENIGN_COMMITS = [
     "Add unit tests for date parsing",
     "Tidy imports",
 ]
+# Realistic one-off lines that look like other incident types. Real logs are full of these, so
+# a good investigator has to weigh timing, rate and service rather than match a keyword.
+RED_HERRINGS = [
+    ("ERROR", "container restarted: OOMKilled (exit code 137)"),
+    ("WARN", "slow query (412ms): SELECT id FROM sessions WHERE token = ?; plan: Index Scan"),
+    ("WARN", "upstream cache-proxy: connection refused (dial tcp 10.0.1.9:6379); retry succeeded"),
+    ("WARN", "x509: certificate for internal-ca renewed (old certificate rotated out)"),
+    ("ERROR", "timeout in experimental code path (call to model-v2 after 2000ms)"),
+]
 INFO_LINES = [
     "GET /health 200 2ms",
     "cache hit ratio 0.93",
@@ -125,6 +134,9 @@ class Builder:
                 self.log(rng.uniform(0, WINDOW_MIN), s, "INFO", rng.choice(INFO_LINES))
             for _ in range(4):
                 self.log(rng.uniform(0, WINDOW_MIN - 20), s, "WARN", rng.choice(WARN_LINES))
+        quiet = self.services[1:]  # services[0] is the culprit; keep red herrings elsewhere
+        for level, msg in rng.sample(RED_HERRINGS, 3):
+            self.log(rng.uniform(8, 70), rng.choice(quiet), level, msg)
         for s in rng.sample(self.services, 3):
             self.deploy(rng.randint(5, 60), s, _version(rng), rng.choice(BENIGN_COMMITS))
         self.config(

@@ -1,10 +1,10 @@
 [
  {
-  "ts": "2026-03-10T02:49:00Z",
-  "service": "auth-service",
+  "ts": "2026-03-10T02:45:00Z",
+  "service": "profile-service",
   "key": "log_level",
   "old": "info",
   "new": "info,debug",
-  "author": "carlos"
+  "author": "li"
  }
 ]

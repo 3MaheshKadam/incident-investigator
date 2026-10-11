@@ -1,37 +1,37 @@
 [
  {
-  "ts": "2026-03-10T02:19:00Z",
-  "service": "auth-service",
-  "version": "v3.12.4",
-  "author": "tom",
-  "commit_message": "Add unit tests for date parsing"
- },
- {
-  "ts": "2026-03-10T02:32:00Z",
-  "service": "api-gateway",
-  "version": "v3.14.9",
-  "author": "dana",
+  "ts": "2026-03-10T02:18:00Z",
+  "service": "pricing-service",
+  "version": "v1.8.5",
+  "author": "priya",
   "commit_message": "Update documentation link in health endpoint"
  },
  {
-  "ts": "2026-03-10T02:33:00Z",
+  "ts": "2026-03-10T02:37:00Z",
+  "service": "api-gateway",
+  "version": "v4.19.4",
+  "author": "priya",
+  "commit_message": "Update documentation link in health endpoint"
+ },
+ {
+  "ts": "2026-03-10T02:41:00Z",
   "service": "cache-proxy",
-  "version": "v3.2.1",
-  "author": "tom",
-  "commit_message": "Tidy imports"
+  "version": "v2.3.3",
+  "author": "dana",
+  "commit_message": "Fix typo in error message"
  },
  {
   "ts": "2026-03-10T03:44:00Z",
-  "service": "api-gateway",
-  "version": "v1.7.3",
-  "author": "li",
+  "service": "auth-service",
+  "version": "v2.8.1",
+  "author": "dana",
   "commit_message": "Bump http client timeout to 5s"
  },
  {
   "ts": "2026-03-10T04:03:00Z",
   "service": "pricing-service",
-  "version": "v2.1.3",
-  "author": "li",
+  "version": "v2.6.7",
+  "author": "tom",
   "commit_message": "Refactor request handling and add currency conversion"
  }
 ]

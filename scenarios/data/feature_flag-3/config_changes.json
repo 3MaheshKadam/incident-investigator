@@ -1,19 +1,19 @@
 [
  {
-  "ts": "2026-03-10T02:08:00Z",
-  "service": "offers-service",
-  "key": "log_level",
-  "old": "info",
-  "new": "info,debug",
-  "author": "dana"
- },
- {
   "ts": "2026-03-10T02:21:00Z",
   "service": "offers-service",
   "key": "request_timeout_ms",
   "old": "2000",
   "new": "2000",
-  "author": "carlos"
+  "author": "li"
+ },
+ {
+  "ts": "2026-03-10T02:30:00Z",
+  "service": "api-gateway",
+  "key": "log_level",
+  "old": "info",
+  "new": "info,debug",
+  "author": "dana"
  },
  {
   "ts": "2026-03-10T03:50:00Z",
@@ -21,6 +21,6 @@
   "key": "async_feed_render",
   "old": "off",
   "new": "on (100%)",
-  "author": "carlos"
+  "author": "priya"
  }
 ]

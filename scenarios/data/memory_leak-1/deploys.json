@@ -1,30 +1,30 @@
 [
  {
-  "ts": "2026-03-10T02:24:00Z",
-  "service": "image-resizer",
-  "version": "v4.20.6",
-  "author": "priya",
-  "commit_message": "Tidy imports"
+  "ts": "2026-03-10T02:27:00Z",
+  "service": "auth-service",
+  "version": "v4.3.7",
+  "author": "dana",
+  "commit_message": "Fix typo in error message"
  },
  {
-  "ts": "2026-03-10T02:31:00Z",
+  "ts": "2026-03-10T02:30:00Z",
   "service": "cache-proxy",
-  "version": "v3.12.6",
-  "author": "carlos",
-  "commit_message": "Update documentation link in health endpoint"
+  "version": "v4.20.1",
+  "author": "priya",
+  "commit_message": "Fix typo in error message"
  },
  {
-  "ts": "2026-03-10T02:38:00Z",
+  "ts": "2026-03-10T02:46:00Z",
   "service": "notification-service",
-  "version": "v3.9.9",
+  "version": "v2.5.4",
   "author": "carlos",
-  "commit_message": "Tidy imports"
+  "commit_message": "Bump logging library patch version"
  },
  {
   "ts": "2026-03-10T02:52:00Z",
   "service": "image-resizer",
-  "version": "v2.14.6",
-  "author": "tom",
+  "version": "v1.1.2",
+  "author": "carlos",
   "commit_message": "Update documentation link in health endpoint"
  }
 ]

@@ -8,11 +8,11 @@
   "author": "li"
  },
  {
-  "ts": "2026-03-10T02:20:00Z",
-  "service": "notification-service",
+  "ts": "2026-03-10T02:43:00Z",
+  "service": "auth-service",
   "key": "log_level",
   "old": "info",
   "new": "info,debug",
-  "author": "carlos"
+  "author": "tom"
  }
 ]

@@ -1,30 +1,30 @@
 [
  {
-  "ts": "2026-03-10T02:19:00Z",
-  "service": "api-gateway",
-  "version": "v2.19.1",
-  "author": "priya",
-  "commit_message": "Bump logging library patch version"
- },
- {
-  "ts": "2026-03-10T02:22:00Z",
+  "ts": "2026-03-10T02:15:00Z",
   "service": "tax-service",
-  "version": "v2.9.5",
-  "author": "li",
-  "commit_message": "Update documentation link in health endpoint"
+  "version": "v2.20.2",
+  "author": "dana",
+  "commit_message": "Add unit tests for date parsing"
  },
  {
-  "ts": "2026-03-10T02:36:00Z",
-  "service": "notification-service",
-  "version": "v2.9.9",
+  "ts": "2026-03-10T02:26:00Z",
+  "service": "api-gateway",
+  "version": "v4.7.4",
   "author": "dana",
   "commit_message": "Tidy imports"
  },
  {
+  "ts": "2026-03-10T02:58:00Z",
+  "service": "notification-service",
+  "version": "v1.18.4",
+  "author": "carlos",
+  "commit_message": "Add unit tests for date parsing"
+ },
+ {
   "ts": "2026-03-10T03:35:00Z",
   "service": "api-gateway",
-  "version": "v2.17.9",
-  "author": "carlos",
+  "version": "v4.10.9",
+  "author": "li",
   "commit_message": "Bump http client timeout to 5s"
  }
 ]

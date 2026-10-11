@@ -1,1 +1,1 @@
-ALERT [critical] profile-service: error rate 17% (threshold 5%) since 2026-03-10T03:56:00Z
+ALERT [critical] profile-service: error rate 25% (threshold 5%) since 2026-03-10T03:56:00Z

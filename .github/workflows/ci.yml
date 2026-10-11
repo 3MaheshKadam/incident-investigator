@@ -20,4 +20,15 @@ jobs:
       - run: pip install -e ".[dev]"
       - run: ruff check .
       - run: pytest -q
-      # A small eval run will be added here once the scoring harness exists.
+      # Smoke eval: the rule-based baseline must run every scenario end to end. It is a floor and
+      # a pipeline check, not a model result.
+      - run: python -m evals.baseline
+      - name: Scenario data is up to date
+        run: |
+          python -m scenarios.generate
+          git diff --exit-code scenarios/data
+  docker:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: docker build -t incident-investigator .

@@ -1,30 +1,30 @@
 [
  {
-  "ts": "2026-03-10T02:08:00Z",
+  "ts": "2026-03-10T02:27:00Z",
   "service": "orders-service",
-  "version": "v4.13.6",
+  "version": "v4.14.0",
   "author": "li",
   "commit_message": "Fix typo in error message"
  },
  {
-  "ts": "2026-03-10T02:15:00Z",
+  "ts": "2026-03-10T02:43:00Z",
   "service": "auth-service",
-  "version": "v4.18.5",
-  "author": "carlos",
-  "commit_message": "Add unit tests for date parsing"
+  "version": "v4.7.2",
+  "author": "dana",
+  "commit_message": "Tidy imports"
  },
  {
-  "ts": "2026-03-10T02:39:00Z",
-  "service": "api-gateway",
-  "version": "v4.1.6",
-  "author": "li",
+  "ts": "2026-03-10T02:59:00Z",
+  "service": "notification-service",
+  "version": "v4.12.2",
+  "author": "dana",
   "commit_message": "Add unit tests for date parsing"
  },
  {
   "ts": "2026-03-10T03:28:00Z",
-  "service": "auth-service",
-  "version": "v1.8.1",
-  "author": "priya",
+  "service": "notification-service",
+  "version": "v3.8.0",
+  "author": "tom",
   "commit_message": "Tidy imports"
  }
 ]

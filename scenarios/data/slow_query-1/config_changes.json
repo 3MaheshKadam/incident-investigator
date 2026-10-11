@@ -1,7 +1,7 @@
 [
  {
-  "ts": "2026-03-10T02:35:00Z",
-  "service": "auth-service",
+  "ts": "2026-03-10T02:34:00Z",
+  "service": "cache-proxy",
   "key": "log_level",
   "old": "info",
   "new": "info,debug",

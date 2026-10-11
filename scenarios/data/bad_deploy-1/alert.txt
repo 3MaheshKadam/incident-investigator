@@ -1,1 +1,1 @@
-ALERT [critical] cart-service: error rate 22% (threshold 5%) since 2026-03-10T03:56:00Z
+ALERT [critical] cart-service: error rate 21% (threshold 5%) since 2026-03-10T03:56:00Z

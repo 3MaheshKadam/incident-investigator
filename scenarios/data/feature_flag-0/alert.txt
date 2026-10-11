@@ -1,1 +1,1 @@
-ALERT [critical] recommendation-service: error rate 16% (threshold 5%) since 2026-03-10T04:08:00Z
+ALERT [critical] recommendation-service: error rate 17% (threshold 5%) since 2026-03-10T04:08:00Z

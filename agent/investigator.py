@@ -5,7 +5,7 @@ from __future__ import annotations
 import json
 from dataclasses import asdict, dataclass, field
 from pathlib import Path
-from typing import Any
+from typing import Any, Protocol
 
 from agent.data import ScenarioData
 from agent.llm import LLM, Message
@@ -26,6 +26,16 @@ action; a human will review it before anything happens."""
 NUDGE = "Use the tools to investigate, then call submit_report when you are done."
 
 
+class GuardLike(Protocol):
+    """What the loop needs from a guard (see guard/guard.py). Optional."""
+
+    system_addendum: str
+
+    def begin(self, alert: str) -> str: ...
+    def wrap_output(self, tool_name: str, output: str) -> tuple[str, list[str]]: ...
+    def check_report(self, report: dict[str, Any]) -> str | None: ...
+
+
 @dataclass
 class RunResult:
     scenario_id: str
@@ -35,20 +45,32 @@ class RunResult:
     trace: list[dict[str, Any]] = field(default_factory=list)
     input_tokens: int = 0
     output_tokens: int = 0
+    guard_redactions: int = 0  # tool-output lines the guard removed as injected instructions
+    guard_blocks: int = 0  # reports the guard refused
 
     def save(self, path: str | Path) -> None:
         Path(path).parent.mkdir(parents=True, exist_ok=True)
         Path(path).write_text(json.dumps(asdict(self), indent=1) + "\n")
 
 
-def run_investigation(llm: LLM, data: ScenarioData, max_steps: int = 12) -> RunResult:
-    """Run one investigation. `max_steps` caps model turns, so a looping model stops."""
+def run_investigation(
+    llm: LLM, data: ScenarioData, max_steps: int = 12, guard: GuardLike | None = None
+) -> RunResult:
+    """Run one investigation. `max_steps` caps model turns, so a looping model stops.
+
+    With a guard, everything read from tools and the alert is passed through it as untrusted
+    data, and the final report must pass its checks before it is accepted.
+    """
     box = Toolbox(data)
+    system = SYSTEM_PROMPT + ("\n\n" + guard.system_addendum if guard else "")
+    alert = guard.begin(data.alert) if guard else data.alert
     messages: list[Message] = [
-        {"role": "system", "content": SYSTEM_PROMPT},
-        {"role": "user", "content": f"Alert:\n{data.alert}"},
+        {"role": "system", "content": system},
+        {"role": "user", "content": f"Alert:\n{alert}"},
     ]
     result = RunResult(data.id, None, 0, "step_limit")
+    if guard is not None:
+        result.guard_redactions += len(getattr(guard, "alert_flags", []))
     nudges = 0
     call_counter = 0
 
@@ -87,6 +109,12 @@ def run_investigation(llm: LLM, data: ScenarioData, max_steps: int = 12) -> RunR
                         "result": error or "accepted",
                     }
                 )
+                if error is None and guard is not None:
+                    reason = guard.check_report(c["arguments"])
+                    if reason:
+                        error = f"blocked by guard: {reason}"
+                        result.guard_blocks += 1
+                        result.trace[-1].update(type="guard_block", result=error)
                 if error is None:
                     result.report = c["arguments"]
                     result.stop_reason = "report"
@@ -94,16 +122,21 @@ def run_investigation(llm: LLM, data: ScenarioData, max_steps: int = 12) -> RunR
                 output = f"error: {error}"
             else:
                 output = box.call(c["name"], c["arguments"])
+                flagged: list[str] = []
+                if guard is not None:
+                    output, flagged = guard.wrap_output(c["name"], output)
+                    result.guard_redactions += len(flagged)
                 result.steps += 1
-                result.trace.append(
-                    {
-                        "turn": turn,
-                        "type": "tool_call",
-                        "name": c["name"],
-                        "arguments": c["arguments"],
-                        "result": output,
-                    }
-                )
+                entry = {
+                    "turn": turn,
+                    "type": "tool_call",
+                    "name": c["name"],
+                    "arguments": c["arguments"],
+                    "result": output,
+                }
+                if flagged:
+                    entry["guard_redacted"] = flagged
+                result.trace.append(entry)
             messages.append(
                 {"role": "tool", "tool_call_id": c["id"], "name": c["name"], "content": output}
             )

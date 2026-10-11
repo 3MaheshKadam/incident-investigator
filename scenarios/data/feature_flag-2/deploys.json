@@ -1,29 +1,29 @@
 [
  {
-  "ts": "2026-03-10T02:26:00Z",
-  "service": "cache-proxy",
-  "version": "v1.1.7",
+  "ts": "2026-03-10T02:27:00Z",
+  "service": "feed-service",
+  "version": "v3.20.8",
   "author": "li",
-  "commit_message": "Fix typo in error message"
+  "commit_message": "Tidy imports"
  },
  {
   "ts": "2026-03-10T02:32:00Z",
-  "service": "auth-service",
-  "version": "v2.19.8",
-  "author": "tom",
-  "commit_message": "Update documentation link in health endpoint"
+  "service": "cache-proxy",
+  "version": "v3.16.1",
+  "author": "priya",
+  "commit_message": "Bump logging library patch version"
  },
  {
-  "ts": "2026-03-10T02:58:00Z",
-  "service": "feed-service",
-  "version": "v3.19.2",
+  "ts": "2026-03-10T02:42:00Z",
+  "service": "auth-service",
+  "version": "v2.13.7",
   "author": "carlos",
-  "commit_message": "Add unit tests for date parsing"
+  "commit_message": "Tidy imports"
  },
  {
   "ts": "2026-03-10T03:47:00Z",
   "service": "api-gateway",
-  "version": "v2.1.8",
+  "version": "v3.13.3",
   "author": "priya",
   "commit_message": "Fix typo in error message"
  }
