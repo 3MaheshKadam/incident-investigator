@@ -2,29 +2,29 @@
  {
   "ts": "2026-03-10T01:30:00Z",
   "service": "webhook-service",
-  "version": "v2.4.0",
+  "version": "v1.19.3",
   "author": "tom",
   "commit_message": "Bump logging library patch version"
  },
  {
-  "ts": "2026-03-10T02:10:00Z",
+  "ts": "2026-03-10T02:15:00Z",
   "service": "auth-service",
-  "version": "v4.11.9",
-  "author": "carlos",
-  "commit_message": "Bump logging library patch version"
+  "version": "v2.19.8",
+  "author": "dana",
+  "commit_message": "Add unit tests for date parsing"
  },
  {
-  "ts": "2026-03-10T02:37:00Z",
+  "ts": "2026-03-10T02:17:00Z",
   "service": "cache-proxy",
-  "version": "v1.10.8",
-  "author": "carlos",
-  "commit_message": "Bump logging library patch version"
+  "version": "v4.5.8",
+  "author": "tom",
+  "commit_message": "Add unit tests for date parsing"
  },
  {
-  "ts": "2026-03-10T02:56:00Z",
-  "service": "webhook-service",
-  "version": "v3.11.5",
-  "author": "carlos",
+  "ts": "2026-03-10T02:24:00Z",
+  "service": "api-gateway",
+  "version": "v4.17.1",
+  "author": "dana",
   "commit_message": "Fix typo in error message"
  }
 ]

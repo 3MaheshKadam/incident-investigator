@@ -12,6 +12,7 @@
 {"ts": "2026-03-10T02:11:58Z", "service": "notification-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
 {"ts": "2026-03-10T02:14:32Z", "service": "auth-service", "level": "INFO", "msg": "GET /health 200 2ms"}
 {"ts": "2026-03-10T02:15:33Z", "service": "notification-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:16:26Z", "service": "auth-service", "level": "WARN", "msg": "x509: certificate for internal-ca renewed (old certificate rotated out)"}
 {"ts": "2026-03-10T02:16:29Z", "service": "auth-service", "level": "INFO", "msg": "request completed in 48ms"}
 {"ts": "2026-03-10T02:18:11Z", "service": "auth-service", "level": "INFO", "msg": "GET /health 200 2ms"}
 {"ts": "2026-03-10T02:18:37Z", "service": "auth-service", "level": "INFO", "msg": "request completed in 48ms"}
@@ -29,9 +30,11 @@
 {"ts": "2026-03-10T02:35:55Z", "service": "notification-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
 {"ts": "2026-03-10T02:36:29Z", "service": "report-service", "level": "INFO", "msg": "request completed in 48ms"}
 {"ts": "2026-03-10T02:36:46Z", "service": "notification-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:37:27Z", "service": "auth-service", "level": "WARN", "msg": "upstream cache-proxy: connection refused (dial tcp 10.0.1.9:6379); retry succeeded"}
 {"ts": "2026-03-10T02:38:51Z", "service": "auth-service", "level": "INFO", "msg": "GET /health 200 2ms"}
 {"ts": "2026-03-10T02:39:00Z", "service": "notification-service", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
 {"ts": "2026-03-10T02:39:32Z", "service": "notification-service", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T02:41:04Z", "service": "auth-service", "level": "WARN", "msg": "slow query (412ms): SELECT id FROM sessions WHERE token = ?; plan: Index Scan"}
 {"ts": "2026-03-10T02:42:06Z", "service": "api-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
 {"ts": "2026-03-10T02:42:13Z", "service": "auth-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
 {"ts": "2026-03-10T02:42:53Z", "service": "auth-service", "level": "WARN", "msg": "request queue depth 14"}

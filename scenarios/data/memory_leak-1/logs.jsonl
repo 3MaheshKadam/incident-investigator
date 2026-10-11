@@ -9,6 +9,7 @@
 {"ts": "2026-03-10T02:13:00Z", "service": "notification-service", "level": "INFO", "msg": "GET /health 200 2ms"}
 {"ts": "2026-03-10T02:13:29Z", "service": "notification-service", "level": "INFO", "msg": "request completed in 48ms"}
 {"ts": "2026-03-10T02:16:58Z", "service": "cache-proxy", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:18:17Z", "service": "notification-service", "level": "WARN", "msg": "upstream cache-proxy: connection refused (dial tcp 10.0.1.9:6379); retry succeeded"}
 {"ts": "2026-03-10T02:18:27Z", "service": "cache-proxy", "level": "WARN", "msg": "slow response from cache (85ms)"}
 {"ts": "2026-03-10T02:19:40Z", "service": "notification-service", "level": "WARN", "msg": "request queue depth 14"}
 {"ts": "2026-03-10T02:21:50Z", "service": "auth-service", "level": "INFO", "msg": "request completed in 48ms"}
@@ -42,6 +43,8 @@
 {"ts": "2026-03-10T03:02:36Z", "service": "cache-proxy", "level": "INFO", "msg": "connection pool: 6/20 in use"}
 {"ts": "2026-03-10T03:03:25Z", "service": "notification-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
 {"ts": "2026-03-10T03:04:49Z", "service": "image-resizer", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:07:30Z", "service": "auth-service", "level": "WARN", "msg": "x509: certificate for internal-ca renewed (old certificate rotated out)"}
+{"ts": "2026-03-10T03:08:37Z", "service": "notification-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
 {"ts": "2026-03-10T03:09:01Z", "service": "cache-proxy", "level": "INFO", "msg": "cache hit ratio 0.93"}
 {"ts": "2026-03-10T03:11:06Z", "service": "auth-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
 {"ts": "2026-03-10T03:12:28Z", "service": "cache-proxy", "level": "INFO", "msg": "request completed in 48ms"}

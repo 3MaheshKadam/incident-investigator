@@ -1,10 +1,10 @@
 [
  {
-  "ts": "2026-03-10T02:38:00Z",
-  "service": "notification-service",
+  "ts": "2026-03-10T02:50:00Z",
+  "service": "cache-proxy",
   "key": "log_level",
   "old": "info",
   "new": "info,debug",
-  "author": "carlos"
+  "author": "tom"
  }
 ]

@@ -1,6 +1,7 @@
 {"ts": "2026-03-10T02:02:06Z", "service": "payments-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
 {"ts": "2026-03-10T02:03:03Z", "service": "api-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
 {"ts": "2026-03-10T02:08:32Z", "service": "auth-service", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T02:08:58Z", "service": "cache-proxy", "level": "ERROR", "msg": "container restarted: OOMKilled (exit code 137)"}
 {"ts": "2026-03-10T02:13:20Z", "service": "payments-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
 {"ts": "2026-03-10T02:15:41Z", "service": "cache-proxy", "level": "INFO", "msg": "request completed in 48ms"}
 {"ts": "2026-03-10T02:15:43Z", "service": "api-gateway", "level": "INFO", "msg": "request completed in 48ms"}
@@ -28,9 +29,11 @@
 {"ts": "2026-03-10T02:50:20Z", "service": "auth-service", "level": "INFO", "msg": "GET /health 200 2ms"}
 {"ts": "2026-03-10T02:51:07Z", "service": "api-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
 {"ts": "2026-03-10T02:53:08Z", "service": "cache-proxy", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:53:18Z", "service": "cache-proxy", "level": "WARN", "msg": "upstream cache-proxy: connection refused (dial tcp 10.0.1.9:6379); retry succeeded"}
 {"ts": "2026-03-10T02:54:36Z", "service": "cache-proxy", "level": "INFO", "msg": "cache hit ratio 0.93"}
 {"ts": "2026-03-10T02:58:22Z", "service": "auth-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
 {"ts": "2026-03-10T02:58:24Z", "service": "api-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:59:23Z", "service": "cache-proxy", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
 {"ts": "2026-03-10T02:59:28Z", "service": "api-gateway", "level": "INFO", "msg": "request completed in 48ms"}
 {"ts": "2026-03-10T03:00:54Z", "service": "cache-proxy", "level": "INFO", "msg": "GET /health 200 2ms"}
 {"ts": "2026-03-10T03:01:08Z", "service": "auth-service", "level": "INFO", "msg": "request completed in 48ms"}
@@ -65,98 +68,99 @@
 {"ts": "2026-03-10T03:50:24Z", "service": "api-gateway", "level": "WARN", "msg": "slow response from cache (85ms)"}
 {"ts": "2026-03-10T03:50:49Z", "service": "payments-gateway", "level": "WARN", "msg": "slow response from cache (85ms)"}
 {"ts": "2026-03-10T03:52:00Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T03:52:00Z is after 2026-03-10T03:52:00Z"}
-{"ts": "2026-03-10T03:53:38Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T03:53:38Z is after 2026-03-10T03:52:00Z"}
-{"ts": "2026-03-10T03:54:24Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T03:54:24Z is after 2026-03-10T03:52:00Z"}
-{"ts": "2026-03-10T03:55:46Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T03:55:46Z is after 2026-03-10T03:52:00Z"}
-{"ts": "2026-03-10T03:57:38Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T03:57:38Z is after 2026-03-10T03:52:00Z"}
+{"ts": "2026-03-10T03:53:34Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T03:53:34Z is after 2026-03-10T03:52:00Z"}
+{"ts": "2026-03-10T03:55:28Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T03:55:28Z is after 2026-03-10T03:52:00Z"}
+{"ts": "2026-03-10T03:56:00Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T03:56:00Z is after 2026-03-10T03:52:00Z"}
+{"ts": "2026-03-10T03:57:33Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T03:57:33Z is after 2026-03-10T03:52:00Z"}
 {"ts": "2026-03-10T03:57:50Z", "service": "api-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
 {"ts": "2026-03-10T03:58:27Z", "service": "api-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
-{"ts": "2026-03-10T03:59:15Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T03:59:15Z is after 2026-03-10T03:52:00Z"}
+{"ts": "2026-03-10T03:59:16Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T03:59:16Z is after 2026-03-10T03:52:00Z"}
+{"ts": "2026-03-10T03:59:57Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T03:59:57Z is after 2026-03-10T03:52:00Z"}
 {"ts": "2026-03-10T03:59:57Z", "service": "cache-proxy", "level": "INFO", "msg": "GET /health 200 2ms"}
 {"ts": "2026-03-10T04:00:01Z", "service": "auth-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
 {"ts": "2026-03-10T04:00:16Z", "service": "payments-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
-{"ts": "2026-03-10T04:00:49Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:00:49Z is after 2026-03-10T03:52:00Z"}
 {"ts": "2026-03-10T04:01:22Z", "service": "api-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:01:24Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:01:24Z is after 2026-03-10T03:52:00Z"}
 {"ts": "2026-03-10T04:01:44Z", "service": "payments-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
 {"ts": "2026-03-10T04:02:10Z", "service": "cache-proxy", "level": "INFO", "msg": "background job finished (processed 120 items)"}
 {"ts": "2026-03-10T04:02:17Z", "service": "cache-proxy", "level": "INFO", "msg": "request completed in 48ms"}
-{"ts": "2026-03-10T04:02:44Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:02:44Z is after 2026-03-10T03:52:00Z"}
-{"ts": "2026-03-10T04:03:16Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:03:16Z is after 2026-03-10T03:52:00Z"}
-{"ts": "2026-03-10T04:04:49Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:04:49Z is after 2026-03-10T03:52:00Z"}
-{"ts": "2026-03-10T04:06:32Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:06:32Z is after 2026-03-10T03:52:00Z"}
-{"ts": "2026-03-10T04:07:12Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:07:12Z is after 2026-03-10T03:52:00Z"}
+{"ts": "2026-03-10T04:02:33Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:02:33Z is after 2026-03-10T03:52:00Z"}
+{"ts": "2026-03-10T04:03:49Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:03:49Z is after 2026-03-10T03:52:00Z"}
+{"ts": "2026-03-10T04:05:07Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:05:07Z is after 2026-03-10T03:52:00Z"}
+{"ts": "2026-03-10T04:06:58Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:06:58Z is after 2026-03-10T03:52:00Z"}
 {"ts": "2026-03-10T04:08:09Z", "service": "payments-gateway", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
-{"ts": "2026-03-10T04:08:39Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:08:39Z is after 2026-03-10T03:52:00Z"}
+{"ts": "2026-03-10T04:08:41Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:08:41Z is after 2026-03-10T03:52:00Z"}
 {"ts": "2026-03-10T04:08:50Z", "service": "auth-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
 {"ts": "2026-03-10T04:09:07Z", "service": "cache-proxy", "level": "INFO", "msg": "connection pool: 6/20 in use"}
-{"ts": "2026-03-10T04:09:49Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:09:49Z is after 2026-03-10T03:52:00Z"}
-{"ts": "2026-03-10T04:11:05Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:11:05Z is after 2026-03-10T03:52:00Z"}
-{"ts": "2026-03-10T04:12:22Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:12:22Z is after 2026-03-10T03:52:00Z"}
+{"ts": "2026-03-10T04:09:11Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:09:11Z is after 2026-03-10T03:52:00Z"}
+{"ts": "2026-03-10T04:10:02Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:10:02Z is after 2026-03-10T03:52:00Z"}
+{"ts": "2026-03-10T04:10:54Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:10:54Z is after 2026-03-10T03:52:00Z"}
+{"ts": "2026-03-10T04:12:43Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:12:43Z is after 2026-03-10T03:52:00Z"}
 {"ts": "2026-03-10T04:13:46Z", "service": "cache-proxy", "level": "INFO", "msg": "request completed in 48ms"}
 {"ts": "2026-03-10T04:13:59Z", "service": "auth-service", "level": "INFO", "msg": "GET /health 200 2ms"}
 {"ts": "2026-03-10T04:13:59Z", "service": "payments-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:14:03Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:14:03Z is after 2026-03-10T03:52:00Z"}
 {"ts": "2026-03-10T04:14:03Z", "service": "payments-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
 {"ts": "2026-03-10T04:14:10Z", "service": "cache-proxy", "level": "WARN", "msg": "slow response from cache (85ms)"}
-{"ts": "2026-03-10T04:14:14Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:14:14Z is after 2026-03-10T03:52:00Z"}
 {"ts": "2026-03-10T04:14:43Z", "service": "payments-gateway", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T04:15:10Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:15:10Z is after 2026-03-10T03:52:00Z"}
 {"ts": "2026-03-10T04:15:17Z", "service": "auth-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
 {"ts": "2026-03-10T04:15:47Z", "service": "api-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
-{"ts": "2026-03-10T04:15:57Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:15:57Z is after 2026-03-10T03:52:00Z"}
-{"ts": "2026-03-10T04:16:27Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:16:27Z is after 2026-03-10T03:52:00Z"}
+{"ts": "2026-03-10T04:16:29Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:16:29Z is after 2026-03-10T03:52:00Z"}
 {"ts": "2026-03-10T04:16:35Z", "service": "auth-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
 {"ts": "2026-03-10T04:17:11Z", "service": "cache-proxy", "level": "INFO", "msg": "cache hit ratio 0.93"}
-{"ts": "2026-03-10T04:17:18Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:17:18Z is after 2026-03-10T03:52:00Z"}
 {"ts": "2026-03-10T04:17:22Z", "service": "auth-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
-{"ts": "2026-03-10T04:18:10Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:18:10Z is after 2026-03-10T03:52:00Z"}
-{"ts": "2026-03-10T04:19:59Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:19:59Z is after 2026-03-10T03:52:00Z"}
+{"ts": "2026-03-10T04:17:25Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:17:25Z is after 2026-03-10T03:52:00Z"}
+{"ts": "2026-03-10T04:18:50Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:18:50Z is after 2026-03-10T03:52:00Z"}
 {"ts": "2026-03-10T04:20:04Z", "service": "cache-proxy", "level": "WARN", "msg": "request queue depth 14"}
-{"ts": "2026-03-10T04:21:19Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:21:19Z is after 2026-03-10T03:52:00Z"}
+{"ts": "2026-03-10T04:20:08Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:20:08Z is after 2026-03-10T03:52:00Z"}
+{"ts": "2026-03-10T04:21:16Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:21:16Z is after 2026-03-10T03:52:00Z"}
+{"ts": "2026-03-10T04:21:51Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:21:51Z is after 2026-03-10T03:52:00Z"}
 {"ts": "2026-03-10T04:22:15Z", "service": "payments-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
-{"ts": "2026-03-10T04:22:25Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:22:25Z is after 2026-03-10T03:52:00Z"}
+{"ts": "2026-03-10T04:22:54Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:22:54Z is after 2026-03-10T03:52:00Z"}
 {"ts": "2026-03-10T04:23:32Z", "service": "payments-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
-{"ts": "2026-03-10T04:23:45Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:23:45Z is after 2026-03-10T03:52:00Z"}
 {"ts": "2026-03-10T04:23:54Z", "service": "api-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
-{"ts": "2026-03-10T04:24:41Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:24:41Z is after 2026-03-10T03:52:00Z"}
-{"ts": "2026-03-10T04:26:06Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:26:06Z is after 2026-03-10T03:52:00Z"}
-{"ts": "2026-03-10T04:27:24Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:27:24Z is after 2026-03-10T03:52:00Z"}
-{"ts": "2026-03-10T04:28:32Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:28:32Z is after 2026-03-10T03:52:00Z"}
+{"ts": "2026-03-10T04:24:07Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:24:07Z is after 2026-03-10T03:52:00Z"}
+{"ts": "2026-03-10T04:24:56Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:24:56Z is after 2026-03-10T03:52:00Z"}
+{"ts": "2026-03-10T04:26:32Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:26:32Z is after 2026-03-10T03:52:00Z"}
+{"ts": "2026-03-10T04:27:37Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:27:37Z is after 2026-03-10T03:52:00Z"}
 {"ts": "2026-03-10T04:28:57Z", "service": "api-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
-{"ts": "2026-03-10T04:29:07Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:29:07Z is after 2026-03-10T03:52:00Z"}
 {"ts": "2026-03-10T04:29:13Z", "service": "payments-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
-{"ts": "2026-03-10T04:30:09Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:30:09Z is after 2026-03-10T03:52:00Z"}
-{"ts": "2026-03-10T04:31:23Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:31:23Z is after 2026-03-10T03:52:00Z"}
+{"ts": "2026-03-10T04:29:28Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:29:28Z is after 2026-03-10T03:52:00Z"}
+{"ts": "2026-03-10T04:30:10Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:30:10Z is after 2026-03-10T03:52:00Z"}
+{"ts": "2026-03-10T04:31:22Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:31:22Z is after 2026-03-10T03:52:00Z"}
 {"ts": "2026-03-10T04:31:29Z", "service": "auth-service", "level": "INFO", "msg": "request completed in 48ms"}
-{"ts": "2026-03-10T04:32:12Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:32:12Z is after 2026-03-10T03:52:00Z"}
+{"ts": "2026-03-10T04:32:06Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:32:06Z is after 2026-03-10T03:52:00Z"}
+{"ts": "2026-03-10T04:33:07Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:33:07Z is after 2026-03-10T03:52:00Z"}
 {"ts": "2026-03-10T04:33:25Z", "service": "cache-proxy", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
-{"ts": "2026-03-10T04:33:48Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:33:48Z is after 2026-03-10T03:52:00Z"}
+{"ts": "2026-03-10T04:34:02Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:34:02Z is after 2026-03-10T03:52:00Z"}
 {"ts": "2026-03-10T04:34:07Z", "service": "api-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
 {"ts": "2026-03-10T04:34:44Z", "service": "cache-proxy", "level": "INFO", "msg": "GET /health 200 2ms"}
 {"ts": "2026-03-10T04:34:49Z", "service": "cache-proxy", "level": "INFO", "msg": "background job finished (processed 120 items)"}
-{"ts": "2026-03-10T04:34:53Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:34:53Z is after 2026-03-10T03:52:00Z"}
-{"ts": "2026-03-10T04:36:44Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:36:44Z is after 2026-03-10T03:52:00Z"}
+{"ts": "2026-03-10T04:35:40Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:35:40Z is after 2026-03-10T03:52:00Z"}
+{"ts": "2026-03-10T04:36:31Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:36:31Z is after 2026-03-10T03:52:00Z"}
 {"ts": "2026-03-10T04:37:21Z", "service": "payments-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
-{"ts": "2026-03-10T04:37:26Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:37:26Z is after 2026-03-10T03:52:00Z"}
-{"ts": "2026-03-10T04:38:38Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:38:38Z is after 2026-03-10T03:52:00Z"}
-{"ts": "2026-03-10T04:39:22Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:39:22Z is after 2026-03-10T03:52:00Z"}
-{"ts": "2026-03-10T04:40:23Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:40:23Z is after 2026-03-10T03:52:00Z"}
+{"ts": "2026-03-10T04:38:22Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:38:22Z is after 2026-03-10T03:52:00Z"}
+{"ts": "2026-03-10T04:38:56Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:38:56Z is after 2026-03-10T03:52:00Z"}
+{"ts": "2026-03-10T04:40:43Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:40:43Z is after 2026-03-10T03:52:00Z"}
 {"ts": "2026-03-10T04:40:44Z", "service": "cache-proxy", "level": "INFO", "msg": "connection pool: 6/20 in use"}
-{"ts": "2026-03-10T04:41:17Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:41:17Z is after 2026-03-10T03:52:00Z"}
-{"ts": "2026-03-10T04:42:56Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:42:56Z is after 2026-03-10T03:52:00Z"}
-{"ts": "2026-03-10T04:43:47Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:43:47Z is after 2026-03-10T03:52:00Z"}
+{"ts": "2026-03-10T04:42:26Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:42:26Z is after 2026-03-10T03:52:00Z"}
+{"ts": "2026-03-10T04:43:48Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:43:48Z is after 2026-03-10T03:52:00Z"}
 {"ts": "2026-03-10T04:44:02Z", "service": "cache-proxy", "level": "INFO", "msg": "connection pool: 6/20 in use"}
 {"ts": "2026-03-10T04:44:20Z", "service": "auth-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:44:24Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:44:24Z is after 2026-03-10T03:52:00Z"}
 {"ts": "2026-03-10T04:45:10Z", "service": "payments-gateway", "level": "INFO", "msg": "request completed in 48ms"}
 {"ts": "2026-03-10T04:45:25Z", "service": "api-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
-{"ts": "2026-03-10T04:45:38Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:45:38Z is after 2026-03-10T03:52:00Z"}
-{"ts": "2026-03-10T04:46:11Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:46:11Z is after 2026-03-10T03:52:00Z"}
+{"ts": "2026-03-10T04:45:47Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:45:47Z is after 2026-03-10T03:52:00Z"}
+{"ts": "2026-03-10T04:46:21Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:46:21Z is after 2026-03-10T03:52:00Z"}
+{"ts": "2026-03-10T04:46:57Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:46:57Z is after 2026-03-10T03:52:00Z"}
 {"ts": "2026-03-10T04:47:38Z", "service": "cache-proxy", "level": "INFO", "msg": "cache hit ratio 0.93"}
 {"ts": "2026-03-10T04:47:38Z", "service": "auth-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
-{"ts": "2026-03-10T04:47:59Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:47:59Z is after 2026-03-10T03:52:00Z"}
+{"ts": "2026-03-10T04:48:56Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:48:56Z is after 2026-03-10T03:52:00Z"}
 {"ts": "2026-03-10T04:49:14Z", "service": "api-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
 {"ts": "2026-03-10T04:49:25Z", "service": "cache-proxy", "level": "INFO", "msg": "request completed in 48ms"}
-{"ts": "2026-03-10T04:49:41Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:49:41Z is after 2026-03-10T03:52:00Z"}
-{"ts": "2026-03-10T04:51:04Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:51:04Z is after 2026-03-10T03:52:00Z"}
-{"ts": "2026-03-10T04:51:40Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:51:40Z is after 2026-03-10T03:52:00Z"}
+{"ts": "2026-03-10T04:49:55Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:49:55Z is after 2026-03-10T03:52:00Z"}
+{"ts": "2026-03-10T04:51:09Z", "service": "payments-gateway", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:51:09Z is after 2026-03-10T03:52:00Z"}
 {"ts": "2026-03-10T04:51:40Z", "service": "auth-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
 {"ts": "2026-03-10T04:52:41Z", "service": "api-gateway", "level": "INFO", "msg": "request completed in 48ms"}
 {"ts": "2026-03-10T04:52:54Z", "service": "cache-proxy", "level": "INFO", "msg": "cache hit ratio 0.93"}

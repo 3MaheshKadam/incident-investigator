@@ -5,11 +5,11 @@
   "key": "connection_pool_size",
   "old": "20",
   "new": "40",
-  "author": "priya"
+  "author": "tom"
  },
  {
-  "ts": "2026-03-10T02:13:00Z",
-  "service": "auth-service",
+  "ts": "2026-03-10T02:57:00Z",
+  "service": "webhook-service",
   "key": "log_level",
   "old": "info",
   "new": "info,debug",

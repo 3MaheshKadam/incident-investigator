@@ -4,7 +4,7 @@
  "root_cause_category": "bad_deploy",
  "component": "pricing-service",
  "evidence_keys": [
-  "v2.1.3",
+  "v2.6.7",
   "NullPointerException"
  ],
  "incident_start": "2026-03-10T04:04:00Z",

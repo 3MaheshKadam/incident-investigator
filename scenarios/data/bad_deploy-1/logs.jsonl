@@ -27,11 +27,14 @@
 {"ts": "2026-03-10T02:45:53Z", "service": "cart-service", "level": "WARN", "msg": "slow response from cache (85ms)"}
 {"ts": "2026-03-10T02:46:17Z", "service": "cart-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
 {"ts": "2026-03-10T02:51:00Z", "service": "cache-proxy", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:51:47Z", "service": "cache-proxy", "level": "WARN", "msg": "slow query (412ms): SELECT id FROM sessions WHERE token = ?; plan: Index Scan"}
 {"ts": "2026-03-10T02:52:11Z", "service": "notification-service", "level": "WARN", "msg": "GC pause 120ms"}
 {"ts": "2026-03-10T02:52:31Z", "service": "cache-proxy", "level": "INFO", "msg": "background job finished (processed 120 items)"}
 {"ts": "2026-03-10T02:53:19Z", "service": "notification-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:54:42Z", "service": "notification-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
 {"ts": "2026-03-10T02:54:51Z", "service": "notification-service", "level": "INFO", "msg": "request completed in 48ms"}
 {"ts": "2026-03-10T02:56:14Z", "service": "notification-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:57:55Z", "service": "cache-proxy", "level": "ERROR", "msg": "container restarted: OOMKilled (exit code 137)"}
 {"ts": "2026-03-10T02:58:08Z", "service": "cart-service", "level": "INFO", "msg": "request completed in 48ms"}
 {"ts": "2026-03-10T02:59:15Z", "service": "notification-service", "level": "INFO", "msg": "request completed in 48ms"}
 {"ts": "2026-03-10T03:00:22Z", "service": "cache-proxy", "level": "INFO", "msg": "connection pool: 6/20 in use"}
@@ -71,79 +74,79 @@
 {"ts": "2026-03-10T03:54:10Z", "service": "api-gateway", "level": "INFO", "msg": "request completed in 48ms"}
 {"ts": "2026-03-10T03:54:45Z", "service": "cache-proxy", "level": "INFO", "msg": "background job finished (processed 120 items)"}
 {"ts": "2026-03-10T03:54:59Z", "service": "cart-service", "level": "INFO", "msg": "request completed in 48ms"}
-{"ts": "2026-03-10T03:55:20Z", "service": "cart-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in CartServiceHandler.handle"}
+{"ts": "2026-03-10T03:56:04Z", "service": "cart-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in CartServiceHandler.handle"}
 {"ts": "2026-03-10T03:56:34Z", "service": "cart-service", "level": "WARN", "msg": "slow response from cache (85ms)"}
 {"ts": "2026-03-10T03:57:19Z", "service": "api-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
 {"ts": "2026-03-10T03:57:49Z", "service": "api-gateway", "level": "INFO", "msg": "request completed in 48ms"}
-{"ts": "2026-03-10T03:58:15Z", "service": "cart-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in CartServiceHandler.handle"}
 {"ts": "2026-03-10T03:58:31Z", "service": "cart-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:58:37Z", "service": "cart-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in CartServiceHandler.handle"}
 {"ts": "2026-03-10T03:58:55Z", "service": "cart-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
 {"ts": "2026-03-10T03:59:34Z", "service": "api-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:00:09Z", "service": "cart-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in CartServiceHandler.handle"}
 {"ts": "2026-03-10T04:00:24Z", "service": "notification-service", "level": "INFO", "msg": "GET /health 200 2ms"}
-{"ts": "2026-03-10T04:01:10Z", "service": "cart-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in CartServiceHandler.handle"}
 {"ts": "2026-03-10T04:01:23Z", "service": "cache-proxy", "level": "INFO", "msg": "GET /health 200 2ms"}
 {"ts": "2026-03-10T04:01:39Z", "service": "api-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
-{"ts": "2026-03-10T04:02:45Z", "service": "cart-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in CartServiceHandler.handle"}
+{"ts": "2026-03-10T04:01:42Z", "service": "cart-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in CartServiceHandler.handle"}
+{"ts": "2026-03-10T04:02:52Z", "service": "cart-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in CartServiceHandler.handle"}
 {"ts": "2026-03-10T04:04:24Z", "service": "cache-proxy", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:04:29Z", "service": "cart-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in CartServiceHandler.handle"}
 {"ts": "2026-03-10T04:05:06Z", "service": "cart-service", "level": "INFO", "msg": "GET /health 200 2ms"}
-{"ts": "2026-03-10T04:05:28Z", "service": "cart-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in CartServiceHandler.handle"}
 {"ts": "2026-03-10T04:06:46Z", "service": "notification-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:06:49Z", "service": "cart-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in CartServiceHandler.handle"}
 {"ts": "2026-03-10T04:07:29Z", "service": "cart-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
-{"ts": "2026-03-10T04:07:44Z", "service": "cart-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in CartServiceHandler.handle"}
-{"ts": "2026-03-10T04:09:06Z", "service": "cart-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in CartServiceHandler.handle"}
+{"ts": "2026-03-10T04:08:05Z", "service": "cart-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in CartServiceHandler.handle"}
 {"ts": "2026-03-10T04:09:16Z", "service": "cache-proxy", "level": "INFO", "msg": "connection pool: 6/20 in use"}
-{"ts": "2026-03-10T04:10:31Z", "service": "cart-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in CartServiceHandler.handle"}
 {"ts": "2026-03-10T04:10:40Z", "service": "api-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:10:41Z", "service": "cart-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in CartServiceHandler.handle"}
 {"ts": "2026-03-10T04:11:13Z", "service": "cart-service", "level": "WARN", "msg": "slow response from cache (85ms)"}
 {"ts": "2026-03-10T04:11:41Z", "service": "cart-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
-{"ts": "2026-03-10T04:12:24Z", "service": "cart-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in CartServiceHandler.handle"}
+{"ts": "2026-03-10T04:12:32Z", "service": "cart-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in CartServiceHandler.handle"}
 {"ts": "2026-03-10T04:12:39Z", "service": "api-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
-{"ts": "2026-03-10T04:13:58Z", "service": "cart-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in CartServiceHandler.handle"}
-{"ts": "2026-03-10T04:16:03Z", "service": "cart-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in CartServiceHandler.handle"}
+{"ts": "2026-03-10T04:14:52Z", "service": "cart-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in CartServiceHandler.handle"}
 {"ts": "2026-03-10T04:16:23Z", "service": "cache-proxy", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:16:35Z", "service": "cart-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in CartServiceHandler.handle"}
+{"ts": "2026-03-10T04:17:51Z", "service": "cart-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in CartServiceHandler.handle"}
 {"ts": "2026-03-10T04:18:20Z", "service": "api-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
-{"ts": "2026-03-10T04:18:35Z", "service": "cart-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in CartServiceHandler.handle"}
+{"ts": "2026-03-10T04:19:07Z", "service": "cart-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in CartServiceHandler.handle"}
 {"ts": "2026-03-10T04:19:20Z", "service": "cart-service", "level": "INFO", "msg": "GET /health 200 2ms"}
 {"ts": "2026-03-10T04:19:25Z", "service": "notification-service", "level": "INFO", "msg": "GET /health 200 2ms"}
-{"ts": "2026-03-10T04:20:08Z", "service": "cart-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in CartServiceHandler.handle"}
-{"ts": "2026-03-10T04:21:40Z", "service": "cart-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in CartServiceHandler.handle"}
-{"ts": "2026-03-10T04:22:50Z", "service": "cart-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in CartServiceHandler.handle"}
+{"ts": "2026-03-10T04:21:27Z", "service": "cart-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in CartServiceHandler.handle"}
+{"ts": "2026-03-10T04:22:56Z", "service": "cart-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in CartServiceHandler.handle"}
 {"ts": "2026-03-10T04:23:03Z", "service": "cache-proxy", "level": "INFO", "msg": "cache hit ratio 0.93"}
 {"ts": "2026-03-10T04:23:59Z", "service": "cache-proxy", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:24:01Z", "service": "cart-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in CartServiceHandler.handle"}
 {"ts": "2026-03-10T04:24:09Z", "service": "cart-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
-{"ts": "2026-03-10T04:24:28Z", "service": "cart-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in CartServiceHandler.handle"}
 {"ts": "2026-03-10T04:24:58Z", "service": "api-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
 {"ts": "2026-03-10T04:25:51Z", "service": "notification-service", "level": "INFO", "msg": "GET /health 200 2ms"}
 {"ts": "2026-03-10T04:25:56Z", "service": "api-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
-{"ts": "2026-03-10T04:26:47Z", "service": "cart-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in CartServiceHandler.handle"}
+{"ts": "2026-03-10T04:26:14Z", "service": "cart-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in CartServiceHandler.handle"}
 {"ts": "2026-03-10T04:27:35Z", "service": "cart-service", "level": "INFO", "msg": "GET /health 200 2ms"}
-{"ts": "2026-03-10T04:28:04Z", "service": "cart-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in CartServiceHandler.handle"}
-{"ts": "2026-03-10T04:30:40Z", "service": "cart-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in CartServiceHandler.handle"}
+{"ts": "2026-03-10T04:28:09Z", "service": "cart-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in CartServiceHandler.handle"}
+{"ts": "2026-03-10T04:30:06Z", "service": "cart-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in CartServiceHandler.handle"}
 {"ts": "2026-03-10T04:31:20Z", "service": "cart-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
-{"ts": "2026-03-10T04:32:30Z", "service": "cart-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in CartServiceHandler.handle"}
+{"ts": "2026-03-10T04:31:28Z", "service": "cart-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in CartServiceHandler.handle"}
 {"ts": "2026-03-10T04:33:39Z", "service": "notification-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
-{"ts": "2026-03-10T04:34:50Z", "service": "cart-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in CartServiceHandler.handle"}
+{"ts": "2026-03-10T04:33:59Z", "service": "cart-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in CartServiceHandler.handle"}
 {"ts": "2026-03-10T04:34:59Z", "service": "notification-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
-{"ts": "2026-03-10T04:36:34Z", "service": "cart-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in CartServiceHandler.handle"}
+{"ts": "2026-03-10T04:36:42Z", "service": "cart-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in CartServiceHandler.handle"}
 {"ts": "2026-03-10T04:37:03Z", "service": "cache-proxy", "level": "WARN", "msg": "slow response from cache (85ms)"}
 {"ts": "2026-03-10T04:37:29Z", "service": "notification-service", "level": "INFO", "msg": "request completed in 48ms"}
 {"ts": "2026-03-10T04:37:45Z", "service": "cart-service", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
-{"ts": "2026-03-10T04:37:50Z", "service": "cart-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in CartServiceHandler.handle"}
+{"ts": "2026-03-10T04:37:55Z", "service": "cart-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in CartServiceHandler.handle"}
 {"ts": "2026-03-10T04:38:07Z", "service": "api-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
-{"ts": "2026-03-10T04:39:06Z", "service": "cart-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in CartServiceHandler.handle"}
+{"ts": "2026-03-10T04:38:56Z", "service": "cart-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in CartServiceHandler.handle"}
 {"ts": "2026-03-10T04:40:27Z", "service": "cart-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:41:12Z", "service": "cart-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in CartServiceHandler.handle"}
 {"ts": "2026-03-10T04:41:16Z", "service": "notification-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
-{"ts": "2026-03-10T04:41:26Z", "service": "cart-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in CartServiceHandler.handle"}
-{"ts": "2026-03-10T04:42:54Z", "service": "cart-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in CartServiceHandler.handle"}
 {"ts": "2026-03-10T04:43:29Z", "service": "api-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
-{"ts": "2026-03-10T04:43:59Z", "service": "cart-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in CartServiceHandler.handle"}
+{"ts": "2026-03-10T04:43:34Z", "service": "cart-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in CartServiceHandler.handle"}
 {"ts": "2026-03-10T04:44:04Z", "service": "notification-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
-{"ts": "2026-03-10T04:46:12Z", "service": "cart-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in CartServiceHandler.handle"}
+{"ts": "2026-03-10T04:44:59Z", "service": "cart-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in CartServiceHandler.handle"}
 {"ts": "2026-03-10T04:46:53Z", "service": "notification-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
-{"ts": "2026-03-10T04:48:08Z", "service": "cart-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in CartServiceHandler.handle"}
+{"ts": "2026-03-10T04:47:40Z", "service": "cart-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in CartServiceHandler.handle"}
 {"ts": "2026-03-10T04:48:26Z", "service": "api-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
-{"ts": "2026-03-10T04:50:04Z", "service": "cart-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in CartServiceHandler.handle"}
-{"ts": "2026-03-10T04:51:26Z", "service": "cart-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in CartServiceHandler.handle"}
+{"ts": "2026-03-10T04:49:20Z", "service": "cart-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in CartServiceHandler.handle"}
+{"ts": "2026-03-10T04:50:26Z", "service": "cart-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in CartServiceHandler.handle"}
 {"ts": "2026-03-10T04:51:41Z", "service": "cache-proxy", "level": "INFO", "msg": "background job finished (processed 120 items)"}
 {"ts": "2026-03-10T04:56:50Z", "service": "cache-proxy", "level": "INFO", "msg": "connection pool: 6/20 in use"}
 {"ts": "2026-03-10T04:59:04Z", "service": "notification-service", "level": "INFO", "msg": "GET /health 200 2ms"}

@@ -1,29 +1,29 @@
 [
  {
-  "ts": "2026-03-10T02:13:00Z",
+  "ts": "2026-03-10T02:12:00Z",
   "service": "notification-service",
-  "version": "v2.20.2",
-  "author": "priya",
-  "commit_message": "Update documentation link in health endpoint"
+  "version": "v1.8.1",
+  "author": "tom",
+  "commit_message": "Tidy imports"
  },
  {
-  "ts": "2026-03-10T02:19:00Z",
+  "ts": "2026-03-10T02:32:00Z",
   "service": "cache-proxy",
-  "version": "v1.19.3",
+  "version": "v4.6.9",
   "author": "carlos",
   "commit_message": "Add unit tests for date parsing"
  },
  {
   "ts": "2026-03-10T02:50:00Z",
-  "service": "api-gateway",
-  "version": "v2.2.3",
-  "author": "li",
+  "service": "pricing-api",
+  "version": "v1.1.2",
+  "author": "tom",
   "commit_message": "Tidy imports"
  },
  {
   "ts": "2026-03-10T03:45:00Z",
   "service": "api-gateway",
-  "version": "v3.14.8",
+  "version": "v2.4.8",
   "author": "dana",
   "commit_message": "Bump http client timeout to 5s"
  }

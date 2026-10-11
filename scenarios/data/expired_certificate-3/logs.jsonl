@@ -8,6 +8,7 @@
 {"ts": "2026-03-10T02:11:15Z", "service": "auth-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
 {"ts": "2026-03-10T02:11:25Z", "service": "auth-service", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
 {"ts": "2026-03-10T02:12:55Z", "service": "cache-proxy", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:13:46Z", "service": "auth-service", "level": "WARN", "msg": "x509: certificate for internal-ca renewed (old certificate rotated out)"}
 {"ts": "2026-03-10T02:16:24Z", "service": "api-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
 {"ts": "2026-03-10T02:19:00Z", "service": "webhook-service", "level": "INFO", "msg": "request completed in 48ms"}
 {"ts": "2026-03-10T02:19:01Z", "service": "cache-proxy", "level": "INFO", "msg": "GET /health 200 2ms"}
@@ -26,9 +27,11 @@
 {"ts": "2026-03-10T02:37:49Z", "service": "cache-proxy", "level": "INFO", "msg": "cache hit ratio 0.93"}
 {"ts": "2026-03-10T02:40:52Z", "service": "webhook-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
 {"ts": "2026-03-10T02:41:06Z", "service": "cache-proxy", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:42:58Z", "service": "api-gateway", "level": "WARN", "msg": "slow query (412ms): SELECT id FROM sessions WHERE token = ?; plan: Index Scan"}
 {"ts": "2026-03-10T02:43:34Z", "service": "cache-proxy", "level": "WARN", "msg": "slow response from cache (85ms)"}
 {"ts": "2026-03-10T02:44:25Z", "service": "webhook-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
 {"ts": "2026-03-10T02:44:46Z", "service": "cache-proxy", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:46:33Z", "service": "api-gateway", "level": "ERROR", "msg": "container restarted: OOMKilled (exit code 137)"}
 {"ts": "2026-03-10T02:46:45Z", "service": "api-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
 {"ts": "2026-03-10T02:46:54Z", "service": "auth-service", "level": "INFO", "msg": "GET /health 200 2ms"}
 {"ts": "2026-03-10T02:47:06Z", "service": "cache-proxy", "level": "INFO", "msg": "request completed in 48ms"}
@@ -83,82 +86,81 @@
 {"ts": "2026-03-10T04:00:00Z", "service": "webhook-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:00:00Z is after 2026-03-10T04:00:00Z"}
 {"ts": "2026-03-10T04:00:14Z", "service": "auth-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
 {"ts": "2026-03-10T04:01:02Z", "service": "cache-proxy", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
-{"ts": "2026-03-10T04:01:36Z", "service": "webhook-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:01:36Z is after 2026-03-10T04:00:00Z"}
+{"ts": "2026-03-10T04:01:47Z", "service": "webhook-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:01:47Z is after 2026-03-10T04:00:00Z"}
+{"ts": "2026-03-10T04:02:41Z", "service": "webhook-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:02:41Z is after 2026-03-10T04:00:00Z"}
 {"ts": "2026-03-10T04:02:50Z", "service": "auth-service", "level": "INFO", "msg": "GET /health 200 2ms"}
-{"ts": "2026-03-10T04:03:00Z", "service": "webhook-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:03:00Z is after 2026-03-10T04:00:00Z"}
-{"ts": "2026-03-10T04:03:31Z", "service": "webhook-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:03:31Z is after 2026-03-10T04:00:00Z"}
-{"ts": "2026-03-10T04:04:18Z", "service": "webhook-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:04:18Z is after 2026-03-10T04:00:00Z"}
-{"ts": "2026-03-10T04:05:04Z", "service": "webhook-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:05:04Z is after 2026-03-10T04:00:00Z"}
+{"ts": "2026-03-10T04:04:34Z", "service": "webhook-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:04:34Z is after 2026-03-10T04:00:00Z"}
 {"ts": "2026-03-10T04:05:20Z", "service": "cache-proxy", "level": "INFO", "msg": "connection pool: 6/20 in use"}
 {"ts": "2026-03-10T04:05:53Z", "service": "auth-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:06:10Z", "service": "webhook-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:06:10Z is after 2026-03-10T04:00:00Z"}
 {"ts": "2026-03-10T04:06:26Z", "service": "auth-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
-{"ts": "2026-03-10T04:06:43Z", "service": "webhook-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:06:43Z is after 2026-03-10T04:00:00Z"}
 {"ts": "2026-03-10T04:06:54Z", "service": "cache-proxy", "level": "INFO", "msg": "cache hit ratio 0.93"}
-{"ts": "2026-03-10T04:07:43Z", "service": "webhook-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:07:43Z is after 2026-03-10T04:00:00Z"}
 {"ts": "2026-03-10T04:07:55Z", "service": "api-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:08:04Z", "service": "webhook-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:08:04Z is after 2026-03-10T04:00:00Z"}
 {"ts": "2026-03-10T04:08:19Z", "service": "api-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
-{"ts": "2026-03-10T04:09:32Z", "service": "webhook-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:09:32Z is after 2026-03-10T04:00:00Z"}
+{"ts": "2026-03-10T04:09:44Z", "service": "webhook-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:09:44Z is after 2026-03-10T04:00:00Z"}
 {"ts": "2026-03-10T04:10:17Z", "service": "auth-service", "level": "WARN", "msg": "GC pause 120ms"}
-{"ts": "2026-03-10T04:11:12Z", "service": "webhook-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:11:12Z is after 2026-03-10T04:00:00Z"}
-{"ts": "2026-03-10T04:12:39Z", "service": "webhook-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:12:39Z is after 2026-03-10T04:00:00Z"}
-{"ts": "2026-03-10T04:13:19Z", "service": "webhook-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:13:19Z is after 2026-03-10T04:00:00Z"}
+{"ts": "2026-03-10T04:10:52Z", "service": "webhook-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:10:52Z is after 2026-03-10T04:00:00Z"}
+{"ts": "2026-03-10T04:11:24Z", "service": "webhook-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:11:24Z is after 2026-03-10T04:00:00Z"}
+{"ts": "2026-03-10T04:11:55Z", "service": "webhook-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:11:55Z is after 2026-03-10T04:00:00Z"}
+{"ts": "2026-03-10T04:13:09Z", "service": "webhook-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:13:09Z is after 2026-03-10T04:00:00Z"}
 {"ts": "2026-03-10T04:13:22Z", "service": "webhook-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
 {"ts": "2026-03-10T04:13:33Z", "service": "api-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
-{"ts": "2026-03-10T04:14:23Z", "service": "webhook-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:14:23Z is after 2026-03-10T04:00:00Z"}
-{"ts": "2026-03-10T04:15:34Z", "service": "webhook-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:15:34Z is after 2026-03-10T04:00:00Z"}
+{"ts": "2026-03-10T04:13:55Z", "service": "webhook-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:13:55Z is after 2026-03-10T04:00:00Z"}
+{"ts": "2026-03-10T04:14:37Z", "service": "webhook-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:14:37Z is after 2026-03-10T04:00:00Z"}
+{"ts": "2026-03-10T04:15:37Z", "service": "webhook-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:15:37Z is after 2026-03-10T04:00:00Z"}
 {"ts": "2026-03-10T04:15:42Z", "service": "cache-proxy", "level": "INFO", "msg": "connection pool: 6/20 in use"}
 {"ts": "2026-03-10T04:16:58Z", "service": "webhook-service", "level": "INFO", "msg": "GET /health 200 2ms"}
-{"ts": "2026-03-10T04:17:15Z", "service": "webhook-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:17:15Z is after 2026-03-10T04:00:00Z"}
-{"ts": "2026-03-10T04:18:04Z", "service": "webhook-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:18:04Z is after 2026-03-10T04:00:00Z"}
-{"ts": "2026-03-10T04:19:56Z", "service": "webhook-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:19:56Z is after 2026-03-10T04:00:00Z"}
-{"ts": "2026-03-10T04:20:30Z", "service": "webhook-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:20:30Z is after 2026-03-10T04:00:00Z"}
+{"ts": "2026-03-10T04:17:26Z", "service": "webhook-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:17:26Z is after 2026-03-10T04:00:00Z"}
+{"ts": "2026-03-10T04:18:34Z", "service": "webhook-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:18:34Z is after 2026-03-10T04:00:00Z"}
+{"ts": "2026-03-10T04:20:02Z", "service": "webhook-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:20:02Z is after 2026-03-10T04:00:00Z"}
 {"ts": "2026-03-10T04:20:59Z", "service": "webhook-service", "level": "INFO", "msg": "GET /health 200 2ms"}
 {"ts": "2026-03-10T04:21:28Z", "service": "webhook-service", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
 {"ts": "2026-03-10T04:21:32Z", "service": "api-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
-{"ts": "2026-03-10T04:22:12Z", "service": "webhook-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:22:12Z is after 2026-03-10T04:00:00Z"}
+{"ts": "2026-03-10T04:21:43Z", "service": "webhook-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:21:43Z is after 2026-03-10T04:00:00Z"}
+{"ts": "2026-03-10T04:22:57Z", "service": "webhook-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:22:57Z is after 2026-03-10T04:00:00Z"}
 {"ts": "2026-03-10T04:23:41Z", "service": "cache-proxy", "level": "WARN", "msg": "GC pause 120ms"}
-{"ts": "2026-03-10T04:24:05Z", "service": "webhook-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:24:05Z is after 2026-03-10T04:00:00Z"}
-{"ts": "2026-03-10T04:24:40Z", "service": "webhook-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:24:40Z is after 2026-03-10T04:00:00Z"}
-{"ts": "2026-03-10T04:26:37Z", "service": "webhook-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:26:37Z is after 2026-03-10T04:00:00Z"}
-{"ts": "2026-03-10T04:28:30Z", "service": "webhook-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:28:30Z is after 2026-03-10T04:00:00Z"}
-{"ts": "2026-03-10T04:29:25Z", "service": "webhook-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:29:25Z is after 2026-03-10T04:00:00Z"}
+{"ts": "2026-03-10T04:23:44Z", "service": "webhook-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:23:44Z is after 2026-03-10T04:00:00Z"}
+{"ts": "2026-03-10T04:24:56Z", "service": "webhook-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:24:56Z is after 2026-03-10T04:00:00Z"}
+{"ts": "2026-03-10T04:25:51Z", "service": "webhook-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:25:51Z is after 2026-03-10T04:00:00Z"}
+{"ts": "2026-03-10T04:27:46Z", "service": "webhook-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:27:46Z is after 2026-03-10T04:00:00Z"}
+{"ts": "2026-03-10T04:29:06Z", "service": "webhook-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:29:06Z is after 2026-03-10T04:00:00Z"}
+{"ts": "2026-03-10T04:30:29Z", "service": "webhook-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:30:29Z is after 2026-03-10T04:00:00Z"}
 {"ts": "2026-03-10T04:31:03Z", "service": "webhook-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
 {"ts": "2026-03-10T04:31:06Z", "service": "cache-proxy", "level": "INFO", "msg": "background job finished (processed 120 items)"}
-{"ts": "2026-03-10T04:31:17Z", "service": "webhook-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:31:17Z is after 2026-03-10T04:00:00Z"}
 {"ts": "2026-03-10T04:31:19Z", "service": "cache-proxy", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:31:39Z", "service": "webhook-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:31:39Z is after 2026-03-10T04:00:00Z"}
 {"ts": "2026-03-10T04:32:23Z", "service": "webhook-service", "level": "INFO", "msg": "GET /health 200 2ms"}
-{"ts": "2026-03-10T04:32:49Z", "service": "webhook-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:32:49Z is after 2026-03-10T04:00:00Z"}
-{"ts": "2026-03-10T04:33:31Z", "service": "webhook-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:33:31Z is after 2026-03-10T04:00:00Z"}
-{"ts": "2026-03-10T04:34:03Z", "service": "webhook-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:34:03Z is after 2026-03-10T04:00:00Z"}
+{"ts": "2026-03-10T04:32:42Z", "service": "webhook-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:32:42Z is after 2026-03-10T04:00:00Z"}
+{"ts": "2026-03-10T04:33:42Z", "service": "webhook-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:33:42Z is after 2026-03-10T04:00:00Z"}
+{"ts": "2026-03-10T04:34:26Z", "service": "webhook-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:34:26Z is after 2026-03-10T04:00:00Z"}
 {"ts": "2026-03-10T04:34:47Z", "service": "auth-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
 {"ts": "2026-03-10T04:35:00Z", "service": "webhook-service", "level": "WARN", "msg": "slow response from cache (85ms)"}
-{"ts": "2026-03-10T04:35:08Z", "service": "webhook-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:35:08Z is after 2026-03-10T04:00:00Z"}
-{"ts": "2026-03-10T04:36:47Z", "service": "webhook-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:36:47Z is after 2026-03-10T04:00:00Z"}
+{"ts": "2026-03-10T04:35:52Z", "service": "webhook-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:35:52Z is after 2026-03-10T04:00:00Z"}
+{"ts": "2026-03-10T04:37:10Z", "service": "webhook-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:37:10Z is after 2026-03-10T04:00:00Z"}
 {"ts": "2026-03-10T04:37:29Z", "service": "api-gateway", "level": "WARN", "msg": "slow response from cache (85ms)"}
-{"ts": "2026-03-10T04:38:41Z", "service": "webhook-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:38:41Z is after 2026-03-10T04:00:00Z"}
+{"ts": "2026-03-10T04:38:45Z", "service": "webhook-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:38:45Z is after 2026-03-10T04:00:00Z"}
 {"ts": "2026-03-10T04:40:00Z", "service": "cache-proxy", "level": "INFO", "msg": "request completed in 48ms"}
-{"ts": "2026-03-10T04:40:11Z", "service": "webhook-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:40:11Z is after 2026-03-10T04:00:00Z"}
-{"ts": "2026-03-10T04:41:20Z", "service": "webhook-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:41:20Z is after 2026-03-10T04:00:00Z"}
+{"ts": "2026-03-10T04:40:44Z", "service": "webhook-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:40:44Z is after 2026-03-10T04:00:00Z"}
 {"ts": "2026-03-10T04:41:51Z", "service": "api-gateway", "level": "INFO", "msg": "request completed in 48ms"}
-{"ts": "2026-03-10T04:42:54Z", "service": "webhook-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:42:54Z is after 2026-03-10T04:00:00Z"}
-{"ts": "2026-03-10T04:43:40Z", "service": "webhook-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:43:40Z is after 2026-03-10T04:00:00Z"}
-{"ts": "2026-03-10T04:45:33Z", "service": "webhook-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:45:33Z is after 2026-03-10T04:00:00Z"}
-{"ts": "2026-03-10T04:46:18Z", "service": "webhook-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:46:18Z is after 2026-03-10T04:00:00Z"}
-{"ts": "2026-03-10T04:47:34Z", "service": "webhook-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:47:34Z is after 2026-03-10T04:00:00Z"}
-{"ts": "2026-03-10T04:48:54Z", "service": "webhook-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:48:54Z is after 2026-03-10T04:00:00Z"}
+{"ts": "2026-03-10T04:41:54Z", "service": "webhook-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:41:54Z is after 2026-03-10T04:00:00Z"}
+{"ts": "2026-03-10T04:42:57Z", "service": "webhook-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:42:57Z is after 2026-03-10T04:00:00Z"}
+{"ts": "2026-03-10T04:44:54Z", "service": "webhook-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:44:54Z is after 2026-03-10T04:00:00Z"}
+{"ts": "2026-03-10T04:46:37Z", "service": "webhook-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:46:37Z is after 2026-03-10T04:00:00Z"}
+{"ts": "2026-03-10T04:48:33Z", "service": "webhook-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:48:33Z is after 2026-03-10T04:00:00Z"}
 {"ts": "2026-03-10T04:49:56Z", "service": "auth-service", "level": "INFO", "msg": "request completed in 48ms"}
-{"ts": "2026-03-10T04:50:13Z", "service": "webhook-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:50:13Z is after 2026-03-10T04:00:00Z"}
+{"ts": "2026-03-10T04:50:04Z", "service": "webhook-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:50:04Z is after 2026-03-10T04:00:00Z"}
 {"ts": "2026-03-10T04:50:15Z", "service": "cache-proxy", "level": "INFO", "msg": "background job finished (processed 120 items)"}
 {"ts": "2026-03-10T04:50:35Z", "service": "api-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
-{"ts": "2026-03-10T04:51:37Z", "service": "webhook-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:51:37Z is after 2026-03-10T04:00:00Z"}
+{"ts": "2026-03-10T04:51:09Z", "service": "webhook-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:51:09Z is after 2026-03-10T04:00:00Z"}
+{"ts": "2026-03-10T04:52:08Z", "service": "webhook-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:52:08Z is after 2026-03-10T04:00:00Z"}
 {"ts": "2026-03-10T04:52:51Z", "service": "auth-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
-{"ts": "2026-03-10T04:52:53Z", "service": "webhook-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:52:53Z is after 2026-03-10T04:00:00Z"}
-{"ts": "2026-03-10T04:53:35Z", "service": "webhook-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:53:35Z is after 2026-03-10T04:00:00Z"}
-{"ts": "2026-03-10T04:54:06Z", "service": "webhook-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:54:06Z is after 2026-03-10T04:00:00Z"}
-{"ts": "2026-03-10T04:54:52Z", "service": "webhook-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:54:52Z is after 2026-03-10T04:00:00Z"}
-{"ts": "2026-03-10T04:55:34Z", "service": "webhook-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:55:34Z is after 2026-03-10T04:00:00Z"}
+{"ts": "2026-03-10T04:53:40Z", "service": "webhook-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:53:40Z is after 2026-03-10T04:00:00Z"}
+{"ts": "2026-03-10T04:54:19Z", "service": "webhook-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:54:19Z is after 2026-03-10T04:00:00Z"}
+{"ts": "2026-03-10T04:55:24Z", "service": "webhook-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:55:24Z is after 2026-03-10T04:00:00Z"}
 {"ts": "2026-03-10T04:55:39Z", "service": "auth-service", "level": "INFO", "msg": "request completed in 48ms"}
 {"ts": "2026-03-10T04:55:55Z", "service": "auth-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:56:04Z", "service": "webhook-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:56:04Z is after 2026-03-10T04:00:00Z"}
 {"ts": "2026-03-10T04:56:58Z", "service": "auth-service", "level": "INFO", "msg": "GET /health 200 2ms"}
-{"ts": "2026-03-10T04:57:20Z", "service": "webhook-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:57:20Z is after 2026-03-10T04:00:00Z"}
-{"ts": "2026-03-10T04:58:40Z", "service": "webhook-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:58:40Z is after 2026-03-10T04:00:00Z"}
+{"ts": "2026-03-10T04:57:52Z", "service": "webhook-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:57:52Z is after 2026-03-10T04:00:00Z"}
+{"ts": "2026-03-10T04:58:25Z", "service": "webhook-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:58:25Z is after 2026-03-10T04:00:00Z"}

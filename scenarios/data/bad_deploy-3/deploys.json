@@ -1,36 +1,36 @@
 [
  {
-  "ts": "2026-03-10T02:17:00Z",
-  "service": "auth-service",
-  "version": "v1.19.4",
-  "author": "priya",
-  "commit_message": "Bump logging library patch version"
- },
- {
-  "ts": "2026-03-10T02:40:00Z",
-  "service": "profile-service",
-  "version": "v2.13.2",
+  "ts": "2026-03-10T02:13:00Z",
+  "service": "notification-service",
+  "version": "v1.18.2",
   "author": "tom",
   "commit_message": "Add unit tests for date parsing"
  },
  {
-  "ts": "2026-03-10T02:47:00Z",
-  "service": "notification-service",
-  "version": "v4.8.0",
+  "ts": "2026-03-10T02:38:00Z",
+  "service": "cache-proxy",
+  "version": "v1.18.2",
   "author": "dana",
-  "commit_message": "Update documentation link in health endpoint"
+  "commit_message": "Add unit tests for date parsing"
+ },
+ {
+  "ts": "2026-03-10T02:46:00Z",
+  "service": "profile-service",
+  "version": "v4.8.4",
+  "author": "priya",
+  "commit_message": "Add unit tests for date parsing"
  },
  {
   "ts": "2026-03-10T03:33:00Z",
-  "service": "auth-service",
-  "version": "v4.17.1",
-  "author": "li",
+  "service": "notification-service",
+  "version": "v2.13.6",
+  "author": "dana",
   "commit_message": "Bump http client timeout to 5s"
  },
  {
   "ts": "2026-03-10T03:52:00Z",
   "service": "profile-service",
-  "version": "v1.17.1",
+  "version": "v4.2.9",
   "author": "dana",
   "commit_message": "Refactor request handling and add currency conversion"
  }

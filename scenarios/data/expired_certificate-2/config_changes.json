@@ -5,14 +5,14 @@
   "key": "connection_pool_size",
   "old": "20",
   "new": "40",
-  "author": "carlos"
+  "author": "li"
  },
  {
-  "ts": "2026-03-10T02:18:00Z",
-  "service": "notification-service",
+  "ts": "2026-03-10T02:45:00Z",
+  "service": "partner-api",
   "key": "log_level",
   "old": "info",
   "new": "info,debug",
-  "author": "priya"
+  "author": "li"
  }
 ]

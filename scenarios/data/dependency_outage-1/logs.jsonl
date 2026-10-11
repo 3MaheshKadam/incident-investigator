@@ -8,6 +8,7 @@
 {"ts": "2026-03-10T02:12:05Z", "service": "shipping-service", "level": "WARN", "msg": "GC pause 120ms"}
 {"ts": "2026-03-10T02:12:45Z", "service": "auth-service", "level": "INFO", "msg": "request completed in 48ms"}
 {"ts": "2026-03-10T02:14:52Z", "service": "notification-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:18:33Z", "service": "notification-service", "level": "WARN", "msg": "upstream cache-proxy: connection refused (dial tcp 10.0.1.9:6379); retry succeeded"}
 {"ts": "2026-03-10T02:22:06Z", "service": "shipping-service", "level": "INFO", "msg": "request completed in 48ms"}
 {"ts": "2026-03-10T02:22:37Z", "service": "auth-service", "level": "INFO", "msg": "request completed in 48ms"}
 {"ts": "2026-03-10T02:23:13Z", "service": "notification-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
@@ -15,6 +16,7 @@
 {"ts": "2026-03-10T02:24:51Z", "service": "api-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
 {"ts": "2026-03-10T02:25:48Z", "service": "api-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
 {"ts": "2026-03-10T02:27:57Z", "service": "auth-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:28:35Z", "service": "api-gateway", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
 {"ts": "2026-03-10T02:29:18Z", "service": "shipping-service", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
 {"ts": "2026-03-10T02:31:57Z", "service": "notification-service", "level": "WARN", "msg": "request queue depth 14"}
 {"ts": "2026-03-10T02:32:12Z", "service": "shipping-service", "level": "INFO", "msg": "GET /health 200 2ms"}
@@ -26,6 +28,7 @@
 {"ts": "2026-03-10T02:38:46Z", "service": "auth-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
 {"ts": "2026-03-10T02:40:02Z", "service": "auth-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
 {"ts": "2026-03-10T02:41:15Z", "service": "api-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:48:21Z", "service": "api-gateway", "level": "WARN", "msg": "x509: certificate for internal-ca renewed (old certificate rotated out)"}
 {"ts": "2026-03-10T02:54:20Z", "service": "auth-service", "level": "WARN", "msg": "request queue depth 14"}
 {"ts": "2026-03-10T02:56:21Z", "service": "api-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
 {"ts": "2026-03-10T02:58:35Z", "service": "shipping-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
@@ -69,108 +72,106 @@
 {"ts": "2026-03-10T03:49:02Z", "service": "api-gateway", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
 {"ts": "2026-03-10T03:52:00Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream shipping-service: connection refused (dial tcp 10.0.3.14:8443)"}
 {"ts": "2026-03-10T03:52:12Z", "service": "shipping-service", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
+{"ts": "2026-03-10T03:53:14Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream shipping-service: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T03:53:26Z", "service": "shipping-service", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
 {"ts": "2026-03-10T03:53:56Z", "service": "shipping-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
-{"ts": "2026-03-10T03:54:00Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream shipping-service: connection refused (dial tcp 10.0.3.14:8443)"}
-{"ts": "2026-03-10T03:54:12Z", "service": "shipping-service", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
+{"ts": "2026-03-10T03:54:37Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream shipping-service: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T03:54:49Z", "service": "shipping-service", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
 {"ts": "2026-03-10T03:55:18Z", "service": "notification-service", "level": "WARN", "msg": "slow response from cache (85ms)"}
-{"ts": "2026-03-10T03:56:03Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream shipping-service: connection refused (dial tcp 10.0.3.14:8443)"}
 {"ts": "2026-03-10T03:56:07Z", "service": "shipping-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
-{"ts": "2026-03-10T03:56:15Z", "service": "shipping-service", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
+{"ts": "2026-03-10T03:56:49Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream shipping-service: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T03:57:01Z", "service": "shipping-service", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
 {"ts": "2026-03-10T03:58:27Z", "service": "notification-service", "level": "INFO", "msg": "GET /health 200 2ms"}
-{"ts": "2026-03-10T03:58:40Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream shipping-service: connection refused (dial tcp 10.0.3.14:8443)"}
-{"ts": "2026-03-10T03:58:52Z", "service": "shipping-service", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
-{"ts": "2026-03-10T03:59:59Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream shipping-service: connection refused (dial tcp 10.0.3.14:8443)"}
-{"ts": "2026-03-10T04:00:11Z", "service": "shipping-service", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
+{"ts": "2026-03-10T03:59:17Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream shipping-service: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T03:59:29Z", "service": "shipping-service", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
+{"ts": "2026-03-10T04:00:28Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream shipping-service: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:00:40Z", "service": "shipping-service", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
 {"ts": "2026-03-10T04:01:06Z", "service": "api-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
 {"ts": "2026-03-10T04:01:23Z", "service": "auth-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
-{"ts": "2026-03-10T04:01:47Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream shipping-service: connection refused (dial tcp 10.0.3.14:8443)"}
-{"ts": "2026-03-10T04:01:59Z", "service": "shipping-service", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
-{"ts": "2026-03-10T04:02:58Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream shipping-service: connection refused (dial tcp 10.0.3.14:8443)"}
-{"ts": "2026-03-10T04:03:10Z", "service": "shipping-service", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
+{"ts": "2026-03-10T04:03:03Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream shipping-service: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:03:15Z", "service": "shipping-service", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
 {"ts": "2026-03-10T04:03:38Z", "service": "api-gateway", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
-{"ts": "2026-03-10T04:04:12Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream shipping-service: connection refused (dial tcp 10.0.3.14:8443)"}
-{"ts": "2026-03-10T04:04:24Z", "service": "shipping-service", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
 {"ts": "2026-03-10T04:04:25Z", "service": "notification-service", "level": "INFO", "msg": "request completed in 48ms"}
 {"ts": "2026-03-10T04:05:25Z", "service": "api-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
-{"ts": "2026-03-10T04:05:35Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream shipping-service: connection refused (dial tcp 10.0.3.14:8443)"}
-{"ts": "2026-03-10T04:05:47Z", "service": "shipping-service", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
+{"ts": "2026-03-10T04:06:01Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream shipping-service: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:06:13Z", "service": "shipping-service", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
 {"ts": "2026-03-10T04:07:04Z", "service": "api-gateway", "level": "INFO", "msg": "request completed in 48ms"}
-{"ts": "2026-03-10T04:07:47Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream shipping-service: connection refused (dial tcp 10.0.3.14:8443)"}
-{"ts": "2026-03-10T04:07:59Z", "service": "shipping-service", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
 {"ts": "2026-03-10T04:08:55Z", "service": "api-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:08:58Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream shipping-service: connection refused (dial tcp 10.0.3.14:8443)"}
 {"ts": "2026-03-10T04:09:01Z", "service": "api-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
-{"ts": "2026-03-10T04:10:15Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream shipping-service: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:09:10Z", "service": "shipping-service", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
+{"ts": "2026-03-10T04:10:12Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream shipping-service: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:10:24Z", "service": "shipping-service", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
 {"ts": "2026-03-10T04:10:26Z", "service": "api-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
-{"ts": "2026-03-10T04:10:27Z", "service": "shipping-service", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
-{"ts": "2026-03-10T04:11:26Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream shipping-service: connection refused (dial tcp 10.0.3.14:8443)"}
-{"ts": "2026-03-10T04:11:38Z", "service": "shipping-service", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
-{"ts": "2026-03-10T04:14:01Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream shipping-service: connection refused (dial tcp 10.0.3.14:8443)"}
-{"ts": "2026-03-10T04:14:13Z", "service": "shipping-service", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
+{"ts": "2026-03-10T04:12:22Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream shipping-service: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:12:34Z", "service": "shipping-service", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
+{"ts": "2026-03-10T04:15:10Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream shipping-service: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:15:22Z", "service": "shipping-service", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
+{"ts": "2026-03-10T04:16:11Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream shipping-service: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:16:23Z", "service": "shipping-service", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
 {"ts": "2026-03-10T04:16:31Z", "service": "notification-service", "level": "WARN", "msg": "request queue depth 14"}
-{"ts": "2026-03-10T04:16:59Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream shipping-service: connection refused (dial tcp 10.0.3.14:8443)"}
-{"ts": "2026-03-10T04:17:11Z", "service": "shipping-service", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
+{"ts": "2026-03-10T04:18:50Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream shipping-service: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:19:02Z", "service": "shipping-service", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
 {"ts": "2026-03-10T04:19:22Z", "service": "shipping-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
 {"ts": "2026-03-10T04:19:23Z", "service": "shipping-service", "level": "INFO", "msg": "request completed in 48ms"}
-{"ts": "2026-03-10T04:19:56Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream shipping-service: connection refused (dial tcp 10.0.3.14:8443)"}
-{"ts": "2026-03-10T04:20:08Z", "service": "shipping-service", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
+{"ts": "2026-03-10T04:20:01Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream shipping-service: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:20:13Z", "service": "shipping-service", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
 {"ts": "2026-03-10T04:20:14Z", "service": "auth-service", "level": "WARN", "msg": "GC pause 120ms"}
 {"ts": "2026-03-10T04:20:24Z", "service": "api-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
-{"ts": "2026-03-10T04:21:10Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream shipping-service: connection refused (dial tcp 10.0.3.14:8443)"}
-{"ts": "2026-03-10T04:21:22Z", "service": "shipping-service", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
+{"ts": "2026-03-10T04:22:17Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream shipping-service: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:22:29Z", "service": "shipping-service", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
 {"ts": "2026-03-10T04:23:19Z", "service": "shipping-service", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
-{"ts": "2026-03-10T04:23:20Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream shipping-service: connection refused (dial tcp 10.0.3.14:8443)"}
-{"ts": "2026-03-10T04:23:32Z", "service": "shipping-service", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
 {"ts": "2026-03-10T04:23:32Z", "service": "notification-service", "level": "INFO", "msg": "request completed in 48ms"}
 {"ts": "2026-03-10T04:23:40Z", "service": "auth-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
 {"ts": "2026-03-10T04:23:53Z", "service": "shipping-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
 {"ts": "2026-03-10T04:24:56Z", "service": "auth-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:25:12Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream shipping-service: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:25:24Z", "service": "shipping-service", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
 {"ts": "2026-03-10T04:25:34Z", "service": "notification-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
-{"ts": "2026-03-10T04:26:08Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream shipping-service: connection refused (dial tcp 10.0.3.14:8443)"}
 {"ts": "2026-03-10T04:26:12Z", "service": "shipping-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
 {"ts": "2026-03-10T04:26:13Z", "service": "notification-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
-{"ts": "2026-03-10T04:26:20Z", "service": "shipping-service", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
 {"ts": "2026-03-10T04:27:04Z", "service": "auth-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
-{"ts": "2026-03-10T04:27:09Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream shipping-service: connection refused (dial tcp 10.0.3.14:8443)"}
 {"ts": "2026-03-10T04:27:11Z", "service": "auth-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
-{"ts": "2026-03-10T04:27:21Z", "service": "shipping-service", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
+{"ts": "2026-03-10T04:27:49Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream shipping-service: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:28:01Z", "service": "shipping-service", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
+{"ts": "2026-03-10T04:29:23Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream shipping-service: connection refused (dial tcp 10.0.3.14:8443)"}
 {"ts": "2026-03-10T04:29:24Z", "service": "api-gateway", "level": "INFO", "msg": "request completed in 48ms"}
-{"ts": "2026-03-10T04:29:48Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream shipping-service: connection refused (dial tcp 10.0.3.14:8443)"}
-{"ts": "2026-03-10T04:30:00Z", "service": "shipping-service", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
+{"ts": "2026-03-10T04:29:35Z", "service": "shipping-service", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
 {"ts": "2026-03-10T04:30:13Z", "service": "api-gateway", "level": "INFO", "msg": "request completed in 48ms"}
-{"ts": "2026-03-10T04:30:59Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream shipping-service: connection refused (dial tcp 10.0.3.14:8443)"}
-{"ts": "2026-03-10T04:31:11Z", "service": "shipping-service", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
-{"ts": "2026-03-10T04:33:15Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream shipping-service: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:31:49Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream shipping-service: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:32:01Z", "service": "shipping-service", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
+{"ts": "2026-03-10T04:33:13Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream shipping-service: connection refused (dial tcp 10.0.3.14:8443)"}
 {"ts": "2026-03-10T04:33:19Z", "service": "notification-service", "level": "INFO", "msg": "request completed in 48ms"}
-{"ts": "2026-03-10T04:33:27Z", "service": "shipping-service", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
+{"ts": "2026-03-10T04:33:25Z", "service": "shipping-service", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
 {"ts": "2026-03-10T04:33:31Z", "service": "auth-service", "level": "INFO", "msg": "request completed in 48ms"}
 {"ts": "2026-03-10T04:34:02Z", "service": "shipping-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
 {"ts": "2026-03-10T04:34:23Z", "service": "shipping-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
-{"ts": "2026-03-10T04:36:10Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream shipping-service: connection refused (dial tcp 10.0.3.14:8443)"}
-{"ts": "2026-03-10T04:36:22Z", "service": "shipping-service", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
+{"ts": "2026-03-10T04:34:23Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream shipping-service: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:34:35Z", "service": "shipping-service", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
+{"ts": "2026-03-10T04:35:51Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream shipping-service: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:36:03Z", "service": "shipping-service", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
 {"ts": "2026-03-10T04:36:33Z", "service": "shipping-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:37:34Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream shipping-service: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:37:46Z", "service": "shipping-service", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
 {"ts": "2026-03-10T04:38:21Z", "service": "notification-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
-{"ts": "2026-03-10T04:38:47Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream shipping-service: connection refused (dial tcp 10.0.3.14:8443)"}
-{"ts": "2026-03-10T04:38:59Z", "service": "shipping-service", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
 {"ts": "2026-03-10T04:39:13Z", "service": "api-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
-{"ts": "2026-03-10T04:40:21Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream shipping-service: connection refused (dial tcp 10.0.3.14:8443)"}
-{"ts": "2026-03-10T04:40:33Z", "service": "shipping-service", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
-{"ts": "2026-03-10T04:42:47Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream shipping-service: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:39:52Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream shipping-service: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:40:04Z", "service": "shipping-service", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
+{"ts": "2026-03-10T04:42:28Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream shipping-service: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:42:40Z", "service": "shipping-service", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
 {"ts": "2026-03-10T04:42:52Z", "service": "notification-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
-{"ts": "2026-03-10T04:42:59Z", "service": "shipping-service", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
-{"ts": "2026-03-10T04:44:11Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream shipping-service: connection refused (dial tcp 10.0.3.14:8443)"}
-{"ts": "2026-03-10T04:44:23Z", "service": "shipping-service", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
+{"ts": "2026-03-10T04:43:58Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream shipping-service: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:44:10Z", "service": "shipping-service", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
 {"ts": "2026-03-10T04:45:20Z", "service": "shipping-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
-{"ts": "2026-03-10T04:45:21Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream shipping-service: connection refused (dial tcp 10.0.3.14:8443)"}
-{"ts": "2026-03-10T04:45:33Z", "service": "shipping-service", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
 {"ts": "2026-03-10T04:45:50Z", "service": "auth-service", "level": "INFO", "msg": "GET /health 200 2ms"}
-{"ts": "2026-03-10T04:46:49Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream shipping-service: connection refused (dial tcp 10.0.3.14:8443)"}
-{"ts": "2026-03-10T04:47:01Z", "service": "shipping-service", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
-{"ts": "2026-03-10T04:48:32Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream shipping-service: connection refused (dial tcp 10.0.3.14:8443)"}
-{"ts": "2026-03-10T04:48:44Z", "service": "shipping-service", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
+{"ts": "2026-03-10T04:46:36Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream shipping-service: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:46:48Z", "service": "shipping-service", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
+{"ts": "2026-03-10T04:47:56Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream shipping-service: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:48:08Z", "service": "shipping-service", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
 {"ts": "2026-03-10T04:49:06Z", "service": "notification-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
 {"ts": "2026-03-10T04:49:44Z", "service": "api-gateway", "level": "INFO", "msg": "request completed in 48ms"}
-{"ts": "2026-03-10T04:50:50Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream shipping-service: connection refused (dial tcp 10.0.3.14:8443)"}
-{"ts": "2026-03-10T04:51:02Z", "service": "shipping-service", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
+{"ts": "2026-03-10T04:49:55Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream shipping-service: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:50:07Z", "service": "shipping-service", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
 {"ts": "2026-03-10T04:52:20Z", "service": "notification-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
 {"ts": "2026-03-10T04:52:33Z", "service": "auth-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
 {"ts": "2026-03-10T04:53:35Z", "service": "api-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}

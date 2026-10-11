@@ -4,8 +4,8 @@ An AI on-call agent that investigates **simulated** production incidents, finds 
 cause, and proposes a fix that a human must approve. A second layer red-teams the agent with
 prompt-injection attacks and measures a guard that blocks them.
 
-> Status: core investigator, scenarios and scoring harness are built. No model results yet.
-> Numbers will be added only after real runs on the held-out split.
+> Status: the full codebase is built and tested with fake models. No real-model results yet.
+> Numbers will be added only after real runs on the held-out split (see `docs/writeup-template.md`).
 
 ## What it will do
 
@@ -25,7 +25,7 @@ All incidents are simulated. No real systems or credentials are involved.
 | `agent/` | Investigator loop, tools and the model wrapper |
 | `scenarios/` | Simulated incidents and hidden answers |
 | `evals/` | Scoring harness and reports |
-| `guard/` | Attack and defense layer (built last) |
+| `guard/` | Attack and defense layer |
 | `ui/` | Replay and approval interface |
 | `docs/` | Architecture notes and write-up |
 
@@ -52,6 +52,37 @@ LLM_PROVIDER=ollama LLM_MODEL=llama3.1:8b python -m evals.run --split dev
 Each run is scored by plain code: root cause correct (category and component), evidence cited,
 tool calls used, and wrong blame (a wrong component named with medium or high confidence).
 Traces and a `summary.json` are written to `evals/reports/`.
+
+## Approval, replay and the UI
+
+Every proposed action goes through an approval gate: opening a ticket may be auto-approved, and
+anything that changes a system (rollback, restart, flag toggle) waits for a human. Actions run
+against a simulation only. Runs, proposals and an audit log are stored in SQLite.
+
+```bash
+pip install -e ".[ui]"
+streamlit run ui/app.py        # run, replay, approve or reject, audit log
+```
+
+Or with Docker: `docker build -t incident-investigator . && docker run -p 8501:8501 -v data:/data incident-investigator`
+
+## Attack and defense
+
+`guard/` plants 18 prompt-injection attacks (6 intents x log / alert / deploy message, half
+blunt and half paraphrased) in the simulated data and adds a guard: untrusted-data labeling, an
+action policy, and a rule-based injection filter. Each part can be switched off to measure it.
+
+```bash
+LLM_PROVIDER=... python -m evals.attack_run --split dev --attacks-per-scenario 3
+```
+
+It runs four conditions on the same scenarios (clean or attacked, guard off or on) and prints
+obeyed injections before and after, accuracy under attack, and what the guard wrongly blocked.
+
+## Baseline
+
+`python -m evals.baseline` runs a rule-based, non-LLM investigator over all scenarios. It is a
+floor for comparison and a pipeline check in CI. It is not a model result.
 
 ## Choosing a model
 

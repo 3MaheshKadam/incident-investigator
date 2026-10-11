@@ -7,6 +7,7 @@
 {"ts": "2026-03-10T02:07:58Z", "service": "cache-proxy", "level": "INFO", "msg": "request completed in 48ms"}
 {"ts": "2026-03-10T02:08:56Z", "service": "notification-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
 {"ts": "2026-03-10T02:09:27Z", "service": "api-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:09:44Z", "service": "cache-proxy", "level": "WARN", "msg": "slow query (412ms): SELECT id FROM sessions WHERE token = ?; plan: Index Scan"}
 {"ts": "2026-03-10T02:13:38Z", "service": "recommendation-service", "level": "INFO", "msg": "GET /health 200 2ms"}
 {"ts": "2026-03-10T02:15:42Z", "service": "recommendation-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
 {"ts": "2026-03-10T02:17:12Z", "service": "api-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
@@ -29,6 +30,7 @@
 {"ts": "2026-03-10T02:43:07Z", "service": "cache-proxy", "level": "INFO", "msg": "request completed in 48ms"}
 {"ts": "2026-03-10T02:43:54Z", "service": "api-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
 {"ts": "2026-03-10T02:44:43Z", "service": "api-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:46:04Z", "service": "notification-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
 {"ts": "2026-03-10T02:47:11Z", "service": "cache-proxy", "level": "INFO", "msg": "cache hit ratio 0.93"}
 {"ts": "2026-03-10T02:47:22Z", "service": "recommendation-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
 {"ts": "2026-03-10T02:48:20Z", "service": "cache-proxy", "level": "INFO", "msg": "request completed in 48ms"}
@@ -41,6 +43,7 @@
 {"ts": "2026-03-10T02:59:38Z", "service": "notification-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
 {"ts": "2026-03-10T03:01:08Z", "service": "cache-proxy", "level": "INFO", "msg": "request completed in 48ms"}
 {"ts": "2026-03-10T03:01:59Z", "service": "notification-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:03:44Z", "service": "cache-proxy", "level": "ERROR", "msg": "container restarted: OOMKilled (exit code 137)"}
 {"ts": "2026-03-10T03:11:04Z", "service": "cache-proxy", "level": "INFO", "msg": "background job finished (processed 120 items)"}
 {"ts": "2026-03-10T03:17:01Z", "service": "notification-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
 {"ts": "2026-03-10T03:18:17Z", "service": "recommendation-service", "level": "INFO", "msg": "request completed in 48ms"}
@@ -82,65 +85,65 @@
 {"ts": "2026-03-10T04:04:34Z", "service": "cache-proxy", "level": "INFO", "msg": "request completed in 48ms"}
 {"ts": "2026-03-10T04:07:00Z", "service": "recommendation-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
 {"ts": "2026-03-10T04:07:22Z", "service": "notification-service", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T04:08:00Z", "service": "recommendation-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
 {"ts": "2026-03-10T04:08:10Z", "service": "cache-proxy", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
-{"ts": "2026-03-10T04:08:12Z", "service": "recommendation-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
-{"ts": "2026-03-10T04:10:03Z", "service": "recommendation-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:10:00Z", "service": "recommendation-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
 {"ts": "2026-03-10T04:10:31Z", "service": "cache-proxy", "level": "INFO", "msg": "cache hit ratio 0.93"}
 {"ts": "2026-03-10T04:10:36Z", "service": "cache-proxy", "level": "INFO", "msg": "request completed in 48ms"}
 {"ts": "2026-03-10T04:10:37Z", "service": "api-gateway", "level": "WARN", "msg": "request queue depth 14"}
 {"ts": "2026-03-10T04:10:42Z", "service": "notification-service", "level": "INFO", "msg": "GET /health 200 2ms"}
 {"ts": "2026-03-10T04:10:51Z", "service": "notification-service", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
-{"ts": "2026-03-10T04:11:54Z", "service": "recommendation-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:11:12Z", "service": "recommendation-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
 {"ts": "2026-03-10T04:13:06Z", "service": "api-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
-{"ts": "2026-03-10T04:14:19Z", "service": "recommendation-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:13:54Z", "service": "recommendation-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:14:56Z", "service": "recommendation-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
 {"ts": "2026-03-10T04:15:25Z", "service": "recommendation-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
 {"ts": "2026-03-10T04:16:02Z", "service": "api-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
-{"ts": "2026-03-10T04:16:12Z", "service": "recommendation-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
 {"ts": "2026-03-10T04:17:21Z", "service": "cache-proxy", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:17:23Z", "service": "recommendation-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
 {"ts": "2026-03-10T04:17:32Z", "service": "recommendation-service", "level": "INFO", "msg": "GET /health 200 2ms"}
 {"ts": "2026-03-10T04:17:56Z", "service": "api-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:18:33Z", "service": "recommendation-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
 {"ts": "2026-03-10T04:18:55Z", "service": "recommendation-service", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
-{"ts": "2026-03-10T04:19:01Z", "service": "recommendation-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
 {"ts": "2026-03-10T04:19:13Z", "service": "recommendation-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:20:19Z", "service": "recommendation-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
 {"ts": "2026-03-10T04:20:38Z", "service": "api-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
-{"ts": "2026-03-10T04:21:16Z", "service": "recommendation-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
-{"ts": "2026-03-10T04:23:20Z", "service": "recommendation-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:23:13Z", "service": "recommendation-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
 {"ts": "2026-03-10T04:23:34Z", "service": "notification-service", "level": "INFO", "msg": "GET /health 200 2ms"}
 {"ts": "2026-03-10T04:24:17Z", "service": "api-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:24:43Z", "service": "recommendation-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
 {"ts": "2026-03-10T04:25:03Z", "service": "recommendation-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
-{"ts": "2026-03-10T04:25:26Z", "service": "recommendation-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
 {"ts": "2026-03-10T04:27:20Z", "service": "recommendation-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
 {"ts": "2026-03-10T04:27:23Z", "service": "api-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
-{"ts": "2026-03-10T04:28:25Z", "service": "recommendation-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:27:24Z", "service": "recommendation-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
 {"ts": "2026-03-10T04:29:27Z", "service": "cache-proxy", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:30:21Z", "service": "recommendation-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
 {"ts": "2026-03-10T04:30:25Z", "service": "cache-proxy", "level": "WARN", "msg": "request queue depth 14"}
-{"ts": "2026-03-10T04:30:38Z", "service": "recommendation-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
 {"ts": "2026-03-10T04:32:10Z", "service": "notification-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
-{"ts": "2026-03-10T04:32:21Z", "service": "recommendation-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:32:23Z", "service": "recommendation-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:34:35Z", "service": "recommendation-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
 {"ts": "2026-03-10T04:34:50Z", "service": "notification-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
-{"ts": "2026-03-10T04:35:13Z", "service": "recommendation-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
-{"ts": "2026-03-10T04:37:21Z", "service": "recommendation-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
-{"ts": "2026-03-10T04:40:00Z", "service": "recommendation-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:36:37Z", "service": "recommendation-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:38:44Z", "service": "recommendation-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:41:13Z", "service": "recommendation-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
 {"ts": "2026-03-10T04:42:03Z", "service": "recommendation-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
 {"ts": "2026-03-10T04:42:21Z", "service": "recommendation-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
-{"ts": "2026-03-10T04:42:27Z", "service": "recommendation-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
-{"ts": "2026-03-10T04:43:35Z", "service": "recommendation-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:43:10Z", "service": "recommendation-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
 {"ts": "2026-03-10T04:44:20Z", "service": "cache-proxy", "level": "INFO", "msg": "background job finished (processed 120 items)"}
-{"ts": "2026-03-10T04:44:39Z", "service": "recommendation-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
 {"ts": "2026-03-10T04:45:41Z", "service": "api-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
-{"ts": "2026-03-10T04:46:20Z", "service": "recommendation-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
-{"ts": "2026-03-10T04:47:59Z", "service": "recommendation-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
-{"ts": "2026-03-10T04:49:53Z", "service": "recommendation-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
-{"ts": "2026-03-10T04:51:45Z", "service": "recommendation-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:46:06Z", "service": "recommendation-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:47:57Z", "service": "recommendation-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:50:03Z", "service": "recommendation-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
 {"ts": "2026-03-10T04:51:46Z", "service": "cache-proxy", "level": "INFO", "msg": "cache hit ratio 0.93"}
 {"ts": "2026-03-10T04:52:34Z", "service": "api-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:52:34Z", "service": "recommendation-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
 {"ts": "2026-03-10T04:52:42Z", "service": "api-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
 {"ts": "2026-03-10T04:52:49Z", "service": "api-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
-{"ts": "2026-03-10T04:53:21Z", "service": "recommendation-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
 {"ts": "2026-03-10T04:53:31Z", "service": "cache-proxy", "level": "INFO", "msg": "GET /health 200 2ms"}
-{"ts": "2026-03-10T04:55:18Z", "service": "recommendation-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
-{"ts": "2026-03-10T04:56:47Z", "service": "recommendation-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
-{"ts": "2026-03-10T04:59:41Z", "service": "recommendation-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
-{"ts": "2026-03-10T05:02:11Z", "service": "recommendation-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
-{"ts": "2026-03-10T05:03:44Z", "service": "recommendation-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
-{"ts": "2026-03-10T05:05:51Z", "service": "recommendation-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:53:49Z", "service": "recommendation-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:55:25Z", "service": "recommendation-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:57:50Z", "service": "recommendation-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:59:35Z", "service": "recommendation-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T05:01:27Z", "service": "recommendation-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T05:03:54Z", "service": "recommendation-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T05:05:45Z", "service": "recommendation-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}

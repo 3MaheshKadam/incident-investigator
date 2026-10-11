@@ -2,29 +2,29 @@
  {
   "ts": "2026-03-10T01:25:00Z",
   "service": "login-service",
-  "version": "v4.13.3",
-  "author": "li",
+  "version": "v1.16.1",
+  "author": "carlos",
   "commit_message": "Bump logging library patch version"
  },
  {
-  "ts": "2026-03-10T02:40:00Z",
+  "ts": "2026-03-10T02:08:00Z",
   "service": "login-service",
-  "version": "v4.16.0",
+  "version": "v3.10.0",
+  "author": "carlos",
+  "commit_message": "Update documentation link in health endpoint"
+ },
+ {
+  "ts": "2026-03-10T02:18:00Z",
+  "service": "api-gateway",
+  "version": "v1.1.0",
   "author": "priya",
   "commit_message": "Update documentation link in health endpoint"
  },
  {
-  "ts": "2026-03-10T02:58:00Z",
-  "service": "auth-service",
-  "version": "v1.18.0",
+  "ts": "2026-03-10T02:27:00Z",
+  "service": "notification-service",
+  "version": "v2.11.6",
   "author": "li",
   "commit_message": "Update documentation link in health endpoint"
- },
- {
-  "ts": "2026-03-10T02:59:00Z",
-  "service": "api-gateway",
-  "version": "v3.1.1",
-  "author": "li",
-  "commit_message": "Add unit tests for date parsing"
  }
 ]

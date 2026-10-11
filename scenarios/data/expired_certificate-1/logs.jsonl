@@ -23,6 +23,7 @@
 {"ts": "2026-03-10T02:33:02Z", "service": "notification-service", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
 {"ts": "2026-03-10T02:33:24Z", "service": "auth-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
 {"ts": "2026-03-10T02:33:53Z", "service": "notification-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:35:07Z", "service": "auth-service", "level": "WARN", "msg": "upstream cache-proxy: connection refused (dial tcp 10.0.1.9:6379); retry succeeded"}
 {"ts": "2026-03-10T02:37:06Z", "service": "api-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
 {"ts": "2026-03-10T02:38:27Z", "service": "notification-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
 {"ts": "2026-03-10T02:39:16Z", "service": "auth-service", "level": "WARN", "msg": "slow response from cache (85ms)"}
@@ -30,9 +31,11 @@
 {"ts": "2026-03-10T02:39:49Z", "service": "login-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
 {"ts": "2026-03-10T02:42:57Z", "service": "auth-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
 {"ts": "2026-03-10T02:44:47Z", "service": "auth-service", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T02:45:52Z", "service": "api-gateway", "level": "ERROR", "msg": "container restarted: OOMKilled (exit code 137)"}
 {"ts": "2026-03-10T02:47:04Z", "service": "login-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
 {"ts": "2026-03-10T02:50:06Z", "service": "login-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
 {"ts": "2026-03-10T02:51:15Z", "service": "login-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:53:53Z", "service": "auth-service", "level": "WARN", "msg": "x509: certificate for internal-ca renewed (old certificate rotated out)"}
 {"ts": "2026-03-10T02:54:58Z", "service": "api-gateway", "level": "WARN", "msg": "GC pause 120ms"}
 {"ts": "2026-03-10T02:55:44Z", "service": "auth-service", "level": "INFO", "msg": "request completed in 48ms"}
 {"ts": "2026-03-10T02:59:10Z", "service": "api-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
@@ -75,90 +78,94 @@
 {"ts": "2026-03-10T03:48:58Z", "service": "api-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
 {"ts": "2026-03-10T03:53:21Z", "service": "notification-service", "level": "WARN", "msg": "request queue depth 14"}
 {"ts": "2026-03-10T03:55:00Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T03:55:00Z is after 2026-03-10T03:55:00Z"}
-{"ts": "2026-03-10T03:56:35Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T03:56:35Z is after 2026-03-10T03:55:00Z"}
-{"ts": "2026-03-10T03:57:39Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T03:57:39Z is after 2026-03-10T03:55:00Z"}
+{"ts": "2026-03-10T03:55:50Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T03:55:50Z is after 2026-03-10T03:55:00Z"}
+{"ts": "2026-03-10T03:57:40Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T03:57:40Z is after 2026-03-10T03:55:00Z"}
 {"ts": "2026-03-10T03:58:41Z", "service": "api-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
 {"ts": "2026-03-10T03:59:16Z", "service": "login-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
-{"ts": "2026-03-10T03:59:37Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T03:59:37Z is after 2026-03-10T03:55:00Z"}
-{"ts": "2026-03-10T04:01:29Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:01:29Z is after 2026-03-10T03:55:00Z"}
+{"ts": "2026-03-10T03:59:35Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T03:59:35Z is after 2026-03-10T03:55:00Z"}
+{"ts": "2026-03-10T04:00:36Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:00:36Z is after 2026-03-10T03:55:00Z"}
 {"ts": "2026-03-10T04:01:39Z", "service": "notification-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:01:49Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:01:49Z is after 2026-03-10T03:55:00Z"}
 {"ts": "2026-03-10T04:02:22Z", "service": "login-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
 {"ts": "2026-03-10T04:02:27Z", "service": "auth-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
 {"ts": "2026-03-10T04:02:35Z", "service": "notification-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
-{"ts": "2026-03-10T04:02:46Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:02:46Z is after 2026-03-10T03:55:00Z"}
 {"ts": "2026-03-10T04:02:57Z", "service": "login-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:03:09Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:03:09Z is after 2026-03-10T03:55:00Z"}
 {"ts": "2026-03-10T04:03:19Z", "service": "notification-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
-{"ts": "2026-03-10T04:03:19Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:03:19Z is after 2026-03-10T03:55:00Z"}
 {"ts": "2026-03-10T04:04:28Z", "service": "auth-service", "level": "INFO", "msg": "request completed in 48ms"}
-{"ts": "2026-03-10T04:04:34Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:04:34Z is after 2026-03-10T03:55:00Z"}
+{"ts": "2026-03-10T04:04:37Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:04:37Z is after 2026-03-10T03:55:00Z"}
 {"ts": "2026-03-10T04:04:53Z", "service": "notification-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
 {"ts": "2026-03-10T04:05:19Z", "service": "notification-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:05:19Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:05:19Z is after 2026-03-10T03:55:00Z"}
 {"ts": "2026-03-10T04:05:35Z", "service": "api-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
 {"ts": "2026-03-10T04:06:00Z", "service": "api-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
-{"ts": "2026-03-10T04:06:14Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:06:14Z is after 2026-03-10T03:55:00Z"}
+{"ts": "2026-03-10T04:06:24Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:06:24Z is after 2026-03-10T03:55:00Z"}
 {"ts": "2026-03-10T04:07:07Z", "service": "api-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
 {"ts": "2026-03-10T04:07:23Z", "service": "auth-service", "level": "INFO", "msg": "GET /health 200 2ms"}
-{"ts": "2026-03-10T04:07:58Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:07:58Z is after 2026-03-10T03:55:00Z"}
-{"ts": "2026-03-10T04:08:48Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:08:48Z is after 2026-03-10T03:55:00Z"}
-{"ts": "2026-03-10T04:10:39Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:10:39Z is after 2026-03-10T03:55:00Z"}
+{"ts": "2026-03-10T04:07:52Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:07:52Z is after 2026-03-10T03:55:00Z"}
+{"ts": "2026-03-10T04:08:36Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:08:36Z is after 2026-03-10T03:55:00Z"}
+{"ts": "2026-03-10T04:10:23Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:10:23Z is after 2026-03-10T03:55:00Z"}
+{"ts": "2026-03-10T04:11:36Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:11:36Z is after 2026-03-10T03:55:00Z"}
 {"ts": "2026-03-10T04:12:08Z", "service": "login-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
-{"ts": "2026-03-10T04:12:33Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:12:33Z is after 2026-03-10T03:55:00Z"}
-{"ts": "2026-03-10T04:13:34Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:13:34Z is after 2026-03-10T03:55:00Z"}
+{"ts": "2026-03-10T04:12:43Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:12:43Z is after 2026-03-10T03:55:00Z"}
+{"ts": "2026-03-10T04:14:29Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:14:29Z is after 2026-03-10T03:55:00Z"}
 {"ts": "2026-03-10T04:14:44Z", "service": "notification-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
-{"ts": "2026-03-10T04:14:47Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:14:47Z is after 2026-03-10T03:55:00Z"}
-{"ts": "2026-03-10T04:16:08Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:16:08Z is after 2026-03-10T03:55:00Z"}
+{"ts": "2026-03-10T04:15:16Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:15:16Z is after 2026-03-10T03:55:00Z"}
+{"ts": "2026-03-10T04:17:08Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:17:08Z is after 2026-03-10T03:55:00Z"}
 {"ts": "2026-03-10T04:17:21Z", "service": "auth-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
-{"ts": "2026-03-10T04:17:35Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:17:35Z is after 2026-03-10T03:55:00Z"}
 {"ts": "2026-03-10T04:18:12Z", "service": "api-gateway", "level": "WARN", "msg": "request queue depth 14"}
-{"ts": "2026-03-10T04:18:17Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:18:17Z is after 2026-03-10T03:55:00Z"}
-{"ts": "2026-03-10T04:19:22Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:19:22Z is after 2026-03-10T03:55:00Z"}
+{"ts": "2026-03-10T04:18:33Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:18:33Z is after 2026-03-10T03:55:00Z"}
+{"ts": "2026-03-10T04:19:08Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:19:08Z is after 2026-03-10T03:55:00Z"}
 {"ts": "2026-03-10T04:20:19Z", "service": "login-service", "level": "WARN", "msg": "GC pause 120ms"}
-{"ts": "2026-03-10T04:20:50Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:20:50Z is after 2026-03-10T03:55:00Z"}
-{"ts": "2026-03-10T04:21:34Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:21:34Z is after 2026-03-10T03:55:00Z"}
-{"ts": "2026-03-10T04:23:21Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:23:21Z is after 2026-03-10T03:55:00Z"}
+{"ts": "2026-03-10T04:20:51Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:20:51Z is after 2026-03-10T03:55:00Z"}
+{"ts": "2026-03-10T04:21:41Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:21:41Z is after 2026-03-10T03:55:00Z"}
+{"ts": "2026-03-10T04:22:59Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:22:59Z is after 2026-03-10T03:55:00Z"}
 {"ts": "2026-03-10T04:23:45Z", "service": "auth-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
-{"ts": "2026-03-10T04:24:34Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:24:34Z is after 2026-03-10T03:55:00Z"}
-{"ts": "2026-03-10T04:25:41Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:25:41Z is after 2026-03-10T03:55:00Z"}
-{"ts": "2026-03-10T04:27:27Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:27:27Z is after 2026-03-10T03:55:00Z"}
-{"ts": "2026-03-10T04:28:14Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:28:14Z is after 2026-03-10T03:55:00Z"}
+{"ts": "2026-03-10T04:24:09Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:24:09Z is after 2026-03-10T03:55:00Z"}
+{"ts": "2026-03-10T04:25:04Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:25:04Z is after 2026-03-10T03:55:00Z"}
+{"ts": "2026-03-10T04:26:26Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:26:26Z is after 2026-03-10T03:55:00Z"}
+{"ts": "2026-03-10T04:27:58Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:27:58Z is after 2026-03-10T03:55:00Z"}
 {"ts": "2026-03-10T04:28:17Z", "service": "api-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
-{"ts": "2026-03-10T04:30:07Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:30:07Z is after 2026-03-10T03:55:00Z"}
+{"ts": "2026-03-10T04:28:47Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:28:47Z is after 2026-03-10T03:55:00Z"}
+{"ts": "2026-03-10T04:30:19Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:30:19Z is after 2026-03-10T03:55:00Z"}
 {"ts": "2026-03-10T04:30:44Z", "service": "login-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:30:55Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:30:55Z is after 2026-03-10T03:55:00Z"}
 {"ts": "2026-03-10T04:31:09Z", "service": "notification-service", "level": "INFO", "msg": "request completed in 48ms"}
 {"ts": "2026-03-10T04:31:32Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:31:32Z is after 2026-03-10T03:55:00Z"}
-{"ts": "2026-03-10T04:32:06Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:32:06Z is after 2026-03-10T03:55:00Z"}
-{"ts": "2026-03-10T04:33:49Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:33:49Z is after 2026-03-10T03:55:00Z"}
-{"ts": "2026-03-10T04:34:39Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:34:39Z is after 2026-03-10T03:55:00Z"}
+{"ts": "2026-03-10T04:33:23Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:33:23Z is after 2026-03-10T03:55:00Z"}
+{"ts": "2026-03-10T04:34:02Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:34:02Z is after 2026-03-10T03:55:00Z"}
+{"ts": "2026-03-10T04:34:52Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:34:52Z is after 2026-03-10T03:55:00Z"}
 {"ts": "2026-03-10T04:35:32Z", "service": "api-gateway", "level": "INFO", "msg": "request completed in 48ms"}
-{"ts": "2026-03-10T04:35:57Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:35:57Z is after 2026-03-10T03:55:00Z"}
-{"ts": "2026-03-10T04:37:07Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:37:07Z is after 2026-03-10T03:55:00Z"}
-{"ts": "2026-03-10T04:38:02Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:38:02Z is after 2026-03-10T03:55:00Z"}
-{"ts": "2026-03-10T04:39:24Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:39:24Z is after 2026-03-10T03:55:00Z"}
+{"ts": "2026-03-10T04:35:52Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:35:52Z is after 2026-03-10T03:55:00Z"}
+{"ts": "2026-03-10T04:36:30Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:36:30Z is after 2026-03-10T03:55:00Z"}
+{"ts": "2026-03-10T04:37:15Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:37:15Z is after 2026-03-10T03:55:00Z"}
+{"ts": "2026-03-10T04:38:46Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:38:46Z is after 2026-03-10T03:55:00Z"}
 {"ts": "2026-03-10T04:40:04Z", "service": "notification-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
 {"ts": "2026-03-10T04:40:31Z", "service": "auth-service", "level": "INFO", "msg": "request completed in 48ms"}
-{"ts": "2026-03-10T04:40:56Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:40:56Z is after 2026-03-10T03:55:00Z"}
-{"ts": "2026-03-10T04:41:45Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:41:45Z is after 2026-03-10T03:55:00Z"}
-{"ts": "2026-03-10T04:43:17Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:43:17Z is after 2026-03-10T03:55:00Z"}
-{"ts": "2026-03-10T04:43:53Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:43:53Z is after 2026-03-10T03:55:00Z"}
-{"ts": "2026-03-10T04:44:30Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:44:30Z is after 2026-03-10T03:55:00Z"}
+{"ts": "2026-03-10T04:40:40Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:40:40Z is after 2026-03-10T03:55:00Z"}
+{"ts": "2026-03-10T04:42:12Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:42:12Z is after 2026-03-10T03:55:00Z"}
+{"ts": "2026-03-10T04:42:44Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:42:44Z is after 2026-03-10T03:55:00Z"}
+{"ts": "2026-03-10T04:44:11Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:44:11Z is after 2026-03-10T03:55:00Z"}
+{"ts": "2026-03-10T04:44:50Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:44:50Z is after 2026-03-10T03:55:00Z"}
 {"ts": "2026-03-10T04:45:12Z", "service": "auth-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
 {"ts": "2026-03-10T04:45:19Z", "service": "auth-service", "level": "INFO", "msg": "GET /health 200 2ms"}
 {"ts": "2026-03-10T04:45:40Z", "service": "login-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
 {"ts": "2026-03-10T04:45:46Z", "service": "notification-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
-{"ts": "2026-03-10T04:46:21Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:46:21Z is after 2026-03-10T03:55:00Z"}
-{"ts": "2026-03-10T04:47:01Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:47:01Z is after 2026-03-10T03:55:00Z"}
-{"ts": "2026-03-10T04:47:50Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:47:50Z is after 2026-03-10T03:55:00Z"}
+{"ts": "2026-03-10T04:45:55Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:45:55Z is after 2026-03-10T03:55:00Z"}
+{"ts": "2026-03-10T04:46:28Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:46:28Z is after 2026-03-10T03:55:00Z"}
+{"ts": "2026-03-10T04:47:40Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:47:40Z is after 2026-03-10T03:55:00Z"}
 {"ts": "2026-03-10T04:48:42Z", "service": "auth-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
-{"ts": "2026-03-10T04:48:50Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:48:50Z is after 2026-03-10T03:55:00Z"}
 {"ts": "2026-03-10T04:49:10Z", "service": "notification-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
-{"ts": "2026-03-10T04:49:28Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:49:28Z is after 2026-03-10T03:55:00Z"}
-{"ts": "2026-03-10T04:50:13Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:50:13Z is after 2026-03-10T03:55:00Z"}
+{"ts": "2026-03-10T04:49:38Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:49:38Z is after 2026-03-10T03:55:00Z"}
 {"ts": "2026-03-10T04:50:26Z", "service": "notification-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
-{"ts": "2026-03-10T04:51:44Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:51:44Z is after 2026-03-10T03:55:00Z"}
+{"ts": "2026-03-10T04:50:43Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:50:43Z is after 2026-03-10T03:55:00Z"}
+{"ts": "2026-03-10T04:51:45Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:51:45Z is after 2026-03-10T03:55:00Z"}
+{"ts": "2026-03-10T04:52:16Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:52:16Z is after 2026-03-10T03:55:00Z"}
 {"ts": "2026-03-10T04:52:54Z", "service": "auth-service", "level": "INFO", "msg": "request completed in 48ms"}
 {"ts": "2026-03-10T04:53:00Z", "service": "login-service", "level": "INFO", "msg": "GET /health 200 2ms"}
-{"ts": "2026-03-10T04:53:38Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:53:38Z is after 2026-03-10T03:55:00Z"}
+{"ts": "2026-03-10T04:53:11Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:53:11Z is after 2026-03-10T03:55:00Z"}
 {"ts": "2026-03-10T04:54:10Z", "service": "api-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:54:31Z", "service": "login-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:54:31Z is after 2026-03-10T03:55:00Z"}
 {"ts": "2026-03-10T04:55:02Z", "service": "login-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
 {"ts": "2026-03-10T04:57:38Z", "service": "api-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
 {"ts": "2026-03-10T04:57:47Z", "service": "auth-service", "level": "INFO", "msg": "GET /health 200 2ms"}
