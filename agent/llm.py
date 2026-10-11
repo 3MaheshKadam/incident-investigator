@@ -121,12 +121,16 @@ class OllamaLLM:
         model: str,
         base_url: str = "http://localhost:11434",
         max_output_tokens: int = 1024,
-        timeout: float = 120.0,
+        timeout: float = 300.0,
+        num_ctx: int = 8192,
     ):
         self.model = model
         self.base_url = base_url.rstrip("/")
         self.max_output_tokens = max_output_tokens
         self.timeout = timeout
+        # Ollama's default context window is small. Tool results are long, so without this the
+        # model silently loses the start of the conversation, including its instructions.
+        self.num_ctx = num_ctx
 
     def chat(
         self, messages: Sequence[Message], tools: Sequence[ToolSpec] | None = None
@@ -135,7 +139,11 @@ class OllamaLLM:
             "model": self.model,
             "messages": _ollama_messages(messages),
             "stream": False,
-            "options": {"temperature": 0, "num_predict": self.max_output_tokens},
+            "options": {
+                "temperature": 0,
+                "num_predict": self.max_output_tokens,
+                "num_ctx": self.num_ctx,
+            },
         }
         if tools:
             payload["tools"] = _tool_wrappers(tools)
@@ -219,6 +227,7 @@ def make_llm(env: dict[str, str] | None = None) -> LLM:
             model=model,
             base_url=env.get("OLLAMA_BASE_URL", "http://localhost:11434"),
             max_output_tokens=max_out,
+            num_ctx=int(env.get("OLLAMA_NUM_CTX", "8192")),
         )
     if provider == "openai_compat":
         base_url, api_key = env.get("LLM_BASE_URL", ""), env.get("LLM_API_KEY", "")

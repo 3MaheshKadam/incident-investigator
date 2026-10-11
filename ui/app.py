@@ -12,6 +12,7 @@ import streamlit as st
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from agent.data import ScenarioData
+from agent.env import load_dotenv
 from agent.pipeline import investigate_and_propose
 from agent.remediation import ActionError, ApprovalGate, SimulatedSystem
 from agent.store import Store
@@ -20,6 +21,7 @@ from evals.run import DATA_DIR, load_manifest
 from guard.guard import Guard
 from ui.replay import evidence_lines, replay_steps
 
+load_dotenv()
 st.set_page_config(page_title="Incident Investigator", layout="wide")
 
 

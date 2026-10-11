@@ -20,6 +20,7 @@ from pathlib import Path
 from typing import Any
 
 from agent.data import ScenarioData
+from agent.env import load_dotenv
 from agent.investigator import GuardLike, run_investigation
 from agent.llm import LLM, make_llm
 from evals.run import DATA_DIR, load_manifest
@@ -110,6 +111,7 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--out", type=Path, default=Path("evals/reports/attack"))
     p.add_argument("--attacks-per-scenario", type=int, default=3, help="0 = every attack on every scenario")
     args = p.parse_args(argv)
+    load_dotenv()
 
     if os.environ.get("LLM_PROVIDER", "mock").lower() == "mock":
         print("Set LLM_PROVIDER to ollama or openai_compat (see .env.example).", file=sys.stderr)

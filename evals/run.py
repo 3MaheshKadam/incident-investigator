@@ -16,6 +16,7 @@ import sys
 from pathlib import Path
 
 from agent.data import ScenarioData
+from agent.env import load_dotenv
 from agent.investigator import run_investigation
 from agent.llm import make_llm
 from evals.score import score_run, summarize
@@ -35,6 +36,7 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--out", type=Path, default=Path("evals/reports/latest"))
     p.add_argument("--limit", type=int, default=0, help="Run only the first N scenarios")
     args = p.parse_args(argv)
+    load_dotenv()
 
     if os.environ.get("LLM_PROVIDER", "mock").lower() == "mock":
         print("Set LLM_PROVIDER to ollama or openai_compat (see .env.example).", file=sys.stderr)
@@ -49,6 +51,7 @@ def main(argv: list[str] | None = None) -> int:
     rows = []
     for e in entries:
         folder = args.data / e["id"]
+        print(f"running {e['id']} ...", flush=True)
         result = run_investigation(llm, ScenarioData(folder), max_steps=max_steps)
         answer = json.loads((folder / "answer.json").read_text())
         row = score_run(result, answer)
@@ -57,6 +60,10 @@ def main(argv: list[str] | None = None) -> int:
         result.save(args.out / "traces" / f"{e['id']}.json")
         mark = "ok " if row["root_cause_correct"] else "BAD"
         print(f"{mark} {e['id']:<28} steps={row['steps']:<3} stop={row['stop_reason']}")
+        if result.report is None:
+            said = [t["text"] for t in result.trace if t["type"] == "model_text"]
+            if said:
+                print(f"      model said: {said[-1][:200]!r}")
 
     summary = summarize(rows)
     args.out.mkdir(parents=True, exist_ok=True)
