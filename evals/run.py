@@ -18,7 +18,7 @@ from pathlib import Path
 from agent.data import ScenarioData
 from agent.env import load_dotenv
 from agent.investigator import RunResult, run_investigation
-from agent.llm import make_llm
+from agent.llm import LLMRequestError, make_llm
 from evals.score import score_run, summarize
 
 DATA_DIR = Path(__file__).resolve().parent.parent / "scenarios" / "data"
@@ -34,6 +34,9 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--split", choices=["dev", "heldout", "all"], default="dev")
     p.add_argument("--data", type=Path, default=DATA_DIR)
     p.add_argument("--out", type=Path, default=Path("evals/reports/latest"))
+    p.add_argument(
+        "--resume", action="store_true", help="Reuse finished traces already saved in --out"
+    )
     p.add_argument("--limit", type=int, default=0, help="Run only the first N scenarios")
     args = p.parse_args(argv)
     load_dotenv()
@@ -49,14 +52,30 @@ def main(argv: list[str] | None = None) -> int:
         entries = entries[: args.limit]
 
     rows = []
+    stopped_early = False
     for e in entries:
         folder = args.data / e["id"]
-        print(f"running {e['id']} ...", flush=True)
-        try:
-            result = run_investigation(llm, ScenarioData(folder), max_steps=max_steps)
-        except Exception as exc:  # noqa: BLE001  one failed call must not throw away the rest of the run
-            print(f"      error: {exc}"[:300], flush=True)
-            result = RunResult(e["id"], None, 0, "error")
+        trace_file = args.out / "traces" / f"{e['id']}.json"
+        result = None
+        if args.resume and trace_file.is_file():
+            saved = json.loads(trace_file.read_text())
+            if saved.get("stop_reason") != "error":
+                result = RunResult(**saved)
+                print(f"reusing {e['id']}", flush=True)
+        if result is None:
+            print(f"running {e['id']} ...", flush=True)
+            try:
+                result = run_investigation(llm, ScenarioData(folder), max_steps=max_steps)
+            except LLMRequestError as exc:
+                if exc.status == 429 and "per day" in exc.body.lower():
+                    print("\nDaily token limit reached. Stopping; rerun later with --resume.")
+                    stopped_early = True
+                    break
+                print(f"      error: {exc}"[:300], flush=True)
+                result = RunResult(e["id"], None, 0, "error")
+            except Exception as exc:  # noqa: BLE001  one failed call must not lose the run
+                print(f"      error: {exc}"[:300], flush=True)
+                result = RunResult(e["id"], None, 0, "error")
         answer = json.loads((folder / "answer.json").read_text())
         row = score_run(result, answer)
         row["split"] = e["split"]
@@ -69,12 +88,16 @@ def main(argv: list[str] | None = None) -> int:
             if said:
                 print(f"      model said: {said[-1][:200]!r}")
 
+    if stopped_early and not rows:
+        return 1
     summary = summarize(rows)
     args.out.mkdir(parents=True, exist_ok=True)
     (args.out / "summary.json").write_text(
         json.dumps({"split": args.split, "summary": summary, "runs": rows}, indent=1) + "\n"
     )
     n = summary["n"]
+    if stopped_early:
+        print(f"\nPARTIAL: only {summary['n']} of {len(entries)} scenarios finished.")
     print(f"\n{args.split}: root cause {summary['root_cause_correct']}/{n}, "
           f"evidence {summary['evidence_cited']}/{n}, wrong blame {summary['wrong_blame']}/{n}, "
           f"no report {summary['no_report']}/{n}, avg steps {summary['avg_steps']}")

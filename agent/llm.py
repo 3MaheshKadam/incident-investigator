@@ -189,7 +189,8 @@ class OpenAICompatLLM:
                 timeout=self.timeout,
             )
             status = getattr(r, "status_code", 200)
-            if status in (429, 500, 502, 503, 504) and attempt < self.max_retries:
+            daily = status == 429 and "per day" in getattr(r, "text", "").lower()
+            if status in (429, 500, 502, 503, 504) and attempt < self.max_retries and not daily:
                 self._sleep(_retry_after(r, attempt))
                 continue
             if status >= 400:

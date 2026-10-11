@@ -318,3 +318,27 @@ def test_malformed_tool_call_rejection_becomes_text_not_a_crash(monkeypatch):
     llm = OpenAICompatLLM("m", "https://x/v1", "k")
     resp = llm.chat([{"role": "user", "content": "q"}])
     assert "submit_report" in resp.text and not resp.tool_calls
+
+
+def test_eval_resume_reuses_finished_traces_and_stops_on_daily_limit(tmp_path, monkeypatch, capsys):
+    import json
+
+    from agent.investigator import RunResult
+    from agent.llm import LLMRequestError
+    from evals import run as run_mod
+
+    done = RunResult("bad_deploy-0", {"root_cause_category": "bad_deploy", "component": "x", "confidence": "low", "evidence": [], "action_type": "open_ticket"}, 2, "report")
+    done.save(tmp_path / "out" / "traces" / "bad_deploy-0.json")
+    monkeypatch.setenv("LLM_PROVIDER", "openai_compat")
+    monkeypatch.setenv("LLM_BASE_URL", "https://x/v1")
+    monkeypatch.setenv("LLM_API_KEY", "k")
+
+    def limited(*a, **k):
+        raise LLMRequestError("limit", 429, "tokens per day (TPD) reached")
+
+    monkeypatch.setattr(run_mod, "run_investigation", limited)
+    code = run_mod.main(["--split", "dev", "--limit", "2", "--resume", "--out", str(tmp_path / "out")])
+    out = capsys.readouterr().out
+    assert code == 0 and "reusing bad_deploy-0" in out and "Daily token limit" in out
+    summary = json.loads((tmp_path / "out" / "summary.json").read_text())
+    assert summary["summary"]["n"] == 1
