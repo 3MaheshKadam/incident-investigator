@@ -183,7 +183,9 @@ class OpenAICompatLLM:
             if status in (429, 500, 502, 503, 504) and attempt < self.max_retries:
                 self._sleep(_retry_after(r, attempt))
                 continue
-            r.raise_for_status()
+            if status >= 400:
+                body = getattr(r, "text", "")[:300]
+                raise RuntimeError(f"{self.base_url} returned HTTP {status} for model {self.model!r}: {body}")
             return r
         raise RuntimeError("unreachable")
 
