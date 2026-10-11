@@ -157,7 +157,7 @@ def test_tools_tolerate_null_and_extra_arguments(root):
 
     box = Toolbox(ScenarioData(root / "bad_deploy-0"))
     out = box.call("search_logs", {"query": None, "level": "ERROR", "service": None, "limit": "3"})
-    assert out.startswith("note") is False and "matching lines, showing 3" in out
+    assert out.startswith("note") is False and "showing the 3 most recent" in out
     assert "metrics for" in box.call("query_metric", {"service": "checkout-service", "extra": 1})
     assert box.call("query_metric", {}).startswith("error: bad arguments")
 
@@ -221,3 +221,43 @@ def test_hosted_backend_gives_up_after_max_retries_and_spaces_calls(monkeypatch)
            "LLM_API_KEY": "k", "LLM_MIN_INTERVAL": "2.5", "LLM_MAX_RETRIES": "3"}
     built = make_llm(env)
     assert built.min_interval == 2.5 and built.max_retries == 3
+
+
+def test_logs_are_newest_first_with_level_counts(root):
+    from agent.tools import Toolbox
+
+    data = ScenarioData(root / "bad_deploy-0")
+    out = Toolbox(data).search_logs(service="checkout-service", limit=5).splitlines()
+    assert "ERROR" in out[0] and "newest first" in out[0] and "most recent" in out[0]
+    stamps = [line.split()[0] for line in out[1:]]
+    assert stamps == sorted(stamps, reverse=True) and len(stamps) == 5
+    # the incident's error lines are in view even without a level filter
+    assert any(" ERROR " in line for line in out[1:])
+
+
+def test_metric_summary_points_at_the_spike(root):
+    from agent.tools import Toolbox
+
+    out = Toolbox(ScenarioData(root / "bad_deploy-0")).query_metric(
+        service="checkout-service", metric="error_rate"
+    ).splitlines()
+    assert out[1].startswith("summary: min") and "max 2" in out[1] and "at 2026-03-10T04" in out[1]
+    box = Toolbox(ScenarioData(root / "bad_deploy-0"))
+    assert "no points" in box.query_metric(service="checkout-service", metric="error_rate", start="2030-01-01")
+
+
+def test_report_validation_lists_every_problem_at_once():
+    from agent.tools import validate_report
+
+    msg = validate_report({"root_cause_category": "gremlins", "action_type": "nuke"})
+    for needle in ("missing field component", "missing field confidence", "root_cause_category must be", "action_type must be", "Required fields"):
+        assert needle in msg
+    assert validate_report(REPORT) is None
+
+
+def test_first_message_states_the_data_window(root):
+    data = ScenarioData(root / "bad_deploy-0")
+    llm = MockLLM([LLMResponse(tool_calls=[ToolCall("submit_report", REPORT)])])
+    run_investigation(llm, data)
+    first_user = llm.calls[0][1]["content"]
+    assert "Data is available from 2026-03-10T02:" in first_user and "(UTC)" in first_user

@@ -18,6 +18,12 @@ list recent deploys and config changes. Form a hypothesis, check it against the 
 look for clues that contradict it. Some clues are misleading: a recent change or a warning is
 not automatically the cause.
 
+A good order: (1) list recent deploys and config changes and note anything shortly before the
+alert; (2) search ERROR logs, then WARN logs, for the alerting service and any service it
+depends on; (3) query metrics to find exactly when the problem started and which service
+changed first. Only state facts that tool results actually showed. Never invent log lines,
+metric values or timestamps.
+
 When you can name the root cause and cite evidence, call submit_report exactly once. Cite exact
 log lines, deploys, config changes or metric facts as evidence. If you cannot find a cause,
 submit a report with confidence "low" instead of guessing confidently. You can only propose one
@@ -90,6 +96,14 @@ class RunResult:
         Path(path).write_text(json.dumps(asdict(self), indent=1) + "\n")
 
 
+def _window(data: ScenarioData) -> str:
+    """Tell the model what time range the data covers, so it does not query the wrong days."""
+    stamps = [r["ts"] for r in data.logs]
+    if not stamps:
+        return ""
+    return f"\n\nData is available from {min(stamps)} to {max(stamps)} (UTC)."
+
+
 def run_investigation(
     llm: LLM, data: ScenarioData, max_steps: int = 12, guard: GuardLike | None = None
 ) -> RunResult:
@@ -103,7 +117,7 @@ def run_investigation(
     alert = guard.begin(data.alert) if guard else data.alert
     messages: list[Message] = [
         {"role": "system", "content": system},
-        {"role": "user", "content": f"Alert:\n{alert}"},
+        {"role": "user", "content": f"Alert:\n{alert}{_window(data)}"},
     ]
     result = RunResult(data.id, None, 0, "step_limit")
     if guard is not None:

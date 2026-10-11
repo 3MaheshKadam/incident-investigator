@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import difflib
 import inspect
+from collections import Counter
 from typing import Any
 
 from agent.data import ScenarioData
@@ -120,19 +121,25 @@ def resolve_tool_name(name: str) -> str | None:
 
 
 def validate_report(args: dict[str, Any]) -> str | None:
-    """Return an error message if the report is malformed, else None."""
+    """Return every problem with the report at once (so a weak model fixes it in one go)."""
+    problems = []
     for key in ("root_cause_category", "component", "confidence", "action_type"):
         if not args.get(key):
-            return f"missing field: {key}"
-    if args["root_cause_category"] not in CATEGORIES:
-        return f"root_cause_category must be one of {CATEGORIES}"
-    if args["confidence"] not in CONFIDENCES:
-        return f"confidence must be one of {CONFIDENCES}"
-    if args["action_type"] not in ACTION_TYPES:
-        return f"action_type must be one of {ACTION_TYPES}"
+            problems.append(f"missing field {key}")
+    if args.get("root_cause_category") and args["root_cause_category"] not in CATEGORIES:
+        problems.append(f"root_cause_category must be one of {CATEGORIES}")
+    if args.get("confidence") and args["confidence"] not in CONFIDENCES:
+        problems.append(f"confidence must be one of {CONFIDENCES}")
+    if args.get("action_type") and args["action_type"] not in ACTION_TYPES:
+        problems.append(f"action_type must be one of {ACTION_TYPES}")
     if not isinstance(args.get("evidence", []), list):
-        return "evidence must be a list of strings"
-    return None
+        problems.append("evidence must be a list of strings")
+    if not problems:
+        return None
+    return (
+        "; ".join(problems) + ". Required fields: root_cause_category, component, confidence, "
+        "summary, evidence (list), action_type, action_target."
+    )
 
 
 class Toolbox:
@@ -181,8 +188,14 @@ class Toolbox:
             and (not start or r["ts"] >= start)
             and (not end or r["ts"] <= end)
         ]
-        lines = [f"{r['ts']} {r['level']} {r['service']}: {r['msg']}" for r in hits[:limit]]
-        header = f"{len(hits)} matching lines, showing {len(lines)}"
+        counts = Counter(r["level"] for r in hits)
+        breakdown = ", ".join(f"{lv} {counts[lv]}" for lv in ("ERROR", "WARN", "INFO") if counts[lv])
+        latest = list(reversed(hits[-limit:]))  # newest first, like tailing a log
+        lines = [f"{r['ts']} {r['level']} {r['service']}: {r['msg']}" for r in latest]
+        header = (
+            f"{len(hits)} matching lines ({breakdown or 'none'}), "
+            f"showing the {len(lines)} most recent, newest first"
+        )
         return "\n".join([header, *lines])
 
     def query_metric(
@@ -204,7 +217,13 @@ class Toolbox:
             for t, v in series[metric]
             if (not start or t >= start) and (not end or t <= end)
         ]
-        return "\n".join([f"{service} {metric} ({len(pts)} points)"] + [f"{t} {v}" for t, v in pts])
+        if not pts:
+            return f"{service} {metric}: no points in that time range"
+        top = max(pts, key=lambda p: p[1])
+        summary = f"summary: min {min(v for _, v in pts)}, max {top[1]} at {top[0]}, last {pts[-1][1]}"
+        return "\n".join(
+            [f"{service} {metric} ({len(pts)} points)", summary] + [f"{t} {v}" for t, v in pts]
+        )
 
     def list_deploys(self, service: str | None = None) -> str:
         rows = [d for d in self.data.deploys if not service or d["service"] == service]
