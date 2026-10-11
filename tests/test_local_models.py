@@ -160,3 +160,64 @@ def test_tools_tolerate_null_and_extra_arguments(root):
     assert out.startswith("note") is False and "matching lines, showing 3" in out
     assert "metrics for" in box.call("query_metric", {"service": "checkout-service", "extra": 1})
     assert box.call("query_metric", {}).startswith("error: bad arguments")
+
+
+def test_hosted_backend_waits_and_retries_on_rate_limit(monkeypatch):
+    from agent.llm import OpenAICompatLLM
+
+    class R:
+        def __init__(self, status, headers=None):
+            self.status_code, self.headers = status, headers or {}
+
+        def raise_for_status(self):
+            if self.status_code >= 400:
+                raise RuntimeError(f"http {self.status_code}")
+
+        def json(self):
+            return {"choices": [{"message": {"content": "ok"}}], "usage": {}}
+
+    replies = [R(429, {"retry-after": "7"}), R(503), R(200)]
+    monkeypatch.setattr("agent.llm.httpx.post", lambda *a, **k: replies.pop(0))
+    llm = OpenAICompatLLM("m", "https://x/v1", "k", min_interval=0)
+    slept = []
+    llm._sleep = slept.append
+    assert llm.chat([{"role": "user", "content": "q"}]).text == "ok"
+    assert slept == [7.0, 4.0]  # Retry-After honored, then exponential back-off
+
+
+def test_hosted_backend_gives_up_after_max_retries_and_spaces_calls(monkeypatch):
+    from agent.llm import OpenAICompatLLM
+
+    class R:
+        status_code, headers = 429, {}
+
+        def raise_for_status(self):
+            raise RuntimeError("http 429")
+
+    monkeypatch.setattr("agent.llm.httpx.post", lambda *a, **k: R())
+    llm = OpenAICompatLLM("m", "https://x/v1", "k", max_retries=2)
+    llm._sleep = lambda s: None
+    with pytest.raises(RuntimeError):
+        llm.chat([{"role": "user", "content": "q"}])
+
+    waits = []
+
+    class OK:
+        status_code, headers = 200, {}
+
+        def raise_for_status(self):
+            pass
+
+        def json(self):
+            return {"choices": [{"message": {"content": "ok"}}]}
+
+    monkeypatch.setattr("agent.llm.httpx.post", lambda *a, **k: OK())
+    spaced = OpenAICompatLLM("m", "https://x/v1", "k", min_interval=2.5)
+    spaced._sleep = waits.append
+    spaced.chat([{"role": "user", "content": "q"}])
+    spaced.chat([{"role": "user", "content": "q"}])
+    assert len(waits) == 1 and 0 < waits[0] <= 2.5  # second call had to wait
+    env = {"LLM_PROVIDER": "openai_compat", "LLM_MODEL": "m", "LLM_BASE_URL": "https://x/v1",
+           "LLM_API_KEY": "k", "LLM_MIN_INTERVAL": "2.5", "LLM_MAX_RETRIES": "3"}
+    built = make_llm(env)
+    assert built.min_interval == 2.5 and built.max_retries == 3

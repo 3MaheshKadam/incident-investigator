@@ -103,6 +103,23 @@ Settings are read from `.env`, and real environment variables win over it. If a 
 cuts off or ignores its instructions, raise `OLLAMA_NUM_CTX`. Models that print tool calls as
 JSON text instead of calling the tool are handled, and the trace marks them as recovered.
 
+## Free hosted model (optional)
+
+A free API tier can replace the local model. Groq is one option with an OpenAI-compatible
+endpoint. Create a key in its console, then in `.env`:
+
+```
+LLM_PROVIDER=openai_compat
+LLM_BASE_URL=https://api.groq.com/openai/v1
+LLM_MODEL=llama-3.3-70b-versatile
+LLM_API_KEY=your-key
+LLM_MIN_INTERVAL=2.5
+```
+
+Free tiers cap requests per minute and per day (check the provider's current limits), so the
+client spaces calls by `LLM_MIN_INTERVAL` seconds and retries on rate-limit errors. Keep the key
+out of git: `.env` is ignored. Use the same model for every run you compare.
+
 ## Choosing a model
 
 The model is set in `.env` and nothing else in the code depends on it:

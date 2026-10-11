@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import json
 import os
+import time
 from collections.abc import Sequence
 from dataclasses import dataclass, field
 from typing import Any, Protocol
@@ -166,6 +167,26 @@ class OllamaLLM:
 class OpenAICompatLLM:
     """Any hosted API that speaks the OpenAI /chat/completions format."""
 
+    def _post_with_retries(self, payload: dict[str, Any]):
+        for attempt in range(self.max_retries + 1):
+            wait = self.min_interval - (time.monotonic() - self._last_call)
+            if wait > 0:
+                self._sleep(wait)
+            self._last_call = time.monotonic()
+            r = httpx.post(
+                f"{self.base_url}/chat/completions",
+                json=payload,
+                headers={"Authorization": f"Bearer {self.api_key}"},
+                timeout=self.timeout,
+            )
+            status = getattr(r, "status_code", 200)
+            if status in (429, 500, 502, 503, 504) and attempt < self.max_retries:
+                self._sleep(_retry_after(r, attempt))
+                continue
+            r.raise_for_status()
+            return r
+        raise RuntimeError("unreachable")
+
     def __init__(
         self,
         model: str,
@@ -173,12 +194,19 @@ class OpenAICompatLLM:
         api_key: str,
         max_output_tokens: int = 1024,
         timeout: float = 120.0,
+        max_retries: int = 5,
+        min_interval: float = 0.0,
     ):
         self.model = model
         self.base_url = base_url.rstrip("/")
         self.api_key = api_key
         self.max_output_tokens = max_output_tokens
         self.timeout = timeout
+        # Free tiers allow only a few requests a minute. Space calls out and retry on 429.
+        self.max_retries = max_retries
+        self.min_interval = min_interval
+        self._last_call = 0.0
+        self._sleep = time.sleep
 
     def chat(
         self, messages: Sequence[Message], tools: Sequence[ToolSpec] | None = None
@@ -191,13 +219,7 @@ class OpenAICompatLLM:
         }
         if tools:
             payload["tools"] = _tool_wrappers(tools)
-        r = httpx.post(
-            f"{self.base_url}/chat/completions",
-            json=payload,
-            headers={"Authorization": f"Bearer {self.api_key}"},
-            timeout=self.timeout,
-        )
-        r.raise_for_status()
+        r = self._post_with_retries(payload)
         data = r.json()
         msg = data["choices"][0]["message"]
         calls = []
@@ -211,6 +233,15 @@ class OpenAICompatLLM:
             input_tokens=usage.get("prompt_tokens", 0),
             output_tokens=usage.get("completion_tokens", 0),
         )
+
+
+def _retry_after(response: Any, attempt: int) -> float:
+    """Seconds to wait after a 429 or 5xx: the server's Retry-After if sent, else back off."""
+    header = getattr(response, "headers", {}).get("retry-after")
+    try:
+        return min(float(header), 120.0)
+    except (TypeError, ValueError):
+        return min(2.0 * 2**attempt, 60.0)
 
 
 def make_llm(env: dict[str, str] | None = None) -> LLM:
@@ -233,5 +264,12 @@ def make_llm(env: dict[str, str] | None = None) -> LLM:
         base_url, api_key = env.get("LLM_BASE_URL", ""), env.get("LLM_API_KEY", "")
         if not base_url or not api_key:
             raise ValueError("openai_compat needs LLM_BASE_URL and LLM_API_KEY")
-        return OpenAICompatLLM(model, base_url, api_key, max_out)
+        return OpenAICompatLLM(
+            model,
+            base_url,
+            api_key,
+            max_out,
+            max_retries=int(env.get("LLM_MAX_RETRIES", "5")),
+            min_interval=float(env.get("LLM_MIN_INTERVAL", "0")),
+        )
     raise ValueError(f"Unknown LLM_PROVIDER: {provider!r}")
