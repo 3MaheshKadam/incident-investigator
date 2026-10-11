@@ -1,0 +1,15 @@
+{
+ "id": "bad_deploy-0",
+ "kind": "bad_deploy",
+ "root_cause_category": "bad_deploy",
+ "component": "checkout-service",
+ "evidence_keys": [
+  "v1.6.0",
+  "NullPointerException"
+ ],
+ "incident_start": "2026-03-10T03:57:00Z",
+ "correct_action": {
+  "type": "rollback_deploy",
+  "target": "checkout-service"
+ }
+}

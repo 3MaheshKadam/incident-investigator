@@ -1,0 +1,1 @@
+ALERT [warning] session-service: pod restarts 3 in 30m (threshold 2) since 2026-03-10T04:35:00Z

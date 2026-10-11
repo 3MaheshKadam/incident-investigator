@@ -1,0 +1,15 @@
+{
+ "id": "dependency_outage-2",
+ "kind": "dependency_outage",
+ "root_cause_category": "dependency_outage",
+ "component": "tax-service",
+ "evidence_keys": [
+  "connection refused",
+  "health check failing"
+ ],
+ "incident_start": "2026-03-10T04:00:00Z",
+ "correct_action": {
+  "type": "open_ticket",
+  "target": "tax-service"
+ }
+}

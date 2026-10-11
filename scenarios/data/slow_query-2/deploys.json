@@ -1,0 +1,30 @@
+[
+ {
+  "ts": "2026-03-10T02:12:00Z",
+  "service": "cache-proxy",
+  "version": "v2.11.5",
+  "author": "li",
+  "commit_message": "Bump logging library patch version"
+ },
+ {
+  "ts": "2026-03-10T02:12:00Z",
+  "service": "notification-service",
+  "version": "v2.12.8",
+  "author": "li",
+  "commit_message": "Tidy imports"
+ },
+ {
+  "ts": "2026-03-10T02:29:00Z",
+  "service": "billing-service",
+  "version": "v3.10.3",
+  "author": "priya",
+  "commit_message": "Fix typo in error message"
+ },
+ {
+  "ts": "2026-03-10T03:24:00Z",
+  "service": "cache-proxy",
+  "version": "v4.9.8",
+  "author": "carlos",
+  "commit_message": "Tidy imports"
+ }
+]

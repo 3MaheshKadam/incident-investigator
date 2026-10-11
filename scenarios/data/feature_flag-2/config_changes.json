@@ -1,0 +1,26 @@
+[
+ {
+  "ts": "2026-03-10T02:32:00Z",
+  "service": "feed-service",
+  "key": "request_timeout_ms",
+  "old": "2000",
+  "new": "2000",
+  "author": "tom"
+ },
+ {
+  "ts": "2026-03-10T02:39:00Z",
+  "service": "feed-service",
+  "key": "log_level",
+  "old": "info",
+  "new": "info,debug",
+  "author": "dana"
+ },
+ {
+  "ts": "2026-03-10T04:01:00Z",
+  "service": "feed-service",
+  "key": "recs_v2_pipeline",
+  "old": "off",
+  "new": "on (100%)",
+  "author": "priya"
+ }
+]

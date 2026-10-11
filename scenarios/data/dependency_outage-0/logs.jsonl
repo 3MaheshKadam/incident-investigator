@@ -1,0 +1,181 @@
+{"ts": "2026-03-10T02:01:31Z", "service": "inventory-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:03:58Z", "service": "inventory-service", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T02:05:53Z", "service": "inventory-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:06:15Z", "service": "cache-proxy", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T02:08:09Z", "service": "api-gateway", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T02:10:32Z", "service": "auth-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:10:55Z", "service": "auth-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:14:40Z", "service": "api-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:15:11Z", "service": "inventory-service", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T02:15:37Z", "service": "inventory-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:20:11Z", "service": "api-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:22:00Z", "service": "auth-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:24:16Z", "service": "cache-proxy", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:27:56Z", "service": "cache-proxy", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:31:42Z", "service": "inventory-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:31:42Z", "service": "auth-service", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T02:34:12Z", "service": "auth-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:34:29Z", "service": "auth-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:35:39Z", "service": "cache-proxy", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:37:53Z", "service": "auth-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:39:01Z", "service": "api-gateway", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T02:39:49Z", "service": "api-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:41:02Z", "service": "auth-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:42:06Z", "service": "inventory-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:42:28Z", "service": "inventory-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:44:14Z", "service": "cache-proxy", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:45:24Z", "service": "auth-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:46:26Z", "service": "cache-proxy", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:46:53Z", "service": "api-gateway", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T02:48:26Z", "service": "api-gateway", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T02:49:01Z", "service": "cache-proxy", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:49:44Z", "service": "api-gateway", "level": "WARN", "msg": "slow query (412ms): SELECT id FROM sessions WHERE token = ?; plan: Index Scan"}
+{"ts": "2026-03-10T02:50:12Z", "service": "api-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:54:52Z", "service": "auth-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:56:41Z", "service": "cache-proxy", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:59:05Z", "service": "auth-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:59:44Z", "service": "cache-proxy", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:02:00Z", "service": "auth-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:03:38Z", "service": "inventory-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:03:59Z", "service": "api-gateway", "level": "WARN", "msg": "x509: certificate for internal-ca renewed (old certificate rotated out)"}
+{"ts": "2026-03-10T03:05:01Z", "service": "cache-proxy", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:10:05Z", "service": "inventory-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:11:11Z", "service": "auth-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:13:27Z", "service": "inventory-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:13:36Z", "service": "api-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:13:43Z", "service": "api-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:16:31Z", "service": "api-gateway", "level": "WARN", "msg": "request queue depth 14"}
+{"ts": "2026-03-10T03:17:29Z", "service": "inventory-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:18:41Z", "service": "auth-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:19:21Z", "service": "api-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:22:37Z", "service": "cache-proxy", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:23:24Z", "service": "inventory-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:24:22Z", "service": "inventory-service", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T03:24:40Z", "service": "auth-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:27:59Z", "service": "api-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:29:43Z", "service": "cache-proxy", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T03:29:58Z", "service": "api-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:30:36Z", "service": "auth-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:31:29Z", "service": "auth-service", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T03:31:40Z", "service": "inventory-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:32:56Z", "service": "cache-proxy", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:33:45Z", "service": "api-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:35:41Z", "service": "api-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:38:15Z", "service": "api-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:38:25Z", "service": "auth-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:39:48Z", "service": "cache-proxy", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:41:05Z", "service": "cache-proxy", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:42:08Z", "service": "cache-proxy", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T03:44:32Z", "service": "inventory-service", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T03:45:32Z", "service": "inventory-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:47:10Z", "service": "cache-proxy", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:48:41Z", "service": "api-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:52:43Z", "service": "inventory-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:54:15Z", "service": "cache-proxy", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:55:14Z", "service": "auth-service", "level": "WARN", "msg": "request queue depth 14"}
+{"ts": "2026-03-10T03:57:00Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream inventory-service: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T03:57:12Z", "service": "inventory-service", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
+{"ts": "2026-03-10T03:58:56Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream inventory-service: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T03:59:08Z", "service": "inventory-service", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
+{"ts": "2026-03-10T04:00:38Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream inventory-service: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:00:50Z", "service": "inventory-service", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
+{"ts": "2026-03-10T04:02:11Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream inventory-service: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:02:23Z", "service": "inventory-service", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
+{"ts": "2026-03-10T04:03:46Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream inventory-service: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:03:58Z", "service": "inventory-service", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
+{"ts": "2026-03-10T04:04:15Z", "service": "cache-proxy", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:05:29Z", "service": "auth-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:05:48Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream inventory-service: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:06:00Z", "service": "inventory-service", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
+{"ts": "2026-03-10T04:06:49Z", "service": "inventory-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:08:30Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream inventory-service: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:08:42Z", "service": "inventory-service", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
+{"ts": "2026-03-10T04:09:16Z", "service": "cache-proxy", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:09:51Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream inventory-service: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:10:03Z", "service": "inventory-service", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
+{"ts": "2026-03-10T04:10:05Z", "service": "cache-proxy", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:11:37Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream inventory-service: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:11:49Z", "service": "inventory-service", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
+{"ts": "2026-03-10T04:12:23Z", "service": "auth-service", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T04:12:36Z", "service": "api-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:12:59Z", "service": "api-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:13:05Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream inventory-service: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:13:16Z", "service": "api-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:13:17Z", "service": "inventory-service", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
+{"ts": "2026-03-10T04:15:15Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream inventory-service: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:15:27Z", "service": "inventory-service", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
+{"ts": "2026-03-10T04:17:30Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream inventory-service: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:17:42Z", "service": "inventory-service", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
+{"ts": "2026-03-10T04:18:41Z", "service": "inventory-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:19:26Z", "service": "cache-proxy", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:19:54Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream inventory-service: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:20:00Z", "service": "auth-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:20:06Z", "service": "inventory-service", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
+{"ts": "2026-03-10T04:22:20Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream inventory-service: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:22:32Z", "service": "inventory-service", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
+{"ts": "2026-03-10T04:24:02Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream inventory-service: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:24:14Z", "service": "inventory-service", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
+{"ts": "2026-03-10T04:25:08Z", "service": "inventory-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:25:51Z", "service": "inventory-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:26:35Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream inventory-service: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:26:38Z", "service": "auth-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:26:47Z", "service": "inventory-service", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
+{"ts": "2026-03-10T04:27:10Z", "service": "inventory-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:28:13Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream inventory-service: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:28:25Z", "service": "inventory-service", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
+{"ts": "2026-03-10T04:28:36Z", "service": "auth-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:28:43Z", "service": "auth-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:30:17Z", "service": "cache-proxy", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T04:30:25Z", "service": "inventory-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:30:39Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream inventory-service: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:30:51Z", "service": "inventory-service", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
+{"ts": "2026-03-10T04:30:59Z", "service": "cache-proxy", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:32:38Z", "service": "inventory-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:32:41Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream inventory-service: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:32:52Z", "service": "inventory-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:32:53Z", "service": "inventory-service", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
+{"ts": "2026-03-10T04:33:48Z", "service": "api-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:34:34Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream inventory-service: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:34:46Z", "service": "inventory-service", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
+{"ts": "2026-03-10T04:34:54Z", "service": "cache-proxy", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:37:16Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream inventory-service: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:37:28Z", "service": "inventory-service", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
+{"ts": "2026-03-10T04:39:09Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream inventory-service: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:39:21Z", "service": "inventory-service", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
+{"ts": "2026-03-10T04:39:48Z", "service": "api-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:40:51Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream inventory-service: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:41:03Z", "service": "inventory-service", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
+{"ts": "2026-03-10T04:41:06Z", "service": "cache-proxy", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:41:50Z", "service": "auth-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:42:15Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream inventory-service: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:42:27Z", "service": "inventory-service", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
+{"ts": "2026-03-10T04:43:18Z", "service": "auth-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:44:30Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream inventory-service: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:44:33Z", "service": "api-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:44:42Z", "service": "inventory-service", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
+{"ts": "2026-03-10T04:46:50Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream inventory-service: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:47:02Z", "service": "inventory-service", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
+{"ts": "2026-03-10T04:47:06Z", "service": "inventory-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:48:10Z", "service": "auth-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:48:10Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream inventory-service: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:48:22Z", "service": "inventory-service", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
+{"ts": "2026-03-10T04:48:27Z", "service": "inventory-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:48:36Z", "service": "auth-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:48:45Z", "service": "cache-proxy", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:49:19Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream inventory-service: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:49:31Z", "service": "inventory-service", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
+{"ts": "2026-03-10T04:50:36Z", "service": "api-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:50:45Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream inventory-service: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:50:57Z", "service": "inventory-service", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
+{"ts": "2026-03-10T04:52:21Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream inventory-service: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:52:33Z", "service": "inventory-service", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
+{"ts": "2026-03-10T04:53:58Z", "service": "api-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:54:35Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream inventory-service: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:54:47Z", "service": "inventory-service", "level": "ERROR", "msg": "health check failing: database primary unreachable"}
+{"ts": "2026-03-10T04:55:47Z", "service": "api-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:55:54Z", "service": "api-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:56:01Z", "service": "inventory-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:57:26Z", "service": "cache-proxy", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:58:29Z", "service": "api-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:58:41Z", "service": "api-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:59:10Z", "service": "cache-proxy", "level": "INFO", "msg": "connection pool: 6/20 in use"}

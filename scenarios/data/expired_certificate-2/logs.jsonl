@@ -1,0 +1,169 @@
+{"ts": "2026-03-10T02:02:32Z", "service": "notification-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:04:30Z", "service": "cache-proxy", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:04:50Z", "service": "api-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:07:18Z", "service": "cache-proxy", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T02:10:37Z", "service": "api-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:16:20Z", "service": "notification-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:16:38Z", "service": "partner-api", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:17:27Z", "service": "cache-proxy", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:17:39Z", "service": "api-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:18:02Z", "service": "partner-api", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:18:15Z", "service": "cache-proxy", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:18:50Z", "service": "cache-proxy", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:19:55Z", "service": "partner-api", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T02:20:24Z", "service": "api-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:21:46Z", "service": "cache-proxy", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T02:22:25Z", "service": "notification-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:28:39Z", "service": "api-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:29:50Z", "service": "partner-api", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:31:34Z", "service": "notification-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:32:57Z", "service": "partner-api", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:33:15Z", "service": "cache-proxy", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:35:12Z", "service": "cache-proxy", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:36:20Z", "service": "cache-proxy", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:37:01Z", "service": "cache-proxy", "level": "ERROR", "msg": "container restarted: OOMKilled (exit code 137)"}
+{"ts": "2026-03-10T02:37:13Z", "service": "api-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:37:51Z", "service": "cache-proxy", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:38:06Z", "service": "api-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:38:44Z", "service": "partner-api", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T02:39:44Z", "service": "cache-proxy", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:40:31Z", "service": "partner-api", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:40:40Z", "service": "notification-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:42:18Z", "service": "partner-api", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:43:01Z", "service": "partner-api", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:46:28Z", "service": "cache-proxy", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:52:01Z", "service": "api-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:52:44Z", "service": "partner-api", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:53:58Z", "service": "api-gateway", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T02:54:53Z", "service": "notification-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:57:44Z", "service": "partner-api", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:59:05Z", "service": "cache-proxy", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:59:43Z", "service": "notification-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:00:23Z", "service": "api-gateway", "level": "WARN", "msg": "slow query (412ms): SELECT id FROM sessions WHERE token = ?; plan: Index Scan"}
+{"ts": "2026-03-10T03:00:46Z", "service": "partner-api", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:01:07Z", "service": "api-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:02:53Z", "service": "api-gateway", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:07:15Z", "service": "api-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:09:38Z", "service": "partner-api", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:11:01Z", "service": "partner-api", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:11:13Z", "service": "api-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:12:55Z", "service": "notification-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:14:31Z", "service": "api-gateway", "level": "WARN", "msg": "request queue depth 14"}
+{"ts": "2026-03-10T03:17:28Z", "service": "cache-proxy", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:18:39Z", "service": "cache-proxy", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:19:01Z", "service": "cache-proxy", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:19:03Z", "service": "partner-api", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T03:20:42Z", "service": "cache-proxy", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:22:29Z", "service": "cache-proxy", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:25:22Z", "service": "partner-api", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T03:25:50Z", "service": "partner-api", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:26:28Z", "service": "notification-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:28:09Z", "service": "notification-service", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T03:35:27Z", "service": "notification-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:36:57Z", "service": "api-gateway", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T03:38:22Z", "service": "notification-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:38:53Z", "service": "api-gateway", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T03:39:55Z", "service": "api-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:40:06Z", "service": "notification-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:43:21Z", "service": "api-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:45:30Z", "service": "notification-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:47:08Z", "service": "cache-proxy", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T03:47:27Z", "service": "api-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:48:38Z", "service": "notification-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:48:56Z", "service": "notification-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:49:52Z", "service": "notification-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:50:00Z", "service": "partner-api", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:51:09Z", "service": "cache-proxy", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:52:00Z", "service": "partner-api", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T03:52:00Z is after 2026-03-10T03:52:00Z"}
+{"ts": "2026-03-10T03:52:30Z", "service": "partner-api", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T03:52:30Z is after 2026-03-10T03:52:00Z"}
+{"ts": "2026-03-10T03:53:39Z", "service": "api-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:54:22Z", "service": "partner-api", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T03:54:22Z is after 2026-03-10T03:52:00Z"}
+{"ts": "2026-03-10T03:55:43Z", "service": "partner-api", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T03:55:43Z is after 2026-03-10T03:52:00Z"}
+{"ts": "2026-03-10T03:55:53Z", "service": "cache-proxy", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:56:18Z", "service": "cache-proxy", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:57:22Z", "service": "partner-api", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T03:57:22Z is after 2026-03-10T03:52:00Z"}
+{"ts": "2026-03-10T03:57:53Z", "service": "partner-api", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T03:57:53Z is after 2026-03-10T03:52:00Z"}
+{"ts": "2026-03-10T03:59:06Z", "service": "partner-api", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T03:59:06Z is after 2026-03-10T03:52:00Z"}
+{"ts": "2026-03-10T03:59:47Z", "service": "notification-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:59:49Z", "service": "partner-api", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T03:59:49Z is after 2026-03-10T03:52:00Z"}
+{"ts": "2026-03-10T04:00:37Z", "service": "cache-proxy", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:01:32Z", "service": "partner-api", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:01:44Z", "service": "partner-api", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:01:44Z is after 2026-03-10T03:52:00Z"}
+{"ts": "2026-03-10T04:02:13Z", "service": "notification-service", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T04:02:35Z", "service": "api-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:02:44Z", "service": "partner-api", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:02:44Z is after 2026-03-10T03:52:00Z"}
+{"ts": "2026-03-10T04:03:10Z", "service": "partner-api", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:03:25Z", "service": "partner-api", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:03:25Z is after 2026-03-10T03:52:00Z"}
+{"ts": "2026-03-10T04:05:05Z", "service": "partner-api", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:05:05Z is after 2026-03-10T03:52:00Z"}
+{"ts": "2026-03-10T04:06:35Z", "service": "partner-api", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:06:35Z is after 2026-03-10T03:52:00Z"}
+{"ts": "2026-03-10T04:06:53Z", "service": "notification-service", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T04:07:11Z", "service": "partner-api", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:07:11Z is after 2026-03-10T03:52:00Z"}
+{"ts": "2026-03-10T04:08:27Z", "service": "partner-api", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:08:27Z is after 2026-03-10T03:52:00Z"}
+{"ts": "2026-03-10T04:08:51Z", "service": "api-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:09:02Z", "service": "partner-api", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:09:02Z is after 2026-03-10T03:52:00Z"}
+{"ts": "2026-03-10T04:09:42Z", "service": "partner-api", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:09:42Z is after 2026-03-10T03:52:00Z"}
+{"ts": "2026-03-10T04:10:43Z", "service": "partner-api", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:10:43Z is after 2026-03-10T03:52:00Z"}
+{"ts": "2026-03-10T04:11:24Z", "service": "partner-api", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:11:25Z", "service": "notification-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:11:27Z", "service": "partner-api", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:11:27Z is after 2026-03-10T03:52:00Z"}
+{"ts": "2026-03-10T04:11:51Z", "service": "partner-api", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:12:21Z", "service": "partner-api", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:12:21Z is after 2026-03-10T03:52:00Z"}
+{"ts": "2026-03-10T04:13:39Z", "service": "partner-api", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:13:39Z is after 2026-03-10T03:52:00Z"}
+{"ts": "2026-03-10T04:14:25Z", "service": "partner-api", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:14:25Z is after 2026-03-10T03:52:00Z"}
+{"ts": "2026-03-10T04:14:48Z", "service": "api-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:15:22Z", "service": "notification-service", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T04:15:46Z", "service": "partner-api", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:15:46Z is after 2026-03-10T03:52:00Z"}
+{"ts": "2026-03-10T04:16:16Z", "service": "cache-proxy", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:16:29Z", "service": "cache-proxy", "level": "WARN", "msg": "request queue depth 14"}
+{"ts": "2026-03-10T04:16:38Z", "service": "partner-api", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:16:38Z is after 2026-03-10T03:52:00Z"}
+{"ts": "2026-03-10T04:17:24Z", "service": "partner-api", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:17:24Z is after 2026-03-10T03:52:00Z"}
+{"ts": "2026-03-10T04:18:11Z", "service": "partner-api", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:18:52Z", "service": "partner-api", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:18:52Z is after 2026-03-10T03:52:00Z"}
+{"ts": "2026-03-10T04:19:52Z", "service": "partner-api", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:19:52Z is after 2026-03-10T03:52:00Z"}
+{"ts": "2026-03-10T04:20:49Z", "service": "partner-api", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:20:49Z is after 2026-03-10T03:52:00Z"}
+{"ts": "2026-03-10T04:21:10Z", "service": "cache-proxy", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:22:25Z", "service": "partner-api", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:22:25Z is after 2026-03-10T03:52:00Z"}
+{"ts": "2026-03-10T04:22:57Z", "service": "partner-api", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:22:57Z is after 2026-03-10T03:52:00Z"}
+{"ts": "2026-03-10T04:23:37Z", "service": "partner-api", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:23:51Z", "service": "notification-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:24:52Z", "service": "partner-api", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:24:55Z", "service": "partner-api", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:24:55Z is after 2026-03-10T03:52:00Z"}
+{"ts": "2026-03-10T04:25:04Z", "service": "api-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:26:22Z", "service": "partner-api", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:26:22Z is after 2026-03-10T03:52:00Z"}
+{"ts": "2026-03-10T04:27:33Z", "service": "partner-api", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:27:33Z is after 2026-03-10T03:52:00Z"}
+{"ts": "2026-03-10T04:28:58Z", "service": "partner-api", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:28:58Z is after 2026-03-10T03:52:00Z"}
+{"ts": "2026-03-10T04:29:33Z", "service": "api-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:29:49Z", "service": "api-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:30:53Z", "service": "partner-api", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:30:53Z is after 2026-03-10T03:52:00Z"}
+{"ts": "2026-03-10T04:32:49Z", "service": "partner-api", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:32:49Z is after 2026-03-10T03:52:00Z"}
+{"ts": "2026-03-10T04:33:44Z", "service": "partner-api", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:33:44Z is after 2026-03-10T03:52:00Z"}
+{"ts": "2026-03-10T04:35:26Z", "service": "partner-api", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:35:26Z is after 2026-03-10T03:52:00Z"}
+{"ts": "2026-03-10T04:36:14Z", "service": "partner-api", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:36:30Z", "service": "partner-api", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:36:30Z is after 2026-03-10T03:52:00Z"}
+{"ts": "2026-03-10T04:37:11Z", "service": "notification-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:37:49Z", "service": "api-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:37:58Z", "service": "partner-api", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:37:58Z is after 2026-03-10T03:52:00Z"}
+{"ts": "2026-03-10T04:38:09Z", "service": "partner-api", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:39:24Z", "service": "notification-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:39:35Z", "service": "partner-api", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:39:45Z", "service": "partner-api", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:39:45Z is after 2026-03-10T03:52:00Z"}
+{"ts": "2026-03-10T04:40:33Z", "service": "partner-api", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:40:33Z is after 2026-03-10T03:52:00Z"}
+{"ts": "2026-03-10T04:41:07Z", "service": "partner-api", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:41:07Z is after 2026-03-10T03:52:00Z"}
+{"ts": "2026-03-10T04:42:27Z", "service": "api-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:42:27Z", "service": "partner-api", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:42:27Z is after 2026-03-10T03:52:00Z"}
+{"ts": "2026-03-10T04:44:23Z", "service": "partner-api", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:44:23Z is after 2026-03-10T03:52:00Z"}
+{"ts": "2026-03-10T04:45:05Z", "service": "partner-api", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:45:05Z is after 2026-03-10T03:52:00Z"}
+{"ts": "2026-03-10T04:45:14Z", "service": "cache-proxy", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:45:53Z", "service": "notification-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:46:10Z", "service": "notification-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:46:17Z", "service": "cache-proxy", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:46:49Z", "service": "partner-api", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:46:49Z is after 2026-03-10T03:52:00Z"}
+{"ts": "2026-03-10T04:47:53Z", "service": "notification-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:48:27Z", "service": "partner-api", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:48:27Z is after 2026-03-10T03:52:00Z"}
+{"ts": "2026-03-10T04:50:08Z", "service": "notification-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:50:16Z", "service": "partner-api", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:50:18Z", "service": "partner-api", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:50:18Z is after 2026-03-10T03:52:00Z"}
+{"ts": "2026-03-10T04:51:40Z", "service": "partner-api", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:51:40Z is after 2026-03-10T03:52:00Z"}
+{"ts": "2026-03-10T04:52:27Z", "service": "api-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:55:25Z", "service": "cache-proxy", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:58:59Z", "service": "api-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}

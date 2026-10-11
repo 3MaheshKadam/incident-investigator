@@ -1,0 +1,14 @@
+{
+ "id": "feature_flag-1",
+ "kind": "feature_flag",
+ "root_cause_category": "feature_flag",
+ "component": "search-ranker",
+ "evidence_keys": [
+  "fast_checkout_path"
+ ],
+ "incident_start": "2026-03-10T03:57:00Z",
+ "correct_action": {
+  "type": "toggle_feature_flag",
+  "target": "fast_checkout_path"
+ }
+}

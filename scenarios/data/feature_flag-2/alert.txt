@@ -1,0 +1,1 @@
+ALERT [critical] feed-service: error rate 18% (threshold 5%) since 2026-03-10T04:04:00Z

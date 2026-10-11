@@ -1,0 +1,14 @@
+{
+ "id": "feature_flag-3",
+ "kind": "feature_flag",
+ "root_cause_category": "feature_flag",
+ "component": "offers-service",
+ "evidence_keys": [
+  "async_feed_render"
+ ],
+ "incident_start": "2026-03-10T03:51:00Z",
+ "correct_action": {
+  "type": "toggle_feature_flag",
+  "target": "async_feed_render"
+ }
+}

@@ -1,0 +1,1 @@
+ALERT [critical] search-ranker: error rate 14% (threshold 5%) since 2026-03-10T03:59:00Z

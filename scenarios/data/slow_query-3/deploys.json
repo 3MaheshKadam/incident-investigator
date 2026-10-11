@@ -1,0 +1,30 @@
+[
+ {
+  "ts": "2026-03-10T02:11:00Z",
+  "service": "notification-service",
+  "version": "v3.12.1",
+  "author": "tom",
+  "commit_message": "Bump logging library patch version"
+ },
+ {
+  "ts": "2026-03-10T02:14:00Z",
+  "service": "reporting-service",
+  "version": "v4.6.1",
+  "author": "tom",
+  "commit_message": "Bump logging library patch version"
+ },
+ {
+  "ts": "2026-03-10T02:46:00Z",
+  "service": "cache-proxy",
+  "version": "v2.2.5",
+  "author": "carlos",
+  "commit_message": "Bump logging library patch version"
+ },
+ {
+  "ts": "2026-03-10T03:32:00Z",
+  "service": "auth-service",
+  "version": "v1.14.6",
+  "author": "li",
+  "commit_message": "Tidy imports"
+ }
+]

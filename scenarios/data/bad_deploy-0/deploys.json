@@ -1,0 +1,37 @@
+[
+ {
+  "ts": "2026-03-10T02:10:00Z",
+  "service": "cache-proxy",
+  "version": "v1.10.3",
+  "author": "dana",
+  "commit_message": "Update documentation link in health endpoint"
+ },
+ {
+  "ts": "2026-03-10T02:31:00Z",
+  "service": "api-gateway",
+  "version": "v4.11.4",
+  "author": "carlos",
+  "commit_message": "Update documentation link in health endpoint"
+ },
+ {
+  "ts": "2026-03-10T02:35:00Z",
+  "service": "checkout-service",
+  "version": "v4.7.1",
+  "author": "dana",
+  "commit_message": "Tidy imports"
+ },
+ {
+  "ts": "2026-03-10T03:37:00Z",
+  "service": "notification-service",
+  "version": "v2.10.9",
+  "author": "priya",
+  "commit_message": "Bump http client timeout to 5s"
+ },
+ {
+  "ts": "2026-03-10T03:56:00Z",
+  "service": "checkout-service",
+  "version": "v1.6.0",
+  "author": "carlos",
+  "commit_message": "Refactor request handling and add currency conversion"
+ }
+]

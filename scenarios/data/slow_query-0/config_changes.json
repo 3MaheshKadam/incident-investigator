@@ -1,0 +1,10 @@
+[
+ {
+  "ts": "2026-03-10T02:07:00Z",
+  "service": "auth-service",
+  "key": "log_level",
+  "old": "info",
+  "new": "info,debug",
+  "author": "tom"
+ }
+]

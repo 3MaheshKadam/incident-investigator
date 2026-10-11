@@ -20,6 +20,7 @@ import httpx
 class ToolCall:
     name: str
     arguments: dict[str, Any]
+    id: str = ""
 
 
 @dataclass
@@ -32,7 +33,11 @@ class LLMResponse:
     output_tokens: int = 0
 
 
-Message = dict[str, Any]  # {"role": "system"|"user"|"assistant"|"tool", "content": str, ...}
+# Neutral message format used everywhere in this project. Backends convert it to their own.
+#   {"role": "system" | "user", "content": str}
+#   {"role": "assistant", "content": str, "tool_calls": [{"id", "name", "arguments"}]}
+#   {"role": "tool", "tool_call_id": str, "name": str, "content": str}
+Message = dict[str, Any]
 ToolSpec = dict[str, Any]  # JSON-schema style: {"name", "description", "parameters"}
 
 
@@ -56,6 +61,52 @@ class MockLLM:
         if not self._script:
             raise RuntimeError("MockLLM script exhausted")
         return self._script.pop(0)
+
+
+def _openai_messages(messages: Sequence[Message]) -> list[dict[str, Any]]:
+    out: list[dict[str, Any]] = []
+    for m in messages:
+        if m["role"] == "assistant" and m.get("tool_calls"):
+            out.append(
+                {
+                    "role": "assistant",
+                    "content": m.get("content") or None,
+                    "tool_calls": [
+                        {
+                            "id": c["id"],
+                            "type": "function",
+                            "function": {"name": c["name"], "arguments": json.dumps(c["arguments"])},
+                        }
+                        for c in m["tool_calls"]
+                    ],
+                }
+            )
+        elif m["role"] == "tool":
+            out.append({"role": "tool", "tool_call_id": m["tool_call_id"], "content": m["content"]})
+        else:
+            out.append({"role": m["role"], "content": m["content"]})
+    return out
+
+
+def _ollama_messages(messages: Sequence[Message]) -> list[dict[str, Any]]:
+    out: list[dict[str, Any]] = []
+    for m in messages:
+        if m["role"] == "assistant" and m.get("tool_calls"):
+            out.append(
+                {
+                    "role": "assistant",
+                    "content": m.get("content") or "",
+                    "tool_calls": [
+                        {"function": {"name": c["name"], "arguments": c["arguments"]}}
+                        for c in m["tool_calls"]
+                    ],
+                }
+            )
+        elif m["role"] == "tool":
+            out.append({"role": "tool", "tool_name": m["name"], "content": m["content"]})
+        else:
+            out.append({"role": m["role"], "content": m["content"]})
+    return out
 
 
 def _tool_wrappers(tools: Sequence[ToolSpec] | None) -> list[dict[str, Any]]:
@@ -82,7 +133,7 @@ class OllamaLLM:
     ) -> LLMResponse:
         payload: dict[str, Any] = {
             "model": self.model,
-            "messages": list(messages),
+            "messages": _ollama_messages(messages),
             "stream": False,
             "options": {"temperature": 0, "num_predict": self.max_output_tokens},
         }
@@ -126,7 +177,7 @@ class OpenAICompatLLM:
     ) -> LLMResponse:
         payload: dict[str, Any] = {
             "model": self.model,
-            "messages": list(messages),
+            "messages": _openai_messages(messages),
             "temperature": 0,
             "max_tokens": self.max_output_tokens,
         }
@@ -144,7 +195,7 @@ class OpenAICompatLLM:
         calls = []
         for c in msg.get("tool_calls") or []:
             args = c["function"].get("arguments") or "{}"
-            calls.append(ToolCall(c["function"]["name"], json.loads(args)))
+            calls.append(ToolCall(c["function"]["name"], json.loads(args), c.get("id", "")))
         usage = data.get("usage", {})
         return LLMResponse(
             text=msg.get("content") or "",

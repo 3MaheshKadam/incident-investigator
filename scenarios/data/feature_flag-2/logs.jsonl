@@ -1,0 +1,150 @@
+{"ts": "2026-03-10T02:00:42Z", "service": "cache-proxy", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:05:00Z", "service": "cache-proxy", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:05:00Z", "service": "api-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:07:03Z", "service": "cache-proxy", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:08:07Z", "service": "auth-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:08:23Z", "service": "cache-proxy", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:08:24Z", "service": "api-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:09:08Z", "service": "api-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:11:42Z", "service": "api-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:12:20Z", "service": "auth-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:12:56Z", "service": "cache-proxy", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:13:20Z", "service": "api-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:18:13Z", "service": "cache-proxy", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:19:10Z", "service": "cache-proxy", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T02:20:09Z", "service": "cache-proxy", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:22:28Z", "service": "feed-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:25:27Z", "service": "api-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:30:57Z", "service": "cache-proxy", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:33:00Z", "service": "auth-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:34:06Z", "service": "api-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:34:27Z", "service": "auth-service", "level": "WARN", "msg": "x509: certificate for internal-ca renewed (old certificate rotated out)"}
+{"ts": "2026-03-10T02:38:20Z", "service": "feed-service", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T02:38:24Z", "service": "api-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:38:44Z", "service": "feed-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:41:19Z", "service": "api-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:41:57Z", "service": "auth-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:42:06Z", "service": "cache-proxy", "level": "WARN", "msg": "upstream cache-proxy: connection refused (dial tcp 10.0.1.9:6379); retry succeeded"}
+{"ts": "2026-03-10T02:43:16Z", "service": "cache-proxy", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:43:58Z", "service": "api-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:45:20Z", "service": "cache-proxy", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T02:47:28Z", "service": "feed-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:48:37Z", "service": "api-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:49:18Z", "service": "cache-proxy", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T02:51:30Z", "service": "api-gateway", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T02:55:45Z", "service": "feed-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:55:54Z", "service": "auth-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:57:12Z", "service": "api-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:58:51Z", "service": "api-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:59:23Z", "service": "api-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:01:16Z", "service": "feed-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:01:45Z", "service": "feed-service", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T03:02:55Z", "service": "cache-proxy", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:03:27Z", "service": "auth-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:03:41Z", "service": "cache-proxy", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:04:09Z", "service": "auth-service", "level": "ERROR", "msg": "container restarted: OOMKilled (exit code 137)"}
+{"ts": "2026-03-10T03:06:20Z", "service": "cache-proxy", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:08:28Z", "service": "auth-service", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T03:09:50Z", "service": "feed-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:10:23Z", "service": "feed-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:13:47Z", "service": "feed-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:13:59Z", "service": "api-gateway", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T03:16:17Z", "service": "auth-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:17:16Z", "service": "api-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:17:46Z", "service": "feed-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:20:20Z", "service": "feed-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:21:25Z", "service": "feed-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:26:12Z", "service": "cache-proxy", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:26:17Z", "service": "auth-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:26:25Z", "service": "feed-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:26:51Z", "service": "cache-proxy", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:29:00Z", "service": "auth-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:29:43Z", "service": "api-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:30:19Z", "service": "auth-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:31:02Z", "service": "auth-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:31:52Z", "service": "api-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:32:35Z", "service": "api-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:34:08Z", "service": "auth-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:39:11Z", "service": "auth-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:39:46Z", "service": "feed-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:39:51Z", "service": "cache-proxy", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:42:56Z", "service": "cache-proxy", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:43:22Z", "service": "auth-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:43:58Z", "service": "feed-service", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T03:46:23Z", "service": "api-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:50:51Z", "service": "cache-proxy", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:51:11Z", "service": "cache-proxy", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:51:18Z", "service": "auth-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:51:52Z", "service": "api-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:53:18Z", "service": "auth-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:54:41Z", "service": "cache-proxy", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:54:54Z", "service": "cache-proxy", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:56:57Z", "service": "feed-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:57:41Z", "service": "cache-proxy", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:58:19Z", "service": "auth-service", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T03:58:20Z", "service": "auth-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:59:48Z", "service": "feed-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:01:23Z", "service": "cache-proxy", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:03:00Z", "service": "feed-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:04:03Z", "service": "feed-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:04:29Z", "service": "feed-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:07:06Z", "service": "api-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:07:27Z", "service": "feed-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:08:59Z", "service": "feed-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:09:38Z", "service": "auth-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:09:45Z", "service": "auth-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:09:47Z", "service": "auth-service", "level": "WARN", "msg": "request queue depth 14"}
+{"ts": "2026-03-10T04:11:56Z", "service": "feed-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:13:16Z", "service": "feed-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:13:37Z", "service": "feed-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:14:21Z", "service": "api-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:14:53Z", "service": "feed-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:15:17Z", "service": "auth-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:15:43Z", "service": "feed-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:16:27Z", "service": "api-gateway", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T04:16:40Z", "service": "feed-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:17:12Z", "service": "feed-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:18:44Z", "service": "feed-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:19:09Z", "service": "api-gateway", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T04:19:10Z", "service": "feed-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:20:02Z", "service": "auth-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:20:39Z", "service": "auth-service", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T04:21:09Z", "service": "feed-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:21:27Z", "service": "cache-proxy", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:22:20Z", "service": "feed-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:22:51Z", "service": "feed-service", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T04:23:06Z", "service": "feed-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:23:41Z", "service": "feed-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:24:03Z", "service": "feed-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:26:04Z", "service": "feed-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:27:54Z", "service": "feed-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:29:56Z", "service": "feed-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:31:11Z", "service": "feed-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:34:10Z", "service": "feed-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:34:54Z", "service": "auth-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:35:31Z", "service": "cache-proxy", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:36:03Z", "service": "feed-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:36:19Z", "service": "cache-proxy", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:37:44Z", "service": "feed-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:38:08Z", "service": "cache-proxy", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T04:38:28Z", "service": "feed-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:39:30Z", "service": "feed-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:42:24Z", "service": "feed-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:42:29Z", "service": "api-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:43:06Z", "service": "api-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:44:17Z", "service": "auth-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:45:02Z", "service": "feed-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:46:29Z", "service": "feed-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:47:00Z", "service": "auth-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:47:31Z", "service": "feed-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:48:35Z", "service": "feed-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:51:19Z", "service": "feed-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:52:01Z", "service": "auth-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:52:22Z", "service": "api-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:54:08Z", "service": "feed-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:55:35Z", "service": "feed-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:56:07Z", "service": "feed-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:58:13Z", "service": "feed-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:59:17Z", "service": "feed-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:59:37Z", "service": "feed-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T05:01:36Z", "service": "feed-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}

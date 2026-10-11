@@ -1,0 +1,30 @@
+[
+ {
+  "ts": "2026-03-10T02:15:00Z",
+  "service": "auth-service",
+  "version": "v3.17.2",
+  "author": "priya",
+  "commit_message": "Bump logging library patch version"
+ },
+ {
+  "ts": "2026-03-10T02:16:00Z",
+  "service": "offers-service",
+  "version": "v1.2.1",
+  "author": "carlos",
+  "commit_message": "Tidy imports"
+ },
+ {
+  "ts": "2026-03-10T02:54:00Z",
+  "service": "cache-proxy",
+  "version": "v4.10.2",
+  "author": "carlos",
+  "commit_message": "Tidy imports"
+ },
+ {
+  "ts": "2026-03-10T03:36:00Z",
+  "service": "api-gateway",
+  "version": "v1.19.9",
+  "author": "li",
+  "commit_message": "Fix typo in error message"
+ }
+]
