@@ -3,6 +3,7 @@ WORKDIR /app
 COPY pyproject.toml README.md ./
 COPY agent agent
 COPY evals evals
+COPY gateway gateway
 COPY guard guard
 COPY monitor monitor
 COPY readiness readiness

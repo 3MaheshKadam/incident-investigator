@@ -26,6 +26,7 @@ All incidents are simulated. No real systems or credentials are involved.
 | `shop/` | A simulated backend (10 services) whose telemetry comes from its own state |
 | `target/` | A real stack: separate Linux processes with HTTP, SQLite and real faults, watched by the same detector |
 | `monitor/` | Anomaly detection, incident grouping, change correlation, recording |
+| `gateway/` | Command gateway: allowlisted read-only shell commands for the agent, changes held for approval |
 | `readiness/` | Production-readiness checks for Dockerfile, compose, CI workflows, env and secrets |
 | `scenarios/` | Hand-generated incidents (`data/`) and monitor-recorded ones (`recorded/`) |
 | `evals/` | Scoring harness and reports |
@@ -114,6 +115,30 @@ Honest limits: Linux only (reads `/proc`); live runs are not deterministic, so r
 incidents are not freshness-checked in CI the way generated ones are; benign deploys are recorded
 events, not real restarts; `expired_certificate` is not implemented on the live stack; and it is
 four processes on one machine, not a cluster.
+
+## Command gateway
+
+`gateway/` is how the agent looks at a live system. It gets one tool, `run_command`, and every
+command goes through a policy before anything runs. The default is deny.
+
+| Verdict | Examples | What happens |
+| --- | --- | --- |
+| allow | `ps -ef`, `free -m`, `df -h`, `uptime`, `ls logs`, `tail -n 50 x.log`, `grep -i text x.log`, `curl -s http://127.0.0.1:<port>/health` | runs now, output capped at 4000 characters |
+| approve | `svc restart <service>`, `svc rollback <service>` | not run; becomes a proposal a human approves or rejects |
+| deny | `rm`, `sudo`, `sh`, pipes, redirects, `$(...)`, paths outside the logs folder (including `..` and symlinks), `curl` to any other host or path, unknown services | refused with a reason the model can read |
+
+Commands are split with `shlex` and run without a shell, with a scrubbed environment, a 5 second
+timeout and no stdin. Output goes through the same guard as other tool results, so an instruction
+planted in a log line is stripped. Every command, decision and approval is kept in an audit list.
+
+```bash
+python -m gateway                          # start the real stack, break it, tour the gateway
+python -m gateway "free -m" "tail -n 5 api-gateway.log"
+```
+
+Honest limits: `ps -ef` shows every process on the host, not only the stack; the allowlist is
+small and hand-written; and the investigator has not yet been scored against the live stack with a
+real model. This is the safe door the next measurements go through.
 
 ## Production-readiness checker
 
