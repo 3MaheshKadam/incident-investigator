@@ -1,0 +1,680 @@
+{"ts": "2026-03-10T02:00:07Z", "service": "search-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:00:17Z", "service": "notification-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:00:36Z", "service": "auth-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:01:45Z", "service": "customers-db", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T02:01:46Z", "service": "payments-gateway", "level": "WARN", "msg": "request queue depth 14"}
+{"ts": "2026-03-10T02:02:07Z", "service": "checkout-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:02:23Z", "service": "orders-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:02:24Z", "service": "notification-service", "level": "WARN", "msg": "request queue depth 14"}
+{"ts": "2026-03-10T02:02:58Z", "service": "customers-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:03:04Z", "service": "search-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:04:31Z", "service": "orders-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:05:10Z", "service": "catalog-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:05:20Z", "service": "notification-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:05:33Z", "service": "customers-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:06:26Z", "service": "catalog-db", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T02:06:33Z", "service": "orders-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:07:28Z", "service": "catalog-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:08:35Z", "service": "orders-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:08:35Z", "service": "catalog-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:08:46Z", "service": "auth-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:09:03Z", "service": "api-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:09:24Z", "service": "orders-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:10:51Z", "service": "payments-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:10:59Z", "service": "catalog-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:11:10Z", "service": "cache-proxy", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:11:40Z", "service": "orders-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:12:11Z", "service": "checkout-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:12:43Z", "service": "orders-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:13:01Z", "service": "payments-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:13:12Z", "service": "checkout-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:14:40Z", "service": "api-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:14:48Z", "service": "payments-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:15:12Z", "service": "checkout-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:15:20Z", "service": "auth-service", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T02:15:37Z", "service": "auth-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:15:49Z", "service": "catalog-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:16:10Z", "service": "search-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:16:13Z", "service": "checkout-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:16:21Z", "service": "auth-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:18:03Z", "service": "cache-proxy", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:18:19Z", "service": "notification-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:18:21Z", "service": "catalog-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:19:24Z", "service": "orders-db", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T02:19:59Z", "service": "cache-proxy", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:20:08Z", "service": "checkout-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:20:15Z", "service": "payments-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:21:02Z", "service": "catalog-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:21:29Z", "service": "search-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:21:47Z", "service": "notification-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:23:52Z", "service": "checkout-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:24:18Z", "service": "customers-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:25:02Z", "service": "auth-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:25:19Z", "service": "api-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:25:42Z", "service": "notification-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:26:10Z", "service": "search-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:26:53Z", "service": "orders-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:27:05Z", "service": "catalog-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:27:21Z", "service": "api-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:28:10Z", "service": "auth-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:28:47Z", "service": "orders-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:29:36Z", "service": "catalog-db", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T02:30:07Z", "service": "search-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:30:22Z", "service": "catalog-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:30:25Z", "service": "api-gateway", "level": "WARN", "msg": "slow query (412ms): SELECT id FROM sessions WHERE token = ?; plan: Index Scan"}
+{"ts": "2026-03-10T02:30:40Z", "service": "auth-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:31:47Z", "service": "payments-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:33:23Z", "service": "checkout-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:34:04Z", "service": "orders-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:34:19Z", "service": "payments-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:34:30Z", "service": "auth-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:34:33Z", "service": "checkout-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:34:39Z", "service": "api-gateway", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T02:35:31Z", "service": "orders-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:36:53Z", "service": "catalog-db", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T02:37:26Z", "service": "checkout-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:37:32Z", "service": "catalog-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:38:25Z", "service": "customers-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:38:44Z", "service": "payments-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:39:14Z", "service": "customers-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:39:31Z", "service": "catalog-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:39:37Z", "service": "checkout-service", "level": "WARN", "msg": "upstream cache-proxy: connection refused (dial tcp 10.0.1.9:6379); retry succeeded"}
+{"ts": "2026-03-10T02:39:39Z", "service": "api-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:39:44Z", "service": "cache-proxy", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:39:53Z", "service": "auth-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:40:15Z", "service": "payments-gateway", "level": "WARN", "msg": "request queue depth 14"}
+{"ts": "2026-03-10T02:40:22Z", "service": "cache-proxy", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:40:48Z", "service": "search-service", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T02:41:45Z", "service": "checkout-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:42:02Z", "service": "api-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:42:02Z", "service": "catalog-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:42:48Z", "service": "search-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:43:19Z", "service": "notification-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:43:26Z", "service": "checkout-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:43:44Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T02:44:21Z", "service": "search-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:45:34Z", "service": "auth-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:45:54Z", "service": "search-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:46:38Z", "service": "api-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:47:01Z", "service": "auth-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:48:01Z", "service": "checkout-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:48:02Z", "service": "customers-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:49:55Z", "service": "customers-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:50:54Z", "service": "cache-proxy", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:51:36Z", "service": "checkout-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:51:48Z", "service": "orders-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:53:19Z", "service": "checkout-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:53:20Z", "service": "catalog-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:53:35Z", "service": "auth-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:53:44Z", "service": "orders-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:54:32Z", "service": "payments-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:54:38Z", "service": "auth-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:54:45Z", "service": "api-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:54:45Z", "service": "customers-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:56:01Z", "service": "checkout-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:56:02Z", "service": "search-service", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T02:56:03Z", "service": "notification-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:56:42Z", "service": "customers-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:57:52Z", "service": "search-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:58:42Z", "service": "catalog-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:59:09Z", "service": "catalog-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:59:09Z", "service": "cache-proxy", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:59:17Z", "service": "customers-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:59:59Z", "service": "orders-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:00:49Z", "service": "catalog-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:03:23Z", "service": "api-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:03:39Z", "service": "customers-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:03:39Z", "service": "auth-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:04:53Z", "service": "catalog-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:05:16Z", "service": "search-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:05:29Z", "service": "api-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:05:30Z", "service": "checkout-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:06:00Z", "service": "api-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:06:27Z", "service": "customers-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:06:34Z", "service": "cache-proxy", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:06:55Z", "service": "auth-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:07:33Z", "service": "search-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:07:55Z", "service": "customers-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:09:30Z", "service": "customers-db", "level": "WARN", "msg": "request queue depth 14"}
+{"ts": "2026-03-10T03:09:36Z", "service": "payments-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:10:12Z", "service": "auth-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:10:17Z", "service": "api-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:10:42Z", "service": "catalog-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:11:16Z", "service": "api-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:11:44Z", "service": "notification-service", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T03:12:13Z", "service": "orders-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:12:36Z", "service": "payments-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:12:42Z", "service": "api-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:12:57Z", "service": "catalog-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:13:32Z", "service": "search-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:14:10Z", "service": "customers-db", "level": "WARN", "msg": "request queue depth 14"}
+{"ts": "2026-03-10T03:14:12Z", "service": "payments-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:15:51Z", "service": "customers-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:16:01Z", "service": "cache-proxy", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:17:20Z", "service": "catalog-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:19:44Z", "service": "payments-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:19:49Z", "service": "search-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:20:17Z", "service": "auth-service", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T03:20:31Z", "service": "notification-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:21:00Z", "service": "checkout-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:21:48Z", "service": "notification-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:22:17Z", "service": "notification-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:22:24Z", "service": "auth-service", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T03:22:49Z", "service": "catalog-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:23:15Z", "service": "catalog-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:24:10Z", "service": "catalog-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:24:35Z", "service": "cache-proxy", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:25:10Z", "service": "catalog-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:25:16Z", "service": "checkout-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:26:02Z", "service": "auth-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:26:54Z", "service": "api-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:27:56Z", "service": "search-service", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T03:28:43Z", "service": "auth-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:28:52Z", "service": "cache-proxy", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:29:09Z", "service": "api-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:29:35Z", "service": "notification-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:29:56Z", "service": "orders-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:30:10Z", "service": "checkout-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:31:10Z", "service": "customers-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:33:17Z", "service": "api-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:33:20Z", "service": "notification-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:34:14Z", "service": "api-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:34:16Z", "service": "cache-proxy", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:34:42Z", "service": "payments-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:34:52Z", "service": "orders-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:34:59Z", "service": "checkout-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:36:28Z", "service": "notification-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:36:45Z", "service": "orders-db", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T03:37:39Z", "service": "catalog-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:37:47Z", "service": "customers-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:39:40Z", "service": "catalog-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:39:42Z", "service": "checkout-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:39:52Z", "service": "payments-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:40:20Z", "service": "api-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:41:36Z", "service": "orders-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:42:09Z", "service": "api-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:42:30Z", "service": "cache-proxy", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:43:21Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T03:43:29Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T03:43:30Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T03:43:33Z", "service": "orders-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:43:33Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T03:43:42Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T03:43:49Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T03:44:00Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T03:44:20Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T03:44:21Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T03:44:29Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T03:44:29Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T03:44:55Z", "service": "api-gateway", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T03:45:04Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T03:45:06Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T03:45:11Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T03:45:13Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T03:45:27Z", "service": "catalog-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:45:32Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T03:45:54Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T03:45:57Z", "service": "payments-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:46:17Z", "service": "payments-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:46:21Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T03:46:35Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T03:46:36Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T03:46:40Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T03:46:40Z", "service": "orders-db", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T03:47:01Z", "service": "notification-service", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T03:47:12Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T03:47:28Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T03:47:28Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T03:47:45Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T03:47:54Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T03:48:10Z", "service": "notification-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:48:11Z", "service": "cache-proxy", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:48:33Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T03:48:33Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T03:48:33Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T03:48:35Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T03:48:44Z", "service": "auth-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:48:51Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T03:49:05Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T03:49:11Z", "service": "api-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:49:18Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T03:49:24Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T03:49:24Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T03:50:07Z", "service": "search-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:50:16Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T03:50:24Z", "service": "notification-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:50:31Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T03:50:39Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T03:51:06Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T03:51:10Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T03:51:21Z", "service": "search-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:51:24Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T03:51:43Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T03:51:50Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T03:52:05Z", "service": "auth-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:52:10Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T03:52:12Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T03:52:16Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T03:52:46Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T03:52:51Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T03:52:53Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T03:53:09Z", "service": "cache-proxy", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:53:22Z", "service": "api-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:53:26Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T03:53:27Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T03:53:28Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T03:53:32Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T03:53:37Z", "service": "payments-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:53:47Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T03:53:58Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T03:54:05Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T03:54:05Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T03:54:08Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T03:54:10Z", "service": "api-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:54:40Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T03:54:42Z", "service": "cache-proxy", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T03:54:49Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T03:54:52Z", "service": "search-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:55:01Z", "service": "auth-service", "level": "WARN", "msg": "request queue depth 14"}
+{"ts": "2026-03-10T03:55:04Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T03:55:28Z", "service": "api-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:55:42Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T03:55:55Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T03:55:58Z", "service": "notification-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:56:16Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T03:56:19Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T03:56:23Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T03:56:29Z", "service": "checkout-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:56:36Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T03:56:48Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T03:57:00Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T03:57:05Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T03:57:23Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T03:57:26Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T03:57:53Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T03:57:55Z", "service": "orders-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:58:01Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T03:58:07Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T03:58:14Z", "service": "api-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:58:18Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T03:58:26Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T03:58:39Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T03:59:07Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T03:59:13Z", "service": "checkout-service", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T03:59:17Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T03:59:30Z", "service": "checkout-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:59:36Z", "service": "api-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:59:44Z", "service": "notification-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:59:46Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T03:59:50Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T03:59:56Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T04:00:19Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:00:21Z", "service": "api-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:00:31Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:00:32Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T04:00:43Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T04:00:55Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T04:00:59Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T04:01:06Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:01:09Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T04:01:14Z", "service": "payments-gateway", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T04:01:18Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T04:01:35Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T04:01:42Z", "service": "search-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:01:56Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T04:01:56Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:01:57Z", "service": "auth-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:02:04Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T04:02:27Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T04:02:29Z", "service": "api-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:02:37Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T04:02:38Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T04:02:53Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:02:55Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:03:08Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T04:03:09Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T04:03:38Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:03:47Z", "service": "checkout-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:03:54Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:03:55Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T04:04:01Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T04:04:04Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T04:04:32Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:04:54Z", "service": "auth-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:05:05Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T04:05:05Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T04:05:09Z", "service": "cache-proxy", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:05:09Z", "service": "auth-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:05:12Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:05:37Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:05:43Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T04:06:08Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T04:06:16Z", "service": "customers-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:06:21Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T04:06:46Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T04:06:52Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:06:58Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T04:07:15Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T04:07:19Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T04:07:25Z", "service": "api-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:07:38Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:07:44Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T04:07:51Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T04:08:01Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:08:28Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T04:08:41Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T04:08:45Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:08:48Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T04:08:58Z", "service": "catalog-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:09:01Z", "service": "cache-proxy", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:09:13Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:09:22Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T04:09:32Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T04:09:41Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T04:10:30Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T04:10:41Z", "service": "payments-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:10:46Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T04:10:48Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:11:01Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:11:01Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T04:11:04Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:11:38Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T04:11:40Z", "service": "auth-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:11:58Z", "service": "catalog-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:12:04Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T04:12:05Z", "service": "payments-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:12:06Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:12:15Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T04:12:20Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:12:26Z", "service": "catalog-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:12:40Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T04:12:43Z", "service": "auth-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:12:56Z", "service": "search-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:13:06Z", "service": "notification-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:13:10Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T04:13:20Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T04:13:21Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:13:56Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T04:14:07Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:14:22Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T04:14:38Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T04:14:47Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:14:50Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T04:14:51Z", "service": "search-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:14:53Z", "service": "api-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:14:59Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T04:15:22Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T04:15:24Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:15:41Z", "service": "cache-proxy", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T04:15:45Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:15:52Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T04:15:56Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T04:16:05Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:16:33Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:16:35Z", "service": "payments-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:16:42Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T04:16:46Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T04:16:50Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T04:16:54Z", "service": "auth-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:17:05Z", "service": "customers-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:17:16Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:17:27Z", "service": "notification-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:17:29Z", "service": "orders-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:17:39Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T04:17:40Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T04:17:51Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T04:17:56Z", "service": "catalog-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:18:17Z", "service": "orders-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:18:20Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:18:25Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:18:55Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T04:18:56Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T04:18:57Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T04:19:06Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:19:23Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T04:19:28Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T04:19:34Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:19:37Z", "service": "orders-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:19:39Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T04:19:42Z", "service": "payments-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:20:11Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T04:20:12Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T04:20:18Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T04:20:21Z", "service": "orders-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:20:24Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:20:35Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T04:20:53Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:21:05Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:21:26Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T04:21:32Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:21:45Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T04:21:56Z", "service": "notification-service", "level": "WARN", "msg": "request queue depth 14"}
+{"ts": "2026-03-10T04:22:00Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:22:04Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T04:22:12Z", "service": "checkout-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:22:35Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T04:22:37Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T04:22:48Z", "service": "orders-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:22:49Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:23:00Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:23:01Z", "service": "cache-proxy", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:23:37Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T04:23:45Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T04:23:48Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:23:50Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T04:24:03Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T04:24:06Z", "service": "notification-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:24:18Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T04:24:19Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:24:48Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T04:24:49Z", "service": "customers-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:25:03Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T04:25:05Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:25:06Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T04:25:35Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:26:09Z", "service": "payments-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:26:26Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T04:26:28Z", "service": "notification-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:26:33Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:26:36Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T04:26:37Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T04:26:40Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:26:55Z", "service": "cache-proxy", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:27:05Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T04:27:07Z", "service": "catalog-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:27:11Z", "service": "checkout-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:27:11Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T04:27:21Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:27:52Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:28:27Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T04:28:32Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T04:28:41Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T04:28:55Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:29:08Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T04:29:30Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T04:29:42Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:29:43Z", "service": "cache-proxy", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:30:11Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:30:27Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T04:30:34Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:30:35Z", "service": "customers-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:30:39Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T04:31:12Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:31:23Z", "service": "catalog-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:31:32Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T04:31:48Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T04:32:00Z", "service": "search-service", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T04:32:16Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T04:32:26Z", "service": "api-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:32:36Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T04:32:38Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T04:32:49Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:32:51Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:32:52Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T04:33:13Z", "service": "payments-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:33:16Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T04:33:26Z", "service": "api-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:33:29Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T04:33:31Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T04:33:34Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:33:36Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T04:33:46Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:34:09Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T04:34:18Z", "service": "notification-service", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T04:34:32Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:34:42Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T04:35:09Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:35:36Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T04:35:40Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T04:35:49Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T04:35:53Z", "service": "cache-proxy", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:36:03Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T04:36:12Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:36:27Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T04:36:58Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T04:37:02Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:37:08Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T04:37:33Z", "service": "checkout-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:37:39Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T04:37:45Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T04:38:03Z", "service": "api-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:38:06Z", "service": "auth-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:38:30Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:38:36Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T04:38:38Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T04:38:54Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T04:38:58Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:39:03Z", "service": "payments-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:39:08Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T04:39:11Z", "service": "orders-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:39:29Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T04:39:34Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:39:42Z", "service": "auth-service", "level": "WARN", "msg": "request queue depth 14"}
+{"ts": "2026-03-10T04:39:42Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T04:39:48Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T04:40:16Z", "service": "cache-proxy", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:40:26Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T04:40:35Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T04:40:36Z", "service": "cache-proxy", "level": "WARN", "msg": "request queue depth 14"}
+{"ts": "2026-03-10T04:40:44Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T04:40:45Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:40:53Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T04:40:54Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:41:08Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T04:41:14Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:41:17Z", "service": "payments-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:41:20Z", "service": "search-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:41:26Z", "service": "auth-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:41:49Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T04:41:49Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:42:10Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:42:23Z", "service": "notification-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:42:29Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T04:42:38Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T04:42:39Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T04:42:43Z", "service": "customers-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:42:59Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:43:06Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T04:43:20Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T04:43:26Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:43:28Z", "service": "orders-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:43:29Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T04:43:52Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T04:44:04Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T04:44:12Z", "service": "checkout-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:44:15Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:44:15Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T04:44:20Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T04:44:23Z", "service": "orders-db", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T04:44:25Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:44:42Z", "service": "search-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:45:03Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T04:45:04Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T04:45:05Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T04:45:07Z", "service": "customers-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:45:27Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:45:53Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:46:03Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T04:46:41Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T04:46:41Z", "service": "customers-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:46:47Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:46:53Z", "service": "payments-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:46:55Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T04:47:07Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:47:08Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T04:47:13Z", "service": "checkout-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:47:13Z", "service": "api-gateway", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T04:47:33Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T04:47:39Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T04:47:41Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:47:43Z", "service": "auth-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:47:44Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T04:48:01Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T04:48:07Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T04:48:12Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:48:30Z", "service": "payments-gateway", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T04:48:38Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T04:49:08Z", "service": "auth-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:49:27Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:49:30Z", "service": "orders-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:49:31Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T04:49:49Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T04:49:51Z", "service": "customers-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:49:56Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:50:28Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T04:50:37Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T04:50:38Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:50:52Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T04:50:56Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:51:03Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T04:51:05Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:51:07Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T04:51:39Z", "service": "cache-proxy", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:51:43Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:51:55Z", "service": "catalog-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:52:01Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:52:07Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T04:52:16Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T04:52:29Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T04:52:33Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T04:52:41Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:52:44Z", "service": "search-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:53:05Z", "service": "payments-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:53:06Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T04:53:09Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:53:13Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:53:27Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T04:53:47Z", "service": "search-service", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T04:53:47Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T04:54:00Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T04:54:20Z", "service": "payments-gateway", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T04:54:31Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T04:54:38Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:54:49Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T04:54:56Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T04:54:57Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:55:00Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T04:55:16Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:55:22Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:55:35Z", "service": "notification-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:55:43Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T04:55:50Z", "service": "cache-proxy", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T04:55:51Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T04:56:27Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:56:37Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T04:56:54Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T04:57:02Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T04:57:18Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T04:57:31Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T04:57:45Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:58:09Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:58:21Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T04:58:32Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:58:51Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T04:59:07Z", "service": "payments-gateway", "level": "ERROR", "msg": "health check failing: upstream provider unreachable"}
+{"ts": "2026-03-10T04:59:10Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:59:17Z", "service": "checkout-service", "level": "ERROR", "msg": "upstream payments-gateway: connection refused (dial tcp 10.0.3.14:8443)"}
+{"ts": "2026-03-10T04:59:31Z", "service": "cache-proxy", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:59:37Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T04:59:38Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream checkout-service: returned 5xx"}
+{"ts": "2026-03-10T04:59:44Z", "service": "auth-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}

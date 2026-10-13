@@ -1,0 +1,37 @@
+[
+ {
+  "ts": "2026-03-10T02:16:00Z",
+  "service": "api-gateway",
+  "version": "v2.6.0",
+  "author": "dana",
+  "commit_message": "Fix typo in error message"
+ },
+ {
+  "ts": "2026-03-10T02:20:00Z",
+  "service": "notification-service",
+  "version": "v4.10.7",
+  "author": "tom",
+  "commit_message": "Tidy imports"
+ },
+ {
+  "ts": "2026-03-10T02:59:00Z",
+  "service": "search-service",
+  "version": "v3.16.0",
+  "author": "li",
+  "commit_message": "Tidy imports"
+ },
+ {
+  "ts": "2026-03-10T03:36:00Z",
+  "service": "api-gateway",
+  "version": "v1.12.7",
+  "author": "carlos",
+  "commit_message": "Bump http client timeout to 5s"
+ },
+ {
+  "ts": "2026-03-10T03:56:00Z",
+  "service": "notification-service",
+  "version": "v2.8.1",
+  "author": "dana",
+  "commit_message": "Refactor request handling and add currency conversion"
+ }
+]

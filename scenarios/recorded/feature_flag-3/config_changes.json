@@ -1,0 +1,26 @@
+[
+ {
+  "ts": "2026-03-10T02:23:00Z",
+  "service": "auth-service",
+  "key": "request_timeout_ms",
+  "old": "2000",
+  "new": "2000",
+  "author": "priya"
+ },
+ {
+  "ts": "2026-03-10T02:54:00Z",
+  "service": "api-gateway",
+  "key": "log_level",
+  "old": "info",
+  "new": "info,debug",
+  "author": "carlos"
+ },
+ {
+  "ts": "2026-03-10T03:53:00Z",
+  "service": "auth-service",
+  "key": "recs_v2_pipeline",
+  "old": "off",
+  "new": "on (100%)",
+  "author": "dana"
+ }
+]

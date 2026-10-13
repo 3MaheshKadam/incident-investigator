@@ -1,0 +1,504 @@
+{"ts": "2026-03-10T02:00:52Z", "service": "checkout-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:01:37Z", "service": "auth-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:04:59Z", "service": "customers-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:05:08Z", "service": "auth-service", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T02:05:10Z", "service": "payments-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:05:14Z", "service": "api-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:05:55Z", "service": "catalog-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:06:05Z", "service": "orders-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:06:23Z", "service": "payments-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:06:35Z", "service": "checkout-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:07:18Z", "service": "search-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:07:48Z", "service": "payments-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:08:41Z", "service": "auth-service", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T02:09:19Z", "service": "api-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:10:28Z", "service": "orders-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:11:00Z", "service": "orders-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:12:04Z", "service": "search-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:12:06Z", "service": "customers-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:13:22Z", "service": "payments-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:13:31Z", "service": "catalog-db", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T02:14:44Z", "service": "customers-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:14:50Z", "service": "auth-service", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T02:15:11Z", "service": "notification-service", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T02:16:23Z", "service": "cache-proxy", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:16:31Z", "service": "catalog-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:16:56Z", "service": "api-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:17:21Z", "service": "orders-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:17:30Z", "service": "customers-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:17:38Z", "service": "payments-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:17:41Z", "service": "cache-proxy", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:17:56Z", "service": "catalog-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:18:18Z", "service": "payments-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:18:39Z", "service": "auth-service", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T02:20:23Z", "service": "notification-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:20:57Z", "service": "cache-proxy", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:21:16Z", "service": "customers-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:23:06Z", "service": "api-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:23:21Z", "service": "orders-db", "level": "WARN", "msg": "request queue depth 14"}
+{"ts": "2026-03-10T02:24:04Z", "service": "cache-proxy", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:24:11Z", "service": "customers-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:25:24Z", "service": "cache-proxy", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:25:47Z", "service": "api-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:25:56Z", "service": "payments-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:26:30Z", "service": "checkout-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:26:47Z", "service": "auth-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:28:18Z", "service": "api-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:28:50Z", "service": "orders-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:29:02Z", "service": "customers-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:31:30Z", "service": "cache-proxy", "level": "WARN", "msg": "request queue depth 14"}
+{"ts": "2026-03-10T02:31:46Z", "service": "payments-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:32:43Z", "service": "cache-proxy", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:33:16Z", "service": "auth-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:33:21Z", "service": "notification-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:33:50Z", "service": "payments-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:33:57Z", "service": "cache-proxy", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:34:28Z", "service": "payments-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:35:19Z", "service": "auth-service", "level": "WARN", "msg": "request queue depth 14"}
+{"ts": "2026-03-10T02:35:19Z", "service": "payments-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:38:55Z", "service": "customers-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:39:05Z", "service": "payments-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:39:13Z", "service": "catalog-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:40:10Z", "service": "search-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:40:23Z", "service": "api-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:40:55Z", "service": "catalog-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:41:07Z", "service": "orders-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:41:26Z", "service": "notification-service", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T02:41:34Z", "service": "catalog-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:42:00Z", "service": "orders-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:42:00Z", "service": "customers-db", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T02:42:14Z", "service": "api-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:44:10Z", "service": "customers-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:45:23Z", "service": "auth-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:45:32Z", "service": "api-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:45:44Z", "service": "payments-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:46:09Z", "service": "auth-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:47:45Z", "service": "api-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:50:09Z", "service": "orders-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:50:15Z", "service": "cache-proxy", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:50:44Z", "service": "api-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:50:46Z", "service": "checkout-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:51:07Z", "service": "notification-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:51:10Z", "service": "customers-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:52:01Z", "service": "auth-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:52:58Z", "service": "customers-db", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T02:53:06Z", "service": "orders-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:53:13Z", "service": "customers-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:53:27Z", "service": "search-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:53:48Z", "service": "api-gateway", "level": "WARN", "msg": "upstream cache-proxy: connection refused (dial tcp 10.0.1.9:6379); retry succeeded"}
+{"ts": "2026-03-10T02:54:14Z", "service": "notification-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:54:33Z", "service": "search-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:55:13Z", "service": "auth-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:56:20Z", "service": "orders-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:56:32Z", "service": "api-gateway", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T02:56:36Z", "service": "notification-service", "level": "ERROR", "msg": "container restarted: OOMKilled (exit code 137)"}
+{"ts": "2026-03-10T02:57:35Z", "service": "notification-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:58:02Z", "service": "payments-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:58:20Z", "service": "cache-proxy", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:58:46Z", "service": "auth-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:59:52Z", "service": "auth-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:00:45Z", "service": "checkout-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:00:59Z", "service": "customers-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:01:30Z", "service": "customers-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:01:51Z", "service": "api-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:02:23Z", "service": "auth-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:02:39Z", "service": "api-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:03:01Z", "service": "payments-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:03:32Z", "service": "api-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:04:41Z", "service": "checkout-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:05:02Z", "service": "payments-gateway", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T03:05:30Z", "service": "cache-proxy", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:06:56Z", "service": "api-gateway", "level": "WARN", "msg": "x509: certificate for internal-ca renewed (old certificate rotated out)"}
+{"ts": "2026-03-10T03:07:28Z", "service": "api-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:07:34Z", "service": "catalog-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:10:55Z", "service": "checkout-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:11:36Z", "service": "checkout-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:12:13Z", "service": "search-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:12:30Z", "service": "orders-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:12:58Z", "service": "checkout-service", "level": "WARN", "msg": "request queue depth 14"}
+{"ts": "2026-03-10T03:13:20Z", "service": "notification-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:13:37Z", "service": "search-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:14:00Z", "service": "payments-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:15:01Z", "service": "checkout-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:15:56Z", "service": "customers-db", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T03:16:44Z", "service": "orders-db", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T03:18:03Z", "service": "cache-proxy", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:19:39Z", "service": "catalog-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:20:26Z", "service": "api-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:20:30Z", "service": "checkout-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:22:40Z", "service": "api-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:23:08Z", "service": "api-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:23:19Z", "service": "auth-service", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T03:23:58Z", "service": "customers-db", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T03:24:09Z", "service": "api-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:24:13Z", "service": "auth-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:25:10Z", "service": "notification-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:25:11Z", "service": "customers-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:25:16Z", "service": "cache-proxy", "level": "WARN", "msg": "request queue depth 14"}
+{"ts": "2026-03-10T03:25:40Z", "service": "checkout-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:26:11Z", "service": "cache-proxy", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:27:20Z", "service": "catalog-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:28:04Z", "service": "customers-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:28:12Z", "service": "orders-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:28:40Z", "service": "orders-db", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T03:28:44Z", "service": "payments-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:29:13Z", "service": "notification-service", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T03:29:57Z", "service": "checkout-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:30:36Z", "service": "orders-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:30:46Z", "service": "catalog-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:30:52Z", "service": "notification-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:31:31Z", "service": "search-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:31:37Z", "service": "payments-gateway", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T03:31:59Z", "service": "notification-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:33:45Z", "service": "customers-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:34:17Z", "service": "payments-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:34:45Z", "service": "search-service", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T03:35:02Z", "service": "customers-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:35:10Z", "service": "cache-proxy", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:36:18Z", "service": "cache-proxy", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:37:17Z", "service": "payments-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:37:18Z", "service": "api-gateway", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T03:37:42Z", "service": "cache-proxy", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:37:52Z", "service": "customers-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:39:07Z", "service": "notification-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:39:25Z", "service": "api-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:39:37Z", "service": "payments-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:40:55Z", "service": "checkout-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:42:22Z", "service": "api-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:43:32Z", "service": "customers-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:44:15Z", "service": "checkout-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:45:28Z", "service": "api-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:46:12Z", "service": "checkout-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:46:22Z", "service": "auth-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:46:49Z", "service": "cache-proxy", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:48:28Z", "service": "cache-proxy", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:48:35Z", "service": "payments-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:50:05Z", "service": "checkout-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:50:25Z", "service": "catalog-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:51:34Z", "service": "cache-proxy", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:52:18Z", "service": "payments-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:52:27Z", "service": "checkout-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:52:55Z", "service": "api-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:53:08Z", "service": "notification-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:53:15Z", "service": "search-service", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T03:54:15Z", "service": "payments-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:54:16Z", "service": "orders-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:56:04Z", "service": "payments-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:56:07Z", "service": "customers-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:56:23Z", "service": "api-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:56:35Z", "service": "checkout-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:57:09Z", "service": "orders-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:57:30Z", "service": "api-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:58:08Z", "service": "checkout-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:58:16Z", "service": "api-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:00:08Z", "service": "checkout-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:00:34Z", "service": "catalog-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:01:08Z", "service": "auth-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:01:16Z", "service": "notification-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:01:21Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:01:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:01:46Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:01:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:01:53Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream auth-service: returned 5xx"}
+{"ts": "2026-03-10T04:01:58Z", "service": "payments-gateway", "level": "WARN", "msg": "request queue depth 14"}
+{"ts": "2026-03-10T04:01:58Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream auth-service: returned 5xx"}
+{"ts": "2026-03-10T04:02:07Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream auth-service: returned 5xx"}
+{"ts": "2026-03-10T04:02:40Z", "service": "cache-proxy", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:02:48Z", "service": "api-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:02:48Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:02:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:02:52Z", "service": "orders-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:03:04Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:03:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:03:20Z", "service": "catalog-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:03:25Z", "service": "notification-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:03:26Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream auth-service: returned 5xx"}
+{"ts": "2026-03-10T04:03:34Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:03:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:03:39Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream auth-service: returned 5xx"}
+{"ts": "2026-03-10T04:03:47Z", "service": "payments-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:04:04Z", "service": "customers-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:04:08Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream auth-service: returned 5xx"}
+{"ts": "2026-03-10T04:04:17Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream auth-service: returned 5xx"}
+{"ts": "2026-03-10T04:04:28Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:04:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:04:41Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:04:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:04:46Z", "service": "cache-proxy", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:05:13Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:05:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:05:21Z", "service": "payments-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:05:25Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream auth-service: returned 5xx"}
+{"ts": "2026-03-10T04:05:32Z", "service": "orders-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:05:37Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream auth-service: returned 5xx"}
+{"ts": "2026-03-10T04:05:41Z", "service": "catalog-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:05:49Z", "service": "auth-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:06:17Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream auth-service: returned 5xx"}
+{"ts": "2026-03-10T04:06:34Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream auth-service: returned 5xx"}
+{"ts": "2026-03-10T04:06:37Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:06:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:07:17Z", "service": "auth-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:07:24Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream auth-service: returned 5xx"}
+{"ts": "2026-03-10T04:07:34Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:07:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:07:39Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:07:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:08:23Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream auth-service: returned 5xx"}
+{"ts": "2026-03-10T04:08:49Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:08:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:09:03Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:09:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:09:05Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream auth-service: returned 5xx"}
+{"ts": "2026-03-10T04:09:12Z", "service": "catalog-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:09:15Z", "service": "orders-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:09:48Z", "service": "customers-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:09:48Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:09:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:09:49Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream auth-service: returned 5xx"}
+{"ts": "2026-03-10T04:10:23Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream auth-service: returned 5xx"}
+{"ts": "2026-03-10T04:10:24Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream auth-service: returned 5xx"}
+{"ts": "2026-03-10T04:10:37Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:10:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:10:41Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:10:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:11:10Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:11:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:11:25Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream auth-service: returned 5xx"}
+{"ts": "2026-03-10T04:11:27Z", "service": "notification-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:11:28Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream auth-service: returned 5xx"}
+{"ts": "2026-03-10T04:11:30Z", "service": "search-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:11:34Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:11:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:11:36Z", "service": "api-gateway", "level": "WARN", "msg": "request queue depth 14"}
+{"ts": "2026-03-10T04:12:02Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:12:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:12:24Z", "service": "auth-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:12:35Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream auth-service: returned 5xx"}
+{"ts": "2026-03-10T04:12:44Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:12:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:12:46Z", "service": "customers-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:13:20Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream auth-service: returned 5xx"}
+{"ts": "2026-03-10T04:13:31Z", "service": "auth-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:13:32Z", "service": "api-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:13:39Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:13:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:13:57Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream auth-service: returned 5xx"}
+{"ts": "2026-03-10T04:14:03Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream auth-service: returned 5xx"}
+{"ts": "2026-03-10T04:14:12Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream auth-service: returned 5xx"}
+{"ts": "2026-03-10T04:14:20Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:14:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:14:27Z", "service": "api-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:14:28Z", "service": "auth-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:14:33Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:14:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:14:51Z", "service": "cache-proxy", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T04:14:52Z", "service": "customers-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:15:06Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream auth-service: returned 5xx"}
+{"ts": "2026-03-10T04:15:10Z", "service": "customers-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:15:35Z", "service": "orders-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:15:44Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:15:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:15:48Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:15:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:16:19Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream auth-service: returned 5xx"}
+{"ts": "2026-03-10T04:16:44Z", "service": "auth-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:16:44Z", "service": "search-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:16:50Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:16:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:16:58Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream auth-service: returned 5xx"}
+{"ts": "2026-03-10T04:17:07Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream auth-service: returned 5xx"}
+{"ts": "2026-03-10T04:17:21Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream auth-service: returned 5xx"}
+{"ts": "2026-03-10T04:17:33Z", "service": "catalog-db", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T04:17:41Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:17:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:17:41Z", "service": "auth-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:17:56Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:17:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:18:00Z", "service": "orders-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:18:09Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream auth-service: returned 5xx"}
+{"ts": "2026-03-10T04:18:13Z", "service": "customers-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:18:14Z", "service": "payments-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:18:20Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:18:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:18:44Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:18:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:18:54Z", "service": "api-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:19:03Z", "service": "notification-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:19:08Z", "service": "api-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:19:12Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:19:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:19:20Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream auth-service: returned 5xx"}
+{"ts": "2026-03-10T04:19:39Z", "service": "catalog-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:19:43Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream auth-service: returned 5xx"}
+{"ts": "2026-03-10T04:19:55Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:19:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:20:15Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream auth-service: returned 5xx"}
+{"ts": "2026-03-10T04:20:43Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:20:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:20:44Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:20:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:21:07Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:21:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:21:23Z", "service": "catalog-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:21:39Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream auth-service: returned 5xx"}
+{"ts": "2026-03-10T04:22:38Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream auth-service: returned 5xx"}
+{"ts": "2026-03-10T04:22:47Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:22:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:22:48Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:22:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:23:14Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:23:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:23:19Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream auth-service: returned 5xx"}
+{"ts": "2026-03-10T04:23:23Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:23:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:23:25Z", "service": "orders-db", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T04:23:38Z", "service": "customers-db", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T04:24:04Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:24:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:24:09Z", "service": "api-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:24:41Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:24:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:24:57Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream auth-service: returned 5xx"}
+{"ts": "2026-03-10T04:25:01Z", "service": "orders-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:25:06Z", "service": "search-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:25:14Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream auth-service: returned 5xx"}
+{"ts": "2026-03-10T04:25:14Z", "service": "cache-proxy", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:25:26Z", "service": "api-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:25:27Z", "service": "customers-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:25:43Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:25:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:25:48Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:25:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:25:48Z", "service": "payments-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:26:14Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:26:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:26:22Z", "service": "catalog-db", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T04:26:25Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:26:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:26:26Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream auth-service: returned 5xx"}
+{"ts": "2026-03-10T04:26:48Z", "service": "cache-proxy", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:26:57Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream auth-service: returned 5xx"}
+{"ts": "2026-03-10T04:27:08Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream auth-service: returned 5xx"}
+{"ts": "2026-03-10T04:27:23Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream auth-service: returned 5xx"}
+{"ts": "2026-03-10T04:27:40Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:27:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:27:41Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:27:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:28:14Z", "service": "api-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:28:35Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream auth-service: returned 5xx"}
+{"ts": "2026-03-10T04:28:43Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream auth-service: returned 5xx"}
+{"ts": "2026-03-10T04:28:43Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:28:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:28:47Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:28:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:29:22Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:29:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:29:23Z", "service": "catalog-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:29:41Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream auth-service: returned 5xx"}
+{"ts": "2026-03-10T04:29:58Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream auth-service: returned 5xx"}
+{"ts": "2026-03-10T04:30:11Z", "service": "checkout-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:30:20Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream auth-service: returned 5xx"}
+{"ts": "2026-03-10T04:30:21Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream auth-service: returned 5xx"}
+{"ts": "2026-03-10T04:30:38Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:30:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:30:39Z", "service": "catalog-db", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T04:30:51Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:30:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:31:00Z", "service": "checkout-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:31:08Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:31:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:31:13Z", "service": "payments-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:31:14Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream auth-service: returned 5xx"}
+{"ts": "2026-03-10T04:31:16Z", "service": "orders-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:31:16Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream auth-service: returned 5xx"}
+{"ts": "2026-03-10T04:31:39Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:31:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:31:41Z", "service": "search-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:32:04Z", "service": "auth-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:32:06Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:32:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:32:06Z", "service": "api-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:32:22Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream auth-service: returned 5xx"}
+{"ts": "2026-03-10T04:32:34Z", "service": "search-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:32:36Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream auth-service: returned 5xx"}
+{"ts": "2026-03-10T04:33:11Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream auth-service: returned 5xx"}
+{"ts": "2026-03-10T04:33:24Z", "service": "checkout-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:33:26Z", "service": "catalog-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:33:37Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:33:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:33:47Z", "service": "cache-proxy", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:33:55Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:33:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:34:03Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream auth-service: returned 5xx"}
+{"ts": "2026-03-10T04:34:12Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:34:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:34:29Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:34:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:35:20Z", "service": "api-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:35:36Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream auth-service: returned 5xx"}
+{"ts": "2026-03-10T04:35:48Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:35:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:36:17Z", "service": "payments-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:36:27Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:36:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:36:29Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream auth-service: returned 5xx"}
+{"ts": "2026-03-10T04:36:51Z", "service": "customers-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:36:58Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:36:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:37:03Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream auth-service: returned 5xx"}
+{"ts": "2026-03-10T04:37:03Z", "service": "orders-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:37:04Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream auth-service: returned 5xx"}
+{"ts": "2026-03-10T04:37:06Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:37:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:37:10Z", "service": "payments-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:37:20Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:37:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:37:42Z", "service": "catalog-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:38:03Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream auth-service: returned 5xx"}
+{"ts": "2026-03-10T04:38:13Z", "service": "search-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:38:17Z", "service": "checkout-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:38:26Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:38:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:38:48Z", "service": "orders-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:38:55Z", "service": "auth-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:39:13Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream auth-service: returned 5xx"}
+{"ts": "2026-03-10T04:39:24Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:39:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:39:31Z", "service": "api-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:39:32Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream auth-service: returned 5xx"}
+{"ts": "2026-03-10T04:39:38Z", "service": "notification-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:39:38Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:39:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:40:01Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:40:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:40:04Z", "service": "catalog-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:40:17Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:40:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:40:28Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream auth-service: returned 5xx"}
+{"ts": "2026-03-10T04:40:49Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream auth-service: returned 5xx"}
+{"ts": "2026-03-10T04:41:08Z", "service": "notification-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:41:12Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream auth-service: returned 5xx"}
+{"ts": "2026-03-10T04:41:25Z", "service": "customers-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:41:38Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:41:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:41:59Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream auth-service: returned 5xx"}
+{"ts": "2026-03-10T04:42:03Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream auth-service: returned 5xx"}
+{"ts": "2026-03-10T04:42:11Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream auth-service: returned 5xx"}
+{"ts": "2026-03-10T04:42:22Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:42:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:42:24Z", "service": "customers-db", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T04:42:27Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:42:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:42:37Z", "service": "payments-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:42:57Z", "service": "notification-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:43:01Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream auth-service: returned 5xx"}
+{"ts": "2026-03-10T04:43:07Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:43:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:43:19Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream auth-service: returned 5xx"}
+{"ts": "2026-03-10T04:43:25Z", "service": "auth-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:43:33Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:43:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:43:47Z", "service": "payments-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:44:34Z", "service": "api-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:44:47Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream auth-service: returned 5xx"}
+{"ts": "2026-03-10T04:44:50Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:44:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:44:51Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream auth-service: returned 5xx"}
+{"ts": "2026-03-10T04:45:00Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:45:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:45:04Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:45:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:45:09Z", "service": "cache-proxy", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:45:15Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream auth-service: returned 5xx"}
+{"ts": "2026-03-10T04:46:08Z", "service": "cache-proxy", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:46:10Z", "service": "api-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:46:24Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream auth-service: returned 5xx"}
+{"ts": "2026-03-10T04:46:28Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:46:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:46:29Z", "service": "orders-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:46:33Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:46:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:46:34Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream auth-service: returned 5xx"}
+{"ts": "2026-03-10T04:47:04Z", "service": "customers-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:47:12Z", "service": "checkout-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:47:35Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:47:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:47:35Z", "service": "catalog-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:47:52Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream auth-service: returned 5xx"}
+{"ts": "2026-03-10T04:47:59Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:47:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:48:05Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream auth-service: returned 5xx"}
+{"ts": "2026-03-10T04:48:13Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:48:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:48:20Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream auth-service: returned 5xx"}
+{"ts": "2026-03-10T04:48:39Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:48:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:48:45Z", "service": "search-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:48:59Z", "service": "customers-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:49:05Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream auth-service: returned 5xx"}
+{"ts": "2026-03-10T04:49:20Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:49:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:49:35Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:49:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:50:02Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream auth-service: returned 5xx"}
+{"ts": "2026-03-10T04:50:02Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:50:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:50:04Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream auth-service: returned 5xx"}
+{"ts": "2026-03-10T04:50:29Z", "service": "customers-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:50:44Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:50:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:51:13Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:51:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:51:39Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream auth-service: returned 5xx"}
+{"ts": "2026-03-10T04:51:40Z", "service": "customers-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:51:44Z", "service": "search-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:51:53Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream auth-service: returned 5xx"}
+{"ts": "2026-03-10T04:51:58Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:51:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:52:01Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:52:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:52:07Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream auth-service: returned 5xx"}
+{"ts": "2026-03-10T04:52:11Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream auth-service: returned 5xx"}
+{"ts": "2026-03-10T04:52:11Z", "service": "cache-proxy", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:52:23Z", "service": "api-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:52:35Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:52:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:53:16Z", "service": "api-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:53:21Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:53:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:53:21Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream auth-service: returned 5xx"}
+{"ts": "2026-03-10T04:53:25Z", "service": "payments-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:53:26Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream auth-service: returned 5xx"}
+{"ts": "2026-03-10T04:54:06Z", "service": "customers-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:54:13Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream auth-service: returned 5xx"}
+{"ts": "2026-03-10T04:54:14Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream auth-service: returned 5xx"}
+{"ts": "2026-03-10T04:54:35Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:54:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:54:44Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:54:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:54:57Z", "service": "cache-proxy", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:55:27Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream auth-service: returned 5xx"}
+{"ts": "2026-03-10T04:55:28Z", "service": "auth-service", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T04:55:54Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:55:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:55:57Z", "service": "checkout-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:56:11Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:56:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:56:29Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream auth-service: returned 5xx"}
+{"ts": "2026-03-10T04:56:35Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream auth-service: returned 5xx"}
+{"ts": "2026-03-10T04:56:55Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:56:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:57:03Z", "service": "notification-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:57:31Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:57:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:57:40Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:57:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:57:52Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream auth-service: returned 5xx"}
+{"ts": "2026-03-10T04:58:06Z", "service": "api-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:58:50Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream auth-service: returned 5xx"}
+{"ts": "2026-03-10T04:58:50Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream auth-service: returned 5xx"}
+{"ts": "2026-03-10T04:58:55Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:58:00Z is after 2026-03-10T04:01:00Z"}
+{"ts": "2026-03-10T04:59:14Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream auth-service: returned 5xx"}
+{"ts": "2026-03-10T04:59:25Z", "service": "api-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:59:53Z", "service": "auth-service", "level": "ERROR", "msg": "tls handshake failed: x509: certificate has expired or is not yet valid: current time 2026-03-10T04:59:00Z is after 2026-03-10T04:01:00Z"}

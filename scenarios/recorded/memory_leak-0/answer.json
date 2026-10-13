@@ -1,0 +1,16 @@
+{
+ "id": "memory_leak-0",
+ "kind": "memory_leak",
+ "root_cause_category": "memory_leak",
+ "component": "search-service",
+ "evidence_keys": [
+  "OOMKilled",
+  "heap usage"
+ ],
+ "incident_start": "2026-03-10T03:47:00Z",
+ "injected_at": "2026-03-10T02:36:00Z",
+ "correct_action": {
+  "type": "restart_service",
+  "target": "search-service"
+ }
+}

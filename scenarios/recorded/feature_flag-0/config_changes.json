@@ -1,0 +1,26 @@
+[
+ {
+  "ts": "2026-03-10T02:06:00Z",
+  "service": "search-service",
+  "key": "log_level",
+  "old": "info",
+  "new": "info,debug",
+  "author": "tom"
+ },
+ {
+  "ts": "2026-03-10T02:19:00Z",
+  "service": "checkout-service",
+  "key": "request_timeout_ms",
+  "old": "2000",
+  "new": "2000",
+  "author": "tom"
+ },
+ {
+  "ts": "2026-03-10T03:49:00Z",
+  "service": "checkout-service",
+  "key": "fast_checkout_path",
+  "old": "off",
+  "new": "on (100%)",
+  "author": "tom"
+ }
+]

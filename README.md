@@ -23,7 +23,9 @@ All incidents are simulated. No real systems or credentials are involved.
 | Folder | Purpose |
 | --- | --- |
 | `agent/` | Investigator loop, tools and the model wrapper |
-| `scenarios/` | Simulated incidents and hidden answers |
+| `shop/` | A simulated backend (10 services) whose telemetry comes from its own state |
+| `monitor/` | Anomaly detection, incident grouping, change correlation, recording |
+| `scenarios/` | Hand-generated incidents (`data/`) and monitor-recorded ones (`recorded/`) |
 | `evals/` | Scoring harness and reports |
 | `guard/` | Attack and defense layer |
 | `ui/` | Replay and approval interface |
@@ -52,6 +54,43 @@ LLM_PROVIDER=ollama LLM_MODEL=llama3.1:8b python -m evals.run --split dev
 Each run is scored by plain code: root cause correct (category and component), evidence cited,
 tool calls used, and wrong blame (a wrong component named with medium or high confidence).
 Traces and a `summary.json` are written to `evals/reports/`.
+
+## Monitored app and detection
+
+`shop/` is a small simulated backend: services that call each other (gateway, checkout, auth,
+search, databases, cache, payments). Each minute it derives logs and metrics from its own state,
+so a fault is a *state change* and the symptoms follow the call chain: a down database makes
+checkout log "connection refused" and the gateway's error rate climb; a slow query slows every
+caller; a leak fills memory until the container is killed. `shop/faults.py` injects the same six
+incident types as the scenario generator, plus decoys (unrelated deploys, red-herring log lines)
+and healthy runs with harmless traffic surges.
+
+`monitor/detect.py` watches only metrics and change events. It learns "normal" from the first 30
+minutes, flags values far outside it that also rise by a meaningful amount for three minutes in a
+row, groups related anomalies into one incident, pages the user-facing service as an SLO alert
+would, and lists deploys and config changes shortly before the incident as suspects.
+
+```bash
+python -m evals.detect_eval --split heldout          # recall, precision, time to detection
+python -m evals.detect_eval --split all --sweep      # quieter and quieter faults
+python -m monitor.record                             # save detected incidents as scenarios
+python -m evals.run --data scenarios/recorded --split dev
+```
+
+A fault counts as detected if an incident is raised between its injection and 30 minutes after
+users first feel it; an incident outside every fault window is a false alarm. Time to detection
+is measured from first user impact (negative means an early warning, as with memory leaks).
+
+| Split | Faults detected | Precision | False alarms on healthy runs | Median time to detect | Change correlated |
+| --- | --- | --- | --- | --- | --- |
+| dev | 12/12 | 1.0 | 0/4 | 2 min | 4/4 |
+| heldout | 12/12 | 1.0 | 0/4 | 2 min | 4/4 |
+
+These faults are loud, so a clean score is expected and says little by itself. The sweep makes
+faults partial (a share of requests fail, queries are only somewhat slow). Detection holds down
+to severity 0.25 and drops to 17/24 at 0.1, where faults are nearly invisible. Honest limits:
+one hand-set threshold per metric, learned baselines assume the first 30 minutes are healthy,
+and a ten-service simulation is far simpler than production.
 
 ## Approval, replay and the UI
 

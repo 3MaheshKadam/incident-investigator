@@ -1,0 +1,30 @@
+[
+ {
+  "ts": "2026-03-10T02:26:00Z",
+  "service": "api-gateway",
+  "version": "v3.3.3",
+  "author": "tom",
+  "commit_message": "Fix typo in error message"
+ },
+ {
+  "ts": "2026-03-10T02:44:00Z",
+  "service": "search-service",
+  "version": "v1.5.4",
+  "author": "tom",
+  "commit_message": "Tidy imports"
+ },
+ {
+  "ts": "2026-03-10T02:56:00Z",
+  "service": "auth-service",
+  "version": "v3.2.9",
+  "author": "dana",
+  "commit_message": "Fix typo in error message"
+ },
+ {
+  "ts": "2026-03-10T03:25:00Z",
+  "service": "api-gateway",
+  "version": "v4.2.2",
+  "author": "tom",
+  "commit_message": "Bump http client timeout to 5s"
+ }
+]

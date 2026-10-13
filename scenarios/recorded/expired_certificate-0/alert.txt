@@ -1,0 +1,1 @@
+ALERT [critical] api-gateway: error rate 20% (normally 0.5%) since 2026-03-10T04:05:00Z

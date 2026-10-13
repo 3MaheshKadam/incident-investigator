@@ -1,0 +1,30 @@
+[
+ {
+  "ts": "2026-03-10T02:21:00Z",
+  "service": "checkout-service",
+  "version": "v3.16.9",
+  "author": "tom",
+  "commit_message": "Update documentation link in health endpoint"
+ },
+ {
+  "ts": "2026-03-10T02:25:00Z",
+  "service": "notification-service",
+  "version": "v2.7.3",
+  "author": "tom",
+  "commit_message": "Add unit tests for date parsing"
+ },
+ {
+  "ts": "2026-03-10T02:50:00Z",
+  "service": "search-service",
+  "version": "v2.6.8",
+  "author": "tom",
+  "commit_message": "Add unit tests for date parsing"
+ },
+ {
+  "ts": "2026-03-10T02:55:00Z",
+  "service": "payments-gateway",
+  "version": "v3.3.0",
+  "author": "priya",
+  "commit_message": "Bump logging library patch version"
+ }
+]

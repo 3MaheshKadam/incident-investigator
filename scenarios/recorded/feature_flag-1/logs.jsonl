@@ -1,0 +1,520 @@
+{"ts": "2026-03-10T02:00:19Z", "service": "catalog-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:00:25Z", "service": "cache-proxy", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:00:26Z", "service": "cache-proxy", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T02:00:39Z", "service": "auth-service", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T02:00:55Z", "service": "payments-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:01:46Z", "service": "notification-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:03:07Z", "service": "customers-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:03:31Z", "service": "notification-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:04:54Z", "service": "customers-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:06:35Z", "service": "api-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:09:07Z", "service": "auth-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:09:08Z", "service": "payments-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:09:08Z", "service": "search-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:10:15Z", "service": "search-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:11:11Z", "service": "checkout-service", "level": "WARN", "msg": "upstream cache-proxy: connection refused (dial tcp 10.0.1.9:6379); retry succeeded"}
+{"ts": "2026-03-10T02:12:24Z", "service": "catalog-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:12:38Z", "service": "checkout-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:13:09Z", "service": "cache-proxy", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:13:38Z", "service": "api-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:14:19Z", "service": "cache-proxy", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:14:19Z", "service": "payments-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:14:47Z", "service": "api-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:15:18Z", "service": "checkout-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:16:54Z", "service": "api-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:17:05Z", "service": "catalog-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:18:26Z", "service": "cache-proxy", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:18:41Z", "service": "customers-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:18:49Z", "service": "api-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:20:03Z", "service": "customers-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:20:22Z", "service": "auth-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:20:38Z", "service": "payments-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:20:44Z", "service": "checkout-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:20:48Z", "service": "search-service", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T02:22:36Z", "service": "auth-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:24:26Z", "service": "api-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:25:45Z", "service": "orders-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:26:12Z", "service": "orders-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:26:19Z", "service": "checkout-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:26:45Z", "service": "search-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:27:12Z", "service": "api-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:27:35Z", "service": "catalog-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:27:58Z", "service": "notification-service", "level": "ERROR", "msg": "container restarted: OOMKilled (exit code 137)"}
+{"ts": "2026-03-10T02:29:27Z", "service": "auth-service", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T02:29:37Z", "service": "orders-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:30:34Z", "service": "customers-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:30:35Z", "service": "payments-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:32:20Z", "service": "catalog-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:33:33Z", "service": "checkout-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:33:59Z", "service": "notification-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:34:57Z", "service": "api-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:35:07Z", "service": "notification-service", "level": "WARN", "msg": "request queue depth 14"}
+{"ts": "2026-03-10T02:35:07Z", "service": "search-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:35:26Z", "service": "notification-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:36:57Z", "service": "search-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:37:00Z", "service": "cache-proxy", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:37:44Z", "service": "customers-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:38:04Z", "service": "cache-proxy", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:38:53Z", "service": "checkout-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:39:19Z", "service": "cache-proxy", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:40:17Z", "service": "checkout-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:41:24Z", "service": "orders-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:41:53Z", "service": "customers-db", "level": "WARN", "msg": "request queue depth 14"}
+{"ts": "2026-03-10T02:42:56Z", "service": "search-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:43:18Z", "service": "customers-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:43:39Z", "service": "api-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:44:17Z", "service": "catalog-db", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T02:44:26Z", "service": "api-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:44:44Z", "service": "payments-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:47:12Z", "service": "notification-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:48:20Z", "service": "api-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:48:41Z", "service": "notification-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:48:52Z", "service": "orders-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:50:07Z", "service": "auth-service", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T02:50:39Z", "service": "cache-proxy", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:51:23Z", "service": "search-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:52:20Z", "service": "cache-proxy", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:52:24Z", "service": "auth-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:52:59Z", "service": "orders-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:53:37Z", "service": "catalog-db", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T02:54:48Z", "service": "catalog-db", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T02:55:42Z", "service": "cache-proxy", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:56:13Z", "service": "orders-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:56:25Z", "service": "notification-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:57:13Z", "service": "search-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:57:22Z", "service": "auth-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:57:27Z", "service": "customers-db", "level": "WARN", "msg": "request queue depth 14"}
+{"ts": "2026-03-10T02:58:08Z", "service": "cache-proxy", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:58:23Z", "service": "search-service", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T02:59:19Z", "service": "search-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:59:23Z", "service": "api-gateway", "level": "WARN", "msg": "request queue depth 14"}
+{"ts": "2026-03-10T03:01:41Z", "service": "checkout-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:03:29Z", "service": "orders-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:03:32Z", "service": "checkout-service", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T03:03:44Z", "service": "api-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:04:14Z", "service": "payments-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:04:45Z", "service": "notification-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:05:02Z", "service": "orders-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:06:11Z", "service": "payments-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:06:15Z", "service": "auth-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:08:53Z", "service": "api-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:09:11Z", "service": "checkout-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:09:17Z", "service": "notification-service", "level": "WARN", "msg": "request queue depth 14"}
+{"ts": "2026-03-10T03:09:34Z", "service": "search-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:09:44Z", "service": "cache-proxy", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T03:10:42Z", "service": "payments-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:11:10Z", "service": "payments-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:12:40Z", "service": "customers-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:14:11Z", "service": "orders-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:16:26Z", "service": "customers-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:16:38Z", "service": "auth-service", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T03:17:31Z", "service": "orders-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:17:31Z", "service": "catalog-db", "level": "WARN", "msg": "request queue depth 14"}
+{"ts": "2026-03-10T03:18:07Z", "service": "notification-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:18:14Z", "service": "cache-proxy", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:18:37Z", "service": "api-gateway", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T03:19:51Z", "service": "customers-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:19:53Z", "service": "notification-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:21:03Z", "service": "api-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:22:15Z", "service": "notification-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:22:18Z", "service": "payments-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:22:22Z", "service": "cache-proxy", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:24:02Z", "service": "payments-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:24:14Z", "service": "customers-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:24:49Z", "service": "orders-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:25:47Z", "service": "api-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:26:10Z", "service": "search-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:26:19Z", "service": "catalog-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:27:15Z", "service": "cache-proxy", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:28:04Z", "service": "cache-proxy", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:28:30Z", "service": "catalog-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:30:21Z", "service": "auth-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:30:38Z", "service": "cache-proxy", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:31:08Z", "service": "auth-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:31:11Z", "service": "orders-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:31:57Z", "service": "catalog-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:32:06Z", "service": "cache-proxy", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:33:04Z", "service": "orders-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:33:04Z", "service": "api-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:33:04Z", "service": "payments-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:33:46Z", "service": "cache-proxy", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:34:03Z", "service": "notification-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:35:15Z", "service": "payments-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:35:59Z", "service": "search-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:36:17Z", "service": "notification-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:36:29Z", "service": "payments-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:36:38Z", "service": "api-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:36:48Z", "service": "search-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:37:13Z", "service": "notification-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:37:24Z", "service": "notification-service", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T03:38:16Z", "service": "cache-proxy", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:38:45Z", "service": "notification-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:39:10Z", "service": "orders-db", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T03:39:33Z", "service": "api-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:40:14Z", "service": "cache-proxy", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T03:41:28Z", "service": "auth-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:42:13Z", "service": "notification-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:42:56Z", "service": "api-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:43:11Z", "service": "api-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:43:18Z", "service": "cache-proxy", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:43:35Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:43:36Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:43:41Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T03:43:50Z", "service": "customers-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:43:54Z", "service": "checkout-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:43:55Z", "service": "search-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:44:14Z", "service": "catalog-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:44:30Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T03:44:33Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:44:49Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:44:57Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T03:45:11Z", "service": "orders-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:45:32Z", "service": "payments-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:45:41Z", "service": "checkout-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:45:42Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:45:47Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:45:52Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T03:45:59Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T03:46:12Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:46:31Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T03:46:57Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:47:27Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T03:47:32Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:47:45Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:48:00Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:48:07Z", "service": "search-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:48:23Z", "service": "api-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:48:23Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T03:48:57Z", "service": "notification-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:49:02Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T03:49:15Z", "service": "notification-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:49:28Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:49:52Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T03:50:03Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:50:22Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:50:32Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T03:50:39Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T03:50:43Z", "service": "checkout-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:51:12Z", "service": "payments-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:51:25Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T03:51:40Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:51:55Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T03:52:08Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:52:21Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T03:52:36Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T03:52:53Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:53:01Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T03:53:07Z", "service": "checkout-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:53:18Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:53:41Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T03:53:54Z", "service": "cache-proxy", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:54:00Z", "service": "orders-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:54:07Z", "service": "notification-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:54:11Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:54:46Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:54:50Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T03:54:55Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T03:55:01Z", "service": "auth-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:55:20Z", "service": "checkout-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:55:27Z", "service": "api-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:55:33Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:55:37Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:55:38Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T03:56:03Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:56:20Z", "service": "auth-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:56:37Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:56:37Z", "service": "search-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:56:46Z", "service": "payments-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:56:57Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T03:57:16Z", "service": "api-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:57:19Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T03:57:19Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T03:57:31Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:57:47Z", "service": "api-gateway", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T03:58:00Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:58:24Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T03:58:33Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T03:58:36Z", "service": "customers-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:58:46Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:59:11Z", "service": "orders-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:59:22Z", "service": "search-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:59:25Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:59:34Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:59:37Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T03:59:54Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:00:10Z", "service": "auth-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:00:30Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:00:41Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:00:45Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:00:48Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:00:56Z", "service": "cache-proxy", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:01:22Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:01:27Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:01:46Z", "service": "catalog-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:02:07Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:02:32Z", "service": "api-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:02:58Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:03:07Z", "service": "checkout-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:03:14Z", "service": "notification-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:03:25Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:03:44Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:03:45Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:04:01Z", "service": "payments-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:04:01Z", "service": "checkout-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:04:11Z", "service": "cache-proxy", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:04:20Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:04:46Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:04:59Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:05:03Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:05:21Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:05:39Z", "service": "orders-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:06:26Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:06:31Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:06:47Z", "service": "cache-proxy", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:07:00Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:07:24Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:07:25Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:07:38Z", "service": "search-service", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T04:08:36Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:08:43Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:09:05Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:09:18Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:09:31Z", "service": "payments-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:09:43Z", "service": "search-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:09:46Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:09:49Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:10:27Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:10:51Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:10:56Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:10:56Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:11:31Z", "service": "payments-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:11:35Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:11:38Z", "service": "auth-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:11:38Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:11:43Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:11:49Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:12:18Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:12:38Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:12:40Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:13:13Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:13:20Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:13:25Z", "service": "notification-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:13:56Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:14:35Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:14:36Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:15:05Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:15:09Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:15:49Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:15:56Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:16:14Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:16:32Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:16:34Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:16:45Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:17:12Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:17:31Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:17:51Z", "service": "checkout-service", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T04:17:51Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:18:00Z", "service": "cache-proxy", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:18:04Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:18:07Z", "service": "payments-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:18:25Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:18:37Z", "service": "orders-db", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T04:18:44Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:18:54Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:19:23Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:19:31Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:19:36Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:19:51Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:19:53Z", "service": "checkout-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:20:09Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:20:18Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:20:49Z", "service": "orders-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:21:11Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:21:18Z", "service": "search-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:21:25Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:21:35Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:21:47Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:21:57Z", "service": "api-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:22:09Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:22:37Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:23:03Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:23:14Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:23:17Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:23:19Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:24:05Z", "service": "customers-db", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T04:24:47Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:24:51Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:24:58Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:25:08Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:25:13Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:25:17Z", "service": "notification-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:25:28Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:25:46Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:26:04Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:26:29Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:26:48Z", "service": "api-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:26:58Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:27:03Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:27:04Z", "service": "catalog-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:27:10Z", "service": "customers-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:27:27Z", "service": "payments-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:27:38Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:27:39Z", "service": "notification-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:27:50Z", "service": "api-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:27:54Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:28:04Z", "service": "payments-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:28:17Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:28:31Z", "service": "auth-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:28:33Z", "service": "checkout-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:28:40Z", "service": "customers-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:28:46Z", "service": "notification-service", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T04:28:47Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:28:48Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:28:53Z", "service": "notification-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:29:00Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:29:21Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:29:57Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:30:09Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:30:41Z", "service": "customers-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:30:53Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:30:54Z", "service": "notification-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:31:02Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:31:10Z", "service": "payments-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:31:28Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:31:47Z", "service": "catalog-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:31:59Z", "service": "customers-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:32:02Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:32:32Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:32:38Z", "service": "search-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:32:41Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:32:41Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:33:08Z", "service": "orders-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:33:29Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:33:30Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:33:36Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:34:05Z", "service": "catalog-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:34:08Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:34:21Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:34:35Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:34:38Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:34:52Z", "service": "cache-proxy", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:34:56Z", "service": "search-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:35:00Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:35:05Z", "service": "orders-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:35:06Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:35:17Z", "service": "catalog-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:35:54Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:35:58Z", "service": "checkout-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:36:01Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:36:04Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:36:09Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:37:01Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:37:10Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:37:42Z", "service": "search-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:37:45Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:37:57Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:38:33Z", "service": "catalog-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:38:39Z", "service": "payments-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:38:43Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:38:51Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:38:51Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:38:59Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:39:22Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:39:32Z", "service": "checkout-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:39:53Z", "service": "cache-proxy", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:39:57Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:40:04Z", "service": "notification-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:40:07Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:40:22Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:40:22Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:41:06Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:41:39Z", "service": "customers-db", "level": "WARN", "msg": "request queue depth 14"}
+{"ts": "2026-03-10T04:41:57Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:42:11Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:42:16Z", "service": "orders-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:42:22Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:42:52Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:43:29Z", "service": "api-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:43:32Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:43:36Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:44:11Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:44:12Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:44:42Z", "service": "customers-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:44:46Z", "service": "cache-proxy", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T04:44:51Z", "service": "auth-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:44:52Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:45:03Z", "service": "api-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:45:14Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:45:18Z", "service": "auth-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:45:36Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:45:44Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:45:46Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:45:46Z", "service": "customers-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:46:15Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:46:41Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:46:48Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:47:30Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:47:33Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:47:42Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:48:13Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:48:14Z", "service": "customers-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:48:14Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:48:59Z", "service": "payments-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:49:00Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:49:02Z", "service": "notification-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:49:14Z", "service": "api-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:49:38Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:49:57Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:50:10Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:50:11Z", "service": "catalog-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:50:30Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:50:47Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:50:47Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:50:49Z", "service": "api-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:51:04Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:51:12Z", "service": "api-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:51:17Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:51:23Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:51:26Z", "service": "cache-proxy", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:51:28Z", "service": "customers-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:51:47Z", "service": "search-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:51:49Z", "service": "auth-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:52:02Z", "service": "catalog-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:52:09Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:52:22Z", "service": "orders-db", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T04:52:43Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:52:58Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:53:17Z", "service": "notification-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:53:36Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:53:40Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:53:41Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:54:08Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:54:18Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:54:31Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:54:32Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:54:38Z", "service": "notification-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:54:44Z", "service": "payments-gateway", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T04:55:03Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:55:17Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:55:33Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:55:40Z", "service": "customers-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:55:53Z", "service": "notification-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:55:54Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:56:43Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:56:53Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:56:58Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:57:11Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:57:18Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:57:40Z", "service": "api-gateway", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T04:57:52Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:58:03Z", "service": "payments-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:58:04Z", "service": "checkout-service", "level": "WARN", "msg": "request queue depth 14"}
+{"ts": "2026-03-10T04:58:07Z", "service": "notification-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:58:16Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:58:33Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:58:36Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:58:56Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:59:00Z", "service": "search-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:59:23Z", "service": "search-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:59:38Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:59:59Z", "service": "auth-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}

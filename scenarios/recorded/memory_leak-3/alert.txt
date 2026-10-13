@@ -1,0 +1,1 @@
+ALERT [warning] checkout-service: memory 1373MB (normally 814MB) since 2026-03-10T04:52:00Z

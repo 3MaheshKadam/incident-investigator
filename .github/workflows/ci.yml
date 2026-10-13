@@ -23,10 +23,14 @@ jobs:
       # Smoke eval: the rule-based baseline must run every scenario end to end. It is a floor and
       # a pipeline check, not a model result.
       - run: python -m evals.baseline
+      - run: python -m evals.baseline --data scenarios/recorded
+      - run: python -m evals.detect_eval --split all
       - name: Scenario data is up to date
         run: |
           python -m scenarios.generate
           git diff --exit-code scenarios/data
+          python -m monitor.record
+          git diff --exit-code scenarios/recorded
   docker:
     runs-on: ubuntu-latest
     steps:

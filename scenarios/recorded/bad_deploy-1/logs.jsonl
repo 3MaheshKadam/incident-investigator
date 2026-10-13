@@ -1,0 +1,482 @@
+{"ts": "2026-03-10T02:01:02Z", "service": "checkout-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:01:40Z", "service": "orders-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:02:11Z", "service": "cache-proxy", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:02:42Z", "service": "search-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:02:53Z", "service": "checkout-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:03:25Z", "service": "catalog-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:03:40Z", "service": "payments-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:03:47Z", "service": "checkout-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:04:30Z", "service": "api-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:04:41Z", "service": "catalog-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:05:30Z", "service": "checkout-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:05:50Z", "service": "payments-gateway", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T02:06:05Z", "service": "auth-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:06:15Z", "service": "api-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:06:19Z", "service": "catalog-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:06:53Z", "service": "notification-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:06:55Z", "service": "customers-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:07:11Z", "service": "orders-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:09:16Z", "service": "checkout-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:09:20Z", "service": "cache-proxy", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:09:33Z", "service": "catalog-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:09:53Z", "service": "customers-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:09:55Z", "service": "payments-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:12:05Z", "service": "orders-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:12:09Z", "service": "search-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:12:16Z", "service": "customers-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:12:29Z", "service": "payments-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:13:29Z", "service": "notification-service", "level": "WARN", "msg": "request queue depth 14"}
+{"ts": "2026-03-10T02:13:39Z", "service": "payments-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:14:27Z", "service": "search-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:14:51Z", "service": "orders-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:15:09Z", "service": "payments-gateway", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T02:15:19Z", "service": "catalog-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:16:02Z", "service": "api-gateway", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T02:16:03Z", "service": "search-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:16:34Z", "service": "payments-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:16:53Z", "service": "customers-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:17:04Z", "service": "customers-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:17:08Z", "service": "auth-service", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T02:17:49Z", "service": "search-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:17:54Z", "service": "checkout-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:18:11Z", "service": "search-service", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T02:18:15Z", "service": "payments-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:20:28Z", "service": "api-gateway", "level": "WARN", "msg": "request queue depth 14"}
+{"ts": "2026-03-10T02:20:37Z", "service": "orders-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:20:39Z", "service": "customers-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:21:23Z", "service": "auth-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:22:23Z", "service": "notification-service", "level": "WARN", "msg": "upstream cache-proxy: connection refused (dial tcp 10.0.1.9:6379); retry succeeded"}
+{"ts": "2026-03-10T02:22:42Z", "service": "payments-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:22:49Z", "service": "search-service", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T02:23:54Z", "service": "api-gateway", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T02:24:03Z", "service": "payments-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:24:11Z", "service": "notification-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:24:24Z", "service": "auth-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:25:28Z", "service": "payments-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:25:38Z", "service": "notification-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:26:20Z", "service": "notification-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:27:07Z", "service": "auth-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:27:39Z", "service": "catalog-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:28:54Z", "service": "payments-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:29:47Z", "service": "orders-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:30:31Z", "service": "checkout-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:30:50Z", "service": "catalog-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:31:07Z", "service": "cache-proxy", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:32:51Z", "service": "checkout-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:35:04Z", "service": "search-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:35:22Z", "service": "checkout-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:35:41Z", "service": "cache-proxy", "level": "WARN", "msg": "request queue depth 14"}
+{"ts": "2026-03-10T02:36:25Z", "service": "cache-proxy", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:37:36Z", "service": "auth-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:37:56Z", "service": "checkout-service", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T02:38:12Z", "service": "api-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:38:45Z", "service": "search-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:39:30Z", "service": "customers-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:40:34Z", "service": "cache-proxy", "level": "WARN", "msg": "request queue depth 14"}
+{"ts": "2026-03-10T02:40:43Z", "service": "auth-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:41:14Z", "service": "cache-proxy", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:42:57Z", "service": "search-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:43:20Z", "service": "cache-proxy", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:43:29Z", "service": "catalog-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:43:41Z", "service": "search-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:44:25Z", "service": "catalog-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:44:41Z", "service": "api-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:44:42Z", "service": "customers-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:45:46Z", "service": "notification-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:46:35Z", "service": "catalog-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:46:55Z", "service": "payments-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:47:17Z", "service": "customers-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:48:07Z", "service": "orders-db", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T02:48:18Z", "service": "api-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:48:58Z", "service": "payments-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:49:01Z", "service": "notification-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:51:03Z", "service": "search-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:53:42Z", "service": "checkout-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:53:48Z", "service": "search-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:53:52Z", "service": "auth-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:54:25Z", "service": "customers-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:55:20Z", "service": "customers-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:56:26Z", "service": "customers-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:57:37Z", "service": "api-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:58:00Z", "service": "cache-proxy", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:58:09Z", "service": "auth-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:59:35Z", "service": "orders-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:59:41Z", "service": "checkout-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:59:57Z", "service": "auth-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:00:46Z", "service": "search-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:00:48Z", "service": "checkout-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:01:14Z", "service": "search-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:01:30Z", "service": "orders-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:03:57Z", "service": "orders-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:04:00Z", "service": "api-gateway", "level": "WARN", "msg": "x509: certificate for internal-ca renewed (old certificate rotated out)"}
+{"ts": "2026-03-10T03:04:20Z", "service": "cache-proxy", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:04:20Z", "service": "notification-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:04:26Z", "service": "checkout-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:04:56Z", "service": "payments-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:06:15Z", "service": "api-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:06:26Z", "service": "checkout-service", "level": "ERROR", "msg": "container restarted: OOMKilled (exit code 137)"}
+{"ts": "2026-03-10T03:06:56Z", "service": "payments-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:07:02Z", "service": "auth-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:07:49Z", "service": "payments-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:08:17Z", "service": "api-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:08:46Z", "service": "notification-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:11:39Z", "service": "notification-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:11:47Z", "service": "search-service", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T03:13:36Z", "service": "api-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:14:14Z", "service": "orders-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:14:55Z", "service": "customers-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:17:38Z", "service": "search-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:18:07Z", "service": "checkout-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:18:36Z", "service": "payments-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:19:04Z", "service": "orders-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:20:10Z", "service": "orders-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:20:40Z", "service": "notification-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:21:48Z", "service": "payments-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:21:48Z", "service": "cache-proxy", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:22:43Z", "service": "checkout-service", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T03:22:47Z", "service": "checkout-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:23:32Z", "service": "orders-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:23:50Z", "service": "notification-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:24:34Z", "service": "notification-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:25:08Z", "service": "api-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:25:32Z", "service": "checkout-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:28:17Z", "service": "api-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:28:19Z", "service": "checkout-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:28:53Z", "service": "notification-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:30:03Z", "service": "orders-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:30:50Z", "service": "api-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:31:01Z", "service": "api-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:32:47Z", "service": "auth-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:33:11Z", "service": "checkout-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:34:57Z", "service": "catalog-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:35:33Z", "service": "api-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:35:58Z", "service": "auth-service", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T03:36:17Z", "service": "catalog-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:36:50Z", "service": "payments-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:38:23Z", "service": "api-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:38:43Z", "service": "checkout-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:38:51Z", "service": "catalog-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:39:10Z", "service": "cache-proxy", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:41:25Z", "service": "auth-service", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T03:41:36Z", "service": "cache-proxy", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:41:39Z", "service": "notification-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:41:48Z", "service": "api-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:42:03Z", "service": "orders-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:42:14Z", "service": "search-service", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T03:42:15Z", "service": "api-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:42:22Z", "service": "cache-proxy", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:42:31Z", "service": "customers-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:43:07Z", "service": "catalog-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:43:15Z", "service": "catalog-db", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T03:43:30Z", "service": "orders-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:43:33Z", "service": "customers-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:44:02Z", "service": "api-gateway", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T03:45:05Z", "service": "payments-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:45:15Z", "service": "auth-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:46:57Z", "service": "cache-proxy", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:47:22Z", "service": "api-gateway", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T03:48:08Z", "service": "orders-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:48:10Z", "service": "checkout-service", "level": "WARN", "msg": "request queue depth 14"}
+{"ts": "2026-03-10T03:49:09Z", "service": "catalog-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:49:30Z", "service": "payments-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:50:13Z", "service": "notification-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:51:02Z", "service": "orders-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:51:56Z", "service": "customers-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:52:00Z", "service": "search-service", "level": "WARN", "msg": "redis latency elevated (310ms)"}
+{"ts": "2026-03-10T03:52:08Z", "service": "cache-proxy", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:52:23Z", "service": "api-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:52:32Z", "service": "checkout-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:52:45Z", "service": "cache-proxy", "level": "WARN", "msg": "request queue depth 14"}
+{"ts": "2026-03-10T03:52:46Z", "service": "orders-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:53:10Z", "service": "cache-proxy", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T03:53:34Z", "service": "checkout-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:53:55Z", "service": "search-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:54:20Z", "service": "auth-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:54:30Z", "service": "search-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:55:02Z", "service": "checkout-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:55:55Z", "service": "orders-db", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T03:56:40Z", "service": "checkout-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:58:32Z", "service": "cache-proxy", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:58:46Z", "service": "customers-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:59:04Z", "service": "checkout-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:59:21Z", "service": "catalog-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:59:42Z", "service": "search-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:00:30Z", "service": "payments-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:00:48Z", "service": "checkout-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:01:11Z", "service": "cache-proxy", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:01:27Z", "service": "api-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:02:18Z", "service": "api-gateway", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T04:02:26Z", "service": "customers-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:02:30Z", "service": "auth-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:02:38Z", "service": "cache-proxy", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:03:18Z", "service": "auth-service", "level": "WARN", "msg": "request queue depth 14"}
+{"ts": "2026-03-10T04:03:54Z", "service": "api-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:04:00Z", "service": "cache-proxy", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:04:03Z", "service": "notification-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:04:08Z", "service": "checkout-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:04:17Z", "service": "customers-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:05:01Z", "service": "search-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in SearchServiceHandler.handle"}
+{"ts": "2026-03-10T04:05:08Z", "service": "search-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in SearchServiceHandler.handle"}
+{"ts": "2026-03-10T04:05:29Z", "service": "catalog-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:05:48Z", "service": "customers-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:05:53Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:06:10Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:06:18Z", "service": "catalog-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:06:33Z", "service": "search-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in SearchServiceHandler.handle"}
+{"ts": "2026-03-10T04:06:35Z", "service": "search-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in SearchServiceHandler.handle"}
+{"ts": "2026-03-10T04:06:40Z", "service": "notification-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:06:47Z", "service": "api-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:07:01Z", "service": "search-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in SearchServiceHandler.handle"}
+{"ts": "2026-03-10T04:07:02Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:07:45Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:07:59Z", "service": "search-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in SearchServiceHandler.handle"}
+{"ts": "2026-03-10T04:08:05Z", "service": "auth-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:08:08Z", "service": "search-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in SearchServiceHandler.handle"}
+{"ts": "2026-03-10T04:08:13Z", "service": "search-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in SearchServiceHandler.handle"}
+{"ts": "2026-03-10T04:08:15Z", "service": "checkout-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:08:21Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:08:24Z", "service": "api-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:08:43Z", "service": "customers-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:09:17Z", "service": "api-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:09:18Z", "service": "search-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in SearchServiceHandler.handle"}
+{"ts": "2026-03-10T04:09:32Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:10:09Z", "service": "checkout-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:10:19Z", "service": "customers-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:10:20Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:10:22Z", "service": "search-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in SearchServiceHandler.handle"}
+{"ts": "2026-03-10T04:10:26Z", "service": "search-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in SearchServiceHandler.handle"}
+{"ts": "2026-03-10T04:10:53Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:11:03Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:11:25Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:11:38Z", "service": "search-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in SearchServiceHandler.handle"}
+{"ts": "2026-03-10T04:11:39Z", "service": "search-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in SearchServiceHandler.handle"}
+{"ts": "2026-03-10T04:12:05Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:12:40Z", "service": "search-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in SearchServiceHandler.handle"}
+{"ts": "2026-03-10T04:12:47Z", "service": "orders-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:12:50Z", "service": "notification-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:12:59Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:13:09Z", "service": "search-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in SearchServiceHandler.handle"}
+{"ts": "2026-03-10T04:13:25Z", "service": "catalog-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:13:28Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:13:43Z", "service": "catalog-db", "level": "WARN", "msg": "request queue depth 14"}
+{"ts": "2026-03-10T04:13:59Z", "service": "payments-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:14:00Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:14:04Z", "service": "api-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:14:05Z", "service": "search-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in SearchServiceHandler.handle"}
+{"ts": "2026-03-10T04:14:49Z", "service": "auth-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:15:12Z", "service": "auth-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:15:30Z", "service": "search-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in SearchServiceHandler.handle"}
+{"ts": "2026-03-10T04:15:39Z", "service": "search-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in SearchServiceHandler.handle"}
+{"ts": "2026-03-10T04:15:39Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:15:55Z", "service": "catalog-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:16:10Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:16:21Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:16:24Z", "service": "customers-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:16:27Z", "service": "api-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:16:27Z", "service": "search-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in SearchServiceHandler.handle"}
+{"ts": "2026-03-10T04:16:54Z", "service": "search-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in SearchServiceHandler.handle"}
+{"ts": "2026-03-10T04:17:15Z", "service": "catalog-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:17:27Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:17:39Z", "service": "checkout-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:17:56Z", "service": "search-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in SearchServiceHandler.handle"}
+{"ts": "2026-03-10T04:17:57Z", "service": "search-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in SearchServiceHandler.handle"}
+{"ts": "2026-03-10T04:18:03Z", "service": "search-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in SearchServiceHandler.handle"}
+{"ts": "2026-03-10T04:18:04Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:18:09Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:19:03Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:19:05Z", "service": "search-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in SearchServiceHandler.handle"}
+{"ts": "2026-03-10T04:19:26Z", "service": "catalog-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:19:36Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:20:35Z", "service": "search-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in SearchServiceHandler.handle"}
+{"ts": "2026-03-10T04:20:41Z", "service": "search-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in SearchServiceHandler.handle"}
+{"ts": "2026-03-10T04:20:42Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:21:04Z", "service": "api-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:21:11Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:21:16Z", "service": "search-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in SearchServiceHandler.handle"}
+{"ts": "2026-03-10T04:21:44Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:22:16Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:22:29Z", "service": "search-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in SearchServiceHandler.handle"}
+{"ts": "2026-03-10T04:22:32Z", "service": "cache-proxy", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:22:33Z", "service": "search-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in SearchServiceHandler.handle"}
+{"ts": "2026-03-10T04:22:36Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:23:27Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:23:29Z", "service": "api-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:23:29Z", "service": "search-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in SearchServiceHandler.handle"}
+{"ts": "2026-03-10T04:23:30Z", "service": "search-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:23:32Z", "service": "notification-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:23:39Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:23:50Z", "service": "customers-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:24:18Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:24:31Z", "service": "checkout-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:24:44Z", "service": "notification-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:24:47Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:24:59Z", "service": "search-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in SearchServiceHandler.handle"}
+{"ts": "2026-03-10T04:25:00Z", "service": "search-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:25:04Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:25:07Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:25:12Z", "service": "payments-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:25:14Z", "service": "search-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in SearchServiceHandler.handle"}
+{"ts": "2026-03-10T04:25:22Z", "service": "search-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in SearchServiceHandler.handle"}
+{"ts": "2026-03-10T04:25:31Z", "service": "api-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:26:02Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:26:19Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:26:47Z", "service": "search-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in SearchServiceHandler.handle"}
+{"ts": "2026-03-10T04:27:02Z", "service": "search-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in SearchServiceHandler.handle"}
+{"ts": "2026-03-10T04:27:05Z", "service": "search-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:27:19Z", "service": "cache-proxy", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:27:36Z", "service": "orders-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:27:44Z", "service": "search-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in SearchServiceHandler.handle"}
+{"ts": "2026-03-10T04:27:44Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:28:15Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:28:16Z", "service": "catalog-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:28:17Z", "service": "search-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in SearchServiceHandler.handle"}
+{"ts": "2026-03-10T04:28:40Z", "service": "search-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in SearchServiceHandler.handle"}
+{"ts": "2026-03-10T04:28:44Z", "service": "payments-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:28:47Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:28:47Z", "service": "checkout-service", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T04:28:53Z", "service": "customers-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:29:05Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:29:30Z", "service": "search-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in SearchServiceHandler.handle"}
+{"ts": "2026-03-10T04:29:55Z", "service": "search-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in SearchServiceHandler.handle"}
+{"ts": "2026-03-10T04:29:58Z", "service": "customers-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:30:08Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:30:11Z", "service": "search-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in SearchServiceHandler.handle"}
+{"ts": "2026-03-10T04:30:54Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:31:00Z", "service": "notification-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:31:12Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:31:12Z", "service": "api-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:31:26Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:31:58Z", "service": "search-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in SearchServiceHandler.handle"}
+{"ts": "2026-03-10T04:32:05Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:32:41Z", "service": "search-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in SearchServiceHandler.handle"}
+{"ts": "2026-03-10T04:32:43Z", "service": "notification-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:33:05Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:33:17Z", "service": "search-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in SearchServiceHandler.handle"}
+{"ts": "2026-03-10T04:33:20Z", "service": "orders-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:33:51Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:34:05Z", "service": "customers-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:34:29Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:34:36Z", "service": "search-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in SearchServiceHandler.handle"}
+{"ts": "2026-03-10T04:35:04Z", "service": "checkout-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:35:31Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:35:36Z", "service": "search-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in SearchServiceHandler.handle"}
+{"ts": "2026-03-10T04:35:46Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:36:05Z", "service": "auth-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:36:12Z", "service": "orders-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:36:19Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:36:47Z", "service": "search-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in SearchServiceHandler.handle"}
+{"ts": "2026-03-10T04:36:48Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:36:49Z", "service": "search-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in SearchServiceHandler.handle"}
+{"ts": "2026-03-10T04:37:15Z", "service": "search-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in SearchServiceHandler.handle"}
+{"ts": "2026-03-10T04:37:27Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:37:55Z", "service": "search-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in SearchServiceHandler.handle"}
+{"ts": "2026-03-10T04:38:02Z", "service": "catalog-db", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T04:38:31Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:38:33Z", "service": "search-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in SearchServiceHandler.handle"}
+{"ts": "2026-03-10T04:38:37Z", "service": "customers-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:39:00Z", "service": "auth-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:39:03Z", "service": "search-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:39:36Z", "service": "search-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in SearchServiceHandler.handle"}
+{"ts": "2026-03-10T04:39:43Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:39:55Z", "service": "catalog-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:39:58Z", "service": "search-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in SearchServiceHandler.handle"}
+{"ts": "2026-03-10T04:40:15Z", "service": "customers-db", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T04:40:19Z", "service": "search-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in SearchServiceHandler.handle"}
+{"ts": "2026-03-10T04:40:20Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:40:35Z", "service": "search-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in SearchServiceHandler.handle"}
+{"ts": "2026-03-10T04:40:49Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:40:52Z", "service": "orders-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:41:01Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:41:32Z", "service": "orders-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:41:34Z", "service": "search-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in SearchServiceHandler.handle"}
+{"ts": "2026-03-10T04:41:56Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:41:59Z", "service": "search-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in SearchServiceHandler.handle"}
+{"ts": "2026-03-10T04:42:09Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:42:11Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:42:20Z", "service": "search-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in SearchServiceHandler.handle"}
+{"ts": "2026-03-10T04:42:45Z", "service": "payments-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:43:01Z", "service": "orders-db", "level": "WARN", "msg": "request queue depth 14"}
+{"ts": "2026-03-10T04:43:09Z", "service": "search-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in SearchServiceHandler.handle"}
+{"ts": "2026-03-10T04:43:22Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:43:43Z", "service": "search-service", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T04:43:47Z", "service": "search-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in SearchServiceHandler.handle"}
+{"ts": "2026-03-10T04:43:56Z", "service": "cache-proxy", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T04:44:05Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:44:19Z", "service": "search-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in SearchServiceHandler.handle"}
+{"ts": "2026-03-10T04:44:47Z", "service": "api-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:44:56Z", "service": "search-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in SearchServiceHandler.handle"}
+{"ts": "2026-03-10T04:45:15Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:45:22Z", "service": "auth-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:45:28Z", "service": "search-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in SearchServiceHandler.handle"}
+{"ts": "2026-03-10T04:45:44Z", "service": "customers-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:46:04Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:46:16Z", "service": "api-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:46:20Z", "service": "search-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in SearchServiceHandler.handle"}
+{"ts": "2026-03-10T04:46:22Z", "service": "orders-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:46:44Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:46:48Z", "service": "notification-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:46:55Z", "service": "search-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in SearchServiceHandler.handle"}
+{"ts": "2026-03-10T04:47:08Z", "service": "search-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:47:08Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:47:17Z", "service": "search-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in SearchServiceHandler.handle"}
+{"ts": "2026-03-10T04:47:27Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:47:35Z", "service": "search-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in SearchServiceHandler.handle"}
+{"ts": "2026-03-10T04:48:35Z", "service": "search-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in SearchServiceHandler.handle"}
+{"ts": "2026-03-10T04:48:44Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:49:09Z", "service": "search-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in SearchServiceHandler.handle"}
+{"ts": "2026-03-10T04:49:14Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:49:18Z", "service": "auth-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:49:40Z", "service": "orders-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:49:56Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:50:20Z", "service": "orders-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:50:22Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:50:30Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:50:36Z", "service": "notification-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:50:39Z", "service": "search-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in SearchServiceHandler.handle"}
+{"ts": "2026-03-10T04:50:55Z", "service": "search-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in SearchServiceHandler.handle"}
+{"ts": "2026-03-10T04:51:15Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:51:41Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:51:48Z", "service": "search-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in SearchServiceHandler.handle"}
+{"ts": "2026-03-10T04:51:51Z", "service": "notification-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:52:09Z", "service": "customers-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:52:14Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:52:16Z", "service": "checkout-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:52:18Z", "service": "search-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:52:32Z", "service": "search-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in SearchServiceHandler.handle"}
+{"ts": "2026-03-10T04:52:40Z", "service": "orders-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:52:54Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:53:01Z", "service": "search-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in SearchServiceHandler.handle"}
+{"ts": "2026-03-10T04:53:03Z", "service": "cache-proxy", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:53:16Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:53:21Z", "service": "orders-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:53:32Z", "service": "catalog-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:53:42Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:53:57Z", "service": "search-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in SearchServiceHandler.handle"}
+{"ts": "2026-03-10T04:54:13Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:54:40Z", "service": "checkout-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:54:54Z", "service": "search-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in SearchServiceHandler.handle"}
+{"ts": "2026-03-10T04:55:08Z", "service": "orders-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:55:42Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:55:48Z", "service": "payments-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:55:56Z", "service": "search-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in SearchServiceHandler.handle"}
+{"ts": "2026-03-10T04:55:56Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:55:56Z", "service": "search-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in SearchServiceHandler.handle"}
+{"ts": "2026-03-10T04:56:15Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:56:22Z", "service": "notification-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:56:43Z", "service": "search-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in SearchServiceHandler.handle"}
+{"ts": "2026-03-10T04:56:45Z", "service": "search-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in SearchServiceHandler.handle"}
+{"ts": "2026-03-10T04:57:06Z", "service": "search-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in SearchServiceHandler.handle"}
+{"ts": "2026-03-10T04:57:16Z", "service": "search-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in SearchServiceHandler.handle"}
+{"ts": "2026-03-10T04:57:38Z", "service": "payments-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:57:42Z", "service": "orders-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:57:56Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:58:07Z", "service": "search-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in SearchServiceHandler.handle"}
+{"ts": "2026-03-10T04:58:07Z", "service": "search-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in SearchServiceHandler.handle"}
+{"ts": "2026-03-10T04:58:20Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:58:42Z", "service": "auth-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:58:45Z", "service": "orders-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:59:03Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:59:08Z", "service": "auth-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:59:09Z", "service": "search-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in SearchServiceHandler.handle"}
+{"ts": "2026-03-10T04:59:15Z", "service": "api-gateway", "level": "ERROR", "msg": "upstream search-service: returned 5xx"}
+{"ts": "2026-03-10T04:59:38Z", "service": "search-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in SearchServiceHandler.handle"}

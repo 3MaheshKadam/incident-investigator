@@ -24,6 +24,10 @@ alert ──► investigator loop ──► read-only tools ──► simulated 
 | `agent/investigator.py` | The loop: step limit, trace, optional guard hooks. |
 | `agent/remediation.py` | Fixed action set, simulated system, approval gate. |
 | `agent/store.py` | SQLite for runs, proposals and the audit log. |
+| `shop/system.py`, `shop/faults.py`, `shop/episode.py` | A simulated backend. Faults change service state; logs and metrics are derived from that state each minute. |
+| `monitor/detect.py` | Learns normal from a baseline window, flags abnormal and material changes, groups anomalies into incidents, writes the alert, lists suspect changes. |
+| `monitor/record.py` | Saves detected incidents as scenarios in `scenarios/recorded/`, with the alert written by the detector. |
+| `evals/detect_eval.py` | Detection recall, precision, false alarms on healthy runs, time to detection, severity sweep. |
 | `scenarios/generate.py` | Deterministic generator for 24 incidents with noise and red herrings. |
 | `evals/score.py`, `evals/run.py` | Scoring against hidden answers; dev and held-out splits. |
 | `evals/baseline.py` | Rule-based, non-LLM floor. Also the CI smoke test. |
@@ -39,6 +43,7 @@ alert ──► investigator loop ──► read-only tools ──► simulated 
 - `answer.json` is never opened by agent code, and a test checks the answer cannot leak.
 - Results come from the held-out split only. The dev split is for tuning.
 - Report counts (for example 17/24), not only percentages.
+- The detector sees metrics and change events only, never the fault definitions.
 
 ## Known limits
 

@@ -1,0 +1,30 @@
+[
+ {
+  "ts": "2026-03-10T02:35:00Z",
+  "service": "api-gateway",
+  "version": "v2.5.9",
+  "author": "dana",
+  "commit_message": "Add unit tests for date parsing"
+ },
+ {
+  "ts": "2026-03-10T02:44:00Z",
+  "service": "auth-service",
+  "version": "v4.12.0",
+  "author": "li",
+  "commit_message": "Tidy imports"
+ },
+ {
+  "ts": "2026-03-10T02:50:00Z",
+  "service": "notification-service",
+  "version": "v2.7.3",
+  "author": "carlos",
+  "commit_message": "Bump logging library patch version"
+ },
+ {
+  "ts": "2026-03-10T03:20:00Z",
+  "service": "checkout-service",
+  "version": "v3.11.0",
+  "author": "dana",
+  "commit_message": "Update documentation link in health endpoint"
+ }
+]

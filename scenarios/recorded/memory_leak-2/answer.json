@@ -1,0 +1,16 @@
+{
+ "id": "memory_leak-2",
+ "kind": "memory_leak",
+ "root_cause_category": "memory_leak",
+ "component": "notification-service",
+ "evidence_keys": [
+  "OOMKilled",
+  "heap usage"
+ ],
+ "incident_start": "2026-03-10T04:02:00Z",
+ "injected_at": "2026-03-10T02:39:00Z",
+ "correct_action": {
+  "type": "restart_service",
+  "target": "notification-service"
+ }
+}

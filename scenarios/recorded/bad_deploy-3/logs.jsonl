@@ -1,0 +1,399 @@
+{"ts": "2026-03-10T02:01:28Z", "service": "search-service", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T02:02:24Z", "service": "customers-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:02:30Z", "service": "checkout-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:02:36Z", "service": "cache-proxy", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:03:02Z", "service": "customers-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:03:56Z", "service": "auth-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:04:06Z", "service": "auth-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:04:09Z", "service": "orders-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:04:15Z", "service": "payments-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:05:04Z", "service": "auth-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:07:46Z", "service": "auth-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:08:38Z", "service": "auth-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:09:21Z", "service": "cache-proxy", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:09:34Z", "service": "api-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:10:12Z", "service": "customers-db", "level": "WARN", "msg": "request queue depth 14"}
+{"ts": "2026-03-10T02:11:43Z", "service": "api-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:12:20Z", "service": "cache-proxy", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:12:21Z", "service": "api-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:12:47Z", "service": "checkout-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:14:38Z", "service": "search-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:14:44Z", "service": "orders-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:14:56Z", "service": "customers-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:15:11Z", "service": "notification-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:15:13Z", "service": "orders-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:16:07Z", "service": "orders-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:17:43Z", "service": "catalog-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:17:45Z", "service": "payments-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:18:01Z", "service": "notification-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:18:43Z", "service": "catalog-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:20:46Z", "service": "customers-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:20:50Z", "service": "search-service", "level": "ERROR", "msg": "container restarted: OOMKilled (exit code 137)"}
+{"ts": "2026-03-10T02:20:57Z", "service": "orders-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:20:57Z", "service": "checkout-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:22:58Z", "service": "api-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:23:22Z", "service": "search-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:23:29Z", "service": "orders-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:23:56Z", "service": "payments-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:25:04Z", "service": "orders-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:26:34Z", "service": "api-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:26:49Z", "service": "auth-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:26:55Z", "service": "search-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:27:00Z", "service": "checkout-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:27:06Z", "service": "catalog-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:27:16Z", "service": "catalog-db", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T02:27:55Z", "service": "orders-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:29:59Z", "service": "catalog-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:30:24Z", "service": "cache-proxy", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:31:00Z", "service": "customers-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:32:01Z", "service": "notification-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:32:37Z", "service": "api-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:33:34Z", "service": "cache-proxy", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T02:33:44Z", "service": "auth-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:34:15Z", "service": "search-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:35:23Z", "service": "auth-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:35:32Z", "service": "checkout-service", "level": "WARN", "msg": "slow query (412ms): SELECT id FROM sessions WHERE token = ?; plan: Index Scan"}
+{"ts": "2026-03-10T02:35:58Z", "service": "api-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:36:24Z", "service": "notification-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:36:24Z", "service": "api-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:36:30Z", "service": "checkout-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:37:33Z", "service": "customers-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:37:44Z", "service": "cache-proxy", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:38:22Z", "service": "api-gateway", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T02:38:31Z", "service": "orders-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:38:51Z", "service": "api-gateway", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T02:39:14Z", "service": "cache-proxy", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:39:36Z", "service": "api-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:40:10Z", "service": "api-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:41:51Z", "service": "orders-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:42:07Z", "service": "payments-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:42:26Z", "service": "notification-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:45:29Z", "service": "orders-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:45:33Z", "service": "checkout-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:46:12Z", "service": "api-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:46:35Z", "service": "cache-proxy", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T02:46:47Z", "service": "auth-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:47:13Z", "service": "api-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:47:32Z", "service": "notification-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:47:38Z", "service": "customers-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:48:22Z", "service": "api-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:48:46Z", "service": "cache-proxy", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:49:19Z", "service": "notification-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:50:46Z", "service": "search-service", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T02:50:55Z", "service": "catalog-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:51:03Z", "service": "payments-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:51:15Z", "service": "notification-service", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T02:51:47Z", "service": "api-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:52:29Z", "service": "catalog-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:52:44Z", "service": "customers-db", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T02:53:32Z", "service": "cache-proxy", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:54:14Z", "service": "cache-proxy", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:54:51Z", "service": "api-gateway", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T02:55:47Z", "service": "customers-db", "level": "WARN", "msg": "request queue depth 14"}
+{"ts": "2026-03-10T02:55:55Z", "service": "payments-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:56:07Z", "service": "search-service", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T02:56:23Z", "service": "api-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:58:00Z", "service": "cache-proxy", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:58:01Z", "service": "api-gateway", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T02:58:05Z", "service": "search-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:58:54Z", "service": "payments-gateway", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T03:00:12Z", "service": "payments-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:00:31Z", "service": "customers-db", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T03:00:51Z", "service": "api-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:02:02Z", "service": "notification-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:02:33Z", "service": "customers-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:03:27Z", "service": "api-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:03:38Z", "service": "notification-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:03:55Z", "service": "search-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:04:37Z", "service": "api-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:05:14Z", "service": "payments-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:05:43Z", "service": "notification-service", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T03:06:39Z", "service": "customers-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:07:20Z", "service": "api-gateway", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T03:07:24Z", "service": "cache-proxy", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:07:52Z", "service": "payments-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:08:33Z", "service": "orders-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:08:35Z", "service": "auth-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:09:03Z", "service": "checkout-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:09:12Z", "service": "payments-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:10:55Z", "service": "auth-service", "level": "WARN", "msg": "request queue depth 14"}
+{"ts": "2026-03-10T03:11:16Z", "service": "auth-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:11:45Z", "service": "search-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:12:23Z", "service": "search-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:12:28Z", "service": "catalog-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:13:23Z", "service": "customers-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:14:22Z", "service": "payments-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:15:21Z", "service": "search-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:15:30Z", "service": "checkout-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:16:07Z", "service": "cache-proxy", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:16:51Z", "service": "auth-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:17:33Z", "service": "checkout-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:17:40Z", "service": "search-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:18:55Z", "service": "auth-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:19:26Z", "service": "customers-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:20:25Z", "service": "auth-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:20:45Z", "service": "payments-gateway", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T03:21:11Z", "service": "checkout-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:22:00Z", "service": "auth-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:23:06Z", "service": "search-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:23:46Z", "service": "api-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:23:50Z", "service": "cache-proxy", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:24:08Z", "service": "auth-service", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T03:25:01Z", "service": "search-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:25:24Z", "service": "cache-proxy", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:25:39Z", "service": "auth-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:25:55Z", "service": "checkout-service", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T03:26:21Z", "service": "search-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:26:56Z", "service": "catalog-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:27:09Z", "service": "customers-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:28:47Z", "service": "search-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:29:38Z", "service": "api-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:29:50Z", "service": "notification-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:31:12Z", "service": "checkout-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:31:13Z", "service": "cache-proxy", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:32:28Z", "service": "orders-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:32:38Z", "service": "notification-service", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T03:33:32Z", "service": "api-gateway", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T03:33:42Z", "service": "notification-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:34:28Z", "service": "payments-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:34:33Z", "service": "orders-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:36:26Z", "service": "search-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:37:44Z", "service": "auth-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:38:10Z", "service": "notification-service", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T03:38:26Z", "service": "auth-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:38:54Z", "service": "orders-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:39:19Z", "service": "auth-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:40:50Z", "service": "notification-service", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T03:41:42Z", "service": "checkout-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:42:20Z", "service": "checkout-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:42:23Z", "service": "catalog-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:42:37Z", "service": "auth-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:44:00Z", "service": "notification-service", "level": "WARN", "msg": "redis latency elevated (310ms)"}
+{"ts": "2026-03-10T03:44:38Z", "service": "customers-db", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T03:45:22Z", "service": "auth-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:46:39Z", "service": "orders-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:47:22Z", "service": "customers-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:47:34Z", "service": "payments-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:47:37Z", "service": "orders-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:49:15Z", "service": "api-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:49:45Z", "service": "customers-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:49:56Z", "service": "payments-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:50:16Z", "service": "payments-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:51:19Z", "service": "notification-service", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T03:51:46Z", "service": "cache-proxy", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:52:36Z", "service": "auth-service", "level": "WARN", "msg": "request queue depth 14"}
+{"ts": "2026-03-10T03:52:55Z", "service": "notification-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:53:25Z", "service": "catalog-db", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T03:53:48Z", "service": "auth-service", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T03:53:59Z", "service": "catalog-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:54:42Z", "service": "api-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:55:14Z", "service": "payments-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:55:41Z", "service": "catalog-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:56:14Z", "service": "api-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:57:06Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T03:57:06Z", "service": "catalog-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:57:08Z", "service": "search-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:57:31Z", "service": "auth-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:57:39Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T03:58:03Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T03:58:10Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T03:59:00Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T03:59:41Z", "service": "checkout-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:59:56Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:00:02Z", "service": "customers-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:00:30Z", "service": "notification-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:00:30Z", "service": "payments-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:00:48Z", "service": "search-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:00:51Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:01:00Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:01:42Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:02:14Z", "service": "api-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:02:26Z", "service": "notification-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:02:34Z", "service": "checkout-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:02:47Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:02:48Z", "service": "orders-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:02:48Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:03:15Z", "service": "cache-proxy", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:03:16Z", "service": "customers-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:03:29Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:03:40Z", "service": "api-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:04:13Z", "service": "checkout-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:04:18Z", "service": "customers-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:04:33Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:04:36Z", "service": "catalog-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:04:48Z", "service": "notification-service", "level": "WARN", "msg": "request queue depth 14"}
+{"ts": "2026-03-10T04:05:02Z", "service": "checkout-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:05:29Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:05:44Z", "service": "cache-proxy", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T04:05:51Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:06:26Z", "service": "checkout-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:06:42Z", "service": "api-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:06:50Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:06:56Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:07:29Z", "service": "payments-gateway", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T04:07:35Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:07:49Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:08:16Z", "service": "payments-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:08:20Z", "service": "checkout-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:08:45Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:09:07Z", "service": "checkout-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:09:16Z", "service": "cache-proxy", "level": "WARN", "msg": "request queue depth 14"}
+{"ts": "2026-03-10T04:09:16Z", "service": "customers-db", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T04:09:41Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:09:55Z", "service": "search-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:10:01Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:10:56Z", "service": "api-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:11:14Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:11:19Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:11:29Z", "service": "search-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:11:40Z", "service": "cache-proxy", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:12:27Z", "service": "payments-gateway", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T04:12:32Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:12:35Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:13:12Z", "service": "checkout-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:13:26Z", "service": "payments-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:13:43Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:14:00Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:14:05Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:15:16Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:15:37Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:15:41Z", "service": "checkout-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:16:21Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:16:38Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:16:53Z", "service": "cache-proxy", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:17:29Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:17:36Z", "service": "cache-proxy", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:18:07Z", "service": "checkout-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:18:12Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:18:22Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:18:31Z", "service": "cache-proxy", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:18:53Z", "service": "notification-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:19:12Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:19:56Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:20:26Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:20:39Z", "service": "customers-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:20:50Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:21:01Z", "service": "checkout-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:21:10Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:21:40Z", "service": "catalog-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:21:45Z", "service": "auth-service", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T04:22:19Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:22:35Z", "service": "catalog-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:22:48Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:23:19Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:23:27Z", "service": "checkout-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:24:17Z", "service": "customers-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:24:18Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:24:24Z", "service": "search-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:24:26Z", "service": "checkout-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:24:38Z", "service": "orders-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:24:53Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:25:06Z", "service": "orders-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:25:20Z", "service": "checkout-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:25:54Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:26:17Z", "service": "search-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:26:50Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:26:52Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:27:09Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:27:34Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:27:55Z", "service": "notification-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:28:02Z", "service": "cache-proxy", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:28:34Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:28:49Z", "service": "checkout-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:28:56Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:29:13Z", "service": "payments-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:29:33Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:29:43Z", "service": "checkout-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:29:47Z", "service": "catalog-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:30:21Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:30:46Z", "service": "cache-proxy", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:31:20Z", "service": "orders-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:31:20Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:31:39Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:32:18Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:33:20Z", "service": "checkout-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:33:31Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:34:50Z", "service": "auth-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:34:54Z", "service": "payments-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:34:54Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:35:29Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:35:38Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:36:21Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:36:31Z", "service": "orders-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:37:19Z", "service": "catalog-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:37:30Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:37:33Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:37:49Z", "service": "api-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:38:25Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:38:55Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:39:25Z", "service": "cache-proxy", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:39:37Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:39:40Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:39:50Z", "service": "checkout-service", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T04:40:05Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:40:08Z", "service": "search-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:40:15Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:40:22Z", "service": "customers-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:41:03Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:41:20Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:41:25Z", "service": "checkout-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:41:34Z", "service": "customers-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:42:30Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:42:45Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:43:09Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:43:36Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:43:40Z", "service": "search-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:44:35Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:44:44Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:45:13Z", "service": "checkout-service", "level": "WARN", "msg": "request queue depth 14"}
+{"ts": "2026-03-10T04:45:36Z", "service": "notification-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:45:38Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:46:09Z", "service": "api-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:46:09Z", "service": "customers-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:46:14Z", "service": "notification-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:46:31Z", "service": "checkout-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:46:48Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:47:08Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:47:15Z", "service": "orders-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:47:58Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:48:21Z", "service": "catalog-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:48:35Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:48:36Z", "service": "customers-db", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T04:48:46Z", "service": "search-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:48:48Z", "service": "api-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:48:58Z", "service": "customers-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:49:09Z", "service": "checkout-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:49:27Z", "service": "auth-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:49:46Z", "service": "catalog-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:49:58Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:50:18Z", "service": "catalog-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:50:22Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:51:02Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:52:11Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:52:59Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:53:15Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:53:33Z", "service": "payments-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:53:43Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:53:47Z", "service": "search-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:54:28Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:54:45Z", "service": "notification-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:54:49Z", "service": "cache-proxy", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:55:01Z", "service": "catalog-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:55:11Z", "service": "api-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:55:35Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:55:42Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:55:54Z", "service": "checkout-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:56:00Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:56:11Z", "service": "customers-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:56:18Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:57:17Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:57:26Z", "service": "api-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:57:27Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:57:55Z", "service": "cache-proxy", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:58:16Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:58:37Z", "service": "catalog-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:58:39Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:58:44Z", "service": "search-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:59:18Z", "service": "notification-service", "level": "ERROR", "msg": "NullPointerException: field 'currency' is null in NotificationServiceHandler.handle"}
+{"ts": "2026-03-10T04:59:18Z", "service": "orders-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:59:58Z", "service": "search-service", "level": "INFO", "msg": "cache hit ratio 0.93"}

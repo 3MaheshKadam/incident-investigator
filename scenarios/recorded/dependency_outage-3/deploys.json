@@ -1,0 +1,30 @@
+[
+ {
+  "ts": "2026-03-10T02:24:00Z",
+  "service": "notification-service",
+  "version": "v3.13.4",
+  "author": "tom",
+  "commit_message": "Fix typo in error message"
+ },
+ {
+  "ts": "2026-03-10T02:46:00Z",
+  "service": "search-service",
+  "version": "v1.9.1",
+  "author": "li",
+  "commit_message": "Update documentation link in health endpoint"
+ },
+ {
+  "ts": "2026-03-10T02:52:00Z",
+  "service": "api-gateway",
+  "version": "v2.13.2",
+  "author": "priya",
+  "commit_message": "Bump logging library patch version"
+ },
+ {
+  "ts": "2026-03-10T03:21:00Z",
+  "service": "api-gateway",
+  "version": "v3.11.4",
+  "author": "li",
+  "commit_message": "Bump http client timeout to 5s"
+ }
+]

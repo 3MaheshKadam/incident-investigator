@@ -1,0 +1,37 @@
+[
+ {
+  "ts": "2026-03-10T02:21:00Z",
+  "service": "notification-service",
+  "version": "v3.11.0",
+  "author": "carlos",
+  "commit_message": "Add unit tests for date parsing"
+ },
+ {
+  "ts": "2026-03-10T02:30:00Z",
+  "service": "search-service",
+  "version": "v1.1.8",
+  "author": "tom",
+  "commit_message": "Tidy imports"
+ },
+ {
+  "ts": "2026-03-10T02:52:00Z",
+  "service": "checkout-service",
+  "version": "v3.20.4",
+  "author": "li",
+  "commit_message": "Update documentation link in health endpoint"
+ },
+ {
+  "ts": "2026-03-10T03:29:00Z",
+  "service": "notification-service",
+  "version": "v4.9.5",
+  "author": "carlos",
+  "commit_message": "Bump http client timeout to 5s"
+ },
+ {
+  "ts": "2026-03-10T03:49:00Z",
+  "service": "auth-service",
+  "version": "v2.1.7",
+  "author": "li",
+  "commit_message": "Refactor request handling and add currency conversion"
+ }
+]

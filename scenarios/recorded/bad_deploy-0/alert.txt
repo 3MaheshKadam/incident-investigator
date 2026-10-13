@@ -1,0 +1,1 @@
+ALERT [warning] api-gateway: error rate 5% (normally 0.5%) since 2026-03-10T03:55:00Z

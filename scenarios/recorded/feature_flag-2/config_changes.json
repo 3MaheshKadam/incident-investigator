@@ -1,0 +1,26 @@
+[
+ {
+  "ts": "2026-03-10T02:14:00Z",
+  "service": "notification-service",
+  "key": "request_timeout_ms",
+  "old": "2000",
+  "new": "2000",
+  "author": "li"
+ },
+ {
+  "ts": "2026-03-10T02:25:00Z",
+  "service": "auth-service",
+  "key": "log_level",
+  "old": "info",
+  "new": "info,debug",
+  "author": "tom"
+ },
+ {
+  "ts": "2026-03-10T03:44:00Z",
+  "service": "notification-service",
+  "key": "async_feed_render",
+  "old": "off",
+  "new": "on (100%)",
+  "author": "carlos"
+ }
+]

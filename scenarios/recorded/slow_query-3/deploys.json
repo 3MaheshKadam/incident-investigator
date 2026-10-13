@@ -1,0 +1,30 @@
+[
+ {
+  "ts": "2026-03-10T02:08:00Z",
+  "service": "checkout-service",
+  "version": "v4.7.4",
+  "author": "tom",
+  "commit_message": "Tidy imports"
+ },
+ {
+  "ts": "2026-03-10T02:16:00Z",
+  "service": "search-service",
+  "version": "v2.17.6",
+  "author": "li",
+  "commit_message": "Add unit tests for date parsing"
+ },
+ {
+  "ts": "2026-03-10T02:39:00Z",
+  "service": "api-gateway",
+  "version": "v3.8.2",
+  "author": "dana",
+  "commit_message": "Tidy imports"
+ },
+ {
+  "ts": "2026-03-10T03:31:00Z",
+  "service": "checkout-service",
+  "version": "v1.4.1",
+  "author": "carlos",
+  "commit_message": "Tidy imports"
+ }
+]
