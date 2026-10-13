@@ -24,6 +24,7 @@ All incidents are simulated. No real systems or credentials are involved.
 | --- | --- |
 | `agent/` | Investigator loop, tools and the model wrapper |
 | `shop/` | A simulated backend (10 services) whose telemetry comes from its own state |
+| `target/` | A real stack: separate Linux processes with HTTP, SQLite and real faults, watched by the same detector |
 | `monitor/` | Anomaly detection, incident grouping, change correlation, recording |
 | `readiness/` | Production-readiness checks for Dockerfile, compose, CI workflows, env and secrets |
 | `scenarios/` | Hand-generated incidents (`data/`) and monitor-recorded ones (`recorded/`) |
@@ -92,6 +93,27 @@ faults partial (a share of requests fail, queries are only somewhat slow). Detec
 to severity 0.25 and drops to 17/24 at 0.1, where faults are nearly invisible. Honest limits:
 one hand-set threshold per metric, learned baselines assume the first 30 minutes are healthy,
 and a ten-service simulation is far simpler than production.
+
+## Real target app (live processes)
+
+`target/` runs a small stack of real OS processes: `api-gateway`, `orders-service`,
+`inventory-service` and `orders-db`, talking HTTP over localhost with a SQLite database. Telemetry
+is measured, not derived: request latency and errors from real calls, memory from `/proc`, and a
+Prometheus-style `/metrics` endpoint per service. Faults are real: SIGKILL on the database
+(`dependency_outage`), a dropped index (`slow_query`), a deploy that ships a genuine
+`AttributeError` (`bad_deploy`), a flag file (`feature_flag`), and a leaking thread that a
+watchdog OOM-kills (`memory_leak`). Time is compressed: one sample is 0.5 s real, one "virtual
+minute".
+
+```bash
+python -m target.run --kinds all --variants 0,1 --healthy 1 --out scenarios/live
+python -m target.run --kinds dependency_outage,bad_deploy --variants 0 --require-detected   # CI
+```
+
+Honest limits: Linux only (reads `/proc`); live runs are not deterministic, so recorded live
+incidents are not freshness-checked in CI the way generated ones are; benign deploys are recorded
+events, not real restarts; `expired_certificate` is not implemented on the live stack; and it is
+four processes on one machine, not a cluster.
 
 ## Production-readiness checker
 

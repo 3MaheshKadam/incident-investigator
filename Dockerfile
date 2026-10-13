@@ -7,6 +7,7 @@ COPY guard guard
 COPY monitor monitor
 COPY readiness readiness
 COPY shop shop
+COPY target target
 COPY scenarios scenarios
 COPY ui ui
 RUN pip install --no-cache-dir -e ".[ui]"
