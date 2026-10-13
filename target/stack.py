@@ -48,6 +48,7 @@ class Stack:
         self.ports = {n: free_port() for n in SERVICES}
         self.procs: dict[str, subprocess.Popen] = {}
         self.versions: dict[str, str] = {n: "v1.0.0" for n in SERVICES}
+        self.previous: dict[str, str] = {}
         self.oom_events: list[tuple[float, str]] = []
         self.deploys: list[tuple[float, dict]] = []
         self.config_changes: list[tuple[float, dict]] = []
@@ -129,6 +130,7 @@ class Stack:
     # ----- real operations a fault is made of -----------------------------------------------------
     def deploy(self, name: str, version: str, commit: str, author: str, **env: str) -> None:
         """Ship a new release: record the event, restart the process with the new settings."""
+        self.previous[name] = self.versions[name]
         self.versions[name] = version
         self._extra_env[name].update(env)
         self.deploys.append((time.time(), {"service": name, "version": version,
@@ -137,6 +139,29 @@ class Stack:
         self.procs[name].wait()
         self._spawn(name)
         self._wait_healthy(name)
+
+    @property
+    def log_dir(self) -> Path:
+        return self._log_dir
+
+    def restart(self, name: str) -> None:
+        """Graceful restart of one service with its current release and settings."""
+        if self.procs[name].poll() is None:
+            self.procs[name].send_signal(signal.SIGTERM)
+            self.procs[name].wait()
+        self._spawn(name)
+        self._wait_healthy(name)
+
+    def rollback(self, name: str) -> str:
+        """Go back to the previous release: drop the settings the bad release added."""
+        old = self.previous.get(name)
+        if old is None:
+            return f"nothing to roll back for {name}"
+        self.versions[name], self._extra_env[name] = old, {}
+        self.deploys.append((time.time(), {"service": name, "version": old, "author": "gateway",
+                                           "commit_message": f"rollback to {old}"}))
+        self.restart(name)
+        return f"rolled back {name} to {old}"
 
     def record_deploy(self, name: str, version: str, commit: str, author: str) -> None:
         """A release with no behavioural change (docs, typos). Recorded, not restarted."""
