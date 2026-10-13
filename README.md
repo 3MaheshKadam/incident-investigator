@@ -140,6 +140,19 @@ Honest limits: `ps -ef` shows every process on the host, not only the stack; the
 small and hand-written; and the investigator has not yet been scored against the live stack with a
 real model. This is the safe door the next measurements go through.
 
+### Investigating the live stack
+
+```bash
+python -m target.investigate --kinds dependency_outage,bad_deploy --variants 0
+```
+
+This breaks the real stack, records what the monitor saw, then leaves the stack running and lets
+the investigator use its usual tools plus `run_command` through the gateway. The run is scored
+like any other (root cause, evidence, wrong blame) and also reports how many commands ran, how
+many were denied, and how many changes were proposed for approval. A test drives this path with a
+scripted model (`LIVE_TESTS=1 pytest tests/test_target.py`). No real-model score on the live stack
+exists yet; the numbers go here once the run is done.
+
 ## Production-readiness checker
 
 `readiness/` checks that the deployment files are safe and consistent before anything ships. Every
