@@ -1,4 +1,5 @@
 import json
+import os
 import time
 import urllib.error
 import urllib.request
@@ -111,3 +112,21 @@ def test_live_faults_have_truth_in_the_scenario_format():
         json.dumps(truth)
     assert isinstance(fault, LiveFault)
     assert downsample([1.0] * 10)[0][1] == 1.0
+
+
+@pytest.mark.skipif(not os.environ.get("LIVE_TESTS"), reason="slow (about a minute); set LIVE_TESTS=1")
+def test_investigator_uses_the_gateway_on_a_broken_live_stack(tmp_path):
+    from agent.llm import LLMResponse, MockLLM, ToolCall
+    from target.investigate import investigate_live
+
+    report = {"root_cause_category": "dependency_outage", "component": "orders-service",
+              "confidence": "medium", "summary": "down", "evidence": ["connection refused"],
+              "action_type": "open_ticket", "action_target": "orders-service"}
+    llm = MockLLM([
+        LLMResponse(tool_calls=[ToolCall("run_command", {"command": "grep -c refused api-gateway.log"})]),
+        LLMResponse(tool_calls=[ToolCall("run_command", {"command": "rm -rf /"})]),
+        LLMResponse(tool_calls=[ToolCall("submit_report", report)]),
+    ])
+    row = investigate_live("dependency_outage", 0, llm, tmp_path, 3000, 100, 12, True)["row"]
+    assert row["stop_reason"] == "report" and row["commands_run"] == 2 and row["commands_denied"] == 1
+    assert int(row["audit"][0]["detail"]) > 0  # the gateway saw the real "connection refused" lines

@@ -10,6 +10,7 @@ import random
 import threading
 import time
 import urllib.request
+from collections.abc import Callable
 from dataclasses import dataclass, field
 from functools import partial
 from pathlib import Path
@@ -161,6 +162,7 @@ def make_live_fault(kind: str, rng: random.Random) -> LiveFault:
 def run_live_episode(
     kind: str | None, variant: int, workdir: Path, db_rows: int = 1_000_000,
     samples: int = SAMPLES, interval: float = SAMPLE_S,
+    inspect: Callable[[Stack, LiveEpisode], None] | None = None,
 ) -> LiveEpisode:
     if kind is not None and kind not in LIVE_KINDS:
         raise ValueError(f"{kind!r} is not available on the live stack ({LIVE_KINDS})")
@@ -214,22 +216,27 @@ def run_live_episode(
                               snap["service_request_rate"])
                 for metric, v in zip(METRICS, values, strict=True):
                     metrics[name][metric].append(round(v, 2))
+        load.stop()
+
+        def minute(t: float) -> float:
+            return (t - t0) / interval
+
+        logs = [
+            (minute(rec["ts"]), name, rec["level"], rec["msg"])
+            for name in SERVICES for rec in stack.read_logs(name) if minute(rec["ts"]) >= 0
+        ]
+        telemetry = Telemetry(
+            metrics=metrics,
+            logs=logs,
+            deploys=[{**d, "ts": ts(max(0, minute(t)))} for t, d in stack.deploys],
+            config_changes=[{**c, "ts": ts(max(0, minute(t)))} for t, c in stack.config_changes],
+            first_oom={n: int(minute(t)) for t, n in reversed(stack.oom_events)},
+        )
+        episode = LiveEpisode(sid, kind, variant, telemetry, fault)
+        if inspect is not None:
+            inspect(stack, episode)  # the stack is still running, with the fault in place
+        return episode
     finally:
         load.stop()
         stack.stop()
 
-    def minute(t: float) -> float:
-        return (t - t0) / interval
-
-    logs = [
-        (minute(rec["ts"]), name, rec["level"], rec["msg"])
-        for name in SERVICES for rec in stack.read_logs(name) if minute(rec["ts"]) >= 0
-    ]
-    telemetry = Telemetry(
-        metrics=metrics,
-        logs=logs,
-        deploys=[{**d, "ts": ts(max(0, minute(t)))} for t, d in stack.deploys],
-        config_changes=[{**c, "ts": ts(max(0, minute(t)))} for t, c in stack.config_changes],
-        first_oom={n: int(minute(t)) for t, n in reversed(stack.oom_events)},
-    )
-    return LiveEpisode(sid, kind, variant, telemetry, fault)
