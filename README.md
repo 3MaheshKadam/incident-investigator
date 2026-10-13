@@ -25,6 +25,7 @@ All incidents are simulated. No real systems or credentials are involved.
 | `agent/` | Investigator loop, tools and the model wrapper |
 | `shop/` | A simulated backend (10 services) whose telemetry comes from its own state |
 | `monitor/` | Anomaly detection, incident grouping, change correlation, recording |
+| `readiness/` | Production-readiness checks for Dockerfile, compose, CI workflows, env and secrets |
 | `scenarios/` | Hand-generated incidents (`data/`) and monitor-recorded ones (`recorded/`) |
 | `evals/` | Scoring harness and reports |
 | `guard/` | Attack and defense layer |
@@ -91,6 +92,28 @@ faults partial (a share of requests fail, queries are only somewhat slow). Detec
 to severity 0.25 and drops to 17/24 at 0.1, where faults are nearly invisible. Honest limits:
 one hand-set threshold per metric, learned baselines assume the first 30 minutes are healthy,
 and a ten-service simulation is far simpler than production.
+
+## Production-readiness checker
+
+`readiness/` checks that the deployment files are safe and consistent before anything ships. Every
+rule has an id, a severity and a fix hint, and each one is tested against a bad and a good example.
+
+```bash
+python -m readiness .                 # human-readable
+python -m readiness . --json --out evals/reports/readiness.json
+python -m readiness . --fail-on high  # exit 1 on any high finding (this is what CI runs)
+```
+
+| Area | Examples of what it catches |
+| --- | --- |
+| Dockerfile (`DF`) | unpinned base image, runs as root, no HEALTHCHECK, secrets in ENV/ARG, `curl \| sh`, `ADD` of URLs |
+| docker-compose (`DC`) | unpinned images, no healthcheck / restart policy / memory limit, privileged mode or Docker socket, literal secrets, unknown `depends_on`, datastore ports on all interfaces, undefined volumes, `${VARS}` missing from `.env.example` |
+| GitHub Actions (`GH`) | no `permissions`, unpinned or movable-tag actions, `pull_request_target`, secrets echoed, script injection from PR titles, no job timeout |
+| Repo (`RP`, `YAML`) | `.env` not git-ignored, weak `.dockerignore`, committed keys (AWS, Groq, GitHub, private keys), invalid YAML |
+
+On this repository it found a root container, no healthcheck and missing job timeouts; those are
+fixed. Three low findings remain on purpose: CI actions are pinned to a release tag rather than a
+commit SHA. It is a transparent rule set, not a replacement for hadolint or actionlint.
 
 ## Approval, replay and the UI
 
