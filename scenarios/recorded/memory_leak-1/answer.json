@@ -1,0 +1,16 @@
+{
+ "id": "memory_leak-1",
+ "kind": "memory_leak",
+ "root_cause_category": "memory_leak",
+ "component": "auth-service",
+ "evidence_keys": [
+  "OOMKilled",
+  "heap usage"
+ ],
+ "incident_start": "2026-03-10T04:22:00Z",
+ "injected_at": "2026-03-10T02:43:00Z",
+ "correct_action": {
+  "type": "restart_service",
+  "target": "auth-service"
+ }
+}

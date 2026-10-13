@@ -1,0 +1,26 @@
+[
+ {
+  "ts": "2026-03-10T02:12:00Z",
+  "service": "search-service",
+  "key": "request_timeout_ms",
+  "old": "2000",
+  "new": "2000",
+  "author": "tom"
+ },
+ {
+  "ts": "2026-03-10T02:30:00Z",
+  "service": "search-service",
+  "key": "log_level",
+  "old": "info",
+  "new": "info,debug",
+  "author": "li"
+ },
+ {
+  "ts": "2026-03-10T03:42:00Z",
+  "service": "search-service",
+  "key": "new_ranking_model",
+  "old": "off",
+  "new": "on (100%)",
+  "author": "priya"
+ }
+]

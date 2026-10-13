@@ -1,0 +1,16 @@
+{
+ "id": "bad_deploy-1",
+ "kind": "bad_deploy",
+ "root_cause_category": "bad_deploy",
+ "component": "search-service",
+ "evidence_keys": [
+  "v3.17.3",
+  "NullPointerException"
+ ],
+ "incident_start": "2026-03-10T04:05:00Z",
+ "injected_at": "2026-03-10T04:04:00Z",
+ "correct_action": {
+  "type": "rollback_deploy",
+  "target": "search-service"
+ }
+}

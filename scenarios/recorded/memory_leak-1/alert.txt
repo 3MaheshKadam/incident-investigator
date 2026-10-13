@@ -1,0 +1,1 @@
+ALERT [warning] auth-service: memory 1169MB (normally 655MB) since 2026-03-10T04:39:00Z

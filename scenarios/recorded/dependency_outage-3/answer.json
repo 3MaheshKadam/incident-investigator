@@ -1,0 +1,16 @@
+{
+ "id": "dependency_outage-3",
+ "kind": "dependency_outage",
+ "root_cause_category": "dependency_outage",
+ "component": "catalog-db",
+ "evidence_keys": [
+  "connection refused",
+  "health check failing"
+ ],
+ "incident_start": "2026-03-10T03:46:00Z",
+ "injected_at": "2026-03-10T03:46:00Z",
+ "correct_action": {
+  "type": "open_ticket",
+  "target": "catalog-db"
+ }
+}

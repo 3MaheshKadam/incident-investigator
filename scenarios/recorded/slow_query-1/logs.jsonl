@@ -1,0 +1,366 @@
+{"ts": "2026-03-10T02:01:29Z", "service": "api-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:01:44Z", "service": "orders-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:01:58Z", "service": "payments-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:02:54Z", "service": "orders-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:03:43Z", "service": "auth-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:03:54Z", "service": "payments-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:04:00Z", "service": "notification-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:04:07Z", "service": "payments-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:04:18Z", "service": "notification-service", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T02:04:38Z", "service": "cache-proxy", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:05:20Z", "service": "api-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:05:53Z", "service": "search-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:06:08Z", "service": "auth-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:06:58Z", "service": "notification-service", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T02:07:25Z", "service": "checkout-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:08:32Z", "service": "search-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:08:52Z", "service": "api-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:08:59Z", "service": "cache-proxy", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:09:57Z", "service": "payments-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:10:14Z", "service": "notification-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:10:34Z", "service": "cache-proxy", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:10:35Z", "service": "customers-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:10:48Z", "service": "auth-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:11:11Z", "service": "customers-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:11:58Z", "service": "checkout-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T02:12:48Z", "service": "api-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:12:48Z", "service": "notification-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:12:57Z", "service": "orders-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:13:15Z", "service": "payments-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:13:22Z", "service": "orders-db", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T02:14:19Z", "service": "api-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:14:20Z", "service": "notification-service", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T02:14:28Z", "service": "notification-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:14:51Z", "service": "cache-proxy", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:15:00Z", "service": "api-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:16:44Z", "service": "auth-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:17:17Z", "service": "catalog-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:17:26Z", "service": "cache-proxy", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:19:28Z", "service": "cache-proxy", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:19:31Z", "service": "notification-service", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T02:19:51Z", "service": "checkout-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:20:08Z", "service": "customers-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:21:25Z", "service": "catalog-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:21:30Z", "service": "notification-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:21:51Z", "service": "cache-proxy", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:22:49Z", "service": "auth-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:24:16Z", "service": "payments-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:24:35Z", "service": "auth-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:25:08Z", "service": "search-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:25:18Z", "service": "auth-service", "level": "WARN", "msg": "slow query (412ms): SELECT id FROM sessions WHERE token = ?; plan: Index Scan"}
+{"ts": "2026-03-10T02:25:41Z", "service": "customers-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:26:21Z", "service": "orders-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:26:40Z", "service": "auth-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:27:07Z", "service": "auth-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:28:16Z", "service": "customers-db", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T02:29:32Z", "service": "auth-service", "level": "WARN", "msg": "upstream cache-proxy: connection refused (dial tcp 10.0.1.9:6379); retry succeeded"}
+{"ts": "2026-03-10T02:30:20Z", "service": "search-service", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T02:30:52Z", "service": "notification-service", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T02:31:17Z", "service": "api-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:31:41Z", "service": "customers-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:33:25Z", "service": "catalog-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:33:55Z", "service": "search-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:34:43Z", "service": "payments-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:35:15Z", "service": "checkout-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:37:26Z", "service": "notification-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:38:15Z", "service": "customers-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:38:42Z", "service": "orders-db", "level": "WARN", "msg": "request queue depth 14"}
+{"ts": "2026-03-10T02:38:42Z", "service": "catalog-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:39:51Z", "service": "notification-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:40:11Z", "service": "checkout-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:40:23Z", "service": "customers-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:40:24Z", "service": "orders-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:40:54Z", "service": "cache-proxy", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:41:10Z", "service": "api-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:41:35Z", "service": "payments-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:41:38Z", "service": "catalog-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:42:18Z", "service": "cache-proxy", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:42:19Z", "service": "auth-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:43:07Z", "service": "payments-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:43:15Z", "service": "orders-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:43:33Z", "service": "cache-proxy", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:44:26Z", "service": "checkout-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:44:30Z", "service": "orders-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:45:27Z", "service": "cache-proxy", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:45:31Z", "service": "api-gateway", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T02:45:37Z", "service": "search-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:46:19Z", "service": "auth-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:46:36Z", "service": "notification-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:47:52Z", "service": "catalog-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:48:16Z", "service": "orders-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:48:39Z", "service": "notification-service", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T02:49:03Z", "service": "customers-db", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T02:49:11Z", "service": "orders-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:49:19Z", "service": "search-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:50:07Z", "service": "catalog-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:50:15Z", "service": "checkout-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:50:48Z", "service": "api-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:51:08Z", "service": "orders-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:51:58Z", "service": "cache-proxy", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:52:39Z", "service": "api-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:52:54Z", "service": "customers-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:55:09Z", "service": "auth-service", "level": "WARN", "msg": "request queue depth 14"}
+{"ts": "2026-03-10T02:55:20Z", "service": "checkout-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:55:38Z", "service": "payments-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:56:14Z", "service": "notification-service", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T02:57:03Z", "service": "api-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:57:49Z", "service": "auth-service", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T02:57:53Z", "service": "auth-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:58:36Z", "service": "cache-proxy", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:58:43Z", "service": "notification-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:58:56Z", "service": "auth-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:59:15Z", "service": "api-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:59:53Z", "service": "search-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:00:14Z", "service": "orders-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:02:15Z", "service": "catalog-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:02:45Z", "service": "auth-service", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T03:02:48Z", "service": "checkout-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:04:26Z", "service": "catalog-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:04:31Z", "service": "orders-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:05:04Z", "service": "orders-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:05:11Z", "service": "cache-proxy", "level": "WARN", "msg": "request queue depth 14"}
+{"ts": "2026-03-10T03:06:10Z", "service": "auth-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:06:29Z", "service": "customers-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:06:35Z", "service": "cache-proxy", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:06:56Z", "service": "api-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:07:25Z", "service": "api-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:07:29Z", "service": "checkout-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:08:04Z", "service": "customers-db", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T03:08:11Z", "service": "search-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:08:35Z", "service": "orders-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:09:34Z", "service": "search-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:11:18Z", "service": "orders-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:12:18Z", "service": "auth-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:12:47Z", "service": "cache-proxy", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:13:29Z", "service": "cache-proxy", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T03:13:44Z", "service": "payments-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:14:28Z", "service": "checkout-service", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T03:14:46Z", "service": "customers-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:14:55Z", "service": "payments-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:15:17Z", "service": "payments-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:15:34Z", "service": "catalog-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:16:52Z", "service": "catalog-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:17:31Z", "service": "checkout-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:18:17Z", "service": "customers-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:18:27Z", "service": "search-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:18:45Z", "service": "payments-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:19:01Z", "service": "catalog-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:19:47Z", "service": "checkout-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:20:02Z", "service": "cache-proxy", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:21:04Z", "service": "notification-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:21:49Z", "service": "customers-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:22:06Z", "service": "api-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:22:19Z", "service": "checkout-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:23:17Z", "service": "cache-proxy", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:23:25Z", "service": "orders-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:23:45Z", "service": "payments-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:24:50Z", "service": "search-service", "level": "WARN", "msg": "request queue depth 14"}
+{"ts": "2026-03-10T03:26:19Z", "service": "cache-proxy", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T03:26:37Z", "service": "auth-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:27:00Z", "service": "search-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:27:16Z", "service": "catalog-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:28:02Z", "service": "api-gateway", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T03:32:14Z", "service": "checkout-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:33:06Z", "service": "search-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:33:16Z", "service": "notification-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:33:28Z", "service": "payments-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:33:41Z", "service": "customers-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:34:54Z", "service": "catalog-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:36:28Z", "service": "orders-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:36:52Z", "service": "catalog-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:39:04Z", "service": "search-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:40:44Z", "service": "checkout-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:41:03Z", "service": "auth-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:41:59Z", "service": "orders-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:42:20Z", "service": "catalog-db", "level": "WARN", "msg": "slow query (2620ms): SELECT * FROM customers WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on customers"}
+{"ts": "2026-03-10T03:42:54Z", "service": "orders-db", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T03:43:10Z", "service": "customers-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:43:30Z", "service": "payments-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:43:35Z", "service": "search-service", "level": "WARN", "msg": "request timed out waiting for database (3000ms)"}
+{"ts": "2026-03-10T03:43:53Z", "service": "notification-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:43:57Z", "service": "search-service", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T03:44:00Z", "service": "payments-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:44:27Z", "service": "search-service", "level": "WARN", "msg": "request timed out waiting for database (3000ms)"}
+{"ts": "2026-03-10T03:45:02Z", "service": "notification-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:45:59Z", "service": "customers-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:46:13Z", "service": "checkout-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:46:14Z", "service": "auth-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:46:20Z", "service": "search-service", "level": "WARN", "msg": "request timed out waiting for database (3000ms)"}
+{"ts": "2026-03-10T03:47:06Z", "service": "notification-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:47:52Z", "service": "search-service", "level": "WARN", "msg": "request timed out waiting for database (3000ms)"}
+{"ts": "2026-03-10T03:48:13Z", "service": "checkout-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:48:17Z", "service": "auth-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:48:29Z", "service": "search-service", "level": "WARN", "msg": "request timed out waiting for database (3000ms)"}
+{"ts": "2026-03-10T03:49:11Z", "service": "payments-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:49:30Z", "service": "search-service", "level": "WARN", "msg": "request timed out waiting for database (3000ms)"}
+{"ts": "2026-03-10T03:49:58Z", "service": "catalog-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:50:10Z", "service": "catalog-db", "level": "WARN", "msg": "slow query (4060ms): SELECT * FROM customers WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on customers"}
+{"ts": "2026-03-10T03:50:32Z", "service": "notification-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:50:40Z", "service": "cache-proxy", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:51:11Z", "service": "catalog-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:51:16Z", "service": "cache-proxy", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:51:47Z", "service": "catalog-db", "level": "WARN", "msg": "slow query (2850ms): SELECT * FROM customers WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on customers"}
+{"ts": "2026-03-10T03:51:51Z", "service": "search-service", "level": "WARN", "msg": "request timed out waiting for database (3000ms)"}
+{"ts": "2026-03-10T03:52:22Z", "service": "catalog-db", "level": "WARN", "msg": "slow query (2833ms): SELECT * FROM customers WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on customers"}
+{"ts": "2026-03-10T03:52:36Z", "service": "orders-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:52:40Z", "service": "search-service", "level": "WARN", "msg": "request timed out waiting for database (3000ms)"}
+{"ts": "2026-03-10T03:53:12Z", "service": "cache-proxy", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:54:27Z", "service": "catalog-db", "level": "WARN", "msg": "slow query (2662ms): SELECT * FROM customers WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on customers"}
+{"ts": "2026-03-10T03:55:10Z", "service": "catalog-db", "level": "WARN", "msg": "slow query (4772ms): SELECT * FROM customers WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on customers"}
+{"ts": "2026-03-10T03:55:39Z", "service": "orders-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:56:36Z", "service": "payments-gateway", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T03:56:40Z", "service": "customers-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:56:47Z", "service": "catalog-db", "level": "WARN", "msg": "slow query (4168ms): SELECT * FROM customers WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on customers"}
+{"ts": "2026-03-10T03:57:34Z", "service": "search-service", "level": "WARN", "msg": "request timed out waiting for database (3000ms)"}
+{"ts": "2026-03-10T03:57:57Z", "service": "catalog-db", "level": "WARN", "msg": "slow query (2676ms): SELECT * FROM customers WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on customers"}
+{"ts": "2026-03-10T03:58:20Z", "service": "search-service", "level": "WARN", "msg": "request timed out waiting for database (3000ms)"}
+{"ts": "2026-03-10T03:58:38Z", "service": "catalog-db", "level": "WARN", "msg": "slow query (3189ms): SELECT * FROM customers WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on customers"}
+{"ts": "2026-03-10T03:58:42Z", "service": "checkout-service", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T03:59:16Z", "service": "api-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:59:58Z", "service": "catalog-db", "level": "WARN", "msg": "slow query (3995ms): SELECT * FROM customers WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on customers"}
+{"ts": "2026-03-10T04:00:32Z", "service": "payments-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:01:23Z", "service": "checkout-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:01:56Z", "service": "customers-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:02:02Z", "service": "orders-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:02:49Z", "service": "customers-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:02:50Z", "service": "catalog-db", "level": "WARN", "msg": "slow query (3141ms): SELECT * FROM customers WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on customers"}
+{"ts": "2026-03-10T04:03:03Z", "service": "catalog-db", "level": "WARN", "msg": "slow query (3655ms): SELECT * FROM customers WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on customers"}
+{"ts": "2026-03-10T04:03:27Z", "service": "catalog-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:03:36Z", "service": "notification-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:04:06Z", "service": "customers-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:04:15Z", "service": "search-service", "level": "WARN", "msg": "request timed out waiting for database (3000ms)"}
+{"ts": "2026-03-10T04:04:19Z", "service": "payments-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:04:27Z", "service": "notification-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:04:57Z", "service": "cache-proxy", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:05:09Z", "service": "search-service", "level": "WARN", "msg": "request timed out waiting for database (3000ms)"}
+{"ts": "2026-03-10T04:06:03Z", "service": "payments-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:06:45Z", "service": "catalog-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:07:33Z", "service": "search-service", "level": "WARN", "msg": "request timed out waiting for database (3000ms)"}
+{"ts": "2026-03-10T04:07:40Z", "service": "orders-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:07:53Z", "service": "auth-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:08:19Z", "service": "search-service", "level": "WARN", "msg": "request timed out waiting for database (3000ms)"}
+{"ts": "2026-03-10T04:09:06Z", "service": "search-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:09:31Z", "service": "checkout-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:09:39Z", "service": "auth-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:09:50Z", "service": "customers-db", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T04:09:53Z", "service": "search-service", "level": "WARN", "msg": "request timed out waiting for database (3000ms)"}
+{"ts": "2026-03-10T04:10:05Z", "service": "payments-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:12:17Z", "service": "payments-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:12:18Z", "service": "checkout-service", "level": "WARN", "msg": "request queue depth 14"}
+{"ts": "2026-03-10T04:13:55Z", "service": "catalog-db", "level": "WARN", "msg": "slow query (3308ms): SELECT * FROM customers WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on customers"}
+{"ts": "2026-03-10T04:13:59Z", "service": "cache-proxy", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:14:12Z", "service": "checkout-service", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T04:14:20Z", "service": "catalog-db", "level": "WARN", "msg": "slow query (3494ms): SELECT * FROM customers WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on customers"}
+{"ts": "2026-03-10T04:14:31Z", "service": "catalog-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:14:31Z", "service": "search-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:14:39Z", "service": "auth-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:15:34Z", "service": "search-service", "level": "WARN", "msg": "request timed out waiting for database (3000ms)"}
+{"ts": "2026-03-10T04:16:00Z", "service": "search-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:16:18Z", "service": "api-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:16:59Z", "service": "orders-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:17:36Z", "service": "catalog-db", "level": "WARN", "msg": "slow query (2733ms): SELECT * FROM customers WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on customers"}
+{"ts": "2026-03-10T04:18:06Z", "service": "search-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:18:11Z", "service": "checkout-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:18:25Z", "service": "catalog-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:18:53Z", "service": "payments-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:19:34Z", "service": "catalog-db", "level": "WARN", "msg": "slow query (2693ms): SELECT * FROM customers WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on customers"}
+{"ts": "2026-03-10T04:19:38Z", "service": "search-service", "level": "WARN", "msg": "request timed out waiting for database (3000ms)"}
+{"ts": "2026-03-10T04:19:39Z", "service": "notification-service", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T04:20:18Z", "service": "checkout-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:20:22Z", "service": "catalog-db", "level": "WARN", "msg": "slow query (4694ms): SELECT * FROM customers WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on customers"}
+{"ts": "2026-03-10T04:21:07Z", "service": "catalog-db", "level": "WARN", "msg": "slow query (2691ms): SELECT * FROM customers WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on customers"}
+{"ts": "2026-03-10T04:21:26Z", "service": "cache-proxy", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:21:33Z", "service": "api-gateway", "level": "WARN", "msg": "request queue depth 14"}
+{"ts": "2026-03-10T04:21:37Z", "service": "payments-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:21:50Z", "service": "api-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:21:56Z", "service": "orders-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:23:34Z", "service": "catalog-db", "level": "WARN", "msg": "slow query (4307ms): SELECT * FROM customers WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on customers"}
+{"ts": "2026-03-10T04:23:49Z", "service": "orders-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:24:35Z", "service": "orders-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:24:37Z", "service": "cache-proxy", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:24:49Z", "service": "checkout-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:24:57Z", "service": "catalog-db", "level": "WARN", "msg": "slow query (3229ms): SELECT * FROM customers WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on customers"}
+{"ts": "2026-03-10T04:25:22Z", "service": "catalog-db", "level": "WARN", "msg": "slow query (3810ms): SELECT * FROM customers WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on customers"}
+{"ts": "2026-03-10T04:25:27Z", "service": "customers-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:25:50Z", "service": "orders-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:25:53Z", "service": "cache-proxy", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T04:26:01Z", "service": "checkout-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:26:44Z", "service": "search-service", "level": "WARN", "msg": "request timed out waiting for database (3000ms)"}
+{"ts": "2026-03-10T04:26:45Z", "service": "catalog-db", "level": "WARN", "msg": "slow query (3736ms): SELECT * FROM customers WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on customers"}
+{"ts": "2026-03-10T04:26:52Z", "service": "api-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:27:03Z", "service": "api-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:27:29Z", "service": "catalog-db", "level": "WARN", "msg": "slow query (3615ms): SELECT * FROM customers WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on customers"}
+{"ts": "2026-03-10T04:27:36Z", "service": "auth-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:28:28Z", "service": "catalog-db", "level": "WARN", "msg": "slow query (4147ms): SELECT * FROM customers WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on customers"}
+{"ts": "2026-03-10T04:28:54Z", "service": "auth-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:29:09Z", "service": "catalog-db", "level": "WARN", "msg": "slow query (3989ms): SELECT * FROM customers WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on customers"}
+{"ts": "2026-03-10T04:30:08Z", "service": "auth-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:31:02Z", "service": "notification-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:31:35Z", "service": "search-service", "level": "WARN", "msg": "request timed out waiting for database (3000ms)"}
+{"ts": "2026-03-10T04:31:43Z", "service": "api-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:32:01Z", "service": "search-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:32:56Z", "service": "cache-proxy", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:33:04Z", "service": "auth-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:33:09Z", "service": "search-service", "level": "WARN", "msg": "request timed out waiting for database (3000ms)"}
+{"ts": "2026-03-10T04:33:12Z", "service": "catalog-db", "level": "WARN", "msg": "slow query (2821ms): SELECT * FROM customers WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on customers"}
+{"ts": "2026-03-10T04:34:02Z", "service": "catalog-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:34:23Z", "service": "catalog-db", "level": "WARN", "msg": "slow query (3577ms): SELECT * FROM customers WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on customers"}
+{"ts": "2026-03-10T04:34:47Z", "service": "api-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:35:02Z", "service": "search-service", "level": "WARN", "msg": "request timed out waiting for database (3000ms)"}
+{"ts": "2026-03-10T04:35:32Z", "service": "customers-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:35:51Z", "service": "catalog-db", "level": "WARN", "msg": "slow query (4238ms): SELECT * FROM customers WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on customers"}
+{"ts": "2026-03-10T04:35:57Z", "service": "orders-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:36:06Z", "service": "orders-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:36:10Z", "service": "checkout-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:36:10Z", "service": "catalog-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:36:19Z", "service": "cache-proxy", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:36:44Z", "service": "checkout-service", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T04:37:04Z", "service": "orders-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:37:26Z", "service": "catalog-db", "level": "WARN", "msg": "slow query (3197ms): SELECT * FROM customers WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on customers"}
+{"ts": "2026-03-10T04:38:13Z", "service": "catalog-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:38:20Z", "service": "catalog-db", "level": "WARN", "msg": "slow query (4633ms): SELECT * FROM customers WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on customers"}
+{"ts": "2026-03-10T04:38:34Z", "service": "customers-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:39:27Z", "service": "catalog-db", "level": "WARN", "msg": "slow query (3485ms): SELECT * FROM customers WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on customers"}
+{"ts": "2026-03-10T04:39:36Z", "service": "checkout-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:40:02Z", "service": "catalog-db", "level": "WARN", "msg": "slow query (4069ms): SELECT * FROM customers WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on customers"}
+{"ts": "2026-03-10T04:40:05Z", "service": "search-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:40:22Z", "service": "catalog-db", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T04:41:00Z", "service": "catalog-db", "level": "WARN", "msg": "slow query (4619ms): SELECT * FROM customers WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on customers"}
+{"ts": "2026-03-10T04:41:17Z", "service": "api-gateway", "level": "WARN", "msg": "request queue depth 14"}
+{"ts": "2026-03-10T04:41:54Z", "service": "payments-gateway", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T04:41:59Z", "service": "search-service", "level": "WARN", "msg": "request timed out waiting for database (3000ms)"}
+{"ts": "2026-03-10T04:42:36Z", "service": "catalog-db", "level": "WARN", "msg": "slow query (4489ms): SELECT * FROM customers WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on customers"}
+{"ts": "2026-03-10T04:43:25Z", "service": "search-service", "level": "WARN", "msg": "request timed out waiting for database (3000ms)"}
+{"ts": "2026-03-10T04:43:53Z", "service": "orders-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:44:34Z", "service": "auth-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:44:55Z", "service": "catalog-db", "level": "WARN", "msg": "slow query (4740ms): SELECT * FROM customers WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on customers"}
+{"ts": "2026-03-10T04:45:08Z", "service": "orders-db", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T04:45:15Z", "service": "search-service", "level": "WARN", "msg": "request timed out waiting for database (3000ms)"}
+{"ts": "2026-03-10T04:46:14Z", "service": "api-gateway", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T04:47:43Z", "service": "catalog-db", "level": "WARN", "msg": "slow query (3217ms): SELECT * FROM customers WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on customers"}
+{"ts": "2026-03-10T04:48:13Z", "service": "catalog-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:48:14Z", "service": "catalog-db", "level": "WARN", "msg": "slow query (3074ms): SELECT * FROM customers WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on customers"}
+{"ts": "2026-03-10T04:49:01Z", "service": "cache-proxy", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:49:10Z", "service": "catalog-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:49:28Z", "service": "api-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:50:25Z", "service": "catalog-db", "level": "WARN", "msg": "slow query (3033ms): SELECT * FROM customers WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on customers"}
+{"ts": "2026-03-10T04:50:35Z", "service": "catalog-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:51:01Z", "service": "search-service", "level": "WARN", "msg": "request timed out waiting for database (3000ms)"}
+{"ts": "2026-03-10T04:52:09Z", "service": "catalog-db", "level": "WARN", "msg": "slow query (3301ms): SELECT * FROM customers WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on customers"}
+{"ts": "2026-03-10T04:52:47Z", "service": "catalog-db", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T04:53:55Z", "service": "api-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:54:00Z", "service": "catalog-db", "level": "WARN", "msg": "slow query (4654ms): SELECT * FROM customers WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on customers"}
+{"ts": "2026-03-10T04:54:21Z", "service": "cache-proxy", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:55:00Z", "service": "catalog-db", "level": "WARN", "msg": "slow query (3790ms): SELECT * FROM customers WHERE customer_email LIKE '%@example.com'; plan: Seq Scan on customers"}
+{"ts": "2026-03-10T04:55:25Z", "service": "customers-db", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T04:56:28Z", "service": "search-service", "level": "WARN", "msg": "request queue depth 14"}
+{"ts": "2026-03-10T04:57:19Z", "service": "search-service", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T04:57:24Z", "service": "auth-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:57:42Z", "service": "auth-service", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T04:57:54Z", "service": "search-service", "level": "WARN", "msg": "request timed out waiting for database (3000ms)"}
+{"ts": "2026-03-10T04:57:56Z", "service": "cache-proxy", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:58:08Z", "service": "checkout-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:58:55Z", "service": "cache-proxy", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:59:11Z", "service": "cache-proxy", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:59:18Z", "service": "notification-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:59:45Z", "service": "auth-service", "level": "INFO", "msg": "request completed in 48ms"}

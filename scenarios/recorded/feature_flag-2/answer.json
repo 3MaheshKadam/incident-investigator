@@ -1,0 +1,15 @@
+{
+ "id": "feature_flag-2",
+ "kind": "feature_flag",
+ "root_cause_category": "feature_flag",
+ "component": "notification-service",
+ "evidence_keys": [
+  "async_feed_render"
+ ],
+ "incident_start": "2026-03-10T03:45:00Z",
+ "injected_at": "2026-03-10T03:44:00Z",
+ "correct_action": {
+  "type": "toggle_feature_flag",
+  "target": "async_feed_render"
+ }
+}

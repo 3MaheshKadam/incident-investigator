@@ -1,0 +1,16 @@
+{
+ "id": "memory_leak-3",
+ "kind": "memory_leak",
+ "root_cause_category": "memory_leak",
+ "component": "checkout-service",
+ "evidence_keys": [
+  "OOMKilled",
+  "heap usage"
+ ],
+ "incident_start": "2026-03-10T04:06:00Z",
+ "injected_at": "2026-03-10T02:50:00Z",
+ "correct_action": {
+  "type": "restart_service",
+  "target": "checkout-service"
+ }
+}

@@ -1,0 +1,37 @@
+[
+ {
+  "ts": "2026-03-10T02:17:00Z",
+  "service": "search-service",
+  "version": "v4.17.0",
+  "author": "carlos",
+  "commit_message": "Fix typo in error message"
+ },
+ {
+  "ts": "2026-03-10T02:39:00Z",
+  "service": "api-gateway",
+  "version": "v3.4.7",
+  "author": "li",
+  "commit_message": "Add unit tests for date parsing"
+ },
+ {
+  "ts": "2026-03-10T02:58:00Z",
+  "service": "auth-service",
+  "version": "v3.17.5",
+  "author": "li",
+  "commit_message": "Add unit tests for date parsing"
+ },
+ {
+  "ts": "2026-03-10T03:34:00Z",
+  "service": "api-gateway",
+  "version": "v2.2.0",
+  "author": "priya",
+  "commit_message": "Bump http client timeout to 5s"
+ },
+ {
+  "ts": "2026-03-10T03:54:00Z",
+  "service": "checkout-service",
+  "version": "v3.9.4",
+  "author": "tom",
+  "commit_message": "Refactor request handling and add currency conversion"
+ }
+]

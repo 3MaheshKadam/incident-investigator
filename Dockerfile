@@ -4,6 +4,8 @@ COPY pyproject.toml README.md ./
 COPY agent agent
 COPY evals evals
 COPY guard guard
+COPY monitor monitor
+COPY shop shop
 COPY scenarios scenarios
 COPY ui ui
 RUN pip install --no-cache-dir -e ".[ui]"

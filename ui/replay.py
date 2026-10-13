@@ -20,6 +20,8 @@ def describe_step(entry: dict[str, Any]) -> dict[str, str]:
         if len(result) > MAX_RESULT_CHARS:
             result = result[:MAX_RESULT_CHARS] + f"\n... ({len(entry['result'])} characters total)"
         title = f"Tool: {entry['name']}({_args(entry['arguments'])})"
+        if entry.get("called_as"):
+            title += f"  [model wrote {entry['called_as']!r}]"
         if entry.get("guard_redacted"):
             title += f"  [guard removed {len(entry['guard_redacted'])} line(s)]"
         return {"kind": kind, "title": title, "body": result}

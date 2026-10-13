@@ -9,6 +9,7 @@ Run:  python -m evals.baseline
 
 from __future__ import annotations
 
+import argparse
 import json
 import re
 import sys
@@ -94,15 +95,19 @@ class RuleBasedLLM:
         return LLMResponse(tool_calls=[ToolCall("submit_report", decide(text))])
 
 
-def main() -> int:
+def main(argv: list[str] | None = None) -> int:
+    p = argparse.ArgumentParser(description=__doc__)
+    p.add_argument("--data", type=Path, default=DATA_DIR, help="Scenario folder to score")
+    p.add_argument("--split", choices=["dev", "heldout", "all"], default="all")
+    args = p.parse_args(argv)
     rows = []
-    for e in load_manifest(DATA_DIR, "all"):
-        folder = Path(DATA_DIR) / e["id"]
+    for e in load_manifest(args.data, args.split):
+        folder = Path(args.data) / e["id"]
         result = run_investigation(RuleBasedLLM(), ScenarioData(folder))
         rows.append(score_run(result, json.loads((folder / "answer.json").read_text())))
     s = summarize(rows)
     n = s["n"]
-    print(f"rule-based baseline on {n} scenarios: root cause {s['root_cause_correct']}/{n}, "
+    print(f"rule-based baseline on {n} scenarios ({args.data.name}/{args.split}): root cause {s['root_cause_correct']}/{n}, "
           f"evidence {s['evidence_cited']}/{n}, wrong blame {s['wrong_blame']}/{n}, "
           f"no report {s['no_report']}/{n}, avg steps {s['avg_steps']}")
     return 1 if s["no_report"] else 0  # pipeline smoke test: every run must end in a report

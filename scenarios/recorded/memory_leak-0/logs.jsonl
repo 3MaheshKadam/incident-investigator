@@ -1,0 +1,313 @@
+{"ts": "2026-03-10T02:00:00Z", "service": "customers-db", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T02:00:08Z", "service": "payments-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:00:13Z", "service": "notification-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:00:20Z", "service": "catalog-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:02:01Z", "service": "checkout-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:02:23Z", "service": "cache-proxy", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:02:44Z", "service": "payments-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:02:56Z", "service": "customers-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:03:49Z", "service": "orders-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:04:16Z", "service": "checkout-service", "level": "WARN", "msg": "request queue depth 14"}
+{"ts": "2026-03-10T02:05:05Z", "service": "auth-service", "level": "WARN", "msg": "request queue depth 14"}
+{"ts": "2026-03-10T02:06:34Z", "service": "cache-proxy", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:07:35Z", "service": "customers-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:08:17Z", "service": "orders-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:08:23Z", "service": "api-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:09:01Z", "service": "search-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:09:20Z", "service": "catalog-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:10:15Z", "service": "payments-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:10:19Z", "service": "cache-proxy", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:10:37Z", "service": "auth-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:11:00Z", "service": "search-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:12:40Z", "service": "payments-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:12:59Z", "service": "payments-gateway", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T02:13:03Z", "service": "search-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:13:47Z", "service": "customers-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:14:01Z", "service": "auth-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:16:09Z", "service": "search-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:16:35Z", "service": "checkout-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:16:45Z", "service": "auth-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:18:30Z", "service": "notification-service", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T02:18:46Z", "service": "api-gateway", "level": "WARN", "msg": "request queue depth 14"}
+{"ts": "2026-03-10T02:19:00Z", "service": "payments-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:19:08Z", "service": "search-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:19:10Z", "service": "checkout-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:20:30Z", "service": "customers-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:20:40Z", "service": "payments-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:21:19Z", "service": "cache-proxy", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:21:23Z", "service": "auth-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:21:49Z", "service": "api-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:22:00Z", "service": "search-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:22:02Z", "service": "orders-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:23:26Z", "service": "orders-db", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T02:26:15Z", "service": "api-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:26:46Z", "service": "search-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:26:51Z", "service": "catalog-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:27:16Z", "service": "api-gateway", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T02:28:48Z", "service": "customers-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:29:56Z", "service": "search-service", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T02:30:12Z", "service": "payments-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:30:57Z", "service": "search-service", "level": "WARN", "msg": "request queue depth 14"}
+{"ts": "2026-03-10T02:32:01Z", "service": "api-gateway", "level": "ERROR", "msg": "container restarted: OOMKilled (exit code 137)"}
+{"ts": "2026-03-10T02:32:12Z", "service": "api-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:33:59Z", "service": "search-service", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T02:34:12Z", "service": "notification-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:35:14Z", "service": "customers-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:35:22Z", "service": "cache-proxy", "level": "WARN", "msg": "request queue depth 14"}
+{"ts": "2026-03-10T02:36:52Z", "service": "notification-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:36:56Z", "service": "search-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:37:00Z", "service": "payments-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:37:51Z", "service": "notification-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:38:01Z", "service": "checkout-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:38:08Z", "service": "customers-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:38:21Z", "service": "api-gateway", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T02:38:28Z", "service": "auth-service", "level": "WARN", "msg": "x509: certificate for internal-ca renewed (old certificate rotated out)"}
+{"ts": "2026-03-10T02:39:10Z", "service": "customers-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:39:15Z", "service": "auth-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:41:09Z", "service": "payments-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:42:21Z", "service": "customers-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:42:52Z", "service": "catalog-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:42:52Z", "service": "auth-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:42:57Z", "service": "orders-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:43:20Z", "service": "customers-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:44:44Z", "service": "api-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:44:53Z", "service": "checkout-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:46:35Z", "service": "notification-service", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T02:47:03Z", "service": "api-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:47:08Z", "service": "orders-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:47:52Z", "service": "customers-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:48:02Z", "service": "auth-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:48:51Z", "service": "notification-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:49:31Z", "service": "search-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:49:40Z", "service": "catalog-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:49:42Z", "service": "auth-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:49:55Z", "service": "notification-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:50:09Z", "service": "notification-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:50:32Z", "service": "customers-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:51:32Z", "service": "notification-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:51:44Z", "service": "orders-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T02:53:17Z", "service": "catalog-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T02:53:53Z", "service": "orders-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:54:55Z", "service": "checkout-service", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T02:55:23Z", "service": "notification-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T02:55:27Z", "service": "customers-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:55:41Z", "service": "orders-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T02:55:42Z", "service": "orders-db", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T02:56:57Z", "service": "payments-gateway", "level": "WARN", "msg": "request queue depth 14"}
+{"ts": "2026-03-10T02:57:22Z", "service": "customers-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T02:57:49Z", "service": "notification-service", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T02:58:04Z", "service": "auth-service", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T02:59:19Z", "service": "catalog-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:00:02Z", "service": "notification-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:00:57Z", "service": "search-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:01:44Z", "service": "customers-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:02:13Z", "service": "catalog-db", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T03:02:22Z", "service": "checkout-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:02:39Z", "service": "orders-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:02:58Z", "service": "cache-proxy", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:03:03Z", "service": "checkout-service", "level": "WARN", "msg": "slow query (412ms): SELECT id FROM sessions WHERE token = ?; plan: Index Scan"}
+{"ts": "2026-03-10T03:03:18Z", "service": "payments-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:03:25Z", "service": "orders-db", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T03:03:51Z", "service": "notification-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:04:03Z", "service": "customers-db", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T03:04:38Z", "service": "search-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:04:45Z", "service": "cache-proxy", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:05:58Z", "service": "checkout-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:06:06Z", "service": "catalog-db", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T03:07:37Z", "service": "customers-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:08:04Z", "service": "search-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:08:35Z", "service": "notification-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:08:36Z", "service": "payments-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:09:19Z", "service": "catalog-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:09:54Z", "service": "search-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:10:48Z", "service": "search-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:14:38Z", "service": "orders-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:15:57Z", "service": "api-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:16:09Z", "service": "orders-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:16:47Z", "service": "api-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:17:33Z", "service": "payments-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:18:30Z", "service": "notification-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:18:38Z", "service": "api-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:18:39Z", "service": "search-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:19:15Z", "service": "auth-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:20:50Z", "service": "payments-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:21:26Z", "service": "api-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:22:44Z", "service": "search-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:22:56Z", "service": "auth-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:23:23Z", "service": "catalog-db", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T03:24:30Z", "service": "orders-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:24:37Z", "service": "customers-db", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T03:25:42Z", "service": "customers-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:25:44Z", "service": "payments-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:26:09Z", "service": "cache-proxy", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:26:37Z", "service": "orders-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:27:01Z", "service": "auth-service", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T03:27:12Z", "service": "search-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:27:26Z", "service": "auth-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:28:10Z", "service": "orders-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:28:35Z", "service": "payments-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:30:13Z", "service": "cache-proxy", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:30:14Z", "service": "search-service", "level": "WARN", "msg": "heap usage 85% of limit (1757MB/2048MB)"}
+{"ts": "2026-03-10T03:30:41Z", "service": "checkout-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:30:46Z", "service": "payments-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:31:15Z", "service": "orders-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:31:16Z", "service": "payments-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:32:18Z", "service": "payments-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:33:31Z", "service": "payments-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:33:51Z", "service": "api-gateway", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T03:34:04Z", "service": "catalog-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:35:33Z", "service": "auth-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:36:27Z", "service": "customers-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:37:40Z", "service": "payments-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:37:45Z", "service": "orders-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:37:48Z", "service": "cache-proxy", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:38:24Z", "service": "customers-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:39:56Z", "service": "search-service", "level": "WARN", "msg": "heap usage 93% of limit (1914MB/2048MB)"}
+{"ts": "2026-03-10T03:40:02Z", "service": "orders-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:40:27Z", "service": "auth-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:41:54Z", "service": "payments-gateway", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T03:42:09Z", "service": "auth-service", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T03:42:54Z", "service": "api-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:44:04Z", "service": "payments-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:44:40Z", "service": "checkout-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:45:02Z", "service": "payments-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:45:10Z", "service": "catalog-db", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T03:45:14Z", "service": "catalog-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:46:24Z", "service": "cache-proxy", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:46:33Z", "service": "customers-db", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T03:46:57Z", "service": "api-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:47:19Z", "service": "search-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:47:23Z", "service": "api-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:47:29Z", "service": "search-service", "level": "ERROR", "msg": "container restarted: OOMKilled (exit code 137)"}
+{"ts": "2026-03-10T03:47:54Z", "service": "customers-db", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T03:48:23Z", "service": "orders-db", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T03:49:06Z", "service": "notification-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:49:40Z", "service": "payments-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:49:50Z", "service": "auth-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:50:09Z", "service": "checkout-service", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T03:50:40Z", "service": "customers-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T03:51:15Z", "service": "auth-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:51:48Z", "service": "api-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:52:12Z", "service": "api-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:52:38Z", "service": "orders-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:52:47Z", "service": "payments-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:53:16Z", "service": "checkout-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:53:39Z", "service": "customers-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T03:53:49Z", "service": "notification-service", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T03:55:26Z", "service": "orders-db", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T03:56:10Z", "service": "checkout-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:56:11Z", "service": "search-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T03:57:21Z", "service": "search-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T03:57:45Z", "service": "checkout-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T03:59:33Z", "service": "auth-service", "level": "WARN", "msg": "request queue depth 14"}
+{"ts": "2026-03-10T03:59:46Z", "service": "api-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:00:26Z", "service": "auth-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:00:50Z", "service": "api-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:01:39Z", "service": "customers-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:02:38Z", "service": "search-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:03:16Z", "service": "catalog-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:04:16Z", "service": "auth-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:05:02Z", "service": "cache-proxy", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T04:05:14Z", "service": "customers-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:06:42Z", "service": "payments-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:07:47Z", "service": "orders-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:08:18Z", "service": "checkout-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:10:44Z", "service": "notification-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:12:03Z", "service": "search-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:13:04Z", "service": "customers-db", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T04:13:14Z", "service": "search-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:13:57Z", "service": "cache-proxy", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:14:04Z", "service": "search-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:14:26Z", "service": "search-service", "level": "WARN", "msg": "heap usage 85% of limit (1775MB/2048MB)"}
+{"ts": "2026-03-10T04:15:21Z", "service": "customers-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:15:35Z", "service": "api-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:16:13Z", "service": "customers-db", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T04:16:23Z", "service": "customers-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:17:03Z", "service": "cache-proxy", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:17:18Z", "service": "catalog-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:17:29Z", "service": "payments-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:17:51Z", "service": "search-service", "level": "WARN", "msg": "heap usage 93% of limit (1905MB/2048MB)"}
+{"ts": "2026-03-10T04:19:07Z", "service": "auth-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:19:29Z", "service": "catalog-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:19:32Z", "service": "search-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:19:32Z", "service": "payments-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:20:15Z", "service": "search-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:20:29Z", "service": "auth-service", "level": "WARN", "msg": "request queue depth 14"}
+{"ts": "2026-03-10T04:20:45Z", "service": "payments-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:21:42Z", "service": "cache-proxy", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:21:56Z", "service": "search-service", "level": "ERROR", "msg": "container restarted: OOMKilled (exit code 137)"}
+{"ts": "2026-03-10T04:23:06Z", "service": "catalog-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:23:57Z", "service": "cache-proxy", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:24:24Z", "service": "cache-proxy", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T04:24:32Z", "service": "cache-proxy", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:24:54Z", "service": "api-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:27:16Z", "service": "catalog-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:27:44Z", "service": "search-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:27:49Z", "service": "checkout-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:28:33Z", "service": "orders-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:30:11Z", "service": "cache-proxy", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T04:31:50Z", "service": "orders-db", "level": "WARN", "msg": "GC pause 120ms"}
+{"ts": "2026-03-10T04:32:25Z", "service": "checkout-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:32:28Z", "service": "api-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:33:23Z", "service": "checkout-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:33:36Z", "service": "api-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:33:55Z", "service": "customers-db", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T04:34:21Z", "service": "checkout-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:34:34Z", "service": "payments-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:35:09Z", "service": "cache-proxy", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:35:17Z", "service": "api-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:36:01Z", "service": "auth-service", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T04:36:57Z", "service": "orders-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:37:14Z", "service": "catalog-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:37:14Z", "service": "customers-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:38:07Z", "service": "customers-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:38:08Z", "service": "notification-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:39:27Z", "service": "payments-gateway", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T04:39:27Z", "service": "search-service", "level": "WARN", "msg": "heap usage 85% of limit (1752MB/2048MB)"}
+{"ts": "2026-03-10T04:39:33Z", "service": "catalog-db", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:40:17Z", "service": "customers-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:40:27Z", "service": "orders-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:41:09Z", "service": "orders-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:41:26Z", "service": "api-gateway", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:41:42Z", "service": "search-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:42:04Z", "service": "search-service", "level": "WARN", "msg": "heap usage 93% of limit (1944MB/2048MB)"}
+{"ts": "2026-03-10T04:42:27Z", "service": "catalog-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:43:29Z", "service": "checkout-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:43:42Z", "service": "notification-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:44:06Z", "service": "notification-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:44:07Z", "service": "catalog-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:44:10Z", "service": "search-service", "level": "ERROR", "msg": "container restarted: OOMKilled (exit code 137)"}
+{"ts": "2026-03-10T04:44:38Z", "service": "payments-gateway", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:45:28Z", "service": "customers-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:45:39Z", "service": "cache-proxy", "level": "WARN", "msg": "slow response from cache (85ms)"}
+{"ts": "2026-03-10T04:45:45Z", "service": "search-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:45:49Z", "service": "auth-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:46:33Z", "service": "cache-proxy", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:46:50Z", "service": "catalog-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:47:07Z", "service": "payments-gateway", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:47:16Z", "service": "checkout-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:47:21Z", "service": "notification-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:48:07Z", "service": "payments-gateway", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:48:16Z", "service": "notification-service", "level": "WARN", "msg": "retrying connection to redis (attempt 1)"}
+{"ts": "2026-03-10T04:48:33Z", "service": "notification-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:49:08Z", "service": "catalog-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:49:43Z", "service": "auth-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:49:51Z", "service": "notification-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:50:24Z", "service": "checkout-service", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:51:04Z", "service": "notification-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:51:21Z", "service": "orders-db", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:51:24Z", "service": "api-gateway", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:51:25Z", "service": "catalog-db", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:51:31Z", "service": "auth-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:51:39Z", "service": "cache-proxy", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:52:09Z", "service": "notification-service", "level": "INFO", "msg": "connection pool: 6/20 in use"}
+{"ts": "2026-03-10T04:54:42Z", "service": "search-service", "level": "WARN", "msg": "request queue depth 14"}
+{"ts": "2026-03-10T04:54:46Z", "service": "customers-db", "level": "INFO", "msg": "background job finished (processed 120 items)"}
+{"ts": "2026-03-10T04:54:46Z", "service": "catalog-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:55:40Z", "service": "search-service", "level": "INFO", "msg": "request completed in 48ms"}
+{"ts": "2026-03-10T04:55:42Z", "service": "payments-gateway", "level": "WARN", "msg": "request queue depth 14"}
+{"ts": "2026-03-10T04:56:47Z", "service": "cache-proxy", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:57:13Z", "service": "catalog-db", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:57:32Z", "service": "notification-service", "level": "INFO", "msg": "GET /health 200 2ms"}
+{"ts": "2026-03-10T04:59:27Z", "service": "auth-service", "level": "INFO", "msg": "cache hit ratio 0.93"}
+{"ts": "2026-03-10T04:59:36Z", "service": "cache-proxy", "level": "WARN", "msg": "slow response from cache (85ms)"}

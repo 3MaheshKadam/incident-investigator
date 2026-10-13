@@ -9,7 +9,7 @@ from typing import Any, Protocol
 
 from agent.data import ScenarioData
 from agent.llm import LLM, Message, ToolCall
-from agent.tools import TOOL_SPECS, Toolbox, validate_report
+from agent.tools import TOOL_SPECS, Toolbox, resolve_tool_name, validate_report
 
 SYSTEM_PROMPT = """You are an on-call engineer investigating a production incident.
 
@@ -17,6 +17,24 @@ You start from an alert. Use the read-only tools to gather evidence: search logs
 list recent deploys and config changes. Form a hypothesis, check it against the evidence, and
 look for clues that contradict it. Some clues are misleading: a recent change or a warning is
 not automatically the cause.
+
+A good order: (1) list recent deploys and config changes and note anything shortly before the
+alert; (2) search ERROR logs, then WARN logs, for the alerting service and any service it
+depends on; (3) query metrics to find exactly when the problem started and which service
+changed first. Only state facts that tool results actually showed. Never invent log lines,
+metric values or timestamps.
+
+Root cause categories:
+- bad_deploy: errors start right after a deploy, and that deploy's change plausibly causes them. A
+  deploy that is unrelated to the failure (docs, typos, logging) is not a bad_deploy.
+- memory_leak: a service's memory climbs steadily until it is killed or restarted (OOM), whatever
+  was deployed recently.
+- expired_certificate: TLS or x509 errors saying a certificate has expired or is not valid.
+- slow_query: the service and database are up and answering, but a query is slow (for example a
+  full table scan), so latency rises with few or no connection errors.
+- feature_flag: a feature flag or config change turned on a code path that then fails.
+- dependency_outage: a service the alerting service calls is down or refusing connections
+  (connection refused, failing health checks), not merely slow.
 
 When you can name the root cause and cite evidence, call submit_report exactly once. Cite exact
 log lines, deploys, config changes or metric facts as evidence. If you cannot find a cause,
@@ -31,7 +49,10 @@ NUDGE = (
     "summary, evidence (a list), action_type and action_target."
 )
 MAX_NUDGES = 3
-_TOOL_NAMES = {t["name"] for t in TOOL_SPECS}
+FORCE_REPORT = (
+    "You are almost out of investigation steps. Call submit_report now with your best "
+    "conclusion from the evidence so far. Use confidence \"low\" if you are not sure."
+)
 
 
 def extract_text_tool_call(text: str) -> ToolCall | None:
@@ -57,7 +78,7 @@ def extract_text_tool_call(text: str) -> ToolCall | None:
                 args = json.loads(args)
             except ValueError:
                 args = None
-        if name in _TOOL_NAMES and isinstance(args, dict):
+        if isinstance(name, str) and isinstance(args, dict):
             return ToolCall(name, args)
         if "root_cause_category" in obj:
             return ToolCall("submit_report", obj)
@@ -91,6 +112,14 @@ class RunResult:
         Path(path).write_text(json.dumps(asdict(self), indent=1) + "\n")
 
 
+def _window(data: ScenarioData) -> str:
+    """Tell the model what time range the data covers, so it does not query the wrong days."""
+    stamps = [r["ts"] for r in data.logs]
+    if not stamps:
+        return ""
+    return f"\n\nData is available from {min(stamps)} to {max(stamps)} (UTC)."
+
+
 def run_investigation(
     llm: LLM, data: ScenarioData, max_steps: int = 12, guard: GuardLike | None = None
 ) -> RunResult:
@@ -104,7 +133,7 @@ def run_investigation(
     alert = guard.begin(data.alert) if guard else data.alert
     messages: list[Message] = [
         {"role": "system", "content": system},
-        {"role": "user", "content": f"Alert:\n{alert}"},
+        {"role": "user", "content": f"Alert:\n{alert}{_window(data)}"},
     ]
     result = RunResult(data.id, None, 0, "step_limit")
     if guard is not None:
@@ -113,7 +142,13 @@ def run_investigation(
     call_counter = 0
 
     for turn in range(1, max_steps + 1):
-        resp = llm.chat(messages, TOOL_SPECS)
+        # Running out of turns: a weak model can loop on searches or write its answer as prose.
+        # Force the last turns to be a report, so a good investigation is not lost to the limit.
+        final_stretch = max_steps >= 3 and turn >= max_steps - 1
+        if final_stretch and turn == max_steps - 1:
+            messages.append({"role": "user", "content": FORCE_REPORT})
+        tools = [t for t in TOOL_SPECS if t["name"] == "submit_report"] if final_stretch else TOOL_SPECS
+        resp = llm.chat(messages, tools)
         result.input_tokens += resp.input_tokens
         result.output_tokens += resp.output_tokens
         if resp.text:
@@ -140,7 +175,12 @@ def run_investigation(
         for c in resp.tool_calls:
             call_counter += 1
             calls.append(
-                {"id": c.id or f"call_{call_counter}", "name": c.name, "arguments": c.arguments}
+                {
+                    "id": c.id or f"call_{call_counter}",
+                    "name": resolve_tool_name(c.name) or c.name,
+                    "called_as": c.name,
+                    "arguments": c.arguments,
+                }
             )
         messages.append({"role": "assistant", "content": resp.text, "tool_calls": calls})
 
@@ -180,6 +220,8 @@ def run_investigation(
                     "arguments": c["arguments"],
                     "result": output,
                 }
+                if c["called_as"] != c["name"]:
+                    entry["called_as"] = c["called_as"]
                 if flagged:
                     entry["guard_redacted"] = flagged
                 result.trace.append(entry)

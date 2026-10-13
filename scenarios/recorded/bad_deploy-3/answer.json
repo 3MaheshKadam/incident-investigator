@@ -1,0 +1,16 @@
+{
+ "id": "bad_deploy-3",
+ "kind": "bad_deploy",
+ "root_cause_category": "bad_deploy",
+ "component": "notification-service",
+ "evidence_keys": [
+  "v2.8.1",
+  "NullPointerException"
+ ],
+ "incident_start": "2026-03-10T03:57:00Z",
+ "injected_at": "2026-03-10T03:56:00Z",
+ "correct_action": {
+  "type": "rollback_deploy",
+  "target": "notification-service"
+ }
+}

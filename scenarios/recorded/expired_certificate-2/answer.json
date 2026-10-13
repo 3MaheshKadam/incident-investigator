@@ -1,0 +1,16 @@
+{
+ "id": "expired_certificate-2",
+ "kind": "expired_certificate",
+ "root_cause_category": "expired_certificate",
+ "component": "checkout-service",
+ "evidence_keys": [
+  "certificate has expired",
+  "x509"
+ ],
+ "incident_start": "2026-03-10T03:48:00Z",
+ "injected_at": "2026-03-10T03:48:00Z",
+ "correct_action": {
+  "type": "open_ticket",
+  "target": "renew certificate"
+ }
+}

@@ -2,6 +2,9 @@
 
 from __future__ import annotations
 
+import difflib
+import inspect
+from collections import Counter
 from typing import Any
 
 from agent.data import ScenarioData
@@ -108,20 +111,56 @@ TOOL_SPECS: list[dict[str, Any]] = [
 ]
 
 
+TOOL_ALIASES = {
+    "metrics": "query_metric",
+    "metric": "query_metric",
+    "get_metric": "query_metric",
+    "get_metrics": "query_metric",
+    "query_metrics": "query_metric",
+    "logs": "search_logs",
+    "get_logs": "search_logs",
+    "query_logs": "search_logs",
+    "deploys": "list_deploys",
+    "get_deploys": "list_deploys",
+    "recent_deploys": "list_deploys",
+    "config_changes": "list_config_changes",
+    "get_config_changes": "list_config_changes",
+    "report": "submit_report",
+    "final_report": "submit_report",
+}
+
+
+def resolve_tool_name(name: str) -> str | None:
+    """Map a tool name to a real one. Weak models invent near-misses like list_recent_deploys."""
+    names = [t["name"] for t in TOOL_SPECS]
+    if name in names:
+        return name
+    if str(name).lower() in TOOL_ALIASES:
+        return TOOL_ALIASES[str(name).lower()]
+    close = difflib.get_close_matches(str(name), names, n=1, cutoff=0.7)
+    return close[0] if close else None
+
+
 def validate_report(args: dict[str, Any]) -> str | None:
-    """Return an error message if the report is malformed, else None."""
+    """Return every problem with the report at once (so a weak model fixes it in one go)."""
+    problems = []
     for key in ("root_cause_category", "component", "confidence", "action_type"):
         if not args.get(key):
-            return f"missing field: {key}"
-    if args["root_cause_category"] not in CATEGORIES:
-        return f"root_cause_category must be one of {CATEGORIES}"
-    if args["confidence"] not in CONFIDENCES:
-        return f"confidence must be one of {CONFIDENCES}"
-    if args["action_type"] not in ACTION_TYPES:
-        return f"action_type must be one of {ACTION_TYPES}"
+            problems.append(f"missing field {key}")
+    if args.get("root_cause_category") and args["root_cause_category"] not in CATEGORIES:
+        problems.append(f"root_cause_category must be one of {CATEGORIES}")
+    if args.get("confidence") and args["confidence"] not in CONFIDENCES:
+        problems.append(f"confidence must be one of {CONFIDENCES}")
+    if args.get("action_type") and args["action_type"] not in ACTION_TYPES:
+        problems.append(f"action_type must be one of {ACTION_TYPES}")
     if not isinstance(args.get("evidence", []), list):
-        return "evidence must be a list of strings"
-    return None
+        problems.append("evidence must be a list of strings")
+    if not problems:
+        return None
+    return (
+        "; ".join(problems) + ". Required fields: root_cause_category, component, confidence, "
+        "summary, evidence (list), action_type, action_target."
+    )
 
 
 class Toolbox:
@@ -138,11 +177,17 @@ class Toolbox:
             "list_config_changes": self.list_config_changes,
         }.get(name)
         if fn is None:
-            return f"error: unknown tool {name!r}"
+            valid = [t["name"] for t in TOOL_SPECS]
+            return f"error: unknown tool {name!r}. Available tools: {valid}"
+        # Weak models add arguments the tool does not take, or send null for optional ones.
+        accepted = inspect.signature(fn).parameters
+        clean = {k: v for k, v in args.items() if k in accepted and v is not None}
+        ignored = sorted(set(args) - set(clean) - {k for k, v in args.items() if v is None})
         try:
-            return fn(**args)
-        except TypeError as e:
+            out = fn(**clean)
+        except (TypeError, ValueError, AttributeError) as e:
             return f"error: bad arguments for {name}: {e}"
+        return f"note: ignored unknown arguments {ignored}\n{out}" if ignored else out
 
     def search_logs(
         self,
@@ -164,8 +209,14 @@ class Toolbox:
             and (not start or r["ts"] >= start)
             and (not end or r["ts"] <= end)
         ]
-        lines = [f"{r['ts']} {r['level']} {r['service']}: {r['msg']}" for r in hits[:limit]]
-        header = f"{len(hits)} matching lines, showing {len(lines)}"
+        counts = Counter(r["level"] for r in hits)
+        breakdown = ", ".join(f"{lv} {counts[lv]}" for lv in ("ERROR", "WARN", "INFO") if counts[lv])
+        latest = list(reversed(hits[-limit:]))  # newest first, like tailing a log
+        lines = [f"{r['ts']} {r['level']} {r['service']}: {r['msg']}" for r in latest]
+        header = (
+            f"{len(hits)} matching lines ({breakdown or 'none'}), "
+            f"showing the {len(lines)} most recent, newest first"
+        )
         return "\n".join([header, *lines])
 
     def query_metric(
@@ -187,7 +238,13 @@ class Toolbox:
             for t, v in series[metric]
             if (not start or t >= start) and (not end or t <= end)
         ]
-        return "\n".join([f"{service} {metric} ({len(pts)} points)"] + [f"{t} {v}" for t, v in pts])
+        if not pts:
+            return f"{service} {metric}: no points in that time range"
+        top = max(pts, key=lambda p: p[1])
+        summary = f"summary: min {min(v for _, v in pts)}, max {top[1]} at {top[0]}, last {pts[-1][1]}"
+        return "\n".join(
+            [f"{service} {metric} ({len(pts)} points)", summary] + [f"{t} {v}" for t, v in pts]
+        )
 
     def list_deploys(self, service: str | None = None) -> str:
         rows = [d for d in self.data.deploys if not service or d["service"] == service]

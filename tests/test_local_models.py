@@ -42,10 +42,10 @@ def test_recovers_bare_and_wrapped_report_text():
     assert extract_text_tool_call(json.dumps(wrapped)).arguments == REPORT
 
 
-def test_ignores_unrelated_text_and_unknown_tools():
+def test_ignores_unrelated_text():
     assert extract_text_tool_call("The root cause is a bad deploy.") is None
-    assert extract_text_tool_call('{"name": "rm_rf", "parameters": {}}') is None
     assert extract_text_tool_call("{ broken json") is None
+    assert extract_text_tool_call('{"name": "x"}') is None  # no arguments: not a tool call
 
 
 def test_loop_accepts_report_written_as_text(root):
@@ -115,3 +115,230 @@ def test_show_trace_prints_steps(tmp_path, root, capsys):
     assert main([str(path)]) == 0
     out = capsys.readouterr().out
     assert "list_deploys" in out and "Final report" in out
+
+
+def test_invented_tool_names_are_matched_to_the_closest_real_tool(root):
+    from agent.tools import resolve_tool_name
+
+    assert resolve_tool_name("list_recent_deploys") == "list_deploys"
+    assert resolve_tool_name("search_log") == "search_logs"
+    assert resolve_tool_name("submit_final_report") == "submit_report"
+    assert resolve_tool_name("rm_rf") is None
+
+    data = ScenarioData(root / "bad_deploy-1")
+    llm = MockLLM(
+        [
+            LLMResponse(text='{"name": "list_recent_deploys", "parameters": {"start": "2026-03-09"}}'),
+            LLMResponse(tool_calls=[ToolCall("submit_report", REPORT)]),
+        ]
+    )
+    result = run_investigation(llm, data)
+    call = next(t for t in result.trace if t["type"] == "tool_call")
+    assert call["name"] == "list_deploys" and call["called_as"] == "list_recent_deploys"
+    assert "ignored unknown arguments ['start']" in call["result"]  # and still returned deploys
+    assert result.stop_reason == "report"
+
+
+def test_truly_unknown_tool_gets_an_error_listing_valid_tools(root):
+    data = ScenarioData(root / "bad_deploy-1")
+    llm = MockLLM(
+        [
+            LLMResponse(text='{"name": "rm_rf", "parameters": {}}'),
+            LLMResponse(tool_calls=[ToolCall("submit_report", REPORT)]),
+        ]
+    )
+    result = run_investigation(llm, data)
+    call = next(t for t in result.trace if t["type"] == "tool_call")
+    assert "unknown tool" in call["result"] and "search_logs" in call["result"]
+
+
+def test_tools_tolerate_null_and_extra_arguments(root):
+    from agent.tools import Toolbox
+
+    box = Toolbox(ScenarioData(root / "bad_deploy-0"))
+    out = box.call("search_logs", {"query": None, "level": "ERROR", "service": None, "limit": "3"})
+    assert out.startswith("note") is False and "showing the 3 most recent" in out
+    assert "metrics for" in box.call("query_metric", {"service": "checkout-service", "extra": 1})
+    assert box.call("query_metric", {}).startswith("error: bad arguments")
+
+
+def test_hosted_backend_waits_and_retries_on_rate_limit(monkeypatch):
+    from agent.llm import OpenAICompatLLM
+
+    class R:
+        def __init__(self, status, headers=None):
+            self.status_code, self.headers = status, headers or {}
+
+        def raise_for_status(self):
+            if self.status_code >= 400:
+                raise RuntimeError(f"http {self.status_code}")
+
+        def json(self):
+            return {"choices": [{"message": {"content": "ok"}}], "usage": {}}
+
+    replies = [R(429, {"retry-after": "7"}), R(503), R(200)]
+    monkeypatch.setattr("agent.llm.httpx.post", lambda *a, **k: replies.pop(0))
+    llm = OpenAICompatLLM("m", "https://x/v1", "k", min_interval=0)
+    slept = []
+    llm._sleep = slept.append
+    assert llm.chat([{"role": "user", "content": "q"}]).text == "ok"
+    assert slept == [7.0, 4.0]  # Retry-After honored, then exponential back-off
+
+
+def test_hosted_backend_gives_up_after_max_retries_and_spaces_calls(monkeypatch):
+    from agent.llm import OpenAICompatLLM
+
+    class R:
+        status_code, headers = 429, {}
+
+        def raise_for_status(self):
+            raise RuntimeError("http 429")
+
+    monkeypatch.setattr("agent.llm.httpx.post", lambda *a, **k: R())
+    llm = OpenAICompatLLM("m", "https://x/v1", "k", max_retries=2)
+    llm._sleep = lambda s: None
+    with pytest.raises(RuntimeError):
+        llm.chat([{"role": "user", "content": "q"}])
+
+    waits = []
+
+    class OK:
+        status_code, headers = 200, {}
+
+        def raise_for_status(self):
+            pass
+
+        def json(self):
+            return {"choices": [{"message": {"content": "ok"}}]}
+
+    monkeypatch.setattr("agent.llm.httpx.post", lambda *a, **k: OK())
+    spaced = OpenAICompatLLM("m", "https://x/v1", "k", min_interval=2.5)
+    spaced._sleep = waits.append
+    spaced.chat([{"role": "user", "content": "q"}])
+    spaced.chat([{"role": "user", "content": "q"}])
+    assert len(waits) == 1 and 0 < waits[0] <= 2.5  # second call had to wait
+    env = {"LLM_PROVIDER": "openai_compat", "LLM_MODEL": "m", "LLM_BASE_URL": "https://x/v1",
+           "LLM_API_KEY": "k", "LLM_MIN_INTERVAL": "2.5", "LLM_MAX_RETRIES": "3"}
+    built = make_llm(env)
+    assert built.min_interval == 2.5 and built.max_retries == 3
+
+
+def test_logs_are_newest_first_with_level_counts(root):
+    from agent.tools import Toolbox
+
+    data = ScenarioData(root / "bad_deploy-0")
+    out = Toolbox(data).search_logs(service="checkout-service", limit=5).splitlines()
+    assert "ERROR" in out[0] and "newest first" in out[0] and "most recent" in out[0]
+    stamps = [line.split()[0] for line in out[1:]]
+    assert stamps == sorted(stamps, reverse=True) and len(stamps) == 5
+    # the incident's error lines are in view even without a level filter
+    assert any(" ERROR " in line for line in out[1:])
+
+
+def test_metric_summary_points_at_the_spike(root):
+    from agent.tools import Toolbox
+
+    out = Toolbox(ScenarioData(root / "bad_deploy-0")).query_metric(
+        service="checkout-service", metric="error_rate"
+    ).splitlines()
+    assert out[1].startswith("summary: min") and "max 2" in out[1] and "at 2026-03-10T04" in out[1]
+    box = Toolbox(ScenarioData(root / "bad_deploy-0"))
+    assert "no points" in box.query_metric(service="checkout-service", metric="error_rate", start="2030-01-01")
+
+
+def test_report_validation_lists_every_problem_at_once():
+    from agent.tools import validate_report
+
+    msg = validate_report({"root_cause_category": "gremlins", "action_type": "nuke"})
+    for needle in ("missing field component", "missing field confidence", "root_cause_category must be", "action_type must be", "Required fields"):
+        assert needle in msg
+    assert validate_report(REPORT) is None
+
+
+def test_first_message_states_the_data_window(root):
+    data = ScenarioData(root / "bad_deploy-0")
+    llm = MockLLM([LLMResponse(tool_calls=[ToolCall("submit_report", REPORT)])])
+    run_investigation(llm, data)
+    first_user = llm.calls[0][1]["content"]
+    assert "Data is available from 2026-03-10T02:" in first_user and "(UTC)" in first_user
+
+
+def test_aliases_resolve_invented_tool_names():
+    from agent.tools import resolve_tool_name
+
+    assert resolve_tool_name("metrics") == "query_metric"
+    assert resolve_tool_name("get_logs") == "search_logs"
+    assert resolve_tool_name("totally_unrelated") is None
+
+
+def test_last_turns_force_a_report():
+    from pathlib import Path
+
+    from agent.data import ScenarioData
+    from agent.investigator import FORCE_REPORT, run_investigation
+    from agent.llm import LLMResponse, MockLLM, ToolCall
+
+    data = ScenarioData(Path(__file__).resolve().parent.parent / "scenarios" / "data" / "bad_deploy-0")
+    llm = MockLLM([LLMResponse(tool_calls=[ToolCall("list_deploys", {})])] * 5)
+    run_investigation(llm, data, max_steps=5)
+    assert FORCE_REPORT in [m["content"] for m in llm.calls[3]]
+    assert FORCE_REPORT not in [m["content"] for m in llm.calls[2]]
+
+
+def test_dotenv_accepts_pasted_powershell_lines(tmp_path, monkeypatch):
+    from agent.env import load_dotenv
+
+    f = tmp_path / ".env"
+    f.write_text('$env:ZZ_TEST_A="one"\nexport ZZ_TEST_B=two\nZZ_TEST_C=three\n', encoding="utf-8")
+    for k in ("ZZ_TEST_A", "ZZ_TEST_B", "ZZ_TEST_C"):
+        monkeypatch.delenv(k, raising=False)
+    load_dotenv(f)
+    import os
+
+    assert (os.environ["ZZ_TEST_A"], os.environ["ZZ_TEST_B"], os.environ["ZZ_TEST_C"]) == (
+        "one",
+        "two",
+        "three",
+    )
+    for k in ("ZZ_TEST_A", "ZZ_TEST_B", "ZZ_TEST_C"):
+        os.environ.pop(k, None)
+
+
+def test_malformed_tool_call_rejection_becomes_text_not_a_crash(monkeypatch):
+    from agent.llm import OpenAICompatLLM
+
+    class Bad:
+        status_code, headers = 400, {}
+        text = (
+            '{"error":{"code":"tool_use_failed",'
+            '"failed_generation":"{\\"name\\": \\"submit_report\\", oops"}}'
+        )
+
+    monkeypatch.setattr("agent.llm.httpx.post", lambda *a, **k: Bad())
+    llm = OpenAICompatLLM("m", "https://x/v1", "k")
+    resp = llm.chat([{"role": "user", "content": "q"}])
+    assert "submit_report" in resp.text and not resp.tool_calls
+
+
+def test_eval_resume_reuses_finished_traces_and_stops_on_daily_limit(tmp_path, monkeypatch, capsys):
+    import json
+
+    from agent.investigator import RunResult
+    from agent.llm import LLMRequestError
+    from evals import run as run_mod
+
+    done = RunResult("bad_deploy-0", {"root_cause_category": "bad_deploy", "component": "x", "confidence": "low", "evidence": [], "action_type": "open_ticket"}, 2, "report")
+    done.save(tmp_path / "out" / "traces" / "bad_deploy-0.json")
+    monkeypatch.setenv("LLM_PROVIDER", "openai_compat")
+    monkeypatch.setenv("LLM_BASE_URL", "https://x/v1")
+    monkeypatch.setenv("LLM_API_KEY", "k")
+
+    def limited(*a, **k):
+        raise LLMRequestError("limit", 429, "tokens per day (TPD) reached")
+
+    monkeypatch.setattr(run_mod, "run_investigation", limited)
+    code = run_mod.main(["--split", "dev", "--limit", "2", "--resume", "--out", str(tmp_path / "out")])
+    out = capsys.readouterr().out
+    assert code == 0 and "reusing bad_deploy-0" in out and "Daily token limit" in out
+    summary = json.loads((tmp_path / "out" / "summary.json").read_text())
+    assert summary["summary"]["n"] == 1

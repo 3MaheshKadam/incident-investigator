@@ -1,0 +1,15 @@
+{
+ "id": "feature_flag-3",
+ "kind": "feature_flag",
+ "root_cause_category": "feature_flag",
+ "component": "auth-service",
+ "evidence_keys": [
+  "recs_v2_pipeline"
+ ],
+ "incident_start": "2026-03-10T03:54:00Z",
+ "injected_at": "2026-03-10T03:53:00Z",
+ "correct_action": {
+  "type": "toggle_feature_flag",
+  "target": "recs_v2_pipeline"
+ }
+}
