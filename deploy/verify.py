@@ -46,12 +46,12 @@ def traffic(base: str, n: int = 40) -> float:
     return bad / n
 
 
-def wait_for(cond, seconds: float) -> bool:
+def wait_for(cond, seconds: float, every: float = 1.0) -> bool:
     end = time.time() + seconds
     while time.time() < end:
         if cond():
             return True
-        time.sleep(1)
+        time.sleep(every)
     return False
 
 
@@ -90,11 +90,13 @@ def run(base: str) -> list[Step]:
     rate = traffic(base)
     record("rollback restores service", rate == 0, f"{rate:.0%} errors after rollback")
 
-    compose("kill", "-s", "KILL", "orders-service")
-    down = wait_for(lambda: status(base) != 200, 10)
-    record("an outage is visible to users", down, "gateway returns errors while orders-service is dead")
+    # A crash, not `docker compose kill`: Docker treats a manual kill as a stop and will not restart it.
+    crash = "import urllib.request as u; u.urlopen('http://127.0.0.1:8001/_ctl/crash', timeout=3)"
+    compose("exec", "-T", "orders-service", "python", "-c", crash)
+    down = wait_for(lambda: status(base) != 200, 10, every=0.05)
+    record("a crash is visible to users", down, "gateway returns errors while orders-service is down")
     back = wait_for(lambda: status(base) == 200, 60)
-    record("restart policy brings it back", back, "service recovered without human action" if back
+    record("crashed service is restarted by policy", back, "service recovered without human action" if back
            else "no recovery within 60s")
     if not back:
         compose("up", "-d", "--no-deps", "orders-service")
