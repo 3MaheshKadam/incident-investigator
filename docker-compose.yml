@@ -11,6 +11,8 @@ x-service: &service
   image: incident-stack:local
   restart: unless-stopped
   read_only: true
+  tmpfs:
+    - /tmp
   cap_drop: [ALL]
   security_opt: ["no-new-privileges:true"]
   mem_limit: 256m
