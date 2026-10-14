@@ -67,6 +67,8 @@ def run(base: str) -> list[Step]:
     def record(name: str, ok: bool, detail: str) -> None:
         steps.append((name, ok, detail))
         print(f"{'PASS' if ok else 'FAIL'}  {name}: {detail}", flush=True)
+        if not ok and os.environ.get("GITHUB_ACTIONS"):  # show the failing step in the run's annotations
+            print(f"::error::deploy check failed: {name}: {detail}", flush=True)
 
     health = container_health()
     missing = [s for s in SERVICES if health.get(s) != "healthy"]
