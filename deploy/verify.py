@@ -22,10 +22,10 @@ SERVICES = ["orders-db", "orders-service", "inventory-service", "api-gateway"]
 Step = tuple[str, bool, str]
 
 
-def compose(*args: str, env: dict[str, str] | None = None) -> str:
+def compose(*args: str, env: dict[str, str] | None = None, check: bool = True) -> str:
     p = subprocess.run(["docker", "compose", *args], capture_output=True, text=True, check=False,
                        env={**os.environ, **(env or {})})
-    if p.returncode != 0:
+    if check and p.returncode != 0:
         raise RuntimeError(f"docker compose {' '.join(args)} failed: {p.stderr.strip()[-300:]}")
     return p.stdout + p.stderr
 
@@ -92,7 +92,7 @@ def run(base: str) -> list[Step]:
 
     # A crash, not `docker compose kill`: Docker treats a manual kill as a stop and will not restart it.
     crash = "import urllib.request as u; u.urlopen('http://127.0.0.1:8001/_ctl/crash', timeout=3)"
-    compose("exec", "-T", "orders-service", "python", "-c", crash)
+    compose("exec", "-T", "orders-service", "python", "-c", crash, check=False)  # the process dies mid-call
     down = wait_for(lambda: status(base) != 200, 10, every=0.05)
     record("a crash is visible to users", down, "gateway returns errors while orders-service is down")
     back = wait_for(lambda: status(base) == 200, 60)
@@ -114,7 +114,12 @@ def main(argv: list[str] | None = None) -> int:
     args = p.parse_args(argv)
     if args.wait:
         wait_for(lambda: all(container_health().get(s) == "healthy" for s in SERVICES), args.wait)
-    steps = run(args.base)
+    try:
+        steps = run(args.base)
+    except Exception as e:  # noqa: BLE001 - report any crash of the check itself, then fail
+        print(f"::error::deploy.verify crashed: {type(e).__name__}: {e}" if os.environ.get("GITHUB_ACTIONS")
+              else f"verify crashed: {e}")
+        return 1
     failed = [s for s in steps if not s[1]]
     print(f"\n{len(steps) - len(failed)}/{len(steps)} checks passed")
     return 1 if failed else 0
