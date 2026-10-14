@@ -106,7 +106,10 @@ def run(base: str) -> list[Step]:
 def main(argv: list[str] | None = None) -> int:
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawTextHelpFormatter)
     p.add_argument("--base", default="http://127.0.0.1:8080", help="gateway URL")
+    p.add_argument("--wait", type=int, default=0, help="seconds to wait for all services to be healthy")
     args = p.parse_args(argv)
+    if args.wait:
+        wait_for(lambda: all(container_health().get(s) == "healthy" for s in SERVICES), args.wait)
     steps = run(args.base)
     failed = [s for s in steps if not s[1]]
     print(f"\n{len(steps) - len(failed)}/{len(steps)} checks passed")

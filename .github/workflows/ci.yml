@@ -52,9 +52,12 @@ jobs:
         with:
           python-version: "3.11"
       # Start the containers for real, then ship a bad release, roll back and kill a service.
-      - run: docker compose up -d --build --wait --wait-timeout 120
-      - run: python -m deploy.verify
+      - run: docker compose up -d --build
+      - run: python -m deploy.verify --wait 120
+      # On failure, copy the container state and logs into the run's annotations.
       - if: failure()
-        run: docker compose ps -a && docker compose logs --tail 80
+        run: |
+          echo "::error::$(docker compose ps -a 2>&1 | tr '\n' '|' | head -c 1500)"
+          echo "::error::$(docker compose logs --tail 25 2>&1 | tr '\n' '|' | head -c 3500)"
       - if: always()
         run: docker compose down -v
