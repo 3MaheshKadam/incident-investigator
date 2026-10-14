@@ -172,8 +172,15 @@ crashes a service (the restart policy must bring it back), and confirms the stac
 CI runs this on a real Docker daemon in the `deploy` job. To ship the buggy release by hand, set
 `ORDERS_BUG=1` and run `docker compose up -d --no-deps orders-service`.
 
-Not done yet: running this on a cloud machine, and pointing the detector and the gateway at the
-containers. The gateway currently reads log files, while containers log to stdout.
+The same detector and gateway work on the containers. `python -m deploy.watch` scrapes every
+service's `/metrics` (all four are published on localhost) and prints alerts. `DockerStack`
+lets the command gateway read container logs (copied from `docker compose logs`) and run approved
+restarts and rollbacks. `python -m deploy.verify --detect` (run with `--profile load`) also checks
+that the detector alerts on the bad release and that the gateway reads logs, refuses `rm -rf /`
+and holds a rollback until approved.
+
+Not done yet: running this on a cloud machine. A brief crash that the restart policy fixes in a
+second or two is too short for the detector's four-sample rule, so it is not asserted.
 
 ## Production-readiness checker
 
