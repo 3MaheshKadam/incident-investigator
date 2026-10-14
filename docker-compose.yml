@@ -1,0 +1,90 @@
+# The monitored app as containers: gateway -> orders-service / inventory-service -> orders-db.
+#   docker compose up -d --build --wait      start everything and wait until healthy
+#   docker compose --profile load up -d      add steady user traffic
+#   python -m deploy.verify                  check the deployment, then break and repair it
+name: shop
+
+x-service: &service
+  build:
+    context: .
+    dockerfile: Dockerfile.stack
+  image: incident-stack:local
+  restart: unless-stopped
+  read_only: true
+  cap_drop: [ALL]
+  security_opt: ["no-new-privileges:true"]
+  mem_limit: 256m
+  pids_limit: 128
+  volumes:
+    - appdata:/data
+  environment: &env
+    APP_VERSION: ${APP_VERSION:-v1.0.0}
+    ORDERS_DB_URL: http://orders-db:8003
+    ORDERS_URL: http://orders-service:8001
+    INVENTORY_URL: http://inventory-service:8002
+
+services:
+  init:
+    <<: *service
+    restart: "no"
+    command: ["python", "-m", "target.seed", "/data", "--rows", "${STACK_ROWS:-200000}"]
+    healthcheck:
+      disable: true
+
+  orders-db:
+    <<: *service
+    command: ["python", "-m", "target.services", "orders-db"]
+    environment:
+      <<: *env
+      PORT: "8003"
+    depends_on:
+      init:
+        condition: service_completed_successfully
+
+  orders-service:
+    <<: *service
+    command: ["python", "-m", "target.services", "orders-service"]
+    environment:
+      <<: *env
+      PORT: "8001"
+      BUG: ${ORDERS_BUG:-0}
+    depends_on:
+      orders-db:
+        condition: service_healthy
+
+  inventory-service:
+    <<: *service
+    command: ["python", "-m", "target.services", "inventory-service"]
+    environment:
+      <<: *env
+      PORT: "8002"
+    depends_on:
+      orders-db:
+        condition: service_healthy
+
+  api-gateway:
+    <<: *service
+    command: ["python", "-m", "target.services", "api-gateway"]
+    environment:
+      <<: *env
+      PORT: "8000"
+    ports:
+      - "127.0.0.1:8080:8000"
+    depends_on:
+      orders-service:
+        condition: service_healthy
+      inventory-service:
+        condition: service_healthy
+
+  loadgen:
+    <<: *service
+    profiles: ["load"]
+    command: ["python", "-m", "target.loadgen", "http://api-gateway:8000"]
+    healthcheck:
+      disable: true
+    depends_on:
+      api-gateway:
+        condition: service_healthy
+
+volumes:
+  appdata:
