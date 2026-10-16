@@ -60,3 +60,14 @@ def test_docker_stack_exposes_all_four_services_to_the_gateway(tmp_path):
     stack.refresh_logs = lambda: None  # no docker here
     assert gw.run("grep -c AttributeError orders-service.log").output.strip() == "1"
     assert gw.run("svc restart orders-db").status == "needs_approval"
+
+
+def test_aws_scripts_have_valid_shell_syntax_and_no_secrets():
+    import subprocess
+    from pathlib import Path
+
+    root = Path(__file__).resolve().parents[1] / "deploy" / "aws"
+    for script in root.glob("*.sh"):
+        assert subprocess.run(["bash", "-n", str(script)], check=False).returncode == 0, script.name
+        text = script.read_text()
+        assert "AKIA" not in text and "BEGIN" not in text  # no access keys or private keys
