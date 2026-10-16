@@ -179,7 +179,9 @@ restarts and rollbacks. `python -m deploy.verify --detect` (run with `--profile 
 that the detector alerts on the bad release and that the gateway reads logs, refuses `rm -rf /`
 and holds a rollback until approved.
 
-Not done yet: running this on a cloud machine. A brief crash that the restart policy fixes in a
+Run it on one EC2 instance with `deploy/aws/deploy.sh` (step-by-step guide in `deploy/aws/README.md`; no secrets, SSH from your IP only, services bound to localhost).
+
+Not yet done: an actual cloud run, whose output goes into the write-up. A brief crash that the restart policy fixes in a
 second or two is too short for the detector's four-sample rule, so it is not asserted.
 
 ## Production-readiness checker
