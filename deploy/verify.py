@@ -61,8 +61,13 @@ def container_health() -> dict[str, str]:
     return {r["Service"]: r.get("Health") or r["State"] for r in rows}
 
 
-def run(base: str) -> list[Step]:
+def run(base: str, detect: bool = False) -> list[Step]:
+    from deploy.docker_stack import DockerStack
+    from deploy.watch import Watcher
+    from gateway import CommandGateway
+
     steps: list[Step] = []
+    watcher = Watcher() if detect else None
 
     def record(name: str, ok: bool, detail: str) -> None:
         steps.append((name, ok, detail))
@@ -77,18 +82,36 @@ def run(base: str) -> list[Step]:
         return steps
 
     record("users can check out", traffic(base) == 0, "0% errors on 40 requests")
+    if watcher:
+        watcher.start()  # needs steady traffic: run the stack with `--profile load`
+        wait_for(lambda: watcher.samples >= 40, 60, every=0.5)  # learn what normal looks like
+
+    mark = watcher.samples if watcher else 0
 
     compose("up", "-d", "--no-deps", "orders-service", env={"ORDERS_BUG": "1"})
     wait_for(lambda: container_health().get("orders-service") == "healthy", 30)
     rate = traffic(base, 60)
     record("bad release is visible to users", rate > 0.05, f"{rate:.0%} errors after deploying the buggy release")
+    if watcher:
+        wait_for(lambda: any(i.detected_minute >= mark for i in watcher.incidents()), 30, every=0.5)
+        new = [i for i in watcher.incidents() if i.detected_minute >= mark]
+        record("detector raises an alert for the bad release", bool(new), new[0].alert if new else "no alert")
     logs = compose("logs", "--no-log-prefix", "orders-service")
     record("the bug is findable in the logs", "AttributeError" in logs, "AttributeError in orders-service logs")
 
-    compose("up", "-d", "--no-deps", "orders-service", env={"ORDERS_BUG": "0"})
+    # The agent's door into the running system: read logs, be refused, and have changes approved.
+    gw = CommandGateway(DockerStack())
+    hits = gw.run("grep -c AttributeError orders-service.log")
+    record("gateway reads container logs", hits.status == "ran" and hits.output.strip().isdigit()
+           and int(hits.output.strip()) > 0, f"{hits.output.strip()[:40]} AttributeError lines")
+    record("gateway refuses a destructive command", gw.run("rm -rf /").status == "denied", "rm -rf / denied")
+    prop = gw.run("svc rollback orders-service")
+    record("gateway holds a rollback for approval", prop.status == "needs_approval", "not run until approved")
+    if prop.proposal_id is not None:
+        gw.approve(prop.proposal_id, by="verify")  # the human step, done here by the test
     wait_for(lambda: container_health().get("orders-service") == "healthy", 30)
     rate = traffic(base)
-    record("rollback restores service", rate == 0, f"{rate:.0%} errors after rollback")
+    record("approved rollback restores service", rate == 0, f"{rate:.0%} errors after rollback")
 
     # A crash, not `docker compose kill`: Docker treats a manual kill as a stop and will not restart it.
     crash = "import urllib.request as u; u.urlopen('http://127.0.0.1:8001/_ctl/crash', timeout=3)"
@@ -104,18 +127,21 @@ def run(base: str) -> list[Step]:
 
     final = traffic(base)
     record("stack left healthy", final == 0, f"{final:.0%} errors at the end")
+    if watcher:
+        watcher.stop()
     return steps
 
 
 def main(argv: list[str] | None = None) -> int:
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawTextHelpFormatter)
     p.add_argument("--base", default="http://127.0.0.1:8080", help="gateway URL")
+    p.add_argument("--detect", action="store_true", help="also check the detector (needs --profile load)")
     p.add_argument("--wait", type=int, default=0, help="seconds to wait for all services to be healthy")
     args = p.parse_args(argv)
     if args.wait:
         wait_for(lambda: all(container_health().get(s) == "healthy" for s in SERVICES), args.wait)
     try:
-        steps = run(args.base)
+        steps = run(args.base, args.detect)
     except Exception as e:  # noqa: BLE001 - report any crash of the check itself, then fail
         print(f"::error::deploy.verify crashed: {type(e).__name__}: {e}" if os.environ.get("GITHUB_ACTIONS")
               else f"verify crashed: {e}")
