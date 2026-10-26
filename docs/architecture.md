@@ -27,6 +27,7 @@ alert ──► investigator loop ──► read-only tools ──► simulated 
 | `shop/system.py`, `shop/faults.py`, `shop/episode.py` | A simulated backend. Faults change service state; logs and metrics are derived from that state each minute. |
 | `monitor/detect.py` | Learns normal from a baseline window, flags abnormal and material changes, groups anomalies into incidents, writes the alert, lists suspect changes. |
 | `monitor/record.py` | Saves detected incidents as scenarios in `scenarios/recorded/`, with the alert written by the detector. |
+| `readiness/` | Rules for Dockerfile, compose, workflows, env and secrets. CLI: `python -m readiness`. Runs in CI. |
 | `evals/detect_eval.py` | Detection recall, precision, false alarms on healthy runs, time to detection, severity sweep. |
 | `scenarios/generate.py` | Deterministic generator for 24 incidents with noise and red herrings. |
 | `evals/score.py`, `evals/run.py` | Scoring against hidden answers; dev and held-out splits. |

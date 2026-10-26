@@ -15,7 +15,7 @@ import argparse
 import json
 from pathlib import Path
 
-from monitor.detect import detect_incidents
+from monitor.detect import DEFAULT_CONFIG, DetectorConfig, detect_incidents
 from shop.episode import Episode, build_episode
 from shop.faults import KINDS
 from shop.system import METRICS, ts
@@ -38,10 +38,12 @@ def _dump(path: Path, obj) -> None:
     path.write_text(json.dumps(obj, indent=1) + "\n")
 
 
-def record_episode(ep: Episode, out_dir: Path) -> dict | None:
+def record_episode(
+    ep: Episode, out_dir: Path, config: DetectorConfig = DEFAULT_CONFIG
+) -> dict | None:
     """Save the episode if the monitor raised an incident for it. Returns the manifest entry."""
     s = ep.system
-    incidents = detect_incidents(s.metrics, s.deploys, s.config_changes)
+    incidents = detect_incidents(s.metrics, s.deploys, s.config_changes, config)
     if ep.fault is None or not incidents:
         return None
     first = min(incidents, key=lambda i: i.detected_minute)

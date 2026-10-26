@@ -24,7 +24,10 @@ All incidents are simulated. No real systems or credentials are involved.
 | --- | --- |
 | `agent/` | Investigator loop, tools and the model wrapper |
 | `shop/` | A simulated backend (10 services) whose telemetry comes from its own state |
+| `target/` | A real stack: separate Linux processes with HTTP, SQLite and real faults, watched by the same detector |
 | `monitor/` | Anomaly detection, incident grouping, change correlation, recording |
+| `gateway/` | Command gateway: allowlisted read-only shell commands for the agent, changes held for approval |
+| `readiness/` | Production-readiness checks for Dockerfile, compose, CI workflows, env and secrets |
 | `scenarios/` | Hand-generated incidents (`data/`) and monitor-recorded ones (`recorded/`) |
 | `evals/` | Scoring harness and reports |
 | `guard/` | Attack and defense layer |
@@ -91,6 +94,86 @@ faults partial (a share of requests fail, queries are only somewhat slow). Detec
 to severity 0.25 and drops to 17/24 at 0.1, where faults are nearly invisible. Honest limits:
 one hand-set threshold per metric, learned baselines assume the first 30 minutes are healthy,
 and a ten-service simulation is far simpler than production.
+
+## Real target app (live processes)
+
+`target/` runs a small stack of real OS processes: `api-gateway`, `orders-service`,
+`inventory-service` and `orders-db`, talking HTTP over localhost with a SQLite database. Telemetry
+is measured, not derived: request latency and errors from real calls, memory from `/proc`, and a
+Prometheus-style `/metrics` endpoint per service. Faults are real: SIGKILL on the database
+(`dependency_outage`), a dropped index (`slow_query`), a deploy that ships a genuine
+`AttributeError` (`bad_deploy`), a flag file (`feature_flag`), and a leaking thread that a
+watchdog OOM-kills (`memory_leak`). Time is compressed: one sample is 0.5 s real, one "virtual
+minute".
+
+```bash
+python -m target.run --kinds all --variants 0,1 --healthy 1 --out scenarios/live
+python -m target.run --kinds dependency_outage,bad_deploy --variants 0 --require-detected   # CI
+```
+
+Honest limits: Linux only (reads `/proc`); live runs are not deterministic, so recorded live
+incidents are not freshness-checked in CI the way generated ones are; benign deploys are recorded
+events, not real restarts; `expired_certificate` is not implemented on the live stack; and it is
+four processes on one machine, not a cluster.
+
+## Command gateway
+
+`gateway/` is how the agent looks at a live system. It gets one tool, `run_command`, and every
+command goes through a policy before anything runs. The default is deny.
+
+| Verdict | Examples | What happens |
+| --- | --- | --- |
+| allow | `ps -ef`, `free -m`, `df -h`, `uptime`, `ls logs`, `tail -n 50 x.log`, `grep -i text x.log`, `curl -s http://127.0.0.1:<port>/health` | runs now, output capped at 4000 characters |
+| approve | `svc restart <service>`, `svc rollback <service>` | not run; becomes a proposal a human approves or rejects |
+| deny | `rm`, `sudo`, `sh`, pipes, redirects, `$(...)`, paths outside the logs folder (including `..` and symlinks), `curl` to any other host or path, unknown services | refused with a reason the model can read |
+
+Commands are split with `shlex` and run without a shell, with a scrubbed environment, a 5 second
+timeout and no stdin. Output goes through the same guard as other tool results, so an instruction
+planted in a log line is stripped. Every command, decision and approval is kept in an audit list.
+
+```bash
+python -m gateway                          # start the real stack, break it, tour the gateway
+python -m gateway "free -m" "tail -n 5 api-gateway.log"
+```
+
+Honest limits: `ps -ef` shows every process on the host, not only the stack; the allowlist is
+small and hand-written; and the investigator has not yet been scored against the live stack with a
+real model. This is the safe door the next measurements go through.
+
+### Investigating the live stack
+
+```bash
+python -m target.investigate --kinds dependency_outage,bad_deploy --variants 0
+```
+
+This breaks the real stack, records what the monitor saw, then leaves the stack running and lets
+the investigator use its usual tools plus `run_command` through the gateway. The run is scored
+like any other (root cause, evidence, wrong blame) and also reports how many commands ran, how
+many were denied, and how many changes were proposed for approval. A test drives this path with a
+scripted model (`LIVE_TESTS=1 pytest tests/test_target.py`). No real-model score on the live stack
+exists yet; the numbers go here once the run is done.
+
+## Production-readiness checker
+
+`readiness/` checks that the deployment files are safe and consistent before anything ships. Every
+rule has an id, a severity and a fix hint, and each one is tested against a bad and a good example.
+
+```bash
+python -m readiness .                 # human-readable
+python -m readiness . --json --out evals/reports/readiness.json
+python -m readiness . --fail-on high  # exit 1 on any high finding (this is what CI runs)
+```
+
+| Area | Examples of what it catches |
+| --- | --- |
+| Dockerfile (`DF`) | unpinned base image, runs as root, no HEALTHCHECK, secrets in ENV/ARG, `curl \| sh`, `ADD` of URLs |
+| docker-compose (`DC`) | unpinned images, no healthcheck / restart policy / memory limit, privileged mode or Docker socket, literal secrets, unknown `depends_on`, datastore ports on all interfaces, undefined volumes, `${VARS}` missing from `.env.example` |
+| GitHub Actions (`GH`) | no `permissions`, unpinned or movable-tag actions, `pull_request_target`, secrets echoed, script injection from PR titles, no job timeout |
+| Repo (`RP`, `YAML`) | `.env` not git-ignored, weak `.dockerignore`, committed keys (AWS, Groq, GitHub, private keys), invalid YAML |
+
+On this repository it found a root container, no healthcheck and missing job timeouts; those are
+fixed. Three low findings remain on purpose: CI actions are pinned to a release tag rather than a
+commit SHA. It is a transparent rule set, not a replacement for hadolint or actionlint.
 
 ## Approval, replay and the UI
 

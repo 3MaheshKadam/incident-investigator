@@ -44,6 +44,21 @@ RULES = {
 }
 
 
+@dataclass(frozen=True)
+class DetectorConfig:
+    """Everything tunable about the detector, so the same code can watch systems of different
+    scale: a simulated shop measured in hundreds of milliseconds, or a small real app measured in
+    tens."""
+
+    rules: dict[str, Rule] = field(default_factory=lambda: dict(RULES))
+    train: int = TRAIN_MIN
+    consecutive: int = CONSECUTIVE
+    k: float = K
+
+
+DEFAULT_CONFIG = DetectorConfig()
+
+
 @dataclass
 class Anomaly:
     service: str
@@ -81,25 +96,27 @@ def _normal(values: list[float], rule: Rule) -> tuple[float, float]:
     return med, max(spread, rule.scale_floor)
 
 
-def _abnormal(x: float, med: float, spread: float, rule: Rule) -> bool:
+def _abnormal(x: float, med: float, spread: float, rule: Rule, k: float = K) -> bool:
     rise = x - med
-    return rise >= rule.min_delta and rise / spread >= K and x >= med * rule.min_ratio
+    return rise >= rule.min_delta and rise / spread >= k and x >= med * rule.min_ratio
 
 
-def find_anomalies(metrics: dict[str, dict[str, list[float]]]) -> list[Anomaly]:
+def find_anomalies(
+    metrics: dict[str, dict[str, list[float]]], config: DetectorConfig = DEFAULT_CONFIG
+) -> list[Anomaly]:
     found: list[Anomaly] = []
     for service, series in metrics.items():
-        for metric, rule in RULES.items():
+        for metric, rule in config.rules.items():
             values = series.get(metric, [])
-            if len(values) <= TRAIN_MIN + CONSECUTIVE:
+            if len(values) <= config.train + config.consecutive:
                 continue
-            med, spread = _normal(values[:TRAIN_MIN], rule)
+            med, spread = _normal(values[: config.train], rule)
             streak, calm, open_since = 0, 0, None
-            for m in range(TRAIN_MIN, len(values)):
-                if _abnormal(values[m], med, spread, rule):
+            for m in range(config.train, len(values)):
+                if _abnormal(values[m], med, spread, rule, config.k):
                     streak, calm = streak + 1, 0
-                    if streak == CONSECUTIVE and open_since is None:
-                        open_since = m - CONSECUTIVE + 1
+                    if streak == config.consecutive and open_since is None:
+                        open_since = m - config.consecutive + 1
                         found.append(
                             Anomaly(
                                 service, metric, open_since, m, values[m], round(med, 2),
@@ -137,9 +154,10 @@ def detect_incidents(
     metrics: dict[str, dict[str, list[float]]],
     deploys: list[dict],
     config_changes: list[dict],
+    config: DetectorConfig = DEFAULT_CONFIG,
 ) -> list[Incident]:
     groups: list[list[Anomaly]] = []
-    for a in find_anomalies(metrics):
+    for a in find_anomalies(metrics, config):
         if groups:
             g = groups[-1]
             near = a.start <= max(x.start for x in g) + GROUP_GAP_MIN

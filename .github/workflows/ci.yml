@@ -11,6 +11,7 @@ permissions:
 jobs:
   test:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -25,6 +26,10 @@ jobs:
       - run: python -m evals.baseline
       - run: python -m evals.baseline --data scenarios/recorded
       - run: python -m evals.detect_eval --split all
+      # Real processes (HTTP services + SQLite): two faults must be detected, no false alarm.
+      - run: python -m target.run --kinds dependency_outage,bad_deploy --variants 0 --healthy 0 --samples 100 --rows 300000 --require-detected
+      # Deployment files must have no high-severity findings (see readiness/).
+      - run: python -m readiness . --fail-on high
       - name: Scenario data is up to date
         run: |
           python -m scenarios.generate
@@ -33,6 +38,7 @@ jobs:
           git diff --exit-code scenarios/recorded
   docker:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
       - run: docker build -t incident-investigator .

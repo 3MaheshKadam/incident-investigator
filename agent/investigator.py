@@ -121,14 +121,20 @@ def _window(data: ScenarioData) -> str:
 
 
 def run_investigation(
-    llm: LLM, data: ScenarioData, max_steps: int = 12, guard: GuardLike | None = None
+    llm: LLM,
+    data: ScenarioData,
+    max_steps: int = 12,
+    guard: GuardLike | None = None,
+    box: Toolbox | None = None,
 ) -> RunResult:
     """Run one investigation. `max_steps` caps model turns, so a looping model stops.
 
     With a guard, everything read from tools and the alert is passed through it as untrusted
     data, and the final report must pass its checks before it is accepted.
     """
-    box = Toolbox(data)
+    box = box or Toolbox(data)
+    extra_specs = list(getattr(box, "extra_specs", []))
+    extra_names = {t["name"] for t in extra_specs}
     system = SYSTEM_PROMPT + ("\n\n" + guard.system_addendum if guard else "")
     alert = guard.begin(data.alert) if guard else data.alert
     messages: list[Message] = [
@@ -147,7 +153,7 @@ def run_investigation(
         final_stretch = max_steps >= 3 and turn >= max_steps - 1
         if final_stretch and turn == max_steps - 1:
             messages.append({"role": "user", "content": FORCE_REPORT})
-        tools = [t for t in TOOL_SPECS if t["name"] == "submit_report"] if final_stretch else TOOL_SPECS
+        tools = [t for t in TOOL_SPECS if t["name"] == "submit_report"] if final_stretch else TOOL_SPECS + extra_specs
         resp = llm.chat(messages, tools)
         result.input_tokens += resp.input_tokens
         result.output_tokens += resp.output_tokens
@@ -177,7 +183,7 @@ def run_investigation(
             calls.append(
                 {
                     "id": c.id or f"call_{call_counter}",
-                    "name": resolve_tool_name(c.name) or c.name,
+                    "name": c.name if c.name in extra_names else (resolve_tool_name(c.name) or c.name),
                     "called_as": c.name,
                     "arguments": c.arguments,
                 }
