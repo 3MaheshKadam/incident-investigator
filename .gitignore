@@ -9,3 +9,4 @@ traces/
 *.sqlite
 *.db
 .runtime/
+evals/reports/
