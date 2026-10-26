@@ -11,6 +11,7 @@ from __future__ import annotations
 import itertools
 import json
 import os
+import queue
 import sqlite3
 import sys
 import threading
@@ -20,21 +21,23 @@ import urllib.request
 
 from target.common import Handler, log, serve
 from target.db import INDEX, QUERY
+from target.httpc import get_json
 
 SLOW_QUERY_MS = 60.0
-
-
-def get_json(url: str, timeout: float) -> tuple[int, dict]:
-    with urllib.request.urlopen(url, timeout=timeout) as r:
-        return r.status, json.loads(r.read() or b"{}")
 
 
 # ----- orders-db: a small SQL service over a real SQLite file ----------------------------------
 def orders_db(port: int) -> dict[str, Handler]:
     path = os.environ["DB_PATH"]
+    # Reuse connections across requests, but keep only a few: every open SQLite connection holds
+    # a page cache, so an unbounded pool grows with the busiest moment the service has ever seen.
+    pool: queue.LifoQueue[sqlite3.Connection] = queue.LifoQueue(int(os.environ.get("DB_POOL_SIZE", "4")))
 
     def query(q: dict[str, str]) -> tuple[int, dict]:
-        con = sqlite3.connect(path)
+        try:
+            con = pool.get_nowait()
+        except queue.Empty:
+            con = sqlite3.connect(path, check_same_thread=False)
         try:
             started = time.perf_counter()
             rows = con.execute(QUERY, (q.get("email", ""),)).fetchall()
@@ -42,9 +45,14 @@ def orders_db(port: int) -> dict[str, Handler]:
             if ms > SLOW_QUERY_MS:
                 plan = con.execute("EXPLAIN QUERY PLAN " + QUERY, (q.get("email", ""),)).fetchall()
                 log("orders-db", "WARN", f"slow query ({ms:.0f}ms): {QUERY}; plan: {plan[0][3]}")
-            return 200, {"rows": len(rows)}
-        finally:
+        except BaseException:
+            con.close()  # never return a connection in an unknown state
+            raise
+        try:
+            pool.put_nowait(con)
+        except queue.Full:
             con.close()
+        return 200, {"rows": len(rows)}
 
     def drop_index(_: dict[str, str]) -> tuple[int, dict]:
         con = sqlite3.connect(path)

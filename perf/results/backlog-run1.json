@@ -1,0 +1,246 @@
+{
+ "label": "backlog-run1",
+ "cpus": 2,
+ "rows": 200000,
+ "seconds": 6,
+ "results": [
+  {
+   "concurrency": 1,
+   "requests": 839,
+   "rps": 139.8,
+   "p50_ms": 6.9,
+   "p95_ms": 9.6,
+   "p99_ms": 12.9,
+   "max_ms": 53.8,
+   "error_pct": 0.0,
+   "cpu_pct": {
+    "orders-db": 37.8,
+    "orders-service": 29.3,
+    "inventory-service": 8.8,
+    "api-gateway": 20.8
+   },
+   "services": {
+    "orders-db": {
+     "p95_ms": 0.3,
+     "rss_mb": 24.7
+    },
+    "orders-service": {
+     "p95_ms": 5.4,
+     "rss_mb": 26.0
+    },
+    "inventory-service": {
+     "p95_ms": 0.0,
+     "rss_mb": 23.0
+    },
+    "api-gateway": {
+     "p95_ms": 8.2,
+     "rss_mb": 25.6
+    }
+   }
+  },
+  {
+   "concurrency": 2,
+   "requests": 1402,
+   "rps": 233.6,
+   "p50_ms": 8.3,
+   "p95_ms": 11.4,
+   "p99_ms": 13.7,
+   "max_ms": 21.3,
+   "error_pct": 0.0,
+   "cpu_pct": {
+    "orders-db": 56.6,
+    "orders-service": 45.6,
+    "inventory-service": 11.7,
+    "api-gateway": 30.5
+   },
+   "services": {
+    "orders-db": {
+     "p95_ms": 0.8,
+     "rss_mb": 25.1
+    },
+    "orders-service": {
+     "p95_ms": 7.1,
+     "rss_mb": 26.1
+    },
+    "inventory-service": {
+     "p95_ms": 0.0,
+     "rss_mb": 23.1
+    },
+    "api-gateway": {
+     "p95_ms": 10.0,
+     "rss_mb": 25.8
+    }
+   }
+  },
+  {
+   "concurrency": 4,
+   "requests": 1604,
+   "rps": 266.9,
+   "p50_ms": 14.6,
+   "p95_ms": 21.4,
+   "p99_ms": 24.5,
+   "max_ms": 27.8,
+   "error_pct": 0.0,
+   "cpu_pct": {
+    "orders-db": 62.1,
+    "orders-service": 46.6,
+    "inventory-service": 12.3,
+    "api-gateway": 33.1
+   },
+   "services": {
+    "orders-db": {
+     "p95_ms": 2.3,
+     "rss_mb": 25.9
+    },
+    "orders-service": {
+     "p95_ms": 14.4,
+     "rss_mb": 26.3
+    },
+    "inventory-service": {
+     "p95_ms": 0.0,
+     "rss_mb": 23.2
+    },
+    "api-gateway": {
+     "p95_ms": 19.2,
+     "rss_mb": 26.0
+    }
+   }
+  },
+  {
+   "concurrency": 8,
+   "requests": 1601,
+   "rps": 265.8,
+   "p50_ms": 29.6,
+   "p95_ms": 40.6,
+   "p99_ms": 45.7,
+   "max_ms": 56.4,
+   "error_pct": 0.0,
+   "cpu_pct": {
+    "orders-db": 64.8,
+    "orders-service": 48.2,
+    "inventory-service": 12.8,
+    "api-gateway": 34.4
+   },
+   "services": {
+    "orders-db": {
+     "p95_ms": 4.4,
+     "rss_mb": 26.8
+    },
+    "orders-service": {
+     "p95_ms": 30.7,
+     "rss_mb": 26.5
+    },
+    "inventory-service": {
+     "p95_ms": 0.0,
+     "rss_mb": 23.3
+    },
+    "api-gateway": {
+     "p95_ms": 37.6,
+     "rss_mb": 26.2
+    }
+   }
+  },
+  {
+   "concurrency": 16,
+   "requests": 1511,
+   "rps": 250.0,
+   "p50_ms": 63.3,
+   "p95_ms": 80.7,
+   "p99_ms": 89.2,
+   "max_ms": 102.1,
+   "error_pct": 0.0,
+   "cpu_pct": {
+    "orders-db": 64.2,
+    "orders-service": 49.6,
+    "inventory-service": 12.7,
+    "api-gateway": 34.2
+   },
+   "services": {
+    "orders-db": {
+     "p95_ms": 5.0,
+     "rss_mb": 28.6
+    },
+    "orders-service": {
+     "p95_ms": 68.0,
+     "rss_mb": 27.0
+    },
+    "inventory-service": {
+     "p95_ms": 0.0,
+     "rss_mb": 23.3
+    },
+    "api-gateway": {
+     "p95_ms": 77.7,
+     "rss_mb": 26.5
+    }
+   }
+  },
+  {
+   "concurrency": 32,
+   "requests": 1567,
+   "rps": 258.1,
+   "p50_ms": 122.3,
+   "p95_ms": 152.4,
+   "p99_ms": 166.5,
+   "max_ms": 191.1,
+   "error_pct": 0.0,
+   "cpu_pct": {
+    "orders-db": 65.1,
+    "orders-service": 50.1,
+    "inventory-service": 13.2,
+    "api-gateway": 34.9
+   },
+   "services": {
+    "orders-db": {
+     "p95_ms": 4.3,
+     "rss_mb": 28.6
+    },
+    "orders-service": {
+     "p95_ms": 131.9,
+     "rss_mb": 27.4
+    },
+    "inventory-service": {
+     "p95_ms": 0.0,
+     "rss_mb": 23.3
+    },
+    "api-gateway": {
+     "p95_ms": 139.6,
+     "rss_mb": 27.0
+    }
+   }
+  },
+  {
+   "concurrency": 64,
+   "requests": 1644,
+   "rps": 266.9,
+   "p50_ms": 237.6,
+   "p95_ms": 274.8,
+   "p99_ms": 288.8,
+   "max_ms": 302.3,
+   "error_pct": 0.0,
+   "cpu_pct": {
+    "orders-db": 63.6,
+    "orders-service": 49.5,
+    "inventory-service": 12.8,
+    "api-gateway": 34.7
+   },
+   "services": {
+    "orders-db": {
+     "p95_ms": 4.4,
+     "rss_mb": 28.6
+    },
+    "orders-service": {
+     "p95_ms": 263.6,
+     "rss_mb": 28.3
+    },
+    "inventory-service": {
+     "p95_ms": 0.0,
+     "rss_mb": 23.3
+    },
+    "api-gateway": {
+     "p95_ms": 272.5,
+     "rss_mb": 27.9
+    }
+   }
+  }
+ ]
+}

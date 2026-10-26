@@ -141,3 +141,71 @@ def test_seed_is_repeatable_and_creates_flags(tmp_path):
     assert main([str(tmp_path), "--rows", "500"]) == 0
     assert (tmp_path / "shop.sqlite").stat().st_mtime_ns == first  # not rebuilt
     assert json.loads((tmp_path / "flags.json").read_text()) == {"x": True}  # not reset
+
+
+def _tiny_server(status: int = 200, delay: float = 0.0):
+    import threading
+    import time as _t
+    from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
+    from typing import ClassVar
+
+    class H(BaseHTTPRequestHandler):
+        protocol_version = "HTTP/1.1"
+        seen_ports: ClassVar[set] = set()
+
+        def do_GET(self):
+            _t.sleep(delay)
+            body = b'{"ok": 1}'
+            self.send_response(status)
+            self.send_header("Content-Length", str(len(body)))
+            self.end_headers()
+            self.wfile.write(body)
+            H.seen_ports.add(self.client_address[1])
+
+        def log_message(self, *a):
+            pass
+
+    srv = ThreadingHTTPServer(("127.0.0.1", 0), H)
+    srv.daemon_threads = True
+    threading.Thread(target=srv.serve_forever, daemon=True).start()
+    return srv, H
+
+
+def test_http_client_reuses_connections_and_keeps_urllib_errors():
+    from target.httpc import get_json
+
+    srv, handler = _tiny_server()
+    url = f"http://127.0.0.1:{srv.server_address[1]}/x"
+    try:
+        for _ in range(20):
+            assert get_json(url, 2.0) == (200, {"ok": 1})
+        assert len(handler.seen_ports) == 1  # one TCP connection served all 20 calls
+    finally:
+        srv.shutdown()
+        srv.server_close()
+    import socket
+
+    s = socket.socket()
+    s.bind(("127.0.0.1", 0))
+    closed_port = s.getsockname()[1]
+    s.close()
+    with pytest.raises(urllib.error.URLError) as e:  # nothing listening: same error urllib gives
+        get_json(f"http://127.0.0.1:{closed_port}/x", 2.0)
+    assert isinstance(e.value.reason, ConnectionRefusedError)
+
+
+def test_http_client_maps_status_and_timeout_like_urllib():
+    from target.httpc import get_json
+
+    bad, _ = _tiny_server(status=500)
+    slow, _ = _tiny_server(delay=0.5)
+    try:
+        with pytest.raises(urllib.error.HTTPError) as e:
+            get_json(f"http://127.0.0.1:{bad.server_address[1]}/x", 2.0)
+        assert e.value.code == 500
+        with pytest.raises(TimeoutError):
+            get_json(f"http://127.0.0.1:{slow.server_address[1]}/x", 0.1)
+    finally:
+        for s in (bad, slow):
+            s.shutdown()
+            s.server_close()

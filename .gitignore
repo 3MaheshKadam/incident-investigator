@@ -9,3 +9,6 @@ traces/
 *.sqlite
 *.db
 .runtime/
+evals/reports/
+.env.*
+!.env.example
