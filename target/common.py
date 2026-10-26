@@ -101,6 +101,10 @@ def serve(name: str, port: int, routes: dict[str, Handler]) -> None:
             if url.path == "/_ctl/log":  # ask this process to emit one line, as an app might
                 log(name, query.get("level", "INFO"), query.get("msg", ""))
                 return self._send(200, b"{}")
+            if url.path == "/_ctl/crash":  # simulate a hard crash (non-zero exit), for deployment tests
+                self._send(200, b"{}")
+                log(name, "ERROR", "fatal: simulated crash, exiting with code 137")
+                os._exit(137)
             fn = routes.get(url.path)
             if fn is None:
                 return self._send(404, b'{"error":"not found"}')
@@ -117,7 +121,7 @@ def serve(name: str, port: int, routes: dict[str, Handler]) -> None:
                     log(name, "INFO", f"GET {url.path} {status} {ms:.0f}ms")
             self._send(status, json.dumps(body).encode())
 
-    server = ThreadingHTTPServer(("127.0.0.1", port), Req)
+    server = ThreadingHTTPServer((os.environ.get("BIND_HOST", "127.0.0.1"), port), Req)
     server.daemon_threads = True
     log(name, "INFO", f"{name} {os.environ.get('APP_VERSION', 'v1.0.0')} listening on :{port}")
     server.serve_forever()

@@ -42,3 +42,22 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: docker build -t incident-investigator .
+
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      # Start the containers for real, then ship a bad release, roll back and kill a service.
+      - run: docker compose --profile load up -d --build
+      - run: python -m deploy.verify --wait 120 --detect
+      # On failure, copy the container state and logs into the run's annotations.
+      - if: failure()
+        run: |
+          echo "::error::$(docker compose ps -a 2>&1 | tr '\n' '|' | head -c 1500)"
+          echo "::error::$(docker compose logs --tail 25 2>&1 | tr '\n' '|' | head -c 3500)"
+      - if: always()
+        run: docker compose down -v
