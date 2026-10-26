@@ -1,0 +1,7 @@
+load=16  bad_deploy         detected ttd=3
+load=16  memory_leak        detected ttd=None
+load=16  slow_query         detected ttd=5
+load=16  feature_flag       detected ttd=6
+load=16  dependency_outage  detected ttd=3
+load=16  healthy            false alarms=0
+exit=0

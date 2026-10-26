@@ -1,0 +1,19 @@
+load=1   bad_deploy         detected ttd=4
+load=1   memory_leak        detected ttd=None
+load=1   slow_query         MISSED
+load=1   feature_flag       detected ttd=6
+load=1   dependency_outage  detected ttd=3
+load=1   healthy            false alarms=0
+load=4   bad_deploy         detected ttd=3
+load=4   memory_leak        detected ttd=None
+load=4   slow_query         MISSED
+load=4   feature_flag       detected ttd=6
+load=4   dependency_outage  detected ttd=3
+load=4   healthy            false alarms=0
+load=16  bad_deploy         detected ttd=3
+load=16  memory_leak        detected ttd=None
+load=16  slow_query         detected ttd=4
+load=16  feature_flag       detected ttd=6
+load=16  dependency_outage  detected ttd=3
+load=16  healthy            false alarms=0
+exit=0
