@@ -1,0 +1,42 @@
+{
+ "split": "dev",
+ "summary": {
+  "n": 2,
+  "root_cause_correct": 2,
+  "evidence_cited": 2,
+  "wrong_blame": 0,
+  "action_correct": 2,
+  "no_report": 0,
+  "avg_steps": 3.5,
+  "input_tokens": 14307,
+  "output_tokens": 1860
+ },
+ "runs": [
+  {
+   "id": "bad_deploy-0",
+   "kind": "bad_deploy",
+   "stop_reason": "report",
+   "steps": 4,
+   "input_tokens": 7717,
+   "output_tokens": 962,
+   "root_cause_correct": true,
+   "evidence_cited": true,
+   "wrong_blame": false,
+   "action_correct": true,
+   "split": "dev"
+  },
+  {
+   "id": "bad_deploy-1",
+   "kind": "bad_deploy",
+   "stop_reason": "report",
+   "steps": 3,
+   "input_tokens": 6590,
+   "output_tokens": 898,
+   "root_cause_correct": true,
+   "evidence_cited": true,
+   "wrong_blame": false,
+   "action_correct": true,
+   "split": "dev"
+  }
+ ]
+}
