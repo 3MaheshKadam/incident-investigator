@@ -184,6 +184,14 @@ Run it on one EC2 instance with `deploy/aws/deploy.sh` (step-by-step guide in `d
 Not yet done: an actual cloud run, whose output goes into the write-up. A brief crash that the restart policy fixes in a
 second or two is too short for the detector's four-sample rule, so it is not asserted.
 
+## Performance (Phase A)
+
+`python -m perf.bench` load-tests the real stack and records throughput, latency percentiles and
+per-service CPU. A first pass found and fixed three problems (dropped connections under load, a
+SQLite connection per query, a TCP connection per call), taking throughput at 4 users from about
+280 to about 510 requests/s on a shared 2-CPU machine and removing multi-second tail latency. Full
+method, numbers and limits: `docs/perf-phase-a.md`.
+
 ## Production-readiness checker
 
 `readiness/` checks that the deployment files are safe and consistent before anything ships. Every

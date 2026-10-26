@@ -67,6 +67,7 @@ def run(base: str, detect: bool = False) -> list[Step]:
     from gateway import CommandGateway
 
     steps: list[Step] = []
+    timings: dict[str, float] = {}
     watcher = Watcher() if detect else None
 
     def record(name: str, ok: bool, detail: str) -> None:
@@ -95,6 +96,8 @@ def run(base: str, detect: bool = False) -> list[Step]:
     if watcher:
         wait_for(lambda: any(i.detected_minute >= mark for i in watcher.incidents()), 30, every=0.5)
         new = [i for i in watcher.incidents() if i.detected_minute >= mark]
+        if new:
+            timings["bad_release_to_alert_s"] = round((new[0].detected_minute - mark) * watcher.interval, 1)
         record("detector raises an alert for the bad release", bool(new), new[0].alert if new else "no alert")
     logs = compose("logs", "--no-log-prefix", "orders-service")
     record("the bug is findable in the logs", "AttributeError" in logs, "AttributeError in orders-service logs")
@@ -107,20 +110,25 @@ def run(base: str, detect: bool = False) -> list[Step]:
     record("gateway refuses a destructive command", gw.run("rm -rf /").status == "denied", "rm -rf / denied")
     prop = gw.run("svc rollback orders-service")
     record("gateway holds a rollback for approval", prop.status == "needs_approval", "not run until approved")
+    approved_at = time.time()
     if prop.proposal_id is not None:
         gw.approve(prop.proposal_id, by="verify")  # the human step, done here by the test
     wait_for(lambda: container_health().get("orders-service") == "healthy", 30)
+    timings["approve_to_healthy_s"] = round(time.time() - approved_at, 1)
     rate = traffic(base)
     record("approved rollback restores service", rate == 0, f"{rate:.0%} errors after rollback")
 
     # A crash, not `docker compose kill`: Docker treats a manual kill as a stop and will not restart it.
     crash = "import urllib.request as u; u.urlopen('http://127.0.0.1:8001/_ctl/crash', timeout=3)"
+    crashed_at = time.time()
     compose("exec", "-T", "orders-service", "python", "-c", crash, check=False)  # the process dies mid-call
     down = wait_for(lambda: status(base) != 200, 10, every=0.05)
     record("a crash is visible to users", down, "gateway returns errors while orders-service is down")
-    back = wait_for(lambda: status(base) == 200, 60)
-    record("crashed service is restarted by policy", back, "service recovered without human action" if back
-           else "no recovery within 60s")
+    back = wait_for(lambda: status(base) == 200, 60, every=0.1)
+    recovery_s = time.time() - crashed_at
+    timings["crash_to_recovery_s"] = round(recovery_s, 1)
+    record("crashed service is restarted by policy", back,
+           f"recovered without human action in {recovery_s:.1f}s" if back else "no recovery within 60s")
     if not back:
         compose("up", "-d", "--no-deps", "orders-service")
         wait_for(lambda: status(base) == 200, 30)
@@ -129,6 +137,9 @@ def run(base: str, detect: bool = False) -> list[Step]:
     record("stack left healthy", final == 0, f"{final:.0%} errors at the end")
     if watcher:
         watcher.stop()
+    print("timings: " + json.dumps(timings), flush=True)
+    if os.environ.get("GITHUB_ACTIONS"):
+        print(f"::notice::deploy timings {json.dumps(timings)}", flush=True)
     return steps
 
 

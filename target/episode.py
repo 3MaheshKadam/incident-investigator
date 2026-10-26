@@ -163,6 +163,7 @@ def run_live_episode(
     kind: str | None, variant: int, workdir: Path, db_rows: int = 1_000_000,
     samples: int = SAMPLES, interval: float = SAMPLE_S,
     inspect: Callable[[Stack, LiveEpisode], None] | None = None,
+    load_threads: int = 4,
 ) -> LiveEpisode:
     if kind is not None and kind not in LIVE_KINDS:
         raise ValueError(f"{kind!r} is not available on the live stack ({LIVE_KINDS})")
@@ -194,7 +195,7 @@ def run_live_episode(
         later(fault.at, _inject, stack, fault, rng)
 
     stack.start(db_path=Path(workdir) / f"shop-{db_rows}.sqlite")
-    load = Load(stack.url("api-gateway"))
+    load = Load(stack.url("api-gateway"), load_threads)
     metrics = {n: {m: [] for m in METRICS} for n in SERVICES}
     last_mem = {n: 0.0 for n in SERVICES}
     try:

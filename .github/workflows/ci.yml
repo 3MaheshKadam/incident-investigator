@@ -54,6 +54,8 @@ jobs:
       # Start the containers for real, then ship a bad release, roll back and kill a service.
       - run: docker compose --profile load up -d --build
       - run: python -m deploy.verify --wait 120 --detect
+      - run: |
+          echo "::notice::container resources $(docker stats --no-stream --format '{{.Name}} cpu={{.CPUPerc}} mem={{.MemUsage}}' | tr '\n' ';')"
       # On failure, copy the container state and logs into the run's annotations.
       - if: failure()
         run: |
