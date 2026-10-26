@@ -81,6 +81,9 @@ def serve(name: str, port: int, routes: dict[str, Handler]) -> None:
     metrics = Metrics()
 
     class Req(BaseHTTPRequestHandler):
+        protocol_version = "HTTP/1.1"  # keep connections open between requests
+        timeout = 60  # drop idle connections
+        disable_nagle_algorithm = True  # headers and body go out as separate small writes
         def log_message(self, *args) -> None:  # silence the default access log
             pass
 

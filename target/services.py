@@ -21,13 +21,9 @@ import urllib.request
 
 from target.common import Handler, log, serve
 from target.db import INDEX, QUERY
+from target.httpc import get_json
 
 SLOW_QUERY_MS = 60.0
-
-
-def get_json(url: str, timeout: float) -> tuple[int, dict]:
-    with urllib.request.urlopen(url, timeout=timeout) as r:
-        return r.status, json.loads(r.read() or b"{}")
 
 
 # ----- orders-db: a small SQL service over a real SQLite file ----------------------------------
