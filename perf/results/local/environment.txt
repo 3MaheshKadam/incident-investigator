@@ -1,0 +1,39 @@
+# Environment (2026-10-26T22:07:39+05:30)
+Host: native Linux (not WSL2); .wslconfig not applicable
+
+## OS
+PRETTY_NAME="Ubuntu 26.04 LTS"
+VERSION="26.04 (Resolute Raccoon)"
+kernel: Linux 7.0.0-28-generic #28-Ubuntu SMP PREEMPT_DYNAMIC Sun Jun 21 01:01:36 UTC 2026 x86_64
+
+## CPU
+CPU(s):                                  8
+Model name:                              11th Gen Intel(R) Core(TM) i5-11320H @ 3.20GHz
+Thread(s) per core:                      2
+Core(s) per socket:                      4
+Socket(s):                               1
+CPU(s) scaling MHz:                      69%
+CPU max MHz:                             4500.0000
+CPU min MHz:                             400.0000
+governor: powersave
+power_profile: balanced
+on_ac_power: 1
+
+## Memory
+               total        used        free      shared  buff/cache   available
+Mem:            30Gi       5.1Gi        22Gi       867Mi       4.6Gi        25Gi
+Swap:          8.0Gi          0B       8.0Gi
+
+## Tools
+Python 3.14.4
+Docker version 29.6.2, build dfc4efb
+Docker Compose version v5.3.1
+
+## docker info
+NCPU=8 MemTotal=32886874112 ServerVersion=29.6.2 StorageDriver=overlayfs CgroupVersion=2
+
+## git
+branch: feat/phase-a-perf commit: ccf03a5
+
+## load at capture
+ 22:07:39 up 12 min,  1 user,  load average: 1.25, 0.50, 0.27

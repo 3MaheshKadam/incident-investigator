@@ -1,0 +1,1 @@
+watching api-gateway, orders-service, inventory-service, orders-db (learning normal for the first 30 samples)
