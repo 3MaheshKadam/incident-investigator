@@ -130,3 +130,14 @@ def test_investigator_uses_the_gateway_on_a_broken_live_stack(tmp_path):
     row = investigate_live("dependency_outage", 0, llm, tmp_path, 3000, 100, 12, True)["row"]
     assert row["stop_reason"] == "report" and row["commands_run"] == 2 and row["commands_denied"] == 1
     assert int(row["audit"][0]["detail"]) > 0  # the gateway saw the real "connection refused" lines
+
+
+def test_seed_is_repeatable_and_creates_flags(tmp_path):
+    from target.seed import main
+
+    assert main([str(tmp_path), "--rows", "500"]) == 0
+    first = (tmp_path / "shop.sqlite").stat().st_mtime_ns
+    (tmp_path / "flags.json").write_text('{"x": true}')
+    assert main([str(tmp_path), "--rows", "500"]) == 0
+    assert (tmp_path / "shop.sqlite").stat().st_mtime_ns == first  # not rebuilt
+    assert json.loads((tmp_path / "flags.json").read_text()) == {"x": True}  # not reset

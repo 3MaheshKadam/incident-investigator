@@ -44,7 +44,11 @@ class CommandGateway:
 
     # ----- the agent's entry point ---------------------------------------------------------------
     def run(self, command: str) -> Result:
-        d = check(command, self.stack.log_dir, self.stack.ports, list(self.stack.ports))
+        refresh = getattr(self.stack, "refresh_logs", None)
+        if refresh:  # a stack whose logs live elsewhere (containers) copies them into log_dir first
+            refresh()
+        services = list(getattr(self.stack, "services", None) or self.stack.ports)
+        d = check(command, self.stack.log_dir, self.stack.ports, services)
         if d.verdict == ALLOW:
             out = self._execute(d.argv)
             self._log("ran", command, out[:200])

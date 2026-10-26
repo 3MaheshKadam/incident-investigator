@@ -153,6 +153,37 @@ many were denied, and how many changes were proposed for approval. A test drives
 scripted model (`LIVE_TESTS=1 pytest tests/test_target.py`). No real-model score on the live stack
 exists yet; the numbers go here once the run is done.
 
+## Deploying the stack (containers)
+
+The real stack also runs as containers: `docker-compose.yml` starts the gateway, orders service,
+inventory service and database from `Dockerfile.stack`. The containers have healthchecks, a
+restart policy, memory and process limits, a read-only root, dropped capabilities, and only the
+gateway is published (on localhost).
+
+```bash
+docker compose up -d --build
+python -m deploy.verify --wait 120     # checks, then breaks and repairs the deployment
+docker compose --profile load up -d    # optional steady traffic
+```
+
+`deploy.verify` checks that all four services are healthy and users can check out. It then
+deploys a buggy release (users see errors, and the bug is findable in the logs), rolls it back,
+crashes a service (the restart policy must bring it back), and confirms the stack ends healthy.
+CI runs this on a real Docker daemon in the `deploy` job. To ship the buggy release by hand, set
+`ORDERS_BUG=1` and run `docker compose up -d --no-deps orders-service`.
+
+The same detector and gateway work on the containers. `python -m deploy.watch` scrapes every
+service's `/metrics` (all four are published on localhost) and prints alerts. `DockerStack`
+lets the command gateway read container logs (copied from `docker compose logs`) and run approved
+restarts and rollbacks. `python -m deploy.verify --detect` (run with `--profile load`) also checks
+that the detector alerts on the bad release and that the gateway reads logs, refuses `rm -rf /`
+and holds a rollback until approved.
+
+Run it on one EC2 instance with `deploy/aws/deploy.sh` (step-by-step guide in `deploy/aws/README.md`; no secrets, SSH from your IP only, services bound to localhost).
+
+Not yet done: an actual cloud run, whose output goes into the write-up. A brief crash that the restart policy fixes in a
+second or two is too short for the detector's four-sample rule, so it is not asserted.
+
 ## Production-readiness checker
 
 `readiness/` checks that the deployment files are safe and consistent before anything ships. Every
