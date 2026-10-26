@@ -121,7 +121,10 @@ def serve(name: str, port: int, routes: dict[str, Handler]) -> None:
                     log(name, "INFO", f"GET {url.path} {status} {ms:.0f}ms")
             self._send(status, json.dumps(body).encode())
 
-    server = ThreadingHTTPServer((os.environ.get("BIND_HOST", "127.0.0.1"), port), Req)
+    class Server(ThreadingHTTPServer):
+        request_queue_size = 128  # the default of 5 drops connections under load (1 s TCP retry each)
+
+    server = Server((os.environ.get("BIND_HOST", "127.0.0.1"), port), Req)
     server.daemon_threads = True
     log(name, "INFO", f"{name} {os.environ.get('APP_VERSION', 'v1.0.0')} listening on :{port}")
     server.serve_forever()
