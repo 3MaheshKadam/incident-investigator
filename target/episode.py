@@ -164,6 +164,8 @@ def run_live_episode(
     samples: int = SAMPLES, interval: float = SAMPLE_S,
     inspect: Callable[[Stack, LiveEpisode], None] | None = None,
     load_threads: int = 4,
+    surge_at: int | None = None,
+    surge_threads: int = 24,
 ) -> LiveEpisode:
     if kind is not None and kind not in LIVE_KINDS:
         raise ValueError(f"{kind!r} is not available on the live stack ({LIVE_KINDS})")
@@ -196,6 +198,9 @@ def run_live_episode(
 
     stack.start(db_path=Path(workdir) / f"shop-{db_rows}.sqlite")
     load = Load(stack.url("api-gateway"), load_threads)
+    surge = Load(stack.url("api-gateway"), surge_threads)  # extra users arriving mid-run
+    if surge_at is not None:
+        later(surge_at, surge.start)
     metrics = {n: {m: [] for m in METRICS} for n in SERVICES}
     last_mem = {n: 0.0 for n in SERVICES}
     try:
@@ -218,6 +223,8 @@ def run_live_episode(
                 for metric, v in zip(METRICS, values, strict=True):
                     metrics[name][metric].append(round(v, 2))
         load.stop()
+        if surge_at is not None and surge._threads[0].is_alive():
+            surge.stop()
 
         def minute(t: float) -> float:
             return (t - t0) / interval
@@ -239,5 +246,7 @@ def run_live_episode(
         return episode
     finally:
         load.stop()
+        if surge_at is not None and surge._threads[0].is_alive():
+            surge.stop()
         stack.stop()
 

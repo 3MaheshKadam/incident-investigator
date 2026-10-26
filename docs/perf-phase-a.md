@@ -46,6 +46,19 @@ Throughput at 4 users went from about 280 to about 510 requests/s (+83%). The 2.
 - Live detection re-run after all three changes: **5 of 5 faults detected, 0 false alarms on the
   healthy run, 0 extra incidents** (`perf/results/live-detect-after.json`).
 
+## Follow-up: the pool kept every connection it ever opened
+
+Found independently by a run on a second machine and confirmed in the saved data: the SQLite
+pool from step 2 had no size limit, so orders-db memory grew with the busiest moment it had ever
+seen (29 MB at 1 user, 73 MB at 32, 87 MB at 64, with keep-alive) and never shrank. That looks like
+a leak. The pool is now capped (`DB_POOL_SIZE`, default 4). Pool sizes 2, 4 and 8 held orders-db at
+38-44 MB at 32-64 users against 65-103 MB unbounded, and their throughput was within run-to-run
+noise of the unbounded pool (one run per size, so small differences are not established).
+
+A healthy system with a traffic surge halfway through (`python -m perf.surge_check`, 4 -> 28 users)
+raised **no false alarm with either pool**, so the growth did not trip the detector in that test.
+The risk is real but not demonstrated; the memory growth itself is.
+
 ## What this does not show
 
 - The load generator runs on the same two CPUs, so it takes CPU from the stack. Above about 500

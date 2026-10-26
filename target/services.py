@@ -29,7 +29,9 @@ SLOW_QUERY_MS = 60.0
 # ----- orders-db: a small SQL service over a real SQLite file ----------------------------------
 def orders_db(port: int) -> dict[str, Handler]:
     path = os.environ["DB_PATH"]
-    pool: queue.LifoQueue[sqlite3.Connection] = queue.LifoQueue()  # reuse connections across requests
+    # Reuse connections across requests, but keep only a few: every open SQLite connection holds
+    # a page cache, so an unbounded pool grows with the busiest moment the service has ever seen.
+    pool: queue.LifoQueue[sqlite3.Connection] = queue.LifoQueue(int(os.environ.get("DB_POOL_SIZE", "4")))
 
     def query(q: dict[str, str]) -> tuple[int, dict]:
         try:
@@ -46,7 +48,10 @@ def orders_db(port: int) -> dict[str, Handler]:
         except BaseException:
             con.close()  # never return a connection in an unknown state
             raise
-        pool.put(con)
+        try:
+            pool.put_nowait(con)
+        except queue.Full:
+            con.close()
         return 200, {"rows": len(rows)}
 
     def drop_index(_: dict[str, str]) -> tuple[int, dict]:

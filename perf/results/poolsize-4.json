@@ -1,0 +1,110 @@
+{
+ "label": "poolsize-4",
+ "cpus": 2,
+ "rows": 200000,
+ "seconds": 5.0,
+ "results": [
+  {
+   "concurrency": 1,
+   "requests": 2018,
+   "rps": 403.6,
+   "p50_ms": 2.2,
+   "p95_ms": 3.8,
+   "p99_ms": 4.6,
+   "max_ms": 8.2,
+   "error_pct": 0.0,
+   "cpu_pct": {
+    "orders-db": 24.2,
+    "orders-service": 28.0,
+    "inventory-service": 6.6,
+    "api-gateway": 35.2
+   },
+   "services": {
+    "orders-db": {
+     "p95_ms": 0.1,
+     "rss_mb": 29.4
+    },
+    "orders-service": {
+     "p95_ms": 1.9,
+     "rss_mb": 23.7
+    },
+    "inventory-service": {
+     "p95_ms": 0.0,
+     "rss_mb": 23.4
+    },
+    "api-gateway": {
+     "p95_ms": 2.9,
+     "rss_mb": 23.5
+    }
+   }
+  },
+  {
+   "concurrency": 32,
+   "requests": 3096,
+   "rps": 614.6,
+   "p50_ms": 48.9,
+   "p95_ms": 85.2,
+   "p99_ms": 104.4,
+   "max_ms": 169.4,
+   "error_pct": 0.0,
+   "cpu_pct": {
+    "orders-db": 39.3,
+    "orders-service": 50.2,
+    "inventory-service": 9.3,
+    "api-gateway": 51.2
+   },
+   "services": {
+    "orders-db": {
+     "p95_ms": 5.3,
+     "rss_mb": 39.7
+    },
+    "orders-service": {
+     "p95_ms": 52.0,
+     "rss_mb": 25.7
+    },
+    "inventory-service": {
+     "p95_ms": 0.0,
+     "rss_mb": 24.4
+    },
+    "api-gateway": {
+     "p95_ms": 66.5,
+     "rss_mb": 25.1
+    }
+   }
+  },
+  {
+   "concurrency": 64,
+   "requests": 3040,
+   "rps": 599.5,
+   "p50_ms": 96.4,
+   "p95_ms": 180.5,
+   "p99_ms": 323.0,
+   "max_ms": 593.9,
+   "error_pct": 0.0,
+   "cpu_pct": {
+    "orders-db": 41.2,
+    "orders-service": 54.8,
+    "inventory-service": 8.5,
+    "api-gateway": 46.1
+   },
+   "services": {
+    "orders-db": {
+     "p95_ms": 14.2,
+     "rss_mb": 42.9
+    },
+    "orders-service": {
+     "p95_ms": 121.1,
+     "rss_mb": 27.4
+    },
+    "inventory-service": {
+     "p95_ms": 0.0,
+     "rss_mb": 24.6
+    },
+    "api-gateway": {
+     "p95_ms": 164.3,
+     "rss_mb": 26.4
+    }
+   }
+  }
+ ]
+}
