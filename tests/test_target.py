@@ -209,3 +209,16 @@ def test_http_client_maps_status_and_timeout_like_urllib():
         for s in (bad, slow):
             s.shutdown()
             s.server_close()
+
+
+def test_loadgen_runs_with_only_the_target_package(tmp_path):
+    """The stack image copies only target/, so the load generator must not need the rest of the repo."""
+    import shutil
+    import subprocess
+    import sys
+    from pathlib import Path
+
+    shutil.copytree(Path(__file__).resolve().parents[1] / "target", tmp_path / "target")
+    r = subprocess.run([sys.executable, "-c", "import target.loadgen"], cwd=tmp_path,
+                       env={"PYTHONPATH": str(tmp_path)}, capture_output=True, text=True)
+    assert r.returncode == 0, r.stderr

@@ -8,7 +8,7 @@ from __future__ import annotations
 import argparse
 import time
 
-from target.episode import Load
+from target.load import Load
 
 
 def main(argv: list[str] | None = None) -> int:
