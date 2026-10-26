@@ -55,9 +55,29 @@ a leak. The pool is now capped (`DB_POOL_SIZE`, default 4). Pool sizes 2, 4 and 
 38-44 MB at 32-64 users against 65-103 MB unbounded, and their throughput was within run-to-run
 noise of the unbounded pool (one run per size, so small differences are not established).
 
-A healthy system with a traffic surge halfway through (`python -m perf.surge_check`, 4 -> 28 users)
-raised **no false alarm with either pool**, so the growth did not trip the detector in that test.
-The risk is real but not demonstrated; the memory growth itself is.
+A healthy system whose traffic jumps halfway through, after the detector has learned its baseline
+(`python -m perf.surge_check`), was run at two sizes:
+
+| Surge | Pool | Runs with a false alarm | What the alarm was |
+| --- | --- | --- | --- |
+| 4 -> 28 users (32 -> 223 req/s) | unbounded | 0 of 1 | none; orders-db memory rose 28 -> 40 MB, under the 30 MB rule |
+| 4 -> 28 users | capped (4) | 0 of 1 | none |
+| 4 -> 64 users | unbounded | 3 of 3 | api-gateway p95 latency about 47 ms (normally 6 ms) |
+| 4 -> 64 users | capped (4) | 1 of 3 | the same latency alert |
+
+What this shows and does not show:
+
+- **The suspected memory false alarm did not happen** in any of the six runs. Every alarm was a
+  *latency* alert on the gateway. The memory growth itself is real (verified above) and is fixed.
+- **A 16x traffic jump makes a healthy gateway slower** (p95 from about 5 ms to about 47 ms
+  through queueing), and the latency rule, which fires on a rise of 40 ms or more, reads that as
+  an incident. The detector cannot tell a slowdown caused by load from one caused by a fault.
+  This is a limitation of the current design, not of the pool.
+- **The pool cap may reduce the effect (1 of 3 against 3 of 3), but three runs each cannot
+  establish that**, and I have no mechanism to explain it. Not claimed.
+- The thresholds were not changed to make this go away. Tuning them against this one surge would
+  be fitting the test. A load-aware baseline (comparing latency to what is normal at the current
+  request rate) is the principled fix and is left for later.
 
 ## What this does not show
 
@@ -68,8 +88,8 @@ The risk is real but not demonstrated; the memory growth itself is.
   outside it, small ones would not be.
 - Nothing here measures containers. `deploy.verify` now prints crash-recovery and rollback
   timings, and CI prints container CPU and memory, but there is no Docker in this container.
-- The detector was only re-checked at the default traffic level. `perf.detect_bench` measures it at
-  several traffic levels and has not been run yet.
+- The detector was re-checked at the default traffic level and with the surge runs above. The
+  constant-load runs of `perf.detect_bench` on a second machine are still to be analysed.
 
 ## Next
 
