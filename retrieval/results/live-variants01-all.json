@@ -1,0 +1,197 @@
+{
+ "split": "all",
+ "embedder": "ngram",
+ "k": 5,
+ "evidence": {
+  "overall": {
+   "tail (default tool)": {
+    "coverage": 0.3,
+    "all_keys": 0.2,
+    "mrr": 0.3,
+    "n": 10
+   },
+   "tail errors+warnings": {
+    "coverage": 0.7,
+    "all_keys": 0.6,
+    "mrr": 0.55,
+    "n": 10
+   },
+   "logs-only bm25": {
+    "coverage": 0.35,
+    "all_keys": 0.3,
+    "mrr": 0.333,
+    "n": 10
+   },
+   "slate bm25": {
+    "coverage": 0.8,
+    "all_keys": 0.8,
+    "mrr": 0.433,
+    "n": 10
+   },
+   "logs-only ngram": {
+    "coverage": 0.45,
+    "all_keys": 0.3,
+    "mrr": 0.333,
+    "n": 10
+   },
+   "slate ngram": {
+    "coverage": 0.9,
+    "all_keys": 0.9,
+    "mrr": 0.4,
+    "n": 10
+   },
+   "logs-only rrf": {
+    "coverage": 0.45,
+    "all_keys": 0.3,
+    "mrr": 0.378,
+    "n": 10
+   },
+   "slate rrf": {
+    "coverage": 0.8,
+    "all_keys": 0.8,
+    "mrr": 0.433,
+    "n": 10
+   },
+   "logs-only rrf+": {
+    "coverage": 0.6,
+    "all_keys": 0.5,
+    "mrr": 0.433,
+    "n": 10
+   },
+   "slate rrf+": {
+    "coverage": 0.9,
+    "all_keys": 0.9,
+    "mrr": 0.475,
+    "n": 10
+   }
+  },
+  "per_kind": {
+   "tail (default tool)": {
+    "bad_deploy": 0.5,
+    "memory_leak": 0.0,
+    "slow_query": 0.0,
+    "feature_flag": 0.0,
+    "dependency_outage": 1.0
+   },
+   "tail errors+warnings": {
+    "bad_deploy": 0.5,
+    "memory_leak": 1.0,
+    "slow_query": 1.0,
+    "feature_flag": 0.0,
+    "dependency_outage": 1.0
+   },
+   "logs-only bm25": {
+    "bad_deploy": 0.0,
+    "memory_leak": 0.5,
+    "slow_query": 0.25,
+    "feature_flag": 0.0,
+    "dependency_outage": 1.0
+   },
+   "slate bm25": {
+    "bad_deploy": 1.0,
+    "memory_leak": 0.5,
+    "slow_query": 0.5,
+    "feature_flag": 1.0,
+    "dependency_outage": 1.0
+   },
+   "logs-only ngram": {
+    "bad_deploy": 0.5,
+    "memory_leak": 0.5,
+    "slow_query": 0.25,
+    "feature_flag": 0.0,
+    "dependency_outage": 1.0
+   },
+   "slate ngram": {
+    "bad_deploy": 1.0,
+    "memory_leak": 1.0,
+    "slow_query": 0.5,
+    "feature_flag": 1.0,
+    "dependency_outage": 1.0
+   },
+   "logs-only rrf": {
+    "bad_deploy": 0.5,
+    "memory_leak": 0.5,
+    "slow_query": 0.25,
+    "feature_flag": 0.0,
+    "dependency_outage": 1.0
+   },
+   "slate rrf": {
+    "bad_deploy": 1.0,
+    "memory_leak": 0.5,
+    "slow_query": 0.5,
+    "feature_flag": 1.0,
+    "dependency_outage": 1.0
+   },
+   "logs-only rrf+": {
+    "bad_deploy": 0.5,
+    "memory_leak": 1.0,
+    "slow_query": 0.5,
+    "feature_flag": 0.0,
+    "dependency_outage": 1.0
+   },
+   "slate rrf+": {
+    "bad_deploy": 1.0,
+    "memory_leak": 1.0,
+    "slow_query": 0.5,
+    "feature_flag": 1.0,
+    "dependency_outage": 1.0
+   }
+  }
+ },
+ "paraphrase": {
+  "bm25": {
+   "coverage": 0.55,
+   "all_keys": 0.55,
+   "mrr": 0.435,
+   "n": 20
+  },
+  "ngram": {
+   "coverage": 0.725,
+   "all_keys": 0.65,
+   "mrr": 0.57,
+   "n": 20
+  },
+  "rrf": {
+   "coverage": 0.725,
+   "all_keys": 0.65,
+   "mrr": 0.57,
+   "n": 20
+  }
+ },
+ "hypotheses": {
+  "runbook only": {
+   "top1": 0.8,
+   "top3": 1,
+   "mrr": 0.867,
+   "n": 10
+  },
+  "history only": {
+   "top1": 0.8,
+   "top3": 1,
+   "mrr": 0.867,
+   "n": 10
+  },
+  "history + runbook": {
+   "top1": 1,
+   "top3": 1,
+   "mrr": 1.0,
+   "n": 10
+  },
+  "unseen kind, history only": {
+   "top1": 0,
+   "top3": 0,
+   "mrr": 0.182,
+   "n": 10
+  },
+  "unseen kind, history + runbook": {
+   "top1": 0.6,
+   "top3": 0.8,
+   "mrr": 0.74,
+   "n": 10
+  },
+  "chance": {
+   "top1": 0.167,
+   "top3": 0.5
+  }
+ }
+}
