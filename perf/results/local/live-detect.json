@@ -1,0 +1,104 @@
+[
+ {
+  "id": "bad_deploy-0",
+  "kind": "bad_deploy",
+  "detected": true,
+  "ttd_samples": 3,
+  "alert": "ALERT [critical] api-gateway: error rate 10% (normally 0.0%) since 2026-03-10T02:49:00Z",
+  "extra_incidents": 0,
+  "suspect_changes": 2
+ },
+ {
+  "id": "bad_deploy-1",
+  "kind": "bad_deploy",
+  "detected": true,
+  "ttd_samples": 3,
+  "alert": "ALERT [warning] api-gateway: error rate 10% (normally 0.0%) since 2026-03-10T02:51:00Z",
+  "extra_incidents": 0,
+  "suspect_changes": 1
+ },
+ {
+  "id": "memory_leak-0",
+  "kind": "memory_leak",
+  "detected": true,
+  "ttd_samples": -50,
+  "alert": "ALERT [warning] inventory-service: memory 63MB (normally 26MB) since 2026-03-10T03:00:00Z",
+  "extra_incidents": 0,
+  "suspect_changes": 0
+ },
+ {
+  "id": "memory_leak-1",
+  "kind": "memory_leak",
+  "detected": true,
+  "ttd_samples": -54,
+  "alert": "ALERT [warning] inventory-service: memory 62MB (normally 26MB) since 2026-03-10T02:54:00Z",
+  "extra_incidents": 0,
+  "suspect_changes": 0
+ },
+ {
+  "id": "slow_query-0",
+  "kind": "slow_query",
+  "detected": true,
+  "ttd_samples": 29,
+  "alert": "ALERT [warning] api-gateway: p95 latency 48ms (normally 2ms) since 2026-03-10T03:21:00Z",
+  "extra_incidents": 0,
+  "suspect_changes": 0
+ },
+ {
+  "id": "slow_query-1",
+  "kind": "slow_query",
+  "detected": true,
+  "ttd_samples": 7,
+  "alert": "ALERT [warning] api-gateway: p95 latency 44ms (normally 2ms) since 2026-03-10T03:02:00Z",
+  "extra_incidents": 0,
+  "suspect_changes": 0
+ },
+ {
+  "id": "feature_flag-0",
+  "kind": "feature_flag",
+  "detected": true,
+  "ttd_samples": 6,
+  "alert": "ALERT [warning] api-gateway: error rate 9% (normally 0.0%) since 2026-03-10T02:49:00Z",
+  "extra_incidents": 0,
+  "suspect_changes": 2
+ },
+ {
+  "id": "feature_flag-1",
+  "kind": "feature_flag",
+  "detected": true,
+  "ttd_samples": 6,
+  "alert": "ALERT [warning] api-gateway: error rate 9% (normally 0.0%) since 2026-03-10T02:52:00Z",
+  "extra_incidents": 0,
+  "suspect_changes": 1
+ },
+ {
+  "id": "dependency_outage-0",
+  "kind": "dependency_outage",
+  "detected": true,
+  "ttd_samples": 3,
+  "alert": "ALERT [critical] api-gateway: error rate 38% (normally 0.0%) since 2026-03-10T02:48:00Z",
+  "extra_incidents": 0,
+  "suspect_changes": 1
+ },
+ {
+  "id": "dependency_outage-1",
+  "kind": "dependency_outage",
+  "detected": true,
+  "ttd_samples": 3,
+  "alert": "ALERT [critical] api-gateway: error rate 40% (normally 0.0%) since 2026-03-10T02:56:00Z",
+  "extra_incidents": 0,
+  "suspect_changes": 0
+ },
+ {
+  "id": "healthy-0",
+  "kind": null,
+  "false_alarms": 0,
+  "alerts": []
+ },
+ {
+  "id": "healthy-1",
+  "kind": null,
+  "false_alarms": 0,
+  "alerts": []
+ }
+]

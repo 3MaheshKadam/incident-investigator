@@ -1,0 +1,16 @@
+PASS  all services healthy: 4/4 healthy
+PASS  users can check out: 0% errors on 40 requests
+PASS  bad release is visible to users: 20% errors after deploying the buggy release
+PASS  detector raises an alert for the bad release: ALERT [critical] api-gateway: error rate 20% (normally 0.0%) since 2026-03-10T03:11:00Z
+PASS  the bug is findable in the logs: AttributeError in orders-service logs
+PASS  gateway reads container logs: 12 AttributeError lines
+PASS  gateway refuses a destructive command: rm -rf / denied
+PASS  gateway holds a rollback for approval: not run until approved
+PASS  approved rollback restores service: 0% errors after rollback
+PASS  a crash is visible to users: gateway returns errors while orders-service is down
+PASS  crashed service is restarted by policy: recovered without human action in 0.8s
+PASS  stack left healthy: 0% errors at the end
+timings: {"bad_release_to_alert_s": 17.0, "approve_to_healthy_s": 15.7, "crash_to_recovery_s": 0.8}
+
+12/12 checks passed
+exit=0

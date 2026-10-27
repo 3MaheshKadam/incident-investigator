@@ -1,0 +1,3 @@
+# load: target.loadgen run on the HOST against 127.0.0.1:8080, 4 threads
+watching api-gateway, orders-service, inventory-service, orders-db (learning normal for the first 30 samples)
+exit=0

@@ -1,0 +1,6 @@
+CONTAINER ID   NAME                       CPU %     MEM USAGE / LIMIT   MEM %     NET I/O           BLOCK I/O     PIDS
+73071abe71dc   shop-orders-service-1      0.01%     16.56MiB / 256MiB   6.47%     47.6kB / 41.8kB   0B / 0B       2
+91ec79ecf4d1   shop-loadgen-1             0.00%     0B / 0B             0.00%     0B / 0B           0B / 0B       0
+8bb0c3817fb2   shop-api-gateway-1         0.01%     16.29MiB / 256MiB   6.36%     267kB / 277kB     94.2kB / 0B   1
+b0c895881b5f   shop-inventory-service-1   0.02%     16.23MiB / 256MiB   6.34%     100kB / 145kB     0B / 0B       2
+c5c7338b8893   shop-orders-db-1           17.38%    18.22MiB / 256MiB   7.12%     194kB / 252kB     0B / 0B       2
