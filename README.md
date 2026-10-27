@@ -201,6 +201,9 @@ investigator tools, `find_evidence` and `suggest_hypotheses`, are switched on wi
     python -m retrieval.eval --split dev            # no model needed
     python -m evals.run --split dev --retrieval     # with a model
 
+    python -m evals.history_poison                  # poisoned past incidents, no model needed
+    python -m evals.attack_run --split dev --retrieval   # the 18 attacks with the retrieval tools on
+
 Results, design decisions and limits are in [docs/retrieval-phase-b.md](docs/retrieval-phase-b.md).
 
 ## Production-readiness checker

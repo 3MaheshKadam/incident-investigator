@@ -80,9 +80,34 @@ Root cause category ranking (top-1 / top-3):
 - **No language model was involved.** Whether the tools help the investigator is a separate question,
   answered by `python -m evals.run --split dev --retrieval` against the same run without the flag.
 
-## Security note (for Phase C)
+## Poisoned history (`python -m evals.history_poison`, no model needed)
 
-The past-incident entries are text derived from earlier incidents' logs, and tool output is
-untrusted. Poisoning that history is a new attack path: a planted instruction in a past incident
-reaches the model through `suggest_hypotheses`. Tool output already goes through the guard; whether
-that holds for this path is a Phase C measurement, not something assumed here.
+The past-incident entries come from earlier incidents, so a planted or corrupted entry is a new way
+to mislead the investigator. I measured three plants against all 24 incidents and every wrong label
+(120 runs each; `retrieval/results/history-poison.json`):
+
+| Plant | First "similar past incident" shown | Runbook lead changed | Injected sentence reached the model |
+|---|---|---|---|
+| copy of the incident's own signature, wrong label | **100%** (the tool flags every one as disagreeing with the runbook) | 0% | 0% |
+| same, plus a prompt-injection sentence | 100%, flagged | 0% | 0% |
+| only the incident's alert wording, wrong label | 0% (it ranks third; two are shown) | 0% | 0% |
+
+- **Prompt injection through history is closed by construction, not by filtering.** The tool prints
+  a past incident's id and label, never its text, so a sentence planted in the text has nowhere to
+  go. A test checks the detector would fire if the text did appear.
+- **Label poisoning works against ranking.** The strongest plant wins the similar-incident list
+  every time. A knowledge base that fused runbook and history into one ranking fell from 96% to 0%
+  top-1 under that plant. That is why the runbook decides the lead and history is shown separately.
+- **The defense is a disagreement flag, and it is only a flag.** Each past incident whose label
+  differs from the runbook's lead is marked "(disagrees with the runbook's top lead)". Whether a
+  model is misled anyway, or whether the flag makes it more cautious, needs a run with a model; this
+  measurement stops at what the tool prints.
+- **The strong plant needs the target's logs.** An attacker who can only see the alert (third row)
+  does not reach the list. I have not tried partial copies between those two extremes.
+- **Where it matters most:** the runbook is hand-written here. If the runbook were also editable
+  by whoever writes the history, the flag would protect nothing.
+
+## Remaining question for Phase C
+
+What a model does with a poisoned-but-flagged lead is not measured yet. It needs the 18 existing
+attacks and these plants run through a real model, with and without `--retrieval`.
