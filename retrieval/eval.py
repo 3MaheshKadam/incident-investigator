@@ -41,13 +41,13 @@ PARAPHRASES = {
 }
 
 
-def load(split: str) -> list[dict]:
-    entries = json.loads((DATA / "manifest.json").read_text())["scenarios"]
+def load(split: str, data_dir: Path = DATA) -> list[dict]:
+    entries = json.loads((data_dir / "manifest.json").read_text())["scenarios"]
     return [e for e in entries if split == "all" or e["split"] == split]
 
 
-def answer(sid: str) -> dict:
-    return json.loads((DATA / sid / "answer.json").read_text())
+def answer(sid: str, data_dir: Path = DATA) -> dict:
+    return json.loads((data_dir / sid / "answer.json").read_text())
 
 
 def score_texts(texts: list[str], keys: list[str]) -> tuple[float, bool, float]:
@@ -67,12 +67,12 @@ def summarize(rows: list[tuple[float, bool, float]]) -> dict:
             "mrr": round(mean(r[2] for r in rows), 3), "n": len(rows)}
 
 
-def evidence_eval(scen: list[dict], embedder_spec: str) -> dict:
+def evidence_eval(scen: list[dict], embedder_spec: str, data_dir: Path = DATA) -> dict:
     emb = make_embedder(embedder_spec)
     rows: dict[str, list] = defaultdict(list)
     per_kind: dict[str, dict[str, list]] = defaultdict(lambda: defaultdict(list))
     for e in scen:
-        data, keys = ScenarioData(DATA / e["id"]), answer(e["id"])["evidence_keys"]
+        data, keys = ScenarioData(data_dir / e["id"]), answer(e["id"], data_dir)["evidence_keys"]
         r = EvidenceRetriever(data, emb)
         runs = {
             "tail (default tool)": tail_lines(data, K),
@@ -89,11 +89,11 @@ def evidence_eval(scen: list[dict], embedder_spec: str) -> dict:
             "per_kind": {n: {k: summarize(v)["coverage"] for k, v in kinds.items()} for n, kinds in per_kind.items()}}
 
 
-def paraphrase_eval(scen: list[dict], embedder_spec: str) -> dict:
+def paraphrase_eval(scen: list[dict], embedder_spec: str, data_dir: Path = DATA) -> dict:
     emb = make_embedder(embedder_spec)
     rows: dict[str, list] = defaultdict(list)
     for e in scen:
-        data, keys = ScenarioData(DATA / e["id"]), answer(e["id"])["evidence_keys"]
+        data, keys = ScenarioData(data_dir / e["id"]), answer(e["id"], data_dir)["evidence_keys"]
         r = EvidenceRetriever(data, emb)
         for q in PARAPHRASES[e["kind"]]:
             for m in ("bm25", "ngram", "rrf"):
@@ -102,13 +102,15 @@ def paraphrase_eval(scen: list[dict], embedder_spec: str) -> dict:
     return {m: summarize(v) for m, v in rows.items()}
 
 
-def hypothesis_eval(scen: list[dict], split: str, embedder_spec: str) -> dict:
+def hypothesis_eval(scen: list[dict], embedder_spec: str, data_dir: Path = DATA, history_dir: Path = DATA) -> dict:
+    """History is the dev split of `history_dir`. When the incidents being judged live in that same
+    directory an incident is left out of its own history; otherwise nothing is excluded (live
+    incident ids repeat the simulated ones, so comparing ids would drop unrelated history)."""
     emb = make_embedder(embedder_spec)
-    dev_ids = [e["id"] for e in load("dev")]
+    same = data_dir.resolve() == history_dir.resolve()
+    dev_ids = [e["id"] for e in load("dev", history_dir)]
     out: dict[str, dict] = {}
-    cache_sig = {e["id"]: signature(ScenarioData(DATA / e["id"])) for e in scen}
-    for e in load("dev"):
-        cache_sig.setdefault(e["id"], signature(ScenarioData(DATA / e["id"])))
+    cache_sig = {e["id"]: signature(ScenarioData(data_dir / e["id"])) for e in scen}
     scenarios = {
         "runbook only": (False, True, False),
         "history only": (True, False, False),
@@ -119,12 +121,12 @@ def hypothesis_eval(scen: list[dict], split: str, embedder_spec: str) -> dict:
     for name, (hist, book, unseen) in scenarios.items():
         ranks = []
         for e in scen:
-            truth = answer(e["id"])["root_cause_category"]
-            ids = [i for i in dev_ids if i != e["id"]] if hist else []
+            truth = answer(e["id"], data_dir)["root_cause_category"]
+            ids = [i for i in dev_ids if not (same and i == e["id"])] if hist else []
             if unseen:
-                ids = [i for i in ids if answer(i)["root_cause_category"] != truth]
-            kb = KnowledgeBase.build(DATA, ids, runbook=book, embedder=emb)
-            ranked = [h.category for h in kb.rank(cache_sig[e["id"]], exclude=e["id"])]
+                ids = [i for i in ids if answer(i, history_dir)["root_cause_category"] != truth]
+            kb = KnowledgeBase.build(history_dir, ids, runbook=book, embedder=emb)
+            ranked = [h.category for h in kb.rank(cache_sig[e["id"]])]
             ranks.append(ranked.index(truth) + 1)
         out[name] = {"top1": round(mean(r == 1 for r in ranks), 3), "top3": round(mean(r <= 3 for r in ranks), 3),
                      "mrr": round(mean(1 / r for r in ranks), 3), "n": len(ranks)}
@@ -144,16 +146,18 @@ def main(argv: list[str] | None = None) -> int:
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawTextHelpFormatter)
     p.add_argument("--split", choices=["dev", "heldout", "all"], default="dev")
     p.add_argument("--embedder", default="ngram", help="ngram | ollama[:model]")
+    p.add_argument("--data", type=Path, default=DATA, help="incidents to judge (default: the simulated set)")
     p.add_argument("--label", default="")
     p.add_argument("--out", type=Path, default=Path("retrieval/results"))
     args = p.parse_args(argv)
-    scen = load(args.split)
-    print(f"{len(scen)} incidents ({args.split}), embedder={args.embedder}, k={K}")
-    ev = evidence_eval(scen, args.embedder)
+    scen = load(args.split, args.data)
+    where = "" if args.data == DATA else f" from {args.data}, history from {DATA}"
+    print(f"{len(scen)} incidents ({args.split}){where}, embedder={args.embedder}, k={K}")
+    ev = evidence_eval(scen, args.embedder, args.data)
     show("Evidence retrieval", ev["overall"], ["coverage", "all_keys", "mrr"])
-    pa = paraphrase_eval(scen, args.embedder)
+    pa = paraphrase_eval(scen, args.embedder, args.data)
     show("Paraphrased queries (log-level ranking, top 5)", pa, ["coverage", "all_keys", "mrr"])
-    hy = hypothesis_eval(scen, args.split, args.embedder)
+    hy = hypothesis_eval(scen, args.embedder, args.data, DATA)
     show("Root cause ranking", hy, ["top1", "top3", "mrr"])
     if args.label:
         args.out.mkdir(parents=True, exist_ok=True)

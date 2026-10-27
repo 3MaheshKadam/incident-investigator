@@ -9,6 +9,7 @@ from agent.investigator import GuardLike, RunResult, run_investigation
 from agent.llm import LLM
 from agent.remediation import ApprovalGate, SimulatedSystem
 from agent.store import Store
+from agent.tools import Toolbox
 
 
 @dataclass
@@ -25,8 +26,9 @@ def investigate_and_propose(
     gate: ApprovalGate,
     max_steps: int = 12,
     guard: GuardLike | None = None,
+    box: Toolbox | None = None,
 ) -> PipelineOutcome:
-    result = run_investigation(llm, data, max_steps=max_steps, guard=guard)
+    result = run_investigation(llm, data, max_steps=max_steps, guard=guard, box=box)
     run_id = store.save_run(result)
     pid = gate.propose(data.id, result.report, run_id) if result.report else None
     return PipelineOutcome(run_id, pid, result)

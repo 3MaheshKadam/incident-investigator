@@ -23,9 +23,9 @@
     "n": 12
    },
    "slate bm25": {
-    "coverage": 0.917,
-    "all_keys": 0.833,
-    "mrr": 0.736,
+    "coverage": 0.958,
+    "all_keys": 0.917,
+    "mrr": 0.75,
     "n": 12
    },
    "logs-only ngram": {
@@ -35,9 +35,9 @@
     "n": 12
    },
    "slate ngram": {
-    "coverage": 0.5,
-    "all_keys": 0.5,
-    "mrr": 0.222,
+    "coverage": 0.958,
+    "all_keys": 0.917,
+    "mrr": 0.389,
     "n": 12
    },
    "logs-only rrf": {
@@ -47,9 +47,9 @@
     "n": 12
    },
    "slate rrf": {
-    "coverage": 0.667,
-    "all_keys": 0.583,
-    "mrr": 0.41,
+    "coverage": 0.958,
+    "all_keys": 0.917,
+    "mrr": 0.5,
     "n": 12
    },
    "logs-only rrf+": {
@@ -59,9 +59,9 @@
     "n": 12
    },
    "slate rrf+": {
-    "coverage": 0.833,
-    "all_keys": 0.75,
-    "mrr": 0.618,
+    "coverage": 0.958,
+    "all_keys": 0.917,
+    "mrr": 0.653,
     "n": 12
    }
   },
@@ -92,11 +92,11 @@
    },
    "slate bm25": {
     "bad_deploy": 1.0,
-    "memory_leak": 1.0,
+    "memory_leak": 0.75,
     "expired_certificate": 1.0,
     "slow_query": 1.0,
     "feature_flag": 1.0,
-    "dependency_outage": 0.5
+    "dependency_outage": 1.0
    },
    "logs-only ngram": {
     "bad_deploy": 0.5,
@@ -108,11 +108,11 @@
    },
    "slate ngram": {
     "bad_deploy": 1.0,
-    "memory_leak": 1.0,
-    "expired_certificate": 0.0,
-    "slow_query": 0.0,
+    "memory_leak": 0.75,
+    "expired_certificate": 1.0,
+    "slow_query": 1.0,
     "feature_flag": 1.0,
-    "dependency_outage": 0.0
+    "dependency_outage": 1.0
    },
    "logs-only rrf": {
     "bad_deploy": 0.5,
@@ -124,11 +124,11 @@
    },
    "slate rrf": {
     "bad_deploy": 1.0,
-    "memory_leak": 1.0,
-    "expired_certificate": 0.5,
-    "slow_query": 0.0,
+    "memory_leak": 0.75,
+    "expired_certificate": 1.0,
+    "slow_query": 1.0,
     "feature_flag": 1.0,
-    "dependency_outage": 0.5
+    "dependency_outage": 1.0
    },
    "logs-only rrf+": {
     "bad_deploy": 0.5,
@@ -140,11 +140,11 @@
    },
    "slate rrf+": {
     "bad_deploy": 1.0,
-    "memory_leak": 1.0,
+    "memory_leak": 0.75,
     "expired_certificate": 1.0,
-    "slow_query": 0.5,
+    "slow_query": 1.0,
     "feature_flag": 1.0,
-    "dependency_outage": 0.5
+    "dependency_outage": 1.0
    }
   }
  },
@@ -176,15 +176,15 @@
    "n": 12
   },
   "history only": {
-   "top1": 0.917,
-   "top3": 0.917,
-   "mrr": 0.938,
+   "top1": 1,
+   "top3": 1,
+   "mrr": 1.0,
    "n": 12
   },
   "history + runbook": {
-   "top1": 0.917,
-   "top3": 0.917,
-   "mrr": 0.938,
+   "top1": 1,
+   "top3": 1,
+   "mrr": 1.0,
    "n": 12
   },
   "unseen kind, history only": {
@@ -194,9 +194,9 @@
    "n": 12
   },
   "unseen kind, history + runbook": {
-   "top1": 0.083,
-   "top3": 0.417,
-   "mrr": 0.346,
+   "top1": 0.25,
+   "top3": 0.75,
+   "mrr": 0.524,
    "n": 12
   },
   "chance": {

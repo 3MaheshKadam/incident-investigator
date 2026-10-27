@@ -26,7 +26,7 @@ from retrieval.embed import Embedder, NgramEmbedder, cosine
 from retrieval.evidence import EvidenceRetriever
 from retrieval.fusion import rank_order, rrf
 
-ONSET_SCORE = 2.0  # a log message that first appeared at the alert, or a change shortly before it
+SIGNATURE_BURSTS = 3  # how many of the biggest new error/warning bursts describe an incident
 
 RUNBOOK = {
     "bad_deploy": "errors begin right after a deploy of the failing service; exceptions such as "
@@ -50,12 +50,11 @@ def mask_signature(text: str) -> str:
 
 
 def signature(data: ScenarioData, retriever: EvidenceRetriever | None = None) -> str:
-    """What changed around the alert: the alert's wording, new kinds of log message near its start,
-    and any deploy or config change just before it. Steady background messages are left out, because
-    every incident has them and they would make all incidents look alike."""
+    """What changed around the alert: its wording, the biggest new bursts of errors and warnings at its
+    start, and any deploy or config change just before it. Steady background messages and one-off
+    stray lines are left out: every incident has them, and they would make incidents look alike."""
     r = retriever or EvidenceRetriever(data)
-    sig = r.signal_scores(data.alert)
-    changed = [d for d, s in zip(r.docs, sig, strict=True) if s >= ONSET_SCORE and (d.level or d.kind != "log")]
+    changed = [*r.onset_docs(data.alert)[:SIGNATURE_BURSTS], *r.recent_changes(data.alert)]
     alert = re.sub(r"ALERT \[\w+\] [\w\-]+:", "", data.alert.split(" since ")[0])
     return mask_signature(" \n".join([alert, *(d.text for d in changed)]))
 
