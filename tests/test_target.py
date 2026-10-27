@@ -220,5 +220,5 @@ def test_loadgen_runs_with_only_the_target_package(tmp_path):
 
     shutil.copytree(Path(__file__).resolve().parents[1] / "target", tmp_path / "target")
     r = subprocess.run([sys.executable, "-c", "import target.loadgen"], cwd=tmp_path,
-                       env={"PYTHONPATH": str(tmp_path)}, capture_output=True, text=True)
+                       env={"PYTHONPATH": str(tmp_path)}, capture_output=True, text=True, check=False)
     assert r.returncode == 0, r.stderr

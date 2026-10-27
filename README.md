@@ -192,6 +192,17 @@ SQLite connection per query, a TCP connection per call), taking throughput at 4 
 280 to about 510 requests/s on a shared 2-CPU machine and removing multi-second tail latency. Full
 method, numbers and limits: `docs/perf-phase-a.md`.
 
+## Retrieval (Phase B)
+
+`retrieval/` ranks an incident's evidence (BM25, character n-gram or Ollama embeddings, reciprocal
+rank fusion) and suggests root cause categories from a runbook and past incidents. Two opt-in
+investigator tools, `find_evidence` and `suggest_hypotheses`, are switched on with `--retrieval`.
+
+    python -m retrieval.eval --split dev            # no model needed
+    python -m evals.run --split dev --retrieval     # with a model
+
+Results, design decisions and limits are in [docs/retrieval-phase-b.md](docs/retrieval-phase-b.md).
+
 ## Production-readiness checker
 
 `readiness/` checks that the deployment files are safe and consistent before anything ships. Every
