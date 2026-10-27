@@ -8,6 +8,7 @@ COPY gateway gateway
 COPY guard guard
 COPY monitor monitor
 COPY readiness readiness
+COPY retrieval retrieval
 COPY shop shop
 COPY target target
 COPY scenarios scenarios

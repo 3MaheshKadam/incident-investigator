@@ -71,3 +71,14 @@ def test_aws_scripts_have_valid_shell_syntax_and_no_secrets():
         assert subprocess.run(["bash", "-n", str(script)], check=False).returncode == 0, script.name
         text = script.read_text()
         assert "AKIA" not in text and "BEGIN" not in text  # no access keys or private keys
+
+
+def test_the_app_image_copies_every_package_pyproject_lists():
+    """`pip install .` fails in the image if a listed package directory was not copied in."""
+    import tomllib
+    from pathlib import Path
+
+    root = Path(__file__).resolve().parent.parent
+    packages = tomllib.loads((root / "pyproject.toml").read_text())["tool"]["setuptools"]["packages"]
+    copied = {ln.split()[1] for ln in (root / "Dockerfile").read_text().splitlines() if ln.startswith("COPY ")}
+    assert [p for p in packages if p not in copied] == []
