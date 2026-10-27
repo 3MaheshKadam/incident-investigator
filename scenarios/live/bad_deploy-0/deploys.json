@@ -1,0 +1,30 @@
+[
+ {
+  "service": "inventory-service",
+  "version": "v1.4.3",
+  "author": "li",
+  "commit_message": "Bump logging library patch version",
+  "ts": "2026-03-10T02:12:00Z"
+ },
+ {
+  "service": "api-gateway",
+  "version": "v4.18.7",
+  "author": "carlos",
+  "commit_message": "Bump logging library patch version",
+  "ts": "2026-03-10T02:15:00Z"
+ },
+ {
+  "service": "orders-service",
+  "version": "v1.6.1",
+  "author": "carlos",
+  "commit_message": "Fix typo in error message",
+  "ts": "2026-03-10T02:19:00Z"
+ },
+ {
+  "service": "orders-service",
+  "version": "v2.19.1",
+  "author": "dana",
+  "commit_message": "Refactor request handling and add currency conversion",
+  "ts": "2026-03-10T02:47:00Z"
+ }
+]

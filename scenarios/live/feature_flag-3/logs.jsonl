@@ -1,0 +1,617 @@
+{"ts": "2026-03-10T02:00:03Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 200 2ms"}
+{"ts": "2026-03-10T02:00:25Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:01:02Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:01:37Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:01:44Z", "service": "inventory-service", "level": "INFO", "msg": "GET /stock 200 0ms"}
+{"ts": "2026-03-10T02:02:11Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 200 3ms"}
+{"ts": "2026-03-10T02:02:20Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:02:33Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:02:42Z", "service": "inventory-service", "level": "INFO", "msg": "GET /stock 200 0ms"}
+{"ts": "2026-03-10T02:03:26Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 2ms"}
+{"ts": "2026-03-10T02:03:30Z", "service": "inventory-service", "level": "INFO", "msg": "GET /stock 200 0ms"}
+{"ts": "2026-03-10T02:03:45Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 200 3ms"}
+{"ts": "2026-03-10T02:04:03Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 200 3ms"}
+{"ts": "2026-03-10T02:04:18Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:04:46Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 2ms"}
+{"ts": "2026-03-10T02:05:00Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:05:02Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:05:33Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 2ms"}
+{"ts": "2026-03-10T02:06:04Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:06:24Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:06:27Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:06:40Z", "service": "inventory-service", "level": "INFO", "msg": "GET /stock 200 0ms"}
+{"ts": "2026-03-10T02:06:43Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:07:07Z", "service": "inventory-service", "level": "INFO", "msg": "GET /stock 200 0ms"}
+{"ts": "2026-03-10T02:07:07Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:07:24Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:07:24Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 2ms"}
+{"ts": "2026-03-10T02:07:30Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:07:56Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 2ms"}
+{"ts": "2026-03-10T02:08:20Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 200 3ms"}
+{"ts": "2026-03-10T02:08:32Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:08:49Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:09:28Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:09:42Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 200 3ms"}
+{"ts": "2026-03-10T02:10:43Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 2ms"}
+{"ts": "2026-03-10T02:11:00Z", "service": "inventory-service", "level": "ERROR", "msg": "container restarted: OOMKilled (exit code 137)"}
+{"ts": "2026-03-10T02:11:30Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:11:33Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:11:37Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 200 4ms"}
+{"ts": "2026-03-10T02:12:26Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:13:27Z", "service": "inventory-service", "level": "INFO", "msg": "GET /stock 200 0ms"}
+{"ts": "2026-03-10T02:13:31Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:13:49Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 2ms"}
+{"ts": "2026-03-10T02:15:55Z", "service": "inventory-service", "level": "INFO", "msg": "GET /stock 200 0ms"}
+{"ts": "2026-03-10T02:16:44Z", "service": "inventory-service", "level": "INFO", "msg": "GET /stock 200 0ms"}
+{"ts": "2026-03-10T02:17:13Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 2ms"}
+{"ts": "2026-03-10T02:17:25Z", "service": "inventory-service", "level": "INFO", "msg": "GET /stock 200 0ms"}
+{"ts": "2026-03-10T02:17:28Z", "service": "inventory-service", "level": "INFO", "msg": "GET /stock 200 0ms"}
+{"ts": "2026-03-10T02:17:37Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:17:45Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 2ms"}
+{"ts": "2026-03-10T02:18:00Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:19:22Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 1ms"}
+{"ts": "2026-03-10T02:20:00Z", "service": "inventory-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T02:20:56Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 200 3ms"}
+{"ts": "2026-03-10T02:21:20Z", "service": "inventory-service", "level": "INFO", "msg": "GET /stock 200 0ms"}
+{"ts": "2026-03-10T02:21:20Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 200 3ms"}
+{"ts": "2026-03-10T02:21:48Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:22:21Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 2ms"}
+{"ts": "2026-03-10T02:22:37Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:23:00Z", "service": "api-gateway", "level": "WARN", "msg": "slow query (412ms): SELECT id FROM sessions WHERE token = ?; plan: SEARCH sessions USING INDEX"}
+{"ts": "2026-03-10T02:23:02Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:23:45Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:24:02Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:24:19Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:24:48Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 2ms"}
+{"ts": "2026-03-10T02:25:37Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:25:40Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:25:56Z", "service": "inventory-service", "level": "INFO", "msg": "GET /stock 200 0ms"}
+{"ts": "2026-03-10T02:26:02Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 200 4ms"}
+{"ts": "2026-03-10T02:27:00Z", "service": "inventory-service", "level": "INFO", "msg": "GET /stock 200 0ms"}
+{"ts": "2026-03-10T02:28:26Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:28:26Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 2ms"}
+{"ts": "2026-03-10T02:28:42Z", "service": "inventory-service", "level": "INFO", "msg": "GET /stock 200 0ms"}
+{"ts": "2026-03-10T02:29:02Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:29:18Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 2ms"}
+{"ts": "2026-03-10T02:30:01Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:30:03Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 2ms"}
+{"ts": "2026-03-10T02:30:26Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:30:33Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:30:33Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 2ms"}
+{"ts": "2026-03-10T02:31:59Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 200 4ms"}
+{"ts": "2026-03-10T02:32:07Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 2ms"}
+{"ts": "2026-03-10T02:32:15Z", "service": "inventory-service", "level": "INFO", "msg": "GET /stock 200 0ms"}
+{"ts": "2026-03-10T02:32:35Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:32:39Z", "service": "inventory-service", "level": "INFO", "msg": "GET /stock 200 0ms"}
+{"ts": "2026-03-10T02:33:03Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:33:17Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:33:50Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 1ms"}
+{"ts": "2026-03-10T02:33:59Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 2ms"}
+{"ts": "2026-03-10T02:34:08Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:34:44Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:34:54Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 200 3ms"}
+{"ts": "2026-03-10T02:35:50Z", "service": "inventory-service", "level": "INFO", "msg": "GET /stock 200 0ms"}
+{"ts": "2026-03-10T02:36:39Z", "service": "inventory-service", "level": "INFO", "msg": "GET /stock 200 0ms"}
+{"ts": "2026-03-10T02:36:54Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 200 4ms"}
+{"ts": "2026-03-10T02:37:21Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 1ms"}
+{"ts": "2026-03-10T02:38:08Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 200 3ms"}
+{"ts": "2026-03-10T02:38:29Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:38:30Z", "service": "inventory-service", "level": "INFO", "msg": "GET /stock 200 0ms"}
+{"ts": "2026-03-10T02:40:06Z", "service": "inventory-service", "level": "INFO", "msg": "GET /stock 200 0ms"}
+{"ts": "2026-03-10T02:40:51Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:41:22Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:41:42Z", "service": "inventory-service", "level": "INFO", "msg": "GET /stock 200 0ms"}
+{"ts": "2026-03-10T02:42:05Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 2ms"}
+{"ts": "2026-03-10T02:42:15Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:43:03Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:44:00Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:44:10Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:44:33Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:44:40Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:48:40Z", "service": "inventory-service", "level": "INFO", "msg": "GET /stock 200 0ms"}
+{"ts": "2026-03-10T02:48:56Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:49:00Z", "service": "inventory-service", "level": "INFO", "msg": "GET /stock 200 0ms"}
+{"ts": "2026-03-10T02:49:21Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:49:29Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:49:57Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T02:49:57Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T02:50:20Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T02:50:20Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T02:51:03Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T02:51:03Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T02:51:28Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T02:51:28Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T02:51:29Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:51:52Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:52:08Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:52:08Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T02:52:08Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T02:52:21Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:52:35Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:52:44Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T02:52:44Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T02:53:21Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T02:53:21Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T02:53:48Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T02:53:48Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T02:54:04Z", "service": "inventory-service", "level": "INFO", "msg": "GET /stock 200 0ms"}
+{"ts": "2026-03-10T02:54:27Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T02:54:27Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T02:54:54Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 200 3ms"}
+{"ts": "2026-03-10T02:55:03Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T02:55:03Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T02:55:17Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:55:35Z", "service": "inventory-service", "level": "INFO", "msg": "GET /stock 200 0ms"}
+{"ts": "2026-03-10T02:55:41Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T02:55:41Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T02:56:05Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T02:56:05Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T02:56:49Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T02:56:49Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T02:57:26Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T02:57:26Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T02:57:54Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 2ms"}
+{"ts": "2026-03-10T02:57:56Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T02:57:57Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T02:58:07Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 2ms"}
+{"ts": "2026-03-10T02:58:27Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T02:58:27Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T02:59:10Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T02:59:10Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T02:59:40Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 200 3ms"}
+{"ts": "2026-03-10T02:59:41Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T02:59:41Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T02:59:58Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 2ms"}
+{"ts": "2026-03-10T03:00:12Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:00:12Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:00:26Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:00:55Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:00:55Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:01:29Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:01:29Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:02:00Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:02:00Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:02:21Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:02:28Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:02:28Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:02:55Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:03:09Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:03:09Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:03:37Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:03:37Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:03:43Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:04:06Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 2ms"}
+{"ts": "2026-03-10T03:04:15Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:04:15Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:04:51Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:04:51Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:05:12Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:05:22Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:05:22Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:05:38Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:05:55Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:05:55Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:06:07Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 2ms"}
+{"ts": "2026-03-10T03:06:25Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:06:34Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:06:34Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:07:04Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:07:04Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:07:31Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:07:37Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 2ms"}
+{"ts": "2026-03-10T03:07:39Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:07:40Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:08:10Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:08:10Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:08:52Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:08:52Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:08:53Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:08:53Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 200 3ms"}
+{"ts": "2026-03-10T03:09:22Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:09:22Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:09:35Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:09:39Z", "service": "inventory-service", "level": "INFO", "msg": "GET /stock 200 0ms"}
+{"ts": "2026-03-10T03:09:57Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:09:57Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:10:28Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:10:28Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:10:32Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 2ms"}
+{"ts": "2026-03-10T03:11:03Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:11:03Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:11:35Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:11:35Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:11:41Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 200 3ms"}
+{"ts": "2026-03-10T03:11:52Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:12:08Z", "service": "inventory-service", "level": "INFO", "msg": "GET /stock 200 0ms"}
+{"ts": "2026-03-10T03:12:09Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:12:10Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:12:25Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:12:42Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:12:42Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:12:57Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 2ms"}
+{"ts": "2026-03-10T03:13:21Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:13:21Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:13:21Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 500 401ms"}
+{"ts": "2026-03-10T03:13:31Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 2ms"}
+{"ts": "2026-03-10T03:13:55Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:13:55Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:14:33Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:14:33Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:15:05Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:15:05Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:15:09Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:15:16Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:15:19Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 200 3ms"}
+{"ts": "2026-03-10T03:15:33Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:15:35Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:15:35Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:16:12Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:16:12Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:16:24Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 200 3ms"}
+{"ts": "2026-03-10T03:16:52Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:16:52Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:17:23Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:17:23Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:17:52Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:17:52Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:18:23Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:18:26Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:18:26Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 500 400ms"}
+{"ts": "2026-03-10T03:18:26Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:18:37Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:19:08Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:19:08Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:19:37Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:19:37Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:19:37Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 500 401ms"}
+{"ts": "2026-03-10T03:19:53Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 200 3ms"}
+{"ts": "2026-03-10T03:20:06Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:20:06Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:20:43Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:20:43Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:21:18Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:21:18Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:21:52Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:21:52Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:22:32Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:22:32Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:23:04Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:23:04Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:23:17Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:23:17Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 3ms"}
+{"ts": "2026-03-10T03:23:35Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:23:35Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:24:14Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:24:14Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:24:46Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:24:46Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:25:25Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:25:25Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:25:35Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:25:59Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:25:59Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:26:20Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 200 3ms"}
+{"ts": "2026-03-10T03:26:23Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:26:23Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:26:39Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 200 4ms"}
+{"ts": "2026-03-10T03:27:01Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:27:01Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:27:10Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:27:32Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:27:32Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:27:44Z", "service": "inventory-service", "level": "INFO", "msg": "GET /stock 200 0ms"}
+{"ts": "2026-03-10T03:28:12Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:28:12Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:28:42Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:28:42Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:29:15Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:29:15Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:29:46Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:29:52Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:29:52Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:30:06Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:30:23Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:30:29Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:30:29Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:31:09Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:31:10Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:31:38Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:31:39Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:32:13Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:32:13Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:32:45Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:32:45Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:32:56Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:33:18Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:33:19Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 2ms"}
+{"ts": "2026-03-10T03:33:19Z", "service": "inventory-service", "level": "INFO", "msg": "GET /stock 200 0ms"}
+{"ts": "2026-03-10T03:33:21Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:33:21Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:33:36Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:33:36Z", "service": "inventory-service", "level": "INFO", "msg": "GET /stock 200 0ms"}
+{"ts": "2026-03-10T03:33:37Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:33:57Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:33:57Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:34:27Z", "service": "inventory-service", "level": "INFO", "msg": "GET /stock 200 0ms"}
+{"ts": "2026-03-10T03:34:32Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:34:32Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:34:45Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:34:48Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 2ms"}
+{"ts": "2026-03-10T03:35:01Z", "service": "inventory-service", "level": "INFO", "msg": "GET /stock 200 0ms"}
+{"ts": "2026-03-10T03:35:11Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:35:11Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:35:37Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:35:37Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:35:44Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 200 4ms"}
+{"ts": "2026-03-10T03:36:05Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:36:19Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:36:19Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:36:28Z", "service": "inventory-service", "level": "INFO", "msg": "GET /stock 200 0ms"}
+{"ts": "2026-03-10T03:36:51Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:36:51Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:37:19Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:37:19Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:38:01Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:38:01Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:38:12Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 200 3ms"}
+{"ts": "2026-03-10T03:38:34Z", "service": "inventory-service", "level": "INFO", "msg": "GET /stock 200 0ms"}
+{"ts": "2026-03-10T03:38:35Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:38:35Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:38:48Z", "service": "inventory-service", "level": "INFO", "msg": "GET /stock 200 0ms"}
+{"ts": "2026-03-10T03:38:52Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 200 3ms"}
+{"ts": "2026-03-10T03:39:10Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:39:10Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:39:44Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:39:44Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:39:47Z", "service": "inventory-service", "level": "INFO", "msg": "GET /stock 200 0ms"}
+{"ts": "2026-03-10T03:40:21Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:40:22Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:40:27Z", "service": "inventory-service", "level": "INFO", "msg": "GET /stock 200 0ms"}
+{"ts": "2026-03-10T03:40:47Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 2ms"}
+{"ts": "2026-03-10T03:40:50Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:40:50Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:40:53Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 200 3ms"}
+{"ts": "2026-03-10T03:41:01Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:41:34Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:41:34Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:41:37Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:41:37Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:42:06Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:42:06Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:42:34Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:42:35Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:43:12Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:43:12Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:43:56Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:43:57Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:44:25Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:44:25Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:44:52Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 200 2ms"}
+{"ts": "2026-03-10T03:45:00Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:45:00Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:45:01Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:45:32Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:45:32Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:45:57Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:46:10Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:46:10Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:46:22Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:46:43Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:46:43Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:46:48Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 2ms"}
+{"ts": "2026-03-10T03:46:53Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:47:16Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:47:16Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 500 400ms"}
+{"ts": "2026-03-10T03:47:16Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:47:18Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 2ms"}
+{"ts": "2026-03-10T03:47:33Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:47:50Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:47:50Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:48:24Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:48:24Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:48:54Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:48:54Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:49:07Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:49:28Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:49:28Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:50:00Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:50:05Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:50:05Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:50:45Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:50:46Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:50:46Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:51:12Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:51:18Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:51:18Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:51:49Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:51:49Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:52:23Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:52:23Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:52:49Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:52:49Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:52:52Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:53:25Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:53:25Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:53:51Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:53:57Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:54:00Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:54:00Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:54:04Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:54:14Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:54:27Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:54:36Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:54:36Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:55:02Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:55:02Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:55:44Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:55:44Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:55:49Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:55:59Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 2ms"}
+{"ts": "2026-03-10T03:56:00Z", "service": "inventory-service", "level": "INFO", "msg": "GET /stock 200 0ms"}
+{"ts": "2026-03-10T03:56:13Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 2ms"}
+{"ts": "2026-03-10T03:56:17Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:56:17Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:56:17Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 500 401ms"}
+{"ts": "2026-03-10T03:56:51Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:56:52Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:56:52Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 500 405ms"}
+{"ts": "2026-03-10T03:57:33Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:57:33Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:57:37Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 200 4ms"}
+{"ts": "2026-03-10T03:57:57Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:57:57Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:58:14Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 2ms"}
+{"ts": "2026-03-10T03:58:41Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:58:41Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:58:45Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:58:46Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 200 2ms"}
+{"ts": "2026-03-10T03:59:16Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:59:16Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:59:21Z", "service": "inventory-service", "level": "INFO", "msg": "GET /stock 200 0ms"}
+{"ts": "2026-03-10T03:59:23Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 200 3ms"}
+{"ts": "2026-03-10T03:59:49Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T03:59:49Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:59:49Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 500 401ms"}
+{"ts": "2026-03-10T04:00:25Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:00:25Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:01:03Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:01:03Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:01:34Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:01:34Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:01:56Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 200 3ms"}
+{"ts": "2026-03-10T04:02:05Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T04:02:09Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:02:10Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:02:42Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:02:42Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:03:11Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 2ms"}
+{"ts": "2026-03-10T04:03:17Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:03:17Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:03:49Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:03:49Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 500 400ms"}
+{"ts": "2026-03-10T04:03:49Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:03:58Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T04:04:24Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:04:24Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:04:35Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 200 3ms"}
+{"ts": "2026-03-10T04:04:53Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 200 4ms"}
+{"ts": "2026-03-10T04:05:03Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:05:03Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:05:31Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:05:31Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:05:35Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 200 3ms"}
+{"ts": "2026-03-10T04:05:38Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 2ms"}
+{"ts": "2026-03-10T04:06:12Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:06:12Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:06:37Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:06:37Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:07:04Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T04:07:19Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:07:19Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:07:23Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 2ms"}
+{"ts": "2026-03-10T04:07:37Z", "service": "inventory-service", "level": "INFO", "msg": "GET /stock 200 0ms"}
+{"ts": "2026-03-10T04:07:53Z", "service": "inventory-service", "level": "INFO", "msg": "GET /stock 200 0ms"}
+{"ts": "2026-03-10T04:07:55Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:07:55Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:08:30Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:08:30Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:08:45Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T04:09:05Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:09:05Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:09:34Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T04:09:39Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:09:39Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:10:05Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T04:10:05Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T04:10:10Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:10:10Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:10:23Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 1ms"}
+{"ts": "2026-03-10T04:10:39Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T04:10:50Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:10:50Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:11:08Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T04:11:22Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:11:22Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:11:37Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 2ms"}
+{"ts": "2026-03-10T04:11:57Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:11:57Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:12:35Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:12:35Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:13:08Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:13:08Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:13:38Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:13:38Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:14:14Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:14:14Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:14:48Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:14:48Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:15:29Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:15:29Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:16:02Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:16:02Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:16:42Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:16:42Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:17:04Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 200 3ms"}
+{"ts": "2026-03-10T04:17:06Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:17:06Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 500 400ms"}
+{"ts": "2026-03-10T04:17:07Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:17:44Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T04:17:49Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:17:50Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:17:57Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T04:18:22Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:18:22Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:18:40Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T04:18:57Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:18:57Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:18:57Z", "service": "inventory-service", "level": "INFO", "msg": "GET /stock 200 0ms"}
+{"ts": "2026-03-10T04:19:32Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:19:32Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:19:49Z", "service": "inventory-service", "level": "INFO", "msg": "GET /stock 200 0ms"}
+{"ts": "2026-03-10T04:20:08Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:20:09Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:20:38Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:20:38Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:20:58Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T04:21:03Z", "service": "inventory-service", "level": "INFO", "msg": "GET /stock 200 0ms"}
+{"ts": "2026-03-10T04:21:14Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:21:14Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:21:14Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 500 401ms"}
+{"ts": "2026-03-10T04:21:25Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T04:21:44Z", "service": "inventory-service", "level": "INFO", "msg": "GET /stock 200 0ms"}
+{"ts": "2026-03-10T04:21:49Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:21:49Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:22:24Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:22:24Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:22:33Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T04:22:53Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T04:22:53Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:22:53Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:23:31Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:23:32Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:24:09Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:24:09Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:24:45Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:24:45Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:24:56Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T04:25:13Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:25:13Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:25:34Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 2ms"}
+{"ts": "2026-03-10T04:25:48Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:25:48Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:26:29Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:26:29Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:26:34Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T04:27:00Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:27:00Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:27:15Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 200 3ms"}
+{"ts": "2026-03-10T04:27:35Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:27:35Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:28:05Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 1ms"}
+{"ts": "2026-03-10T04:28:08Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:28:08Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:28:24Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T04:28:44Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:28:44Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:29:23Z", "service": "orders-service", "level": "ERROR", "msg": "TimeoutError: timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T04:29:23Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}

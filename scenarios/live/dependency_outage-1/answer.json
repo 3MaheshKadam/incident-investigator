@@ -1,0 +1,15 @@
+{
+ "id": "dependency_outage-1",
+ "kind": "dependency_outage",
+ "root_cause_category": "dependency_outage",
+ "component": "inventory-service",
+ "evidence_keys": [
+  "connection refused"
+ ],
+ "incident_start": "2026-03-10T02:55:00Z",
+ "injected_at": "2026-03-10T02:55:00Z",
+ "correct_action": {
+  "type": "open_ticket",
+  "target": "inventory-service"
+ }
+}

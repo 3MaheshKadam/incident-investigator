@@ -1,0 +1,1 @@
+ALERT [warning] inventory-service: memory 57MB (normally 23MB) since 2026-03-10T02:59:00Z

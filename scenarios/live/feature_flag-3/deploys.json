@@ -1,0 +1,23 @@
+[
+ {
+  "service": "api-gateway",
+  "version": "v4.12.5",
+  "author": "dana",
+  "commit_message": "Tidy imports",
+  "ts": "2026-03-10T02:15:00Z"
+ },
+ {
+  "service": "orders-service",
+  "version": "v2.3.1",
+  "author": "tom",
+  "commit_message": "Fix typo in error message",
+  "ts": "2026-03-10T02:20:00Z"
+ },
+ {
+  "service": "inventory-service",
+  "version": "v3.1.8",
+  "author": "priya",
+  "commit_message": "Update documentation link in health endpoint",
+  "ts": "2026-03-10T02:25:00Z"
+ }
+]

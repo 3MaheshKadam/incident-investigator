@@ -1,0 +1,10 @@
+[
+ {
+  "service": "inventory-service",
+  "key": "log_level",
+  "old": "info",
+  "new": "info,debug",
+  "author": "li",
+  "ts": "2026-03-10T02:08:00Z"
+ }
+]

@@ -1,0 +1,23 @@
+[
+ {
+  "service": "api-gateway",
+  "version": "v1.4.6",
+  "author": "priya",
+  "commit_message": "Bump logging library patch version",
+  "ts": "2026-03-10T02:07:00Z"
+ },
+ {
+  "service": "inventory-service",
+  "version": "v4.18.1",
+  "author": "carlos",
+  "commit_message": "Add unit tests for date parsing",
+  "ts": "2026-03-10T02:10:00Z"
+ },
+ {
+  "service": "orders-service",
+  "version": "v3.11.2",
+  "author": "tom",
+  "commit_message": "Fix typo in error message",
+  "ts": "2026-03-10T02:18:00Z"
+ }
+]

@@ -1,0 +1,30 @@
+[
+ {
+  "service": "orders-service",
+  "version": "v4.10.0",
+  "author": "li",
+  "commit_message": "Add unit tests for date parsing",
+  "ts": "2026-03-10T02:09:00Z"
+ },
+ {
+  "service": "api-gateway",
+  "version": "v4.2.7",
+  "author": "dana",
+  "commit_message": "Update documentation link in health endpoint",
+  "ts": "2026-03-10T02:17:00Z"
+ },
+ {
+  "service": "inventory-service",
+  "version": "v4.15.9",
+  "author": "dana",
+  "commit_message": "Add unit tests for date parsing",
+  "ts": "2026-03-10T02:18:00Z"
+ },
+ {
+  "service": "orders-service",
+  "version": "v3.3.2",
+  "author": "priya",
+  "commit_message": "Refactor request handling and add currency conversion",
+  "ts": "2026-03-10T02:49:00Z"
+ }
+]

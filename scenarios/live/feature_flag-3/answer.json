@@ -1,0 +1,15 @@
+{
+ "id": "feature_flag-3",
+ "kind": "feature_flag",
+ "root_cause_category": "feature_flag",
+ "component": "orders-service",
+ "evidence_keys": [
+  "fast_checkout_path"
+ ],
+ "incident_start": "2026-03-10T02:50:00Z",
+ "injected_at": "2026-03-10T02:49:00Z",
+ "correct_action": {
+  "type": "toggle_feature_flag",
+  "target": "fast_checkout_path"
+ }
+}

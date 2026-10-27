@@ -13,7 +13,7 @@ from typing import Any, ClassVar
 
 from agent.data import ScenarioData
 from agent.tools import Toolbox
-from retrieval.embed import Embedder
+from retrieval.embed import Embedder, shared_embedder
 from retrieval.evidence import EvidenceRetriever
 from retrieval.kb import Entry, KnowledgeBase, signature
 
@@ -52,6 +52,7 @@ class RetrievalToolbox(Toolbox):
                  extra_history: list[Entry] | None = None):
         super().__init__(data)
         self.base = base
+        embedder = embedder or shared_embedder()  # RETRIEVAL_EMBEDDER=ollama:nomic-embed-text to use real embeddings
         self.extra_specs = [*self.extra_specs, *getattr(base, "extra_specs", [])]  # e.g. run_command
         self.retriever = EvidenceRetriever(data, embedder)
         if history_ids is None:  # past incidents are the dev split, never this incident itself

@@ -1,0 +1,23 @@
+[
+ {
+  "service": "orders-service",
+  "version": "v4.2.0",
+  "author": "priya",
+  "commit_message": "Bump logging library patch version",
+  "ts": "2026-03-10T02:05:00Z"
+ },
+ {
+  "service": "inventory-service",
+  "version": "v3.10.2",
+  "author": "dana",
+  "commit_message": "Add unit tests for date parsing",
+  "ts": "2026-03-10T02:15:00Z"
+ },
+ {
+  "service": "api-gateway",
+  "version": "v1.6.7",
+  "author": "tom",
+  "commit_message": "Tidy imports",
+  "ts": "2026-03-10T02:20:00Z"
+ }
+]
