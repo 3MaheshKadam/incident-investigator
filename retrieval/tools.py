@@ -49,10 +49,13 @@ class RetrievalToolbox(Toolbox):
 
     def __init__(self, data: ScenarioData, data_dir: Path, history_ids: list[str] | None = None,
                  embedder: Embedder | None = None, base: Toolbox | None = None,
-                 extra_history: list[Entry] | None = None):
+                 extra_history: list[Entry] | None = None, kb_embedder: Embedder | None = None):
         super().__init__(data)
         self.base = base
-        embedder = embedder or shared_embedder()  # RETRIEVAL_EMBEDDER=ollama:nomic-embed-text to use real embeddings
+        # `embedder` serves query-driven evidence search: RETRIEVAL_EMBEDDER=ollama:nomic-embed-text turns on real
+        # embeddings there. The knowledge base (hypotheses, past incidents) stays on the offline n-gram embedder
+        # unless one is passed: real embeddings did not help it consistently (docs/retrieval-phase-b.md).
+        embedder = embedder or shared_embedder()
         self.extra_specs = [*self.extra_specs, *getattr(base, "extra_specs", [])]  # e.g. run_command
         self.retriever = EvidenceRetriever(data, embedder)
         if history_ids is None:  # past incidents are the dev split, never this incident itself
@@ -61,9 +64,9 @@ class RetrievalToolbox(Toolbox):
         # An incident is left out of its own history, matched by folder: live incidents reuse the
         # simulated ids, so matching by name would drop an unrelated past incident.
         own = {i for i in history_ids if (data_dir / i).resolve() == data.path.resolve()}
-        self.kb = KnowledgeBase.build(data_dir, [i for i in history_ids if i not in own], embedder=embedder)
+        self.kb = KnowledgeBase.build(data_dir, [i for i in history_ids if i not in own], embedder=kb_embedder)
         if extra_history:  # entries that did not come from the manifest, e.g. a poisoned one in a test
-            self.kb = KnowledgeBase([*self.kb.entries, *extra_history], embedder)
+            self.kb = KnowledgeBase([*self.kb.entries, *extra_history], kb_embedder)
         self.sig = signature(data, self.retriever)
 
     def call(self, name: str, args: dict[str, Any]) -> str:

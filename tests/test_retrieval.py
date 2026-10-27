@@ -221,3 +221,21 @@ def test_toolbox_embedder_follows_the_retrieval_embedder_setting(monkeypatch):
     monkeypatch.delenv("RETRIEVAL_EMBEDDER")
     assert shared_embedder().name == "ngram"
     shared_embedder.cache_clear()
+
+
+def test_the_knowledge_base_stays_on_the_offline_embedder_when_evidence_search_uses_another(monkeypatch):
+    class Spy:
+        name = "spy"
+
+        def __init__(self):
+            self.seen = 0
+
+        def embed(self, texts):
+            self.seen += len(texts)
+            return [{hash(t) % 97: 1.0} for t in texts]
+
+    spy = Spy()
+    box = RetrievalToolbox(ScenarioData(DATA / "bad_deploy-0"), DATA, embedder=spy)
+    assert box.kb.embedder.name == "ngram" and box.retriever.embedder is spy and spy.seen > 0
+    box.find_evidence("null pointer")
+    assert RetrievalToolbox(ScenarioData(DATA / "bad_deploy-0"), DATA, kb_embedder=spy).kb.embedder is spy
