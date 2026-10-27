@@ -139,8 +139,27 @@ tables below the "ngram" rows are the embedder-only ranking, so with nomic they 
   difference. It is a direction, not a finding. The real-stack incidents with nomic are the next
   measurement: `python -m retrieval.eval --split heldout --data scenarios/live --embedder ollama:nomic-embed-text`.
 
-To use real embeddings in the investigator's tools, set `RETRIEVAL_EMBEDDER=ollama:nomic-embed-text`
-(and `OLLAMA_BASE_URL` if Ollama is on another machine) in `.env`.
+**On the 10 held-out real-stack incidents** (`retrieval/results/nomic-live-heldout.json`, same incidents as the
+character n-gram run):
+
+| | BM25 | character n-grams | nomic-embed-text |
+|---|---|---|---|
+| paraphrased queries, embedder only: coverage / MRR | 0.55 / 0.49 | 0.73 / 0.60 | **0.80 / 0.65** |
+| the slate | 1.00 | 1.00 | 1.00 |
+| past incidents only, top-1 | | 80% | **60%** |
+| runbook + past incidents, kind with no past incident, top-1 | | 60% | **40%** |
+| runbook only, top-1 | | 80% | 80% |
+
+- **Nearly all the evidence gain comes from the cheap offline embedder.** On real logs it moves paraphrased
+  coverage from 0.55 to 0.73; nomic adds about one more query of 20.
+- **For ranking root causes, neural embeddings were not consistently better.** The kind-with-no-history measure
+  rose from 25% to 50% on the generated dev split and fell from 60% to 40% on the real-stack incidents.
+  Each is a few incidents, so there is no consistent effect.
+
+So the tools use real embeddings for query-driven evidence search only (`find_evidence`), and the knowledge
+base stays on the offline n-gram embedder, which is stable and needs no network. Set
+`RETRIEVAL_EMBEDDER=ollama:nomic-embed-text` (and `OLLAMA_BASE_URL` if Ollama is on another machine) in `.env`
+for the evidence search; pass `kb_embedder` to `RetrievalToolbox` to change the knowledge base.
 
 ## Poisoned history (`python -m evals.history_poison`, no model needed)
 
