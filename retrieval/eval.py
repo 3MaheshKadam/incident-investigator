@@ -22,8 +22,9 @@ from pathlib import Path
 from statistics import mean
 
 from agent.data import ScenarioData
+from agent.env import load_dotenv
 from agent.tools import CATEGORIES
-from retrieval.embed import make_embedder
+from retrieval.embed import EmbedderUnavailable, make_embedder
 from retrieval.evidence import METHODS, EvidenceRetriever
 from retrieval.kb import KnowledgeBase, signature
 
@@ -150,10 +151,15 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--label", default="")
     p.add_argument("--out", type=Path, default=Path("retrieval/results"))
     args = p.parse_args(argv)
+    load_dotenv()
     scen = load(args.split, args.data)
     where = "" if args.data == DATA else f" from {args.data}, history from {DATA}"
     print(f"{len(scen)} incidents ({args.split}){where}, embedder={args.embedder}, k={K}")
-    ev = evidence_eval(scen, args.embedder, args.data)
+    try:
+        ev = evidence_eval(scen, args.embedder, args.data)
+    except EmbedderUnavailable as e:
+        print(f"error: {e}")
+        return 2
     show("Evidence retrieval", ev["overall"], ["coverage", "all_keys", "mrr"])
     pa = paraphrase_eval(scen, args.embedder, args.data)
     show("Paraphrased queries (log-level ranking, top 5)", pa, ["coverage", "all_keys", "mrr"])

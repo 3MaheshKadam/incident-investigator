@@ -176,3 +176,22 @@ def test_retrieval_tools_sit_alongside_another_toolbox_s_tools():
     assert box.call("run_command", {}) == "base:run_command"
     assert "NullPointer" in box.call("find_evidence", {"query": "null pointer"})
     assert len(RetrievalToolbox.extra_specs) == 2  # building one did not change the class default
+
+
+def test_ollama_embedder_uses_the_project_base_url_and_explains_failures(monkeypatch):
+    from retrieval.embed import EmbedderUnavailable
+
+    monkeypatch.setenv("OLLAMA_BASE_URL", "http://windows-box:11434/")
+    assert OllamaEmbedder().host == "http://windows-box:11434"
+    assert OllamaEmbedder(host="http://x:1").host == "http://x:1"
+
+    def missing_model(req: httpx.Request) -> httpx.Response:
+        return httpx.Response(404, json={"error": "model not found"})
+
+    def down(req: httpx.Request) -> httpx.Response:
+        raise httpx.ConnectError("refused", request=req)
+
+    for handler, hint in ((missing_model, "ollama pull nomic-embed-text"), (down, "OLLAMA_BASE_URL")):
+        emb = OllamaEmbedder(client=httpx.Client(transport=httpx.MockTransport(handler)))
+        with pytest.raises(EmbedderUnavailable, match=hint):
+            emb.embed(["x"])
