@@ -149,3 +149,30 @@ def test_investigator_loop_runs_with_retrieval_tools_and_the_guard():
         assert r.report and r.report["root_cause_category"] == "bad_deploy"
         used = [t.get("name") for t in r.trace if t["type"] == "tool_call"]
         assert "suggest_hypotheses" in used and "find_evidence" in used
+
+
+def test_live_incident_with_a_simulated_id_keeps_the_simulated_incident_in_its_history(tmp_path):
+    """Live incidents reuse ids like bad_deploy-0. Leaving one out by name would drop real history."""
+    import shutil
+
+    shutil.copytree(DATA / "bad_deploy-0", tmp_path / "bad_deploy-0")
+    live = ScenarioData(tmp_path / "bad_deploy-0")
+    assert "bad_deploy-0" in {e.id for e in RetrievalToolbox(live, DATA).kb.entries}  # different folder
+    own = ScenarioData(DATA / "bad_deploy-0")
+    assert "bad_deploy-0" not in {e.id for e in RetrievalToolbox(own, DATA).kb.entries}  # same folder
+
+
+def test_retrieval_tools_sit_alongside_another_toolbox_s_tools():
+    from gateway.tool import RUN_COMMAND_SPEC
+
+    class Base:
+        extra_specs = (RUN_COMMAND_SPEC,)
+
+        def call(self, name, args):
+            return f"base:{name}"
+
+    box = RetrievalToolbox(ScenarioData(DATA / "bad_deploy-0"), DATA, base=Base())
+    assert {t["name"] for t in box.extra_specs} == {"find_evidence", "suggest_hypotheses", "run_command"}
+    assert box.call("run_command", {}) == "base:run_command"
+    assert "NullPointer" in box.call("find_evidence", {"query": "null pointer"})
+    assert len(RetrievalToolbox.extra_specs) == 2  # building one did not change the class default

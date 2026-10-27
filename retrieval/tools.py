@@ -45,18 +45,22 @@ SUGGEST_SPEC: dict[str, Any] = {
 
 
 class RetrievalToolbox(Toolbox):
-    extra_specs: ClassVar[list[dict[str, Any]]] = [FIND_EVIDENCE_SPEC, SUGGEST_SPEC]
+    extra_specs: ClassVar[list[dict[str, Any]]] = [FIND_EVIDENCE_SPEC, SUGGEST_SPEC]  # per instance once built
 
     def __init__(self, data: ScenarioData, data_dir: Path, history_ids: list[str] | None = None,
                  embedder: Embedder | None = None, base: Toolbox | None = None,
                  extra_history: list[Entry] | None = None):
         super().__init__(data)
         self.base = base
+        self.extra_specs = [*self.extra_specs, *getattr(base, "extra_specs", [])]  # e.g. run_command
         self.retriever = EvidenceRetriever(data, embedder)
         if history_ids is None:  # past incidents are the dev split, never this incident itself
             manifest = json.loads((data_dir / "manifest.json").read_text())["scenarios"]
             history_ids = [e["id"] for e in manifest if e["split"] == "dev"]
-        self.kb = KnowledgeBase.build(data_dir, [i for i in history_ids if i != data.id], embedder=embedder)
+        # An incident is left out of its own history, matched by folder: live incidents reuse the
+        # simulated ids, so matching by name would drop an unrelated past incident.
+        own = {i for i in history_ids if (data_dir / i).resolve() == data.path.resolve()}
+        self.kb = KnowledgeBase.build(data_dir, [i for i in history_ids if i not in own], embedder=embedder)
         if extra_history:  # entries that did not come from the manifest, e.g. a poisoned one in a test
             self.kb = KnowledgeBase([*self.kb.entries, *extra_history], embedder)
         self.sig = signature(data, self.retriever)

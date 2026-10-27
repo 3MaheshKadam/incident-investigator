@@ -20,16 +20,18 @@ from agent.data import ScenarioData
 from agent.env import load_dotenv
 from agent.investigator import run_investigation
 from agent.llm import make_llm
+from evals.run import DATA_DIR
 from evals.score import score_run, summarize
 from gateway import CommandGateway
 from gateway.tool import GatewayToolbox
 from guard.guard import Guard
 from monitor.record import record_episode
+from retrieval.tools import RetrievalToolbox
 from target.episode import LIVE_CONFIG, LIVE_KINDS, SAMPLES, run_live_episode
 
 
 def investigate_live(kind: str, variant: int, llm, workdir: Path, rows: int, samples: int,
-                     max_steps: int, use_guard: bool) -> dict:
+                     max_steps: int, use_guard: bool, retrieval: bool = False) -> dict:
     out: dict = {}
 
     def look(stack, ep) -> None:
@@ -41,8 +43,10 @@ def investigate_live(kind: str, variant: int, llm, workdir: Path, rows: int, sam
             data = ScenarioData(Path(tmp) / entry["id"])
             answer = json.loads((Path(tmp) / entry["id"] / "answer.json").read_text())
             gw = CommandGateway(stack)
-            result = run_investigation(llm, data, max_steps, Guard() if use_guard else None,
-                                       box=GatewayToolbox(data, gw))
+            box = GatewayToolbox(data, gw)
+            if retrieval:  # past incidents come from the simulated scenarios; this one is live
+                box = RetrievalToolbox(data, DATA_DIR, base=box)
+            result = run_investigation(llm, data, max_steps, Guard() if use_guard else None, box=box)
             row = score_run(result, answer)
             commands = [t for t in result.trace if t.get("name") == "run_command"]
             row["commands_run"] = len(commands)
@@ -64,6 +68,7 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--workdir", type=Path, default=Path(".runtime"))
     p.add_argument("--out", type=Path, default=Path("evals/reports/live"))
     p.add_argument("--no-guard", action="store_true")
+    p.add_argument("--retrieval", action="store_true", help="Also give the model the retrieval tools")
     args = p.parse_args(argv)
     load_dotenv()
     if os.environ.get("LLM_PROVIDER", "mock").lower() == "mock":
@@ -79,7 +84,7 @@ def main(argv: list[str] | None = None) -> int:
         for v in (int(x) for x in args.variants.split(",")):
             print(f"live {kind}-{v} ...", flush=True)
             r = investigate_live(kind, v, llm, args.workdir, args.rows, args.samples,
-                                 max_steps, not args.no_guard)
+                                 max_steps, not args.no_guard, args.retrieval)
             row = r["row"]
             rows.append(row)
             if "result" in r:
