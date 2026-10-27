@@ -83,7 +83,7 @@ Root cause category ranking (top-1 / top-3):
 ## Poisoned history (`python -m evals.history_poison`, no model needed)
 
 The past-incident entries come from earlier incidents, so a planted or corrupted entry is a new way
-to mislead the investigator. I measured three plants against all 24 incidents and every wrong label
+to mislead the investigator. I measured six plants against all 24 incidents and every wrong label
 (120 runs each; `retrieval/results/history-poison.json`):
 
 | Plant | First "similar past incident" shown | Runbook lead changed | Injected sentence reached the model |
@@ -91,6 +91,9 @@ to mislead the investigator. I measured three plants against all 24 incidents an
 | copy of the incident's own signature, wrong label | **100%** (the tool flags every one as disagreeing with the runbook) | 0% | 0% |
 | same, plus a prompt-injection sentence | 100%, flagged | 0% | 0% |
 | only the incident's alert wording, wrong label | 0% (it ranks third; two are shown) | 0% | 0% |
+| a random 25% of the signature's words, wrong label | 4% | 0% | 0% |
+| a random 50% of the words | 46% | 0% | 0% |
+| a random 75% of the words | 92% | 0% | 0% |
 
 - **Prompt injection through history is closed by construction, not by filtering.** The tool prints
   a past incident's id and label, never its text, so a sentence planted in the text has nowhere to
@@ -102,8 +105,11 @@ to mislead the investigator. I measured three plants against all 24 incidents an
   differs from the runbook's lead is marked "(disagrees with the runbook's top lead)". Whether a
   model is misled anyway, or whether the flag makes it more cautious, needs a run with a model; this
   measurement stops at what the tool prints.
-- **The strong plant needs the target's logs.** An attacker who can only see the alert (third row)
-  does not reach the list. I have not tried partial copies between those two extremes.
+- **How well the plant works depends on how much the attacker knows.** Knowing only the alert
+  gets nowhere; knowing half of what the logs say wins the list about half the time (46%); knowing
+  three quarters wins it 92%. A fused runbook-plus-history ranking falls from 96% to 88%, 54% and 8%
+  top-1 at 25%, 50% and 75%. Every plant that wins the list is flagged, and none moves the runbook.
+  Words were chosen at random with a fixed seed, so a smarter choice of words could do better.
 - **Where it matters most:** the runbook is hand-written here. If the runbook were also editable
   by whoever writes the history, the flag would protect nothing.
 
