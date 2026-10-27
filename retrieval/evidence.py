@@ -17,6 +17,7 @@ evidence lives in different sources and one mixed ranking lets the noisiest sour
 
 from __future__ import annotations
 
+import math
 from datetime import datetime
 
 from agent.data import ScenarioData
@@ -52,7 +53,10 @@ class EvidenceRetriever:
         for d in self.docs:
             s = 0.0
             if service and d.service == service:
-                s += 1.0
+                # The alert often fires on a different service from the one at fault (the front door
+                # sees errors that start elsewhere), so for deploys and config changes timing counts
+                # for more than the service name.
+                s += 1.0 if d.kind == "log" else 0.3
             s += SEVERITY.get(d.level, 0) * 0.5
             if d.kind in ("deploy", "config") and start:
                 gap = _minutes_before(d.last_ts, start)
@@ -84,15 +88,50 @@ class EvidenceRetriever:
             order = sorted(fused, key=lambda i: -fused[i])
         return [self.docs[i] for i in order[:k]]
 
-    def slate(self, query: str, method: str = "rrf+", logs: int = 4, deploys: int = 1,
-              configs: int = 1, alert: str | None = None) -> list[Doc]:
+    def onset_docs(self, alert: str) -> list[Doc]:
+        """Errors and warnings that first appeared around the alert's start, biggest bursts first.
+
+        A real symptom repeats (hundreds of identical errors); a stray unrelated message appears once.
+        Ranking by severity and repeat count puts the symptom ahead of that noise, on any service.
+        """
+        service, start = parse_alert(alert)
+        found = []
+        for d in self.docs:
+            if d.kind != "log" or d.level not in ("ERROR", "WARN") or not start:
+                continue
+            gap = _minutes_before(d.first_ts, start)
+            if gap is not None and -5 <= gap <= 20:
+                found.append((SEVERITY[d.level] * math.log(1 + d.count) + (0.5 if d.service == service else 0), d))
+        return [d for _, d in sorted(found, key=lambda x: -x[0])]
+
+    def recent_changes(self, alert: str, minutes: float = 15) -> list[Doc]:
+        """Deploys and config changes in the last few minutes before the alert, latest first."""
+        _, start = parse_alert(alert)
+        out = []
+        for d in self.docs:
+            gap = _minutes_before(d.last_ts, start) if start and d.kind in ("deploy", "config") else None
+            if gap is not None and 0 <= gap <= minutes:
+                out.append((gap, d))
+        return [d for _, d in sorted(out, key=lambda x: x[0])]
+
+    def slate(self, query: str, method: str = "bm25", logs: int = 4, deploys: int = 1,
+              configs: int = 1, alert: str | None = None, onset_slots: int = 2) -> list[Doc]:
         """The best few logs, then the deploy and config change that best fit the alert's timing.
 
-        Logs are ranked by the chosen method. Deploys and config changes are ranked by the structured
-        signal, because the alert text says nothing about them but their timing says a lot.
+        Logs: half by the chosen method (what the query is about), half by onset (what changed at the
+        alert's start, wherever it is). Deploys and config changes are ranked by the structured signal,
+        because the alert text says nothing about them but their timing says a lot.
         """
-        out = [d for d in self.search(query, method, k=len(self.docs), alert=alert) if d.kind == "log"][:logs]
-        sig = self.signal_scores(alert if alert is not None else query)
+        a = alert if alert is not None else query
+        by_method = [d for d in self.search(query, method, k=len(self.docs), alert=a) if d.kind == "log"]
+        out: list[Doc] = by_method[: max(0, logs - onset_slots)]
+        for d in self.onset_docs(a):
+            if len(out) < logs and d not in out:
+                out.append(d)
+        for d in by_method:
+            if len(out) < logs and d not in out:
+                out.append(d)
+        sig = self.signal_scores(a)
         for kind, n in (("deploy", deploys), ("config", configs)):
             ranked = sorted((i for i, d in enumerate(self.docs) if d.kind == kind), key=lambda i: -sig[i])
             out.extend(self.docs[i] for i in ranked[:n])
