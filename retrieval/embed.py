@@ -8,6 +8,7 @@ fuzzy lexical matcher, not a neural model. OllamaEmbedder asks a local model for
 from __future__ import annotations
 
 import math
+import os
 import re
 from collections import Counter
 from typing import Protocol
@@ -66,18 +67,33 @@ def hash_str(s: str) -> int:
     return h
 
 
+class EmbedderUnavailable(RuntimeError):
+    """The embedding service cannot be used; the message says what to do."""
+
+
 class OllamaEmbedder:
-    def __init__(self, model: str = "nomic-embed-text", host: str = "http://localhost:11434",
+    def __init__(self, model: str = "nomic-embed-text", host: str | None = None,
                  client: httpx.Client | None = None):
         self.name = f"ollama:{model}"
+        # The same OLLAMA_BASE_URL the chat model uses, so one setting points both at the same machine.
+        host = host or os.environ.get("OLLAMA_BASE_URL") or "http://localhost:11434"
         self.model, self.host = model, host.rstrip("/")
         self.client = client or httpx.Client(timeout=120)
 
     def embed(self, texts: list[str]) -> list[Vector]:
         out: list[Vector] = []
         for i in range(0, len(texts), 64):
-            r = self.client.post(f"{self.host}/api/embed", json={"model": self.model,
-                                                                  "input": texts[i : i + 64]})
+            try:
+                r = self.client.post(f"{self.host}/api/embed", json={"model": self.model,
+                                                                      "input": texts[i : i + 64]})
+            except httpx.TransportError as e:
+                raise EmbedderUnavailable(
+                    f"cannot reach Ollama at {self.host} ({type(e).__name__}). Start it, or set "
+                    "OLLAMA_BASE_URL (in .env or the shell) to the machine that runs it.") from e
+            if r.status_code == 404:
+                raise EmbedderUnavailable(
+                    f"Ollama at {self.host} does not have the model {self.model!r}. "
+                    f"Run: ollama pull {self.model}")
             r.raise_for_status()
             out.extend(r.json()["embeddings"])
         return out
