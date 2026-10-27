@@ -187,3 +187,21 @@ def test_this_repo_has_no_high_or_medium_findings():
     root = Path(__file__).resolve().parent.parent
     bad = [f for f in check_repo(root).findings if f.severity in ("high", "medium")]
     assert bad == [], [str(f) for f in bad]
+
+
+def test_secret_scan_skips_git_ignored_files_but_not_ones_that_could_be_committed(tmp_path):
+    import subprocess
+
+    key = "gsk_" + "a1B2c3D4e5" * 3
+    subprocess.run(["git", "init", "-q", str(tmp_path)], check=True)
+    (tmp_path / ".gitignore").write_text(".env\n")
+    (tmp_path / ".env").write_text(f"GROQ_API_KEY={key}\n")          # ignored: never committed
+    (tmp_path / "settings.txt").write_text(f"GROQ_API_KEY={key}\n")  # not ignored: would be committed
+    flagged = {f.file for f in check_repo(tmp_path).findings if f.rule == "RP004"}
+    assert flagged == {"settings.txt"}
+
+
+def test_secret_scan_outside_a_git_repo_checks_every_file(tmp_path):
+    key = "gsk_" + "a1B2c3D4e5" * 3
+    (tmp_path / ".env").write_text(f"GROQ_API_KEY={key}\n")
+    assert {f.file for f in check_repo(tmp_path).findings if f.rule == "RP004"} == {".env"}
