@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import re
+import subprocess
 from dataclasses import dataclass, field
 from pathlib import Path
 
@@ -43,9 +44,27 @@ class Report:
                 "findings": [f.to_dict() for f in self.findings]}
 
 
+def _git_files(root: Path) -> list[Path] | None:
+    """Files git tracks, plus untracked files it would not ignore: the ones that could be committed.
+
+    None when `root` is not in a git work tree or git is unavailable. A git-ignored file such as a local
+    .env holding a real key is correctly left out; it is never committed.
+    """
+    try:
+        out = subprocess.run(["git", "-C", str(root), "ls-files", "-z", "--cached", "--others",
+                              "--exclude-standard"], capture_output=True, check=True, timeout=30)
+    except (OSError, subprocess.SubprocessError):
+        return None
+    names = [n for n in out.stdout.decode("utf-8", "surrogateescape").split("\0") if n]
+    return sorted(root / n for n in names if (root / n).is_file())
+
+
 def _walk(root: Path):
-    for p in sorted(root.rglob("*")):
-        if p.is_file() and not (set(p.relative_to(root).parts[:-1]) & SKIP_DIRS):
+    candidates = _git_files(root)
+    if candidates is None:
+        candidates = sorted(p for p in root.rglob("*") if p.is_file())
+    for p in candidates:
+        if not (set(p.relative_to(root).parts[:-1]) & SKIP_DIRS):
             yield p
 
 
