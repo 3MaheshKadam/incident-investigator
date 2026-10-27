@@ -1,0 +1,23 @@
+[
+ {
+  "service": "orders-service",
+  "version": "v4.15.0",
+  "author": "li",
+  "commit_message": "Fix typo in error message",
+  "ts": "2026-03-10T02:06:00Z"
+ },
+ {
+  "service": "api-gateway",
+  "version": "v2.17.2",
+  "author": "dana",
+  "commit_message": "Tidy imports",
+  "ts": "2026-03-10T02:06:00Z"
+ },
+ {
+  "service": "inventory-service",
+  "version": "v1.11.2",
+  "author": "li",
+  "commit_message": "Bump logging library patch version",
+  "ts": "2026-03-10T02:16:00Z"
+ }
+]

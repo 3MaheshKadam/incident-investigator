@@ -1,0 +1,23 @@
+[
+ {
+  "service": "orders-service",
+  "version": "v1.12.8",
+  "author": "li",
+  "commit_message": "Fix typo in error message",
+  "ts": "2026-03-10T02:12:00Z"
+ },
+ {
+  "service": "api-gateway",
+  "version": "v3.17.9",
+  "author": "carlos",
+  "commit_message": "Bump logging library patch version",
+  "ts": "2026-03-10T02:12:00Z"
+ },
+ {
+  "service": "inventory-service",
+  "version": "v4.13.7",
+  "author": "li",
+  "commit_message": "Bump logging library patch version",
+  "ts": "2026-03-10T02:14:00Z"
+ }
+]

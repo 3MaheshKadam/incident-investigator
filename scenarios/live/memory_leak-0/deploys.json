@@ -1,0 +1,23 @@
+[
+ {
+  "service": "inventory-service",
+  "version": "v2.2.4",
+  "author": "dana",
+  "commit_message": "Add unit tests for date parsing",
+  "ts": "2026-03-10T02:14:00Z"
+ },
+ {
+  "service": "orders-service",
+  "version": "v4.9.8",
+  "author": "priya",
+  "commit_message": "Fix typo in error message",
+  "ts": "2026-03-10T02:15:00Z"
+ },
+ {
+  "service": "api-gateway",
+  "version": "v4.13.4",
+  "author": "tom",
+  "commit_message": "Tidy imports",
+  "ts": "2026-03-10T02:18:00Z"
+ }
+]

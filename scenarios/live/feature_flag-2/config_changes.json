@@ -1,0 +1,18 @@
+[
+ {
+  "service": "orders-service",
+  "key": "log_level",
+  "old": "info",
+  "new": "info,debug",
+  "author": "dana",
+  "ts": "2026-03-10T02:08:00Z"
+ },
+ {
+  "service": "orders-service",
+  "key": "fast_checkout_path",
+  "old": "off",
+  "new": "on (100%)",
+  "author": "li",
+  "ts": "2026-03-10T02:56:00Z"
+ }
+]

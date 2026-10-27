@@ -50,7 +50,7 @@ def test_ollama_embedder_batches_and_parses():
         return httpx.Response(200, json={"embeddings": [[1.0, 0.0]] * len(body["input"])})
 
     emb = OllamaEmbedder(client=httpx.Client(transport=httpx.MockTransport(handler)))
-    assert len(emb.embed(["x"] * 130)) == 130 and seen == [64, 64, 2]
+    assert len(emb.embed([f"x{i}" for i in range(130)])) == 130 and seen == [64, 64, 2]
     assert make_embedder("ngram").name == "ngram" and make_embedder("ollama:foo").name == "ollama:foo"
     with pytest.raises(ValueError):
         make_embedder("nope")
@@ -195,3 +195,29 @@ def test_ollama_embedder_uses_the_project_base_url_and_explains_failures(monkeyp
         emb = OllamaEmbedder(client=httpx.Client(transport=httpx.MockTransport(handler)))
         with pytest.raises(EmbedderUnavailable, match=hint):
             emb.embed(["x"])
+
+
+def test_ollama_embedder_does_not_ask_twice_for_the_same_text():
+    calls = []
+
+    def handler(req: httpx.Request) -> httpx.Response:
+        texts = json.loads(req.content)["input"]
+        calls.append(texts)
+        return httpx.Response(200, json={"embeddings": [[float(len(t))] for t in texts]})
+
+    emb = OllamaEmbedder(client=httpx.Client(transport=httpx.MockTransport(handler)))
+    assert emb.embed(["aa", "b", "aa"]) == [[2.0], [1.0], [2.0]]
+    assert emb.embed(["b", "ccc"]) == [[1.0], [3.0]]
+    assert calls == [["aa", "b"], ["ccc"]]
+
+
+def test_toolbox_embedder_follows_the_retrieval_embedder_setting(monkeypatch):
+    from retrieval.embed import shared_embedder
+
+    shared_embedder.cache_clear()
+    monkeypatch.setenv("RETRIEVAL_EMBEDDER", "ollama:some-model")
+    assert shared_embedder().name == "ollama:some-model"
+    shared_embedder.cache_clear()
+    monkeypatch.delenv("RETRIEVAL_EMBEDDER")
+    assert shared_embedder().name == "ngram"
+    shared_embedder.cache_clear()

@@ -104,10 +104,43 @@ it was re-run to check for regressions and is no longer a pure hold-out.
 - **No language model was involved.** Whether the tools help the investigator is a separate question,
   answered by `python -m evals.run --split dev --retrieval` against the same run without the flag.
 
-To reproduce the real-stack numbers:
+To reproduce the real-stack numbers, the 20 recorded incidents are committed in `scenarios/live/`
+(variants 0-1 are its dev split, 2-3 its held-out split):
 
-    python -m target.run --kinds all --variants 2,3 --out recorded-live --workdir .runtime --rows 300000
-    python -m retrieval.eval --split heldout --data recorded-live --label live-variants23
+    python -m retrieval.eval --split heldout --data scenarios/live --label live-variants23
+
+To record new ones: `python -m target.run --kinds all --variants 4,5 --out my-live --workdir .runtime`.
+
+## Neural embeddings (`nomic-embed-text` through Ollama, generated dev split)
+
+Same incidents and questions as the character n-gram runs; only the embedder changed. In the
+tables below the "ngram" rows are the embedder-only ranking, so with nomic they mean nomic.
+
+| | character n-grams | **nomic-embed-text** |
+|---|---|---|
+| paraphrased queries, embedder only: coverage / MRR | 0.58 / 0.55 | **0.73 / 0.62** |
+| paraphrased queries, BM25 fused with embedder: coverage / MRR | 0.63 / 0.54 | **0.71 / 0.63** |
+| paraphrased queries, BM25 alone: coverage / MRR | 0.58 / 0.53 | 0.58 / 0.53 |
+| alert as query, logs only, fused with BM25: coverage | 0.42 | **0.67** (BM25 alone: 0.67) |
+| the slate (what the tools return) | 0.96 | 0.96 |
+| kind with no past incident, runbook + history fused: top-1 / top-3 | 25% / 75% | **50% / 83%** |
+| runbook only, top-1 | 100% | 100% |
+
+- **Embeddings help where words differ.** When the question is phrased in the engineer's words
+  instead of the log's, nomic finds about three or four more of 24 pieces of evidence than BM25
+  (0.73 against 0.58 coverage). Fused with BM25 it is about as good (0.71).
+- **They do not change the slate.** On these incidents BM25 already fills the slate, so the evidence the
+  investigator gets by default is the same. The gain applies to `find_evidence`, where a model
+  writes its own query.
+- **Past incidents mislead less with better embeddings, but still more than the runbook alone**
+  (50% against 100% when no past incident covers the kind).
+- **Only the generated dev split has been run with nomic.** The paraphrases are hand-written by me
+  after I had seen the logs, there are 24 of them, and three or four queries is not a significant
+  difference. It is a direction, not a finding. The real-stack incidents with nomic are the next
+  measurement: `python -m retrieval.eval --split heldout --data scenarios/live --embedder ollama:nomic-embed-text`.
+
+To use real embeddings in the investigator's tools, set `RETRIEVAL_EMBEDDER=ollama:nomic-embed-text`
+(and `OLLAMA_BASE_URL` if Ollama is on another machine) in `.env`.
 
 ## Poisoned history (`python -m evals.history_poison`, no model needed)
 

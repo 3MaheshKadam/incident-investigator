@@ -1,0 +1,15 @@
+{
+ "id": "memory_leak-2",
+ "kind": "memory_leak",
+ "root_cause_category": "memory_leak",
+ "component": "inventory-service",
+ "evidence_keys": [
+  "OOMKilled"
+ ],
+ "incident_start": "2026-03-10T04:14:00Z",
+ "injected_at": "2026-03-10T02:36:00Z",
+ "correct_action": {
+  "type": "restart_service",
+  "target": "inventory-service"
+ }
+}

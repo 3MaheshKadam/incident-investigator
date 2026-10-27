@@ -1,0 +1,23 @@
+[
+ {
+  "service": "api-gateway",
+  "version": "v2.3.9",
+  "author": "dana",
+  "commit_message": "Add unit tests for date parsing",
+  "ts": "2026-03-10T02:05:00Z"
+ },
+ {
+  "service": "orders-service",
+  "version": "v2.11.9",
+  "author": "tom",
+  "commit_message": "Add unit tests for date parsing",
+  "ts": "2026-03-10T02:13:00Z"
+ },
+ {
+  "service": "inventory-service",
+  "version": "v1.17.5",
+  "author": "priya",
+  "commit_message": "Add unit tests for date parsing",
+  "ts": "2026-03-10T02:25:00Z"
+ }
+]

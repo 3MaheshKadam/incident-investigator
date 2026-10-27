@@ -1,0 +1,30 @@
+[
+ {
+  "service": "api-gateway",
+  "version": "v2.6.8",
+  "author": "priya",
+  "commit_message": "Update documentation link in health endpoint",
+  "ts": "2026-03-10T02:05:00Z"
+ },
+ {
+  "service": "orders-service",
+  "version": "v1.8.3",
+  "author": "dana",
+  "commit_message": "Fix typo in error message",
+  "ts": "2026-03-10T02:09:00Z"
+ },
+ {
+  "service": "inventory-service",
+  "version": "v1.4.1",
+  "author": "priya",
+  "commit_message": "Tidy imports",
+  "ts": "2026-03-10T02:11:00Z"
+ },
+ {
+  "service": "orders-service",
+  "version": "v2.8.1",
+  "author": "dana",
+  "commit_message": "Refactor request handling and add currency conversion",
+  "ts": "2026-03-10T02:54:00Z"
+ }
+]

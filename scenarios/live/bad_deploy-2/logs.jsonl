@@ -1,0 +1,1000 @@
+{"ts": "2026-03-10T02:00:18Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:00:36Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 3ms"}
+{"ts": "2026-03-10T02:00:53Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:01:15Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 200 3ms"}
+{"ts": "2026-03-10T02:01:22Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:01:38Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:01:40Z", "service": "inventory-service", "level": "INFO", "msg": "GET /stock 200 0ms"}
+{"ts": "2026-03-10T02:02:16Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 200 3ms"}
+{"ts": "2026-03-10T02:03:45Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:04:12Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:04:47Z", "service": "inventory-service", "level": "INFO", "msg": "GET /stock 200 0ms"}
+{"ts": "2026-03-10T02:05:45Z", "service": "inventory-service", "level": "INFO", "msg": "GET /stock 200 0ms"}
+{"ts": "2026-03-10T02:06:00Z", "service": "inventory-service", "level": "INFO", "msg": "GET /stock 200 0ms"}
+{"ts": "2026-03-10T02:06:09Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:06:40Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:07:03Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:07:07Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:07:18Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:07:43Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:08:50Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 200 3ms"}
+{"ts": "2026-03-10T02:09:30Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:09:35Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 2ms"}
+{"ts": "2026-03-10T02:10:00Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:10:03Z", "service": "inventory-service", "level": "INFO", "msg": "GET /stock 200 0ms"}
+{"ts": "2026-03-10T02:10:03Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 200 3ms"}
+{"ts": "2026-03-10T02:10:13Z", "service": "inventory-service", "level": "INFO", "msg": "GET /stock 200 0ms"}
+{"ts": "2026-03-10T02:10:42Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 200 3ms"}
+{"ts": "2026-03-10T02:11:00Z", "service": "inventory-service", "level": "ERROR", "msg": "timeout in experimental code path (call to model-v2 after 2000ms)"}
+{"ts": "2026-03-10T02:11:17Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 2ms"}
+{"ts": "2026-03-10T02:11:18Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:12:05Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 200 4ms"}
+{"ts": "2026-03-10T02:12:26Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 2ms"}
+{"ts": "2026-03-10T02:13:05Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 200 3ms"}
+{"ts": "2026-03-10T02:13:29Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 200 3ms"}
+{"ts": "2026-03-10T02:13:49Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:14:00Z", "service": "inventory-service", "level": "WARN", "msg": "slow query (412ms): SELECT id FROM sessions WHERE token = ?; plan: SEARCH sessions USING INDEX"}
+{"ts": "2026-03-10T02:14:39Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 2ms"}
+{"ts": "2026-03-10T02:14:56Z", "service": "inventory-service", "level": "INFO", "msg": "GET /stock 200 0ms"}
+{"ts": "2026-03-10T02:15:04Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:15:18Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:15:18Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 2ms"}
+{"ts": "2026-03-10T02:15:53Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:16:06Z", "service": "inventory-service", "level": "INFO", "msg": "GET /stock 200 0ms"}
+{"ts": "2026-03-10T02:16:36Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:16:45Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:16:55Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:17:13Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:17:28Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:17:37Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 2ms"}
+{"ts": "2026-03-10T02:17:53Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 2ms"}
+{"ts": "2026-03-10T02:18:00Z", "service": "api-gateway", "level": "ERROR", "msg": "container restarted: OOMKilled (exit code 137)"}
+{"ts": "2026-03-10T02:18:15Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:18:29Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 200 3ms"}
+{"ts": "2026-03-10T02:18:40Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:18:48Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 2ms"}
+{"ts": "2026-03-10T02:19:21Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 2ms"}
+{"ts": "2026-03-10T02:19:28Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:19:30Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:20:03Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 2ms"}
+{"ts": "2026-03-10T02:20:07Z", "service": "inventory-service", "level": "INFO", "msg": "GET /stock 200 0ms"}
+{"ts": "2026-03-10T02:20:42Z", "service": "inventory-service", "level": "INFO", "msg": "GET /stock 200 0ms"}
+{"ts": "2026-03-10T02:21:03Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 200 3ms"}
+{"ts": "2026-03-10T02:22:44Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:22:45Z", "service": "inventory-service", "level": "INFO", "msg": "GET /stock 200 0ms"}
+{"ts": "2026-03-10T02:23:00Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:23:11Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 2ms"}
+{"ts": "2026-03-10T02:23:55Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:24:21Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:26:30Z", "service": "inventory-service", "level": "INFO", "msg": "GET /stock 200 0ms"}
+{"ts": "2026-03-10T02:26:36Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 200 3ms"}
+{"ts": "2026-03-10T02:27:48Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:27:48Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:28:43Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:29:02Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:29:08Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:29:10Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 200 3ms"}
+{"ts": "2026-03-10T02:29:17Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:29:34Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:29:53Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 200 5ms"}
+{"ts": "2026-03-10T02:31:30Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:32:24Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:32:30Z", "service": "inventory-service", "level": "INFO", "msg": "GET /stock 200 0ms"}
+{"ts": "2026-03-10T02:33:06Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 200 3ms"}
+{"ts": "2026-03-10T02:33:19Z", "service": "inventory-service", "level": "INFO", "msg": "GET /stock 200 0ms"}
+{"ts": "2026-03-10T02:33:26Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:33:38Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 1ms"}
+{"ts": "2026-03-10T02:33:46Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 2ms"}
+{"ts": "2026-03-10T02:33:46Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 200 3ms"}
+{"ts": "2026-03-10T02:34:29Z", "service": "inventory-service", "level": "INFO", "msg": "GET /stock 200 0ms"}
+{"ts": "2026-03-10T02:34:51Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:35:12Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:35:21Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 200 3ms"}
+{"ts": "2026-03-10T02:35:30Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:35:44Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:36:04Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:36:13Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 2ms"}
+{"ts": "2026-03-10T02:36:25Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 200 3ms"}
+{"ts": "2026-03-10T02:36:37Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 200 3ms"}
+{"ts": "2026-03-10T02:37:37Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:38:11Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:38:46Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:39:55Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 200 5ms"}
+{"ts": "2026-03-10T02:40:18Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 2ms"}
+{"ts": "2026-03-10T02:40:54Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:41:34Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:42:21Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:42:46Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:43:43Z", "service": "inventory-service", "level": "INFO", "msg": "GET /stock 200 0ms"}
+{"ts": "2026-03-10T02:44:29Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:45:15Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 200 3ms"}
+{"ts": "2026-03-10T02:46:16Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:46:48Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:47:19Z", "service": "inventory-service", "level": "INFO", "msg": "GET /stock 200 0ms"}
+{"ts": "2026-03-10T02:47:35Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 200 3ms"}
+{"ts": "2026-03-10T02:49:02Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: connection refused (127.0.0.1:32851)"}
+{"ts": "2026-03-10T02:49:08Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: connection refused (127.0.0.1:32851)"}
+{"ts": "2026-03-10T02:49:11Z", "service": "orders-service", "level": "INFO", "msg": "orders-service v4.14.1 listening on :32851"}
+{"ts": "2026-03-10T02:49:18Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:49:23Z", "service": "inventory-service", "level": "INFO", "msg": "GET /stock 200 0ms"}
+{"ts": "2026-03-10T02:49:24Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T02:49:24Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T02:49:40Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T02:49:40Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T02:49:59Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T02:49:59Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T02:50:16Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T02:50:16Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 500 2ms"}
+{"ts": "2026-03-10T02:50:16Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T02:50:20Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:50:39Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T02:50:39Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T02:50:39Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 500 3ms"}
+{"ts": "2026-03-10T02:50:56Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T02:50:56Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T02:50:58Z", "service": "inventory-service", "level": "INFO", "msg": "GET /stock 200 0ms"}
+{"ts": "2026-03-10T02:51:15Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T02:51:15Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T02:51:33Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:51:33Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:51:35Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T02:51:35Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T02:51:40Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 200 7ms"}
+{"ts": "2026-03-10T02:51:54Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T02:51:54Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T02:52:04Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 1ms"}
+{"ts": "2026-03-10T02:52:18Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T02:52:18Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T02:52:22Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:52:36Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T02:52:36Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T02:52:54Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T02:52:54Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T02:53:00Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:53:14Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T02:53:14Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T02:53:17Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:53:26Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:53:32Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T02:53:32Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T02:53:44Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 2ms"}
+{"ts": "2026-03-10T02:53:44Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:53:47Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T02:53:47Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T02:54:06Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T02:54:06Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T02:54:28Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T02:54:29Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T02:54:29Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 200 3ms"}
+{"ts": "2026-03-10T02:54:48Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T02:54:48Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T02:55:06Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T02:55:06Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T02:55:19Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:55:28Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T02:55:28Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T02:55:32Z", "service": "inventory-service", "level": "INFO", "msg": "GET /stock 200 0ms"}
+{"ts": "2026-03-10T02:55:42Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T02:55:42Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T02:55:53Z", "service": "inventory-service", "level": "INFO", "msg": "GET /stock 200 0ms"}
+{"ts": "2026-03-10T02:56:01Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T02:56:01Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T02:56:20Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T02:56:20Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T02:56:22Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 2ms"}
+{"ts": "2026-03-10T02:56:38Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T02:56:38Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T02:56:50Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 2ms"}
+{"ts": "2026-03-10T02:56:57Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T02:56:57Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T02:57:21Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T02:57:21Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T02:57:24Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:57:41Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T02:57:41Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T02:57:58Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T02:57:59Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T02:58:12Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:58:15Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T02:58:15Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T02:58:20Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T02:58:26Z", "service": "inventory-service", "level": "INFO", "msg": "GET /stock 200 0ms"}
+{"ts": "2026-03-10T02:58:30Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T02:58:30Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T02:58:56Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T02:58:56Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T02:59:11Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T02:59:11Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T02:59:15Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 200 4ms"}
+{"ts": "2026-03-10T02:59:28Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T02:59:28Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T02:59:45Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T02:59:45Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:00:02Z", "service": "inventory-service", "level": "INFO", "msg": "GET /stock 200 0ms"}
+{"ts": "2026-03-10T03:00:08Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:00:08Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:00:26Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:00:26Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:00:37Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:00:43Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:00:44Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:00:44Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:00:54Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:00:58Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:00:58Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:01:20Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:01:20Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:01:40Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:01:40Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:01:58Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:01:58Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:02:15Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:02:15Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:02:22Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:02:35Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:02:35Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:02:54Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:02:54Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:03:03Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 200 3ms"}
+{"ts": "2026-03-10T03:03:13Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:03:13Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:03:32Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:03:33Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:03:49Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:03:49Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:04:14Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:04:14Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:04:14Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:04:14Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 200 4ms"}
+{"ts": "2026-03-10T03:04:17Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 200 3ms"}
+{"ts": "2026-03-10T03:04:25Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:04:25Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:04:37Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:04:41Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 200 3ms"}
+{"ts": "2026-03-10T03:04:43Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:04:43Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:04:51Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 2ms"}
+{"ts": "2026-03-10T03:05:05Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:05:05Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:05:22Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:05:22Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:05:40Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:05:40Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:05:43Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:05:59Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:05:59Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:06:04Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:06:04Z", "service": "inventory-service", "level": "INFO", "msg": "GET /stock 200 0ms"}
+{"ts": "2026-03-10T03:06:04Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 200 5ms"}
+{"ts": "2026-03-10T03:06:15Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:06:15Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:06:33Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:06:34Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:06:34Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 500 2ms"}
+{"ts": "2026-03-10T03:06:34Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:06:53Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:06:53Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:06:59Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:07:10Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:07:10Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:07:34Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:07:34Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:07:47Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 200 3ms"}
+{"ts": "2026-03-10T03:07:51Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:07:51Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:08:07Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:08:07Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:08:14Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 2ms"}
+{"ts": "2026-03-10T03:08:25Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:08:25Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:08:25Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:08:45Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:08:45Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:08:58Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:08:59Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:09:09Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:09:23Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:09:23Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:09:40Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:09:40Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:09:57Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:09:57Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:10:12Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:10:12Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:10:31Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:10:31Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:10:57Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:10:57Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:11:02Z", "service": "inventory-service", "level": "INFO", "msg": "GET /stock 200 0ms"}
+{"ts": "2026-03-10T03:11:11Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:11:11Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:11:11Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:11:30Z", "service": "inventory-service", "level": "INFO", "msg": "GET /stock 200 0ms"}
+{"ts": "2026-03-10T03:11:32Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:11:32Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:11:47Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:11:48Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:12:08Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:12:08Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:12:26Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:12:26Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:12:36Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 200 3ms"}
+{"ts": "2026-03-10T03:12:44Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:12:47Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:12:47Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:12:47Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 500 2ms"}
+{"ts": "2026-03-10T03:12:47Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:13:09Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:13:09Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:13:14Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:13:28Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:13:29Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:13:42Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:13:42Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 2ms"}
+{"ts": "2026-03-10T03:13:46Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:13:46Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:13:54Z", "service": "inventory-service", "level": "INFO", "msg": "GET /stock 200 0ms"}
+{"ts": "2026-03-10T03:14:02Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:14:02Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:14:13Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:14:26Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:14:26Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:14:46Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:14:46Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:14:50Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:14:50Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:15:04Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:15:04Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:15:23Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:15:23Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:15:33Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 200 4ms"}
+{"ts": "2026-03-10T03:15:40Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:15:40Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:15:52Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 2ms"}
+{"ts": "2026-03-10T03:15:58Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:15:58Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:16:06Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:16:19Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:16:19Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:16:32Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:16:32Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 200 2ms"}
+{"ts": "2026-03-10T03:16:35Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:16:35Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:16:35Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 500 2ms"}
+{"ts": "2026-03-10T03:16:36Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 1ms"}
+{"ts": "2026-03-10T03:16:45Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 2ms"}
+{"ts": "2026-03-10T03:16:53Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:16:53Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:16:53Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:17:14Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:17:14Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:17:14Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:17:15Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:17:27Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 2ms"}
+{"ts": "2026-03-10T03:17:31Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:17:31Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:17:34Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:17:51Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:17:51Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:18:09Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:18:09Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:18:28Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:18:28Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:18:49Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 3ms"}
+{"ts": "2026-03-10T03:18:49Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:18:49Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:18:59Z", "service": "inventory-service", "level": "INFO", "msg": "GET /stock 200 0ms"}
+{"ts": "2026-03-10T03:19:08Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:19:08Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:19:24Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:19:24Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:19:24Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 500 2ms"}
+{"ts": "2026-03-10T03:19:45Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:19:45Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:19:45Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:20:02Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:20:02Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:20:11Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:20:16Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:20:16Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:20:16Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:20:41Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:20:41Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:21:00Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:21:00Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:21:13Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 2ms"}
+{"ts": "2026-03-10T03:21:20Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:21:20Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:21:29Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 200 4ms"}
+{"ts": "2026-03-10T03:21:35Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:21:35Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:21:47Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 200 4ms"}
+{"ts": "2026-03-10T03:21:59Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:22:00Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:22:15Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:22:16Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:22:17Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:22:35Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:22:35Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:22:54Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:22:54Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:22:54Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:23:11Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:23:11Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:23:11Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:23:25Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:23:25Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:23:35Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 2ms"}
+{"ts": "2026-03-10T03:23:49Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:23:49Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:23:55Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 200 3ms"}
+{"ts": "2026-03-10T03:24:03Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 2ms"}
+{"ts": "2026-03-10T03:24:03Z", "service": "inventory-service", "level": "INFO", "msg": "GET /stock 200 0ms"}
+{"ts": "2026-03-10T03:24:06Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:24:06Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:24:06Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:24:18Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:24:18Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:24:40Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:24:40Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:24:52Z", "service": "inventory-service", "level": "INFO", "msg": "GET /stock 200 0ms"}
+{"ts": "2026-03-10T03:25:00Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:25:00Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:25:07Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 200 3ms"}
+{"ts": "2026-03-10T03:25:21Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:25:21Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:25:35Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:25:35Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:25:52Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:25:52Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:25:56Z", "service": "inventory-service", "level": "INFO", "msg": "GET /stock 200 0ms"}
+{"ts": "2026-03-10T03:26:09Z", "service": "inventory-service", "level": "INFO", "msg": "GET /stock 200 0ms"}
+{"ts": "2026-03-10T03:26:10Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:26:14Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:26:14Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:26:25Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 200 3ms"}
+{"ts": "2026-03-10T03:26:26Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:26:41Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:26:41Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:26:42Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 2ms"}
+{"ts": "2026-03-10T03:26:57Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:26:57Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:27:20Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:27:20Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:27:38Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:27:38Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:27:43Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:27:54Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:27:54Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:28:06Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 2ms"}
+{"ts": "2026-03-10T03:28:12Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:28:12Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 500 2ms"}
+{"ts": "2026-03-10T03:28:12Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:28:30Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:28:30Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:28:49Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:28:49Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:29:05Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:29:09Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:29:09Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:29:29Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:29:29Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:29:29Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 200 3ms"}
+{"ts": "2026-03-10T03:29:41Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:29:44Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:29:44Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:30:06Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:30:06Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 500 2ms"}
+{"ts": "2026-03-10T03:30:06Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:30:23Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:30:23Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:30:33Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:30:37Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:30:45Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:30:45Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:30:45Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:30:55Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:31:00Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:31:00Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:31:24Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:31:24Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:31:35Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 2ms"}
+{"ts": "2026-03-10T03:31:38Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:31:38Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:31:46Z", "service": "inventory-service", "level": "INFO", "msg": "GET /stock 200 0ms"}
+{"ts": "2026-03-10T03:31:48Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 200 4ms"}
+{"ts": "2026-03-10T03:31:50Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 2ms"}
+{"ts": "2026-03-10T03:31:55Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:31:55Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:31:57Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:32:13Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:32:16Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:32:16Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:32:29Z", "service": "inventory-service", "level": "INFO", "msg": "GET /stock 200 0ms"}
+{"ts": "2026-03-10T03:32:31Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:32:31Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:32:49Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:32:49Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:33:05Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:33:05Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:33:21Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:33:21Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:33:32Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:33:40Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:33:40Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:33:55Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:33:55Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:34:12Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:34:12Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:34:33Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:34:33Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:34:46Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 2ms"}
+{"ts": "2026-03-10T03:34:58Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:34:58Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:35:12Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:35:12Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:35:31Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:35:31Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 500 2ms"}
+{"ts": "2026-03-10T03:35:31Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:35:42Z", "service": "inventory-service", "level": "INFO", "msg": "GET /stock 200 0ms"}
+{"ts": "2026-03-10T03:35:53Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:35:53Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:36:13Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:36:13Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:36:31Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:36:31Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:36:38Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:36:52Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:36:52Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:37:14Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:37:14Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:37:30Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:37:30Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:37:30Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:37:52Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:37:52Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:38:10Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:38:10Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:38:33Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:38:33Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 500 2ms"}
+{"ts": "2026-03-10T03:38:33Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:38:35Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:38:51Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:38:51Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:38:51Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:39:12Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:39:12Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:39:28Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:39:28Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:39:46Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:39:46Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:40:09Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:40:09Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:40:24Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:40:24Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:40:42Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:40:42Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:40:58Z", "service": "inventory-service", "level": "INFO", "msg": "GET /stock 200 0ms"}
+{"ts": "2026-03-10T03:40:59Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:40:59Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:41:14Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:41:14Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:41:37Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:41:37Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:41:58Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:41:58Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:41:59Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:42:03Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 2ms"}
+{"ts": "2026-03-10T03:42:12Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 200 4ms"}
+{"ts": "2026-03-10T03:42:18Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:42:18Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:42:36Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:42:36Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:42:52Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:42:52Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:43:11Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:43:11Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:43:30Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:43:30Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:43:54Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:43:54Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:43:54Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:43:58Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:44:11Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:44:11Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:44:22Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 4ms"}
+{"ts": "2026-03-10T03:44:30Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:44:30Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:44:31Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 200 3ms"}
+{"ts": "2026-03-10T03:44:35Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:44:44Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:44:44Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:44:47Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 200 4ms"}
+{"ts": "2026-03-10T03:45:03Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:45:03Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:45:18Z", "service": "inventory-service", "level": "INFO", "msg": "GET /stock 200 0ms"}
+{"ts": "2026-03-10T03:45:20Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:45:20Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:45:41Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:45:41Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:46:00Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:46:00Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:46:19Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:46:19Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:46:27Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:46:37Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:46:37Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:46:57Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:46:57Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:47:09Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:47:09Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:47:29Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:47:29Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:47:48Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:47:49Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:48:10Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:48:10Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:48:10Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:48:15Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:48:26Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 2ms"}
+{"ts": "2026-03-10T03:48:30Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:48:30Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:48:34Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:48:37Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 3ms"}
+{"ts": "2026-03-10T03:48:51Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:48:51Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:48:51Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:49:06Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:49:06Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:49:27Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:49:27Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:49:56Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:49:56Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:50:14Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:50:14Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:50:26Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:50:28Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:50:30Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:50:30Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:50:48Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:50:51Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:50:51Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:51:01Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:51:07Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:51:07Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:51:07Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:51:20Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:51:37Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:51:37Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:51:37Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 500 4ms"}
+{"ts": "2026-03-10T03:51:40Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:51:52Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:51:52Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:51:52Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:52:03Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:52:03Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:52:03Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 1ms"}
+{"ts": "2026-03-10T03:52:09Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:52:09Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:52:22Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 1ms"}
+{"ts": "2026-03-10T03:52:28Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:52:28Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:52:36Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:52:47Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:52:47Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:53:06Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:53:06Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:53:23Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:53:23Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:53:40Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 2ms"}
+{"ts": "2026-03-10T03:53:40Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 200 4ms"}
+{"ts": "2026-03-10T03:53:47Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:53:47Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:53:58Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 200 3ms"}
+{"ts": "2026-03-10T03:54:02Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:54:02Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:54:22Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:54:22Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:54:31Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:54:41Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:54:41Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:55:00Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:55:00Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:55:17Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:55:17Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:55:17Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:55:20Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 200 2ms"}
+{"ts": "2026-03-10T03:55:32Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:55:38Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:55:38Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:55:53Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:55:53Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:56:15Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:56:15Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:56:25Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:56:30Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:56:30Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:56:43Z", "service": "inventory-service", "level": "INFO", "msg": "GET /stock 200 0ms"}
+{"ts": "2026-03-10T03:56:50Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:56:50Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:56:50Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:57:08Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:57:08Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:57:18Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:57:26Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:57:26Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:57:37Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 2ms"}
+{"ts": "2026-03-10T03:57:47Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:57:47Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:57:50Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 1ms"}
+{"ts": "2026-03-10T03:58:01Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:58:01Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:58:21Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:58:21Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:58:24Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 200 2ms"}
+{"ts": "2026-03-10T03:58:37Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:58:37Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:59:03Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:59:03Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:59:18Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:59:18Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:59:30Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 1ms"}
+{"ts": "2026-03-10T03:59:39Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:59:39Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T03:59:56Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T03:59:57Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T03:59:57Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:00:11Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T04:00:12Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T04:00:12Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:00:22Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 2ms"}
+{"ts": "2026-03-10T04:00:28Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T04:00:28Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:00:38Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T04:00:42Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T04:00:49Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T04:00:49Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:01:07Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T04:01:07Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:01:11Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T04:01:24Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T04:01:24Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:01:24Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 500 3ms"}
+{"ts": "2026-03-10T04:01:29Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 3ms"}
+{"ts": "2026-03-10T04:01:30Z", "service": "inventory-service", "level": "INFO", "msg": "GET /stock 200 0ms"}
+{"ts": "2026-03-10T04:01:37Z", "service": "inventory-service", "level": "INFO", "msg": "GET /stock 200 0ms"}
+{"ts": "2026-03-10T04:01:44Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T04:01:44Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:01:51Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T04:02:06Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T04:02:06Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:02:25Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T04:02:25Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:02:43Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T04:02:43Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:02:59Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T04:02:59Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:03:18Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T04:03:18Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T04:03:18Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:03:40Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T04:03:40Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:03:42Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 2ms"}
+{"ts": "2026-03-10T04:04:00Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T04:04:00Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:04:16Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T04:04:16Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:04:29Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T04:04:29Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:04:41Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T04:04:41Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T04:04:50Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T04:04:50Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 500 2ms"}
+{"ts": "2026-03-10T04:04:50Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:04:52Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 1ms"}
+{"ts": "2026-03-10T04:04:58Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 200 3ms"}
+{"ts": "2026-03-10T04:05:04Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T04:05:04Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:05:26Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T04:05:26Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:05:47Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T04:05:47Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:06:02Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 1ms"}
+{"ts": "2026-03-10T04:06:03Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T04:06:03Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:06:22Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T04:06:23Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:06:33Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T04:06:42Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T04:06:42Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:06:58Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T04:07:00Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T04:07:00Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:07:15Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T04:07:15Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:07:33Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 2ms"}
+{"ts": "2026-03-10T04:07:40Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T04:07:40Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:07:45Z", "service": "inventory-service", "level": "INFO", "msg": "GET /stock 200 0ms"}
+{"ts": "2026-03-10T04:07:55Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T04:07:55Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:08:09Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T04:08:09Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:08:32Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T04:08:32Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:08:37Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 1ms"}
+{"ts": "2026-03-10T04:08:46Z", "service": "inventory-service", "level": "INFO", "msg": "GET /stock 200 0ms"}
+{"ts": "2026-03-10T04:08:53Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T04:08:53Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:09:13Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T04:09:13Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:09:17Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 200 7ms"}
+{"ts": "2026-03-10T04:09:32Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T04:09:32Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:09:43Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 1ms"}
+{"ts": "2026-03-10T04:09:49Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T04:09:49Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:10:14Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T04:10:14Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:10:28Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T04:10:28Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:10:48Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T04:10:48Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:11:01Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T04:11:01Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:11:11Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 2ms"}
+{"ts": "2026-03-10T04:11:24Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T04:11:24Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:11:40Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T04:11:40Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:11:56Z", "service": "inventory-service", "level": "INFO", "msg": "GET /stock 200 0ms"}
+{"ts": "2026-03-10T04:11:59Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T04:11:59Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:12:03Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 2ms"}
+{"ts": "2026-03-10T04:12:17Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T04:12:17Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:12:27Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T04:12:39Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T04:12:39Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:12:57Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T04:12:57Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:12:58Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 2ms"}
+{"ts": "2026-03-10T04:13:12Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T04:13:12Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:13:39Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T04:13:39Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:13:55Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T04:13:55Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:14:01Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T04:14:06Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T04:14:14Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T04:14:15Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T04:14:15Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:14:33Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T04:14:33Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:14:49Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T04:14:53Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T04:14:53Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:15:06Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 2ms"}
+{"ts": "2026-03-10T04:15:12Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T04:15:12Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:15:31Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T04:15:31Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:15:46Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T04:15:46Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:16:06Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T04:16:06Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:16:24Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T04:16:24Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:16:41Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T04:16:41Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:16:59Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T04:16:59Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:17:05Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T04:17:06Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 200 5ms"}
+{"ts": "2026-03-10T04:17:09Z", "service": "inventory-service", "level": "INFO", "msg": "GET /stock 200 0ms"}
+{"ts": "2026-03-10T04:17:20Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T04:17:20Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:17:36Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T04:17:36Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:17:52Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T04:17:52Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:18:10Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T04:18:10Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 2ms"}
+{"ts": "2026-03-10T04:18:11Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T04:18:11Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:18:35Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T04:18:35Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:18:46Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T04:18:58Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T04:18:58Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:19:14Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T04:19:14Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:19:31Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T04:19:31Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:19:50Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T04:19:50Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 500 2ms"}
+{"ts": "2026-03-10T04:19:50Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:20:08Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T04:20:08Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:20:24Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T04:20:24Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:20:43Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T04:20:43Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:20:58Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T04:21:08Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T04:21:08Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:21:10Z", "service": "api-gateway", "level": "INFO", "msg": "GET /checkout 200 3ms"}
+{"ts": "2026-03-10T04:21:17Z", "service": "inventory-service", "level": "INFO", "msg": "GET /stock 200 0ms"}
+{"ts": "2026-03-10T04:21:25Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T04:21:25Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T04:21:25Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:21:35Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 2ms"}
+{"ts": "2026-03-10T04:21:46Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T04:21:46Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:22:03Z", "service": "inventory-service", "level": "INFO", "msg": "GET /stock 200 0ms"}
+{"ts": "2026-03-10T04:22:04Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T04:22:04Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T04:22:04Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:22:14Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 3ms"}
+{"ts": "2026-03-10T04:22:25Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T04:22:25Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:22:40Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T04:22:40Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:22:57Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T04:22:57Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T04:22:57Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:23:15Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T04:23:15Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:23:25Z", "service": "inventory-service", "level": "INFO", "msg": "GET /stock 200 0ms"}
+{"ts": "2026-03-10T04:23:35Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T04:23:35Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:23:37Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T04:23:37Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T04:23:56Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T04:23:56Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:24:02Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T04:24:09Z", "service": "inventory-service", "level": "INFO", "msg": "GET /stock 200 0ms"}
+{"ts": "2026-03-10T04:24:17Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T04:24:17Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:24:21Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T04:24:33Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T04:24:33Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:24:38Z", "service": "inventory-service", "level": "INFO", "msg": "GET /stock 200 0ms"}
+{"ts": "2026-03-10T04:24:46Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T04:24:48Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T04:24:48Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:25:03Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T04:25:08Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T04:25:08Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:25:27Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T04:25:27Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:25:44Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T04:25:44Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:26:05Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T04:26:06Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T04:26:06Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:26:23Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T04:26:23Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:26:40Z", "service": "inventory-service", "level": "INFO", "msg": "GET /stock 200 0ms"}
+{"ts": "2026-03-10T04:26:44Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T04:26:44Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:26:55Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T04:27:04Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T04:27:04Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:27:16Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T04:27:16Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:27:38Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T04:27:38Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:27:51Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}
+{"ts": "2026-03-10T04:27:55Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T04:27:55Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:28:08Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 2ms"}
+{"ts": "2026-03-10T04:28:12Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T04:28:12Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:28:34Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T04:28:34Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:28:42Z", "service": "orders-service", "level": "INFO", "msg": "GET /order 200 1ms"}
+{"ts": "2026-03-10T04:28:48Z", "service": "orders-service", "level": "ERROR", "msg": "AttributeError: 'NoneType' object has no attribute 'upper'"}
+{"ts": "2026-03-10T04:28:48Z", "service": "api-gateway", "level": "ERROR", "msg": "RuntimeError: upstream orders-service: returned 500"}
+{"ts": "2026-03-10T04:28:58Z", "service": "orders-db", "level": "INFO", "msg": "GET /query 200 0ms"}

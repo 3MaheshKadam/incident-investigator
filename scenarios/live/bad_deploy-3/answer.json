@@ -1,0 +1,16 @@
+{
+ "id": "bad_deploy-3",
+ "kind": "bad_deploy",
+ "root_cause_category": "bad_deploy",
+ "component": "orders-service",
+ "evidence_keys": [
+  "v2.8.1",
+  "AttributeError"
+ ],
+ "incident_start": "2026-03-10T02:55:00Z",
+ "injected_at": "2026-03-10T02:54:00Z",
+ "correct_action": {
+  "type": "rollback_deploy",
+  "target": "orders-service"
+ }
+}

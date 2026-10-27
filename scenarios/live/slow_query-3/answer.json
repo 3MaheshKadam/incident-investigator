@@ -1,0 +1,16 @@
+{
+ "id": "slow_query-3",
+ "kind": "slow_query",
+ "root_cause_category": "slow_query",
+ "component": "orders-db",
+ "evidence_keys": [
+  "slow query",
+  "SCAN orders"
+ ],
+ "incident_start": "2026-03-10T02:54:00Z",
+ "injected_at": "2026-03-10T02:54:00Z",
+ "correct_action": {
+  "type": "open_ticket",
+  "target": "orders-db"
+ }
+}

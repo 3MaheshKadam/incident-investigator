@@ -11,6 +11,7 @@ import math
 import os
 import re
 from collections import Counter
+from functools import lru_cache
 from typing import Protocol
 
 import httpx
@@ -79,8 +80,15 @@ class OllamaEmbedder:
         host = host or os.environ.get("OLLAMA_BASE_URL") or "http://localhost:11434"
         self.model, self.host = model, host.rstrip("/")
         self.client = client or httpx.Client(timeout=120)
+        self._cache: dict[str, Vector] = {}  # the same incident text is embedded many times per run
 
     def embed(self, texts: list[str]) -> list[Vector]:
+        missing = list(dict.fromkeys(t for t in texts if t not in self._cache))
+        for t, v in zip(missing, self._embed_remote(missing), strict=True):
+            self._cache[t] = v
+        return [self._cache[t] for t in texts]
+
+    def _embed_remote(self, texts: list[str]) -> list[Vector]:
         out: list[Vector] = []
         for i in range(0, len(texts), 64):
             try:
@@ -105,3 +113,9 @@ def make_embedder(spec: str) -> Embedder:
     if spec.startswith("ollama"):
         return OllamaEmbedder(spec.partition(":")[2] or "nomic-embed-text")
     raise ValueError(f"unknown embedder {spec!r}; use 'ngram' or 'ollama[:model]'")
+
+
+@lru_cache(maxsize=4)
+def shared_embedder(spec: str | None = None) -> Embedder:
+    """One embedder per process for a spec (default: RETRIEVAL_EMBEDDER, else 'ngram'), so its cache is shared."""
+    return make_embedder(spec or os.environ.get("RETRIEVAL_EMBEDDER") or "ngram")
