@@ -222,3 +222,24 @@ def test_loadgen_runs_with_only_the_target_package(tmp_path):
     r = subprocess.run([sys.executable, "-c", "import target.loadgen"], cwd=tmp_path,
                        env={"PYTHONPATH": str(tmp_path)}, capture_output=True, text=True, check=False)
     assert r.returncode == 0, r.stderr
+
+
+def test_load_can_be_stopped_before_it_started_and_more_than_once():
+    from target.load import Load
+
+    never_started = Load("http://127.0.0.1:9", threads=3)
+    never_started.stop()
+    never_started.stop()
+    empty = Load("http://127.0.0.1:9", threads=0)
+    empty.start()
+    empty.stop()
+
+
+def test_surge_check_rejects_zero_surge_threads(capsys):
+    import pytest
+
+    from perf import surge_check
+
+    with pytest.raises(SystemExit) as e:
+        surge_check.main(["--surge-threads", "0"])
+    assert e.value.code == 2 and "at least 1" in capsys.readouterr().err

@@ -21,10 +21,12 @@ def main(argv: list[str] | None = None) -> int:
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawTextHelpFormatter)
     p.add_argument("--samples", type=int, default=100)
     p.add_argument("--surge-at", type=int, default=50)
-    p.add_argument("--surge-threads", type=int, default=24, help="extra users arriving at the surge")
+    p.add_argument("--surge-threads", type=int, default=24, help="extra users arriving at the surge (at least 1)")
     p.add_argument("--rows", type=int, default=300_000)
     p.add_argument("--workdir", type=Path, default=Path(".runtime"))
     args = p.parse_args(argv)
+    if args.surge_threads < 1:
+        p.error("--surge-threads must be at least 1")
     args.workdir.mkdir(parents=True, exist_ok=True)
     ep = run_live_episode(None, 0, args.workdir, args.rows, args.samples, surge_at=args.surge_at,
                           surge_threads=args.surge_threads)
