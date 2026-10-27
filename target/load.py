@@ -13,6 +13,7 @@ class Load:
 
     def __init__(self, url: str, threads: int = 4):
         self.url, self._stop = url, threading.Event()
+        self._started = False
         self._threads = [threading.Thread(target=self._run, args=(i,), daemon=True) for i in range(threads)]
 
     def _run(self, seed: int) -> None:
@@ -25,10 +26,13 @@ class Load:
             time.sleep(rng.uniform(0.08, 0.16))
 
     def start(self) -> None:
+        self._started = True
         for t in self._threads:
             t.start()
 
     def stop(self) -> None:
+        """Safe to call more than once, and before start() (a surge that never began)."""
         self._stop.set()
-        for t in self._threads:
-            t.join(timeout=2)
+        if self._started:
+            for t in self._threads:
+                t.join(timeout=2)

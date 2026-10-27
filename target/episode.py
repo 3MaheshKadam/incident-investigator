@@ -197,8 +197,7 @@ def run_live_episode(
                 for metric, v in zip(METRICS, values, strict=True):
                     metrics[name][metric].append(round(v, 2))
         load.stop()
-        if surge_at is not None and surge._threads[0].is_alive():
-            surge.stop()
+        surge.stop()
 
         def minute(t: float) -> float:
             return (t - t0) / interval
@@ -220,7 +219,6 @@ def run_live_episode(
         return episode
     finally:
         load.stop()
-        if surge_at is not None and surge._threads[0].is_alive():
-            surge.stop()
+        surge.stop()
         stack.stop()
 
