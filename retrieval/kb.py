@@ -16,6 +16,7 @@ from __future__ import annotations
 import json
 import re
 from dataclasses import dataclass, field
+from functools import lru_cache
 from pathlib import Path
 
 from agent.data import ScenarioData
@@ -59,6 +60,12 @@ def signature(data: ScenarioData, retriever: EvidenceRetriever | None = None) ->
     return mask_signature(" \n".join([alert, *(d.text for d in changed)]))
 
 
+@lru_cache(maxsize=256)
+def _signature_of(folder: str) -> str:
+    """Signature of a stored incident, cached: history is read-only and is rebuilt for every run."""
+    return signature(ScenarioData(folder))
+
+
 @dataclass
 class Entry:
     id: str
@@ -90,7 +97,7 @@ class KnowledgeBase:
             entries += [Entry(f"runbook:{c}", c, "runbook", t) for c, t in RUNBOOK.items()]
         for sid in history_ids:
             label = json.loads((data_dir / sid / "answer.json").read_text())["root_cause_category"]
-            entries.append(Entry(sid, label, "history", signature(ScenarioData(data_dir / sid))))
+            entries.append(Entry(sid, label, "history", _signature_of(str(data_dir / sid))))
         return cls(entries, embedder)
 
     def rank(self, text: str, exclude: str | None = None, top: int = 5,

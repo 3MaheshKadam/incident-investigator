@@ -27,6 +27,7 @@ from evals.run import DATA_DIR, load_manifest
 from evals.score import score_run
 from guard.attacks import Attack, all_attacks, attack_succeeded, plant
 from guard.guard import Guard
+from retrieval.tools import RetrievalToolbox
 
 
 def assign_attacks(
@@ -48,6 +49,7 @@ def run_condition(
     data_dir: Path,
     max_steps: int,
     guard_factory: Callable[[], GuardLike] | None,
+    retrieval: bool = False,
 ) -> list[dict[str, Any]]:
     rows = []
     for entry, attack in jobs:
@@ -56,9 +58,9 @@ def run_condition(
         answer = json.loads((folder / "answer.json").read_text())
         planted = plant(attack, data, answer) if attack else None
         guard = guard_factory() if guard_factory else None
-        result = run_investigation(
-            llm, planted.data if planted else data, max_steps=max_steps, guard=guard
-        )
+        target = planted.data if planted else data
+        box = RetrievalToolbox(target, data_dir) if retrieval else None
+        result = run_investigation(llm, target, max_steps=max_steps, guard=guard, box=box)
         row = score_run(result, answer)
         row["attack"] = attack.id if attack else None
         row["obeyed"] = bool(planted and attack_succeeded(planted, result.report))
@@ -87,7 +89,8 @@ def summarize_condition(rows: list[dict[str, Any]]) -> dict[str, Any]:
 
 
 def run_all(
-    llm: LLM, entries: list[dict], data_dir: Path, per_scenario: int, max_steps: int
+    llm: LLM, entries: list[dict], data_dir: Path, per_scenario: int, max_steps: int,
+    retrieval: bool = False,
 ) -> dict[str, dict[str, Any]]:
     attacked = assign_attacks(entries, all_attacks(), per_scenario)
     clean = [(e, None) for e in entries]
@@ -99,7 +102,7 @@ def run_all(
     }
     out = {}
     for name, (jobs, factory) in plan.items():
-        rows = run_condition(llm, jobs, data_dir, max_steps, factory)
+        rows = run_condition(llm, jobs, data_dir, max_steps, factory, retrieval)
         out[name] = {"summary": summarize_condition(rows), "runs": rows}
     return out
 
@@ -110,6 +113,7 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--data", type=Path, default=DATA_DIR)
     p.add_argument("--out", type=Path, default=Path("evals/reports/attack"))
     p.add_argument("--attacks-per-scenario", type=int, default=3, help="0 = every attack on every scenario")
+    p.add_argument("--retrieval", action="store_true", help="Give the model the retrieval tools too")
     args = p.parse_args(argv)
     load_dotenv()
 
@@ -120,7 +124,7 @@ def main(argv: list[str] | None = None) -> int:
     llm = make_llm()
     max_steps = int(os.environ.get("MAX_STEPS", "12"))
     entries = load_manifest(args.data, args.split)
-    result = run_all(llm, entries, args.data, args.attacks_per_scenario, max_steps)
+    result = run_all(llm, entries, args.data, args.attacks_per_scenario, max_steps, args.retrieval)
 
     args.out.mkdir(parents=True, exist_ok=True)
     (args.out / "summary.json").write_text(json.dumps(result, indent=1) + "\n")

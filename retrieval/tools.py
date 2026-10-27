@@ -15,7 +15,7 @@ from agent.data import ScenarioData
 from agent.tools import Toolbox
 from retrieval.embed import Embedder
 from retrieval.evidence import EvidenceRetriever
-from retrieval.kb import KnowledgeBase, signature
+from retrieval.kb import Entry, KnowledgeBase, signature
 
 FIND_EVIDENCE_SPEC: dict[str, Any] = {
     "name": "find_evidence",
@@ -48,7 +48,8 @@ class RetrievalToolbox(Toolbox):
     extra_specs: ClassVar[list[dict[str, Any]]] = [FIND_EVIDENCE_SPEC, SUGGEST_SPEC]
 
     def __init__(self, data: ScenarioData, data_dir: Path, history_ids: list[str] | None = None,
-                 embedder: Embedder | None = None, base: Toolbox | None = None):
+                 embedder: Embedder | None = None, base: Toolbox | None = None,
+                 extra_history: list[Entry] | None = None):
         super().__init__(data)
         self.base = base
         self.retriever = EvidenceRetriever(data, embedder)
@@ -56,6 +57,8 @@ class RetrievalToolbox(Toolbox):
             manifest = json.loads((data_dir / "manifest.json").read_text())["scenarios"]
             history_ids = [e["id"] for e in manifest if e["split"] == "dev"]
         self.kb = KnowledgeBase.build(data_dir, [i for i in history_ids if i != data.id], embedder=embedder)
+        if extra_history:  # entries that did not come from the manifest, e.g. a poisoned one in a test
+            self.kb = KnowledgeBase([*self.kb.entries, *extra_history], embedder)
         self.sig = signature(data, self.retriever)
 
     def call(self, name: str, args: dict[str, Any]) -> str:
@@ -84,5 +87,9 @@ class RetrievalToolbox(Toolbox):
         lines += [f"- [{d.kind}] {d.text}" for d in slate]
         if past:
             lines.append("similar past incidents (the cause may differ):")
-            lines += [f"- {h.support[0]}: {h.category}" for h in past if h.support]
+            lead = runbook[0].category if runbook else ""
+            for h in past:
+                if h.support:
+                    note = "" if h.category == lead else f" (disagrees with the runbook's top lead, {lead})"
+                    lines.append(f"- {h.support[0]}: {h.category}{note}")
         return "\n".join(lines)
