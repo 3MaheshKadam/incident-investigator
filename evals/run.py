@@ -20,7 +20,7 @@ from agent.env import load_dotenv
 from agent.investigator import RunResult, run_investigation
 from agent.llm import LLMRequestError, make_llm
 from evals.score import score_run, summarize
-from retrieval.tools import RetrievalToolbox
+from retrieval.tools import RETRIEVAL_HINT, RetrievalToolbox
 
 DATA_DIR = Path(__file__).resolve().parent.parent / "scenarios" / "data"
 
@@ -41,7 +41,11 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--limit", type=int, default=0, help="Run only the first N scenarios")
     p.add_argument("--retrieval", action="store_true",
                    help="Also give the model find_evidence and suggest_hypotheses (retrieval tools)")
+    p.add_argument("--retrieval-hint", action="store_true",
+                   help="With --retrieval, also tell the model in its instructions when to use the retrieval tools")
     args = p.parse_args(argv)
+    if args.retrieval_hint and not args.retrieval:
+        p.error("--retrieval-hint needs --retrieval")
     load_dotenv()
 
     if os.environ.get("LLM_PROVIDER", "mock").lower() == "mock":
@@ -70,7 +74,8 @@ def main(argv: list[str] | None = None) -> int:
             try:
                 data = ScenarioData(folder)
                 box = RetrievalToolbox(data, args.data) if args.retrieval else None
-                result = run_investigation(llm, data, max_steps=max_steps, box=box)
+                result = run_investigation(llm, data, max_steps=max_steps, box=box,
+                                           system_extra=RETRIEVAL_HINT if args.retrieval_hint else "")
             except LLMRequestError as exc:
                 if exc.status == 429 and "per day" in exc.body.lower():
                     print("\nDaily token limit reached. Stopping; rerun later with --resume.")
