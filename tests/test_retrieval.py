@@ -239,3 +239,19 @@ def test_the_knowledge_base_stays_on_the_offline_embedder_when_evidence_search_u
     assert box.kb.embedder.name == "ngram" and box.retriever.embedder is spy and spy.seen > 0
     box.find_evidence("null pointer")
     assert RetrievalToolbox(ScenarioData(DATA / "bad_deploy-0"), DATA, kb_embedder=spy).kb.embedder is spy
+
+
+def test_system_extra_reaches_the_model_only_when_given():
+    from agent.investigator import run_investigation
+    from retrieval.tools import RETRIEVAL_HINT
+
+    class Records(_UsesRetrieval):
+        def chat(self, messages, tools=None):
+            self.system = messages[0]["content"]
+            return super().chat(messages, tools)
+
+    data = ScenarioData(DATA / "bad_deploy-0")
+    plain, hinted = Records(), Records()
+    run_investigation(plain, data, box=RetrievalToolbox(data, DATA))
+    run_investigation(hinted, data, box=RetrievalToolbox(data, DATA), system_extra=RETRIEVAL_HINT)
+    assert RETRIEVAL_HINT not in plain.system and RETRIEVAL_HINT in hinted.system

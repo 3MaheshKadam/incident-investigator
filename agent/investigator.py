@@ -126,6 +126,7 @@ def run_investigation(
     max_steps: int = 12,
     guard: GuardLike | None = None,
     box: Toolbox | None = None,
+    system_extra: str = "",
 ) -> RunResult:
     """Run one investigation. `max_steps` caps model turns, so a looping model stops.
 
@@ -135,7 +136,9 @@ def run_investigation(
     box = box or Toolbox(data)
     extra_specs = list(getattr(box, "extra_specs", []))
     extra_names = {t["name"] for t in extra_specs}
-    system = SYSTEM_PROMPT + ("\n\n" + guard.system_addendum if guard else "")
+    system = SYSTEM_PROMPT + (f"\n\n{system_extra}" if system_extra else "")
+    if guard:
+        system += "\n\n" + guard.system_addendum
     alert = guard.begin(data.alert) if guard else data.alert
     messages: list[Message] = [
         {"role": "system", "content": system},
