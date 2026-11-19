@@ -120,6 +120,18 @@ def _window(data: ScenarioData) -> str:
     return f"\n\nData is available from {min(stamps)} to {max(stamps)} (UTC)."
 
 
+def build_system(system_extra: str = "", guard: GuardLike | None = None) -> str:
+    """The system prompt exactly as sent, so a dry run can show it without calling the model."""
+    system = SYSTEM_PROMPT + (f"\n\n{system_extra}" if system_extra else "")
+    if guard:
+        system += "\n\n" + guard.system_addendum
+    return system
+
+
+def first_message(data: ScenarioData, alert: str | None = None) -> str:
+    return f"Alert:\n{data.alert if alert is None else alert}{_window(data)}"
+
+
 def run_investigation(
     llm: LLM,
     data: ScenarioData,
@@ -136,13 +148,11 @@ def run_investigation(
     box = box or Toolbox(data)
     extra_specs = list(getattr(box, "extra_specs", []))
     extra_names = {t["name"] for t in extra_specs}
-    system = SYSTEM_PROMPT + (f"\n\n{system_extra}" if system_extra else "")
-    if guard:
-        system += "\n\n" + guard.system_addendum
+    system = build_system(system_extra, guard)
     alert = guard.begin(data.alert) if guard else data.alert
     messages: list[Message] = [
         {"role": "system", "content": system},
-        {"role": "user", "content": f"Alert:\n{alert}{_window(data)}"},
+        {"role": "user", "content": first_message(data, alert)},
     ]
     result = RunResult(data.id, None, 0, "step_limit")
     if guard is not None:
