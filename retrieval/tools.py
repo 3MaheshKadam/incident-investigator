@@ -21,10 +21,9 @@ from retrieval.kb import Entry, KnowledgeBase, signature
 RETRIEVAL_HINT = (
     "You also have two search tools. Call suggest_hypotheses once early: it ranks likely root cause "
     "categories from a runbook and past incidents, as leads to check, not a verdict. Call find_evidence "
-    "with a plain-words description of the symptom (for example 'queries are slow' or 'request timed "
-    "out') to find the most relevant log lines, deploys and config changes when your first searches "
-    "turn up little or point in different directions. Always confirm with the exact log lines and "
-    "metrics before you report."
+    "with a plain-words description of the symptom you are trying to explain to find the most relevant "
+    "log lines, deploys and config changes, especially when your first searches turn up little or point "
+    "in different directions. Always confirm with the exact log lines and metrics before you report."
 )
 
 FIND_EVIDENCE_SPEC: dict[str, Any] = {

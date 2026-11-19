@@ -268,3 +268,13 @@ def test_only_filter_selects_by_id_prefix():
     assert select_entries(entries, "") == entries
     assert [e["id"] for e in select_entries(entries, "slow_query", limit=1)] == ["slow_query-0"]
     assert select_entries(entries, "nope") == []
+
+
+def test_hint_names_no_fault_type_or_symptom():
+    """The hint must not lean toward one incident kind; the retrieval tools supply the leads."""
+    from retrieval.tools import RETRIEVAL_HINT
+
+    text = RETRIEVAL_HINT.lower()
+    for word in ("slow", "timed out", "timeout", "latency", "certificate", "memory", "deploy" + "ment",
+                 "outage", "feature flag", "bad_deploy", "slow_query", "memory_leak"):
+        assert word not in text, word
