@@ -258,6 +258,32 @@ def test_system_extra_reaches_the_model_only_when_given():
 
 
 
+def test_dry_run_makes_no_model_calls_and_shows_the_exact_prompt(monkeypatch, capsys):
+    from agent.investigator import build_system
+    from evals import run
+    from retrieval.tools import RETRIEVAL_HINT
+
+    def no_model(*_a, **_k):
+        raise AssertionError("dry run touched a model")
+
+    monkeypatch.setattr(run, "load_dotenv", list)
+    monkeypatch.setattr(run, "make_llm", no_model)
+    monkeypatch.setattr(run.RetrievalToolbox, "__init__", no_model)  # could build an embedder
+    monkeypatch.setenv("LLM_PROVIDER", "openai_compat")
+
+    assert run.main(["--split", "dev", "--only", "slow_query", "--retrieval", "--retrieval-hint", "--dry-run"]) == 0
+    out = capsys.readouterr().out
+    assert "scenarios (2): slow_query-0, slow_query-1" in out
+    assert "find_evidence" in out and "suggest_hypotheses" in out
+    assert "retrieval hint included: yes" in out
+    assert build_system(RETRIEVAL_HINT) in out and "ESTIMATE" in out
+
+    assert run.main(["--split", "dev", "--only", "slow_query", "--dry-run"]) == 0
+    out = capsys.readouterr().out
+    assert "find_evidence" not in out and RETRIEVAL_HINT not in out
+    assert "retrieval hint included: no" in out
+
+
 def test_only_filter_selects_by_id_prefix():
     from evals.run import select_entries
 
