@@ -30,6 +30,14 @@ def load_manifest(data_dir: Path, split: str) -> list[dict]:
     return [e for e in entries if split == "all" or e["split"] == split]
 
 
+def select_entries(entries: list[dict], only: str = "", limit: int = 0) -> list[dict]:
+    """Keep entries whose id starts with one of the comma-separated prefixes in `only`, then the first `limit`."""
+    wanted = [w.strip() for w in only.split(",") if w.strip()]
+    if wanted:
+        entries = [e for e in entries if any(e["id"].startswith(w) for w in wanted)]
+    return entries[:limit] if limit else entries
+
+
 def main(argv: list[str] | None = None) -> int:
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawTextHelpFormatter)
     p.add_argument("--split", choices=["dev", "heldout", "all"], default="dev")
@@ -39,6 +47,8 @@ def main(argv: list[str] | None = None) -> int:
         "--resume", action="store_true", help="Reuse finished traces already saved in --out"
     )
     p.add_argument("--limit", type=int, default=0, help="Run only the first N scenarios")
+    p.add_argument("--only", default="",
+                   help="Comma-separated scenario ids or id prefixes to run, e.g. slow_query or slow_query-0,memory_leak-1")
     p.add_argument("--retrieval", action="store_true",
                    help="Also give the model find_evidence and suggest_hypotheses (retrieval tools)")
     p.add_argument("--retrieval-hint", action="store_true",
@@ -55,8 +65,10 @@ def main(argv: list[str] | None = None) -> int:
     llm = make_llm()
     max_steps = int(os.environ.get("MAX_STEPS", "12"))
     entries = load_manifest(args.data, args.split)
-    if args.limit:
-        entries = entries[: args.limit]
+    entries = select_entries(entries, args.only, args.limit)
+    if not entries:
+        print(f"--only {args.only!r} matches no scenario in the {args.split} split.", file=sys.stderr)
+        return 2
 
     rows = []
     stopped_early = False

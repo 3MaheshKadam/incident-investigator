@@ -255,3 +255,16 @@ def test_system_extra_reaches_the_model_only_when_given():
     run_investigation(plain, data, box=RetrievalToolbox(data, DATA))
     run_investigation(hinted, data, box=RetrievalToolbox(data, DATA), system_extra=RETRIEVAL_HINT)
     assert RETRIEVAL_HINT not in plain.system and RETRIEVAL_HINT in hinted.system
+
+
+
+def test_only_filter_selects_by_id_prefix():
+    from evals.run import select_entries
+
+    ids = ["bad_deploy-0", "slow_query-0", "slow_query-1", "memory_leak-0"]
+    entries = [{"id": i} for i in ids]
+    assert [e["id"] for e in select_entries(entries, "slow_query")] == ["slow_query-0", "slow_query-1"]
+    assert [e["id"] for e in select_entries(entries, "slow_query-1, bad_deploy-0")] == ["bad_deploy-0", "slow_query-1"]
+    assert select_entries(entries, "") == entries
+    assert [e["id"] for e in select_entries(entries, "slow_query", limit=1)] == ["slow_query-0"]
+    assert select_entries(entries, "nope") == []
